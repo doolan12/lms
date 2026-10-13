@@ -32,7 +32,7 @@ Enrolments and quiz attempts can only be written by the server (service role), s
 ### 1. Supabase
 
 1. Create a project at [supabase.com](https://supabase.com) (choose the Sydney region).
-2. In **SQL Editor**, run `supabase/migrations/0001_init.sql`, then `supabase/seed.sql`.
+2. In **SQL Editor**, run `supabase/migrations/0001_init.sql`, then `0002_curriculum_mapping.sql`, then `supabase/seed.sql`.
 3. In **Authentication → URL Configuration**, set the Site URL to your site and add `http://localhost:3000/auth/callback` (and your production `/auth/callback`) to the redirect URLs.
 
 ### 2. Stripe
@@ -85,6 +85,21 @@ supabase/
 ## Editing course content
 
 For now, content is edited in Supabase (Table Editor or SQL). Lesson bodies are Markdown in `lesson_content.body_md`; set `video_url` to an embeddable URL (e.g. `https://player.vimeo.com/video/…` or `https://www.youtube.com/embed/…`).
+
+## Curriculum coverage (TLILIC0003)
+
+Every lesson and question is tagged (`refs`) with the TLILIC0003 Knowledge Evidence (`KE01`–`KE16`) and Performance Evidence (`PE01`–`PE10`) items it addresses. The items live in the `curriculum_items` table.
+
+```bash
+npm run coverage            # regenerate docs/curriculum-coverage.md
+npm run coverage -- --check # fail if any requirement has no question (use in CI)
+```
+
+In Supabase you can also query `select * from curriculum_coverage;` in the SQL editor.
+
+When you add or edit questions, tag them with the right codes and rerun the report.
+
+> The content is original. Don't add questions copied from a SafeWork National Assessment Instrument (NAI) — NAIs are confidential to accredited assessors, and sharing them breaches the conditions of accreditation.
 
 ## Compliance note
 
