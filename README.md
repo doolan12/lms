@@ -32,7 +32,7 @@ Enrolments and quiz attempts can only be written by the server (service role), s
 ### 1. Supabase
 
 1. Create a project at [supabase.com](https://supabase.com) (choose the Sydney region).
-2. In **SQL Editor**, run the files in `supabase/migrations/` in order (`0001`, `0002`, `0003`), then `supabase/seed.sql`.
+2. In **SQL Editor**, paste `supabase/setup.sql` (all migrations + seed in one file) and run it. Full step-by-step guide: [DEPLOY.md](DEPLOY.md).
 3. In **Authentication → URL Configuration**, set the Site URL to your site and add `http://localhost:3000/auth/callback` (and your production `/auth/callback`) to the redirect URLs.
 
 ### 2. Stripe
