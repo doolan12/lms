@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Forklift Theory LMS
 
-## Getting Started
+An online learning platform for selling forklift licence (HRWL class LF) theory courses in Australia.
 
-First, run the development server:
+**Stack:** Next.js 15 (App Router) · Supabase (Postgres, Auth, Row Level Security) · Stripe Checkout · Tailwind CSS
+
+## What's in the MVP
+
+- **Accounts** — email + password sign-up / sign-in (Supabase Auth)
+- **Course catalogue** — public course pages with outline and free preview lessons
+- **Payments** — Stripe Checkout in AUD; a webhook (plus a success-page fallback) creates the enrolment
+- **Lessons** — markdown content with optional video embed, mark-complete, prev/next navigation
+- **Progress** — per-lesson completion, course progress bar, "My learning" dashboard
+- **Quizzes** — a quiz per module plus a final practice exam (unlocks when all lessons are done), graded on the server, with answer review and explanations
+- **Sample content** — a 6-module forklift theory course (12 lessons, 34 questions) in `supabase/seed.sql`
+
+### Security model
+
+All access rules live in the database (`supabase/migrations/0001_init.sql`):
+
+| Data | Who can read it |
+|---|---|
+| Courses, modules, lesson titles | Anyone (published courses) |
+| Lesson content | Enrolled students, or anyone for preview lessons |
+| Questions & options | Enrolled students — **never** `is_correct` or `explanation` |
+| Enrolments, progress, quiz attempts | Only the student themselves |
+
+Enrolments and quiz attempts can only be written by the server (service role), so students can't grant themselves access or fake scores.
+
+## Setup
+
+### 1. Supabase
+
+1. Create a project at [supabase.com](https://supabase.com) (choose the Sydney region).
+2. In **SQL Editor**, run `supabase/migrations/0001_init.sql`, then `supabase/seed.sql`.
+3. In **Authentication → URL Configuration**, set the Site URL to your site and add `http://localhost:3000/auth/callback` (and your production `/auth/callback`) to the redirect URLs.
+
+### 2. Stripe
+
+1. Create an account at [stripe.com](https://stripe.com) and grab your **test** secret key.
+2. For local development, install the Stripe CLI and run:
+   ```bash
+   stripe listen --forward-to localhost:3000/api/stripe/webhook
+   ```
+   Copy the `whsec_…` secret it prints.
+3. In production, add a webhook endpoint at `https://YOUR-SITE/api/stripe/webhook` for `checkout.session.completed` and `checkout.session.async_payment_succeeded`.
+
+Test card: `4242 4242 4242 4242`, any future expiry, any CVC.
+
+### 3. Run it
 
 ```bash
+cp .env.example .env.local   # fill in the values
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+  app/
+    page.tsx                                  Home + course list
+    login/                                    Sign in / sign up (server actions)
+    auth/callback/route.ts                    Email confirmation handler
+    dashboard/page.tsx                        My learning
+    courses/[slug]/page.tsx                   Course page, outline, buy button
+    courses/[slug]/actions.ts                 Enrol / Stripe checkout, lesson completion
+    courses/[slug]/lessons/[lessonSlug]/      Lesson viewer
+    courses/[slug]/quizzes/[quizId]/          Quiz + server-side grading + results
+    api/stripe/webhook/route.ts               Stripe → enrolment
+  lib/
+    supabase/{server,admin,middleware}.ts     Supabase clients
+    courses.ts                                Course queries
+    enrollment.ts                             Enrolment + checkout fulfilment
+    stripe.ts
+  middleware.ts                               Session refresh + route guard
+supabase/
+  migrations/0001_init.sql                    Schema + RLS
+  seed.sql                                    Sample forklift theory course
+```
 
-## Learn More
+## Editing course content
 
-To learn more about Next.js, take a look at the following resources:
+For now, content is edited in Supabase (Table Editor or SQL). Lesson bodies are Markdown in `lesson_content.body_md`; set `video_url` to an embeddable URL (e.g. `https://player.vimeo.com/video/…` or `https://www.youtube.com/embed/…`).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Compliance note
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The sample content is general study material aligned to the topics of **TLILIC0003 Licence to operate a forklift truck**. Have your RTO or a qualified trainer review it before selling. This platform delivers theory preparation only — the licence itself is issued by the state or territory WHS regulator after assessment by an accredited assessor.
 
-## Deploy on Vercel
+## Next steps
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Admin area for editing courses, lessons and questions in the browser
+- Completion certificates (PDF)
+- Question banks with randomised exams
+- Email receipts and reminders
+- Deploy to Vercel
