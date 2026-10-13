@@ -417,12 +417,12 @@ declare
   chart text := $chart$
 **Load chart — Forklift A (side shifter fitted)**
 
-| Load centre | Lift up to 3,300 mm | Lift up to 4,500 mm |
+| Load centre | Lift up to 3,000 mm | Lift up to 4,500 mm |
 |---|---:|---:|
-| 500 mm | 2,500 kg | 2,200 kg |
-| 600 mm | 2,080 kg | 1,830 kg |
-| 700 mm | 1,780 kg | 1,570 kg |
-| 800 mm | 1,560 kg | 1,370 kg |
+| 600 mm | 2,500 kg | 2,000 kg |
+| 700 mm | 2,100 kg | 1,700 kg |
+| 800 mm | 1,800 kg | 1,500 kg |
+| 900 mm | 1,600 kg | 1,300 kg |
 $chart$;
 begin
   delete from public.courses where slug = 'forklift-licence-theory';
@@ -575,11 +575,11 @@ $md$);
 ## Common forklift hazards
 
 - **Pedestrians**, other plant and vehicles — collision risk
-- **Overhead hazards** — powerlines, low beams, doorways, sprinklers, lights, fixed structures
+- **Overhead hazards** — powerlines (see the next lesson), low beams, doorways, sprinklers, lights, fixed structures
 - **Poor lighting** and blind corners
 - **Dangerous goods** — check labels/placards and the Safety Data Sheet (SDS); know the spill procedure
 - **Restricted or poorly ventilated areas** — LPG, petrol and diesel forklifts give off **carbon monoxide** in exhaust
-- **Ground conditions** and **weather** (next lesson)
+- **Ground conditions** and **weather** (later in this module)
 - Unstable or damaged loads
 
 ## Risk assessment
@@ -603,7 +603,39 @@ Use the most effective control you can, then work down:
 If a control is missing or not working, **report it**.
 $md$);
 
-  perform pg_temp.add_lesson(m2, c, 3, 'ground-and-weather', 'Ground surfaces and weather', 8, false,
+  perform pg_temp.add_lesson(m2, c, 3, 'powerlines', 'Powerlines: keep clear, and the 5-step contact protocol', 8, false,
+    array['PE03','KE07','KE04'], $md$
+## Look up and live
+
+Overhead powerlines are one of the deadliest hazards for forklift operators. Electricity can **jump (arc)** across a gap — you don't have to touch the line to be electrocuted. Treat **every line as live**.
+
+Before you start work outdoors or near doorways and awnings:
+
+- **Look up** — find every overhead line before you move or raise the mast.
+- **Keep the minimum approach distance** for your state and the line's voltage. For example, SafeWork NSW sets **3 m** for lines up to 132,000 volts, **6 m** up to 330,000 volts and **8 m** above that. Your site may set a bigger distance.
+- Remember lines **sag** in heat and **swing** in wind — and a raised mast or load is higher than you think.
+- **Lower the mast and tynes** before you travel near lines.
+- Use a **spotter** when working near lines, and ask for the power to be **switched off or the lines covered** if you have to work close to them.
+
+## If the forklift touches a powerline — the 5 steps
+
+**Stay → Warn → Break → Call → Jump**
+
+1. **STAY on the forklift.** Stay calm, stay seated and don't touch any metal parts. The forklift may be live — the ground around it can be too.
+2. **WARN others.** Shout to everyone to keep **at least 8 metres** away. No one should touch the forklift or try to help you.
+3. **BREAK contact — only if it's safe.** Lower the mast or tynes, or drive the forklift clear of the line, but only if it won't cause another hazard.
+4. **CALL for help.** Call **000** and the local electricity network operator (e.g. Ausgrid 13 13 88, Endeavour Energy 13 10 03, Essential Energy 13 20 80) and ask them to switch the power off. **Stay where you are** until they confirm the power is off.
+5. **JUMP clear — only if you must** (e.g. the forklift is on fire). Jump well clear with your **feet together**, never touching the forklift and the ground at the same time. Land with feet together, then **shuffle or bunny-hop** with feet together until you are **at least 8 metres** away. **Never go back** until the power is confirmed off.
+
+## Afterwards
+
+- Don't use the forklift again until it has been **inspected**.
+- Report it to your supervisor straight away. Contact with a powerline is a **notifiable incident** — your employer must notify the WHS regulator.
+
+> If you see someone else's machine touching a line: **stay back at least 8 m**, call 000 and the network operator, and tell them to stay on the machine.
+$md$);
+
+  perform pg_temp.add_lesson(m2, c, 4, 'ground-and-weather', 'Ground surfaces and weather', 8, false,
     array['KE14','KE06','KE04','PE03'], $md$
 ## Is the surface suitable?
 
@@ -632,7 +664,7 @@ A loaded forklift is extremely heavy — the counterweight alone can weigh more 
 If conditions make the job unsafe, **stop and tell your supervisor**.
 $md$);
 
-  perform pg_temp.add_lesson(m2, c, 4, 'traffic-management-exclusion-zones', 'Traffic management plans and exclusion zones', 6, false,
+  perform pg_temp.add_lesson(m2, c, 5, 'traffic-management-exclusion-zones', 'Traffic management plans and exclusion zones', 6, false,
     array['KE12','PE09','KE02','PE05'], $md$
 ## Traffic management plans
 
@@ -681,6 +713,18 @@ $md$);
   perform pg_temp.add_q(q, 8, array['KE12','PE09'], 'A pedestrian walks into the exclusion zone while you''re loading a truck. You:',
     'Stop work immediately until the person has left the zone, then report the breach if required.', 4,
     array['Sound the horn and keep working', 'Keep going — they should know better', 'Raise the load higher so it''s out of the way', 'Stop work until they have left the zone']);
+  perform pg_temp.add_q(q, 9, array['KE07','PE03'], 'The mast of your forklift touches an overhead powerline. What should you do FIRST?',
+    'Step 1 is STAY: stay seated on the forklift and don''t touch any metal parts. Getting off could electrocute you.', 2,
+    array['Jump off and run', 'Stay on the forklift and don''t touch any metal parts', 'Climb down using three points of contact', 'Push the line away with a piece of timber']);
+  perform pg_temp.add_q(q, 10, array['KE07','PE03'], 'A forklift is touching a powerline. How far away should everyone else stay?',
+    'Step 2 is WARN: keep everyone at least 8 metres away, and no one touches the forklift.', 3,
+    array['1 metre', '3 metres', 'At least 8 metres', 'It is safe to stand next to it if you don''t touch it']);
+  perform pg_temp.add_q(q, 11, array['KE07','KE04'], 'Your forklift is touching a powerline and catches fire. How should you get off?',
+    'Step 5 is JUMP — only if you must. Jump clear with feet together, never touching the forklift and the ground at the same time, then shuffle with feet together at least 8 m away.', 1,
+    array['Jump clear with feet together, then shuffle with feet together at least 8 m away', 'Climb down slowly holding the handrail', 'Step down and run away as fast as you can', 'Stay on the forklift no matter what']);
+  perform pg_temp.add_q(q, 12, array['KE07'], 'What is the correct order of the 5-step powerline contact protocol?',
+    'Stay → Warn → Break contact (if safe) → Call for help → Jump clear (only if you must).', 4,
+    array['Jump, Call, Warn, Stay, Break', 'Call, Jump, Stay, Break, Warn', 'Break, Jump, Warn, Call, Stay', 'Stay, Warn, Break contact, Call, Jump clear']);
 
   -- ════════════════════════════════════════════════════════════════════
   -- Module 3 — Checks, faults and failures
@@ -831,14 +875,14 @@ $md$);
 
 Every forklift has a manufacturer's **data plate / load chart** showing the **maximum weight** it can lift at a given **load centre** and **lift height**, with the attachments fitted.
 
-- **Load centre** — the distance from the vertical face of the tynes to the load's centre of gravity. Common standards are 500 mm or 600 mm.
+- **Load centre** — the distance from the vertical face of the tynes to the load's centre of gravity. The most common load centre on forklift data plates is **600 mm**.
 - **Longer load centre → lower capacity.**
 - **Higher lift → usually lower capacity.**
 - **Attachments change capacity** — use the chart for the attachment fitted.
 
 ### Example (illustrative only)
 
-A forklift rated **2,500 kg at a 500 mm load centre** picks up a long crate whose centre of gravity is **600 mm** from the tyne face. Its capacity at 600 mm is **less than 2,500 kg** — read the actual figure from the chart.
+A forklift is rated **2,500 kg at a 600 mm load centre**. It picks up a long crate whose centre of gravity is **800 mm** from the tyne face. At 800 mm it can lift **less than 2,500 kg** — on the practice chart in Module 5 it's only **1,800 kg**. Always read the actual figure from the chart.
 
 > Always use the manufacturer's chart. **Never exceed** the rated capacity. Never add extra counterweight or put people on the back to "balance" a load.
 
@@ -866,13 +910,15 @@ If you can't confirm the weight — **don't lift it**. Ask your supervisor.
 
 ### Worked example
 
-A pallet holds **5 layers of 8 cartons**. Each carton weighs **22 kg**. The pallet weighs **25 kg**.
+A pallet holds **5 layers of 8 cartons**. Each carton weighs **20 kg**. The pallet weighs **25 kg**.
 
-- Cartons: 5 × 8 = **40 cartons**
-- Weight of cartons: 40 × 22 = **880 kg**
-- Add the pallet: 880 + 25 = **905 kg**
+1. **Count** the cartons: 5 × 8 = **40 cartons**
+2. **Multiply** by the carton weight: 40 × 20 = **800 kg**
+3. **Add** the pallet: 800 + 25 = **825 kg**
 
-Then check: can the forklift lift **905 kg** at this load's load centre and the height you need?
+Then check: can the forklift lift **825 kg** at this load's load centre and the height you need?
+
+> **Count → Multiply → Add the pallet.** Use a calculator and write each step down — that's what you'll do in the assessment too.
 $md$);
 
   perform pg_temp.add_lesson(m4, c, 4, 'attachments', 'Attachments and their capacity', 9, false,
@@ -939,9 +985,9 @@ $md$);
   perform pg_temp.add_q(q, 2, array['KE03'], 'What happens to rated capacity as the load centre increases?',
     'A longer load centre increases leverage over the front wheels, so capacity decreases.', 3,
     array['It increases', 'It stays the same', 'It decreases', 'It doubles']);
-  perform pg_temp.add_cq(q, 3, array['KE05'], 'A pallet has 48 cartons weighing 15 kg each. The pallet weighs 20 kg. What is the total weight?',
-    '48 × 15 = 720 kg, plus the 20 kg pallet = 740 kg.', 2,
-    array['720 kg', '740 kg', '755 kg', '1,068 kg']);
+  perform pg_temp.add_cq(q, 3, array['KE05'], 'A pallet has 40 cartons weighing 20 kg each. The pallet weighs 20 kg. What is the total weight?',
+    '40 × 20 = 800 kg, plus the 20 kg pallet = 820 kg.', 2,
+    array['800 kg', '820 kg', '840 kg', '860 kg']);
   perform pg_temp.add_q(q, 4, array['KE05'], 'Which document from a transport company may show the weight of a load?',
     'Consignment notes and running sheets often list the weight of each item.', 1,
     array['A consignment note', 'A pre-start checklist', 'A traffic management plan', 'A fire evacuation map']);
@@ -966,171 +1012,183 @@ $md$);
   -- ════════════════════════════════════════════════════════════════════
   perform pg_temp.add_lesson(mc, c, 1, 'weights-and-quantities', 'Load weights: units, totals and maximum quantities', 9, false,
     array['KE05'], $md$
+## Maths made simple
+
+Every load calculation uses the same few steps. Take it slowly, **use a calculator**, and **write each step down**.
+
+> **Count → Multiply → Add the pallet**
+
 ## Tonnes and kilograms
 
-Load charts are usually in **kilograms**, but paperwork often uses **tonnes**.
+Load charts are in **kilograms (kg)**. Paperwork sometimes uses **tonnes (t)**.
 
-**1 tonne (t) = 1,000 kg** — multiply tonnes by 1,000.
+**1 tonne = 1,000 kg.** To change tonnes into kilograms, **multiply by 1,000**.
 
 | Tonnes | Kilograms |
 |---|---|
 | 0.5 t | 500 kg |
-| 1.6 t | 1,600 kg |
-| 2.25 t | 2,250 kg |
+| 1.5 t | 1,500 kg |
+| 2.5 t | 2,500 kg |
 
 ## Adding up several items
 
-When a load is made of different items, **add every item plus the pallet**.
+When a pallet has different items on it, **add every item, then add the pallet**.
 
-> A consignment note lists a crate of **420 kg**, a motor of **380 kg** and a crate of **615 kg** on one pallet weighing **25 kg**.
-> 420 + 380 + 615 + 25 = **1,440 kg**
+> A pallet weighing **50 kg** carries items of **400 kg**, **350 kg** and **600 kg**.
+> 400 + 350 + 600 = 1,350 kg → add the pallet: 1,350 + 50 = **1,400 kg**
 
 ## Cartons in layers
 
-**Number of cartons = layers × cartons per layer**, then **× carton weight**, then **+ pallet**.
+1. **Count:** layers × cartons in each layer
+2. **Multiply:** number of cartons × weight of one carton
+3. **Add** the pallet
 
-> 6 layers of 10 cartons, 12 kg each, on a 30 kg pallet:
-> 6 × 10 = 60 cartons → 60 × 12 = 720 kg → 720 + 30 = **750 kg**
+> 5 layers of 10 cartons, 20 kg each, on a 30 kg pallet:
+> 5 × 10 = 50 cartons → 50 × 20 = 1,000 kg → 1,000 + 30 = **1,030 kg**
 
 ## Weighbridge dockets
 
-A weighbridge weighs the whole truck. **Load weight = loaded (gross) weight − empty (tare) weight.**
+A weighbridge weighs the whole truck. **Load = loaded truck − empty truck.**
 
-> Loaded truck **18,450 kg**, empty truck **12,300 kg** → load = **6,150 kg**.
-> If that's **5 identical pallets**: 6,150 ÷ 5 = **1,230 kg each**.
+> Loaded truck **18,000 kg**, empty truck **12,000 kg** → load = **6,000 kg**.
+> If that's **4 identical pallets**: 6,000 ÷ 4 = **1,500 kg each**.
 
 ## The most cartons you can carry
 
-**Maximum cartons = (capacity − pallet weight) ÷ carton weight** — and always **round DOWN**.
+1. Take the pallet off the limit: **limit − pallet**
+2. Divide by the weight of one carton
+3. If the answer has a decimal, **round DOWN** — never up
 
-> Capacity for this lift **1,000 kg**, pallet **25 kg**, cartons **35 kg**:
-> (1,000 − 25) ÷ 35 = 27.86 → **27 cartons**.
-> Check: 28 cartons would be 28 × 35 + 25 = **1,005 kg** — over capacity.
+> Limit **1,000 kg**, pallet **20 kg**, cartons **30 kg** each:
+> 1,000 − 20 = 980 → 980 ÷ 30 = 32.67 → **32 cartons**.
+> Check: 33 cartons would be 33 × 30 + 20 = **1,010 kg** — over the limit.
 $md$);
 
   perform pg_temp.add_lesson(mc, c, 2, 'working-out-load-centre', 'Working out the load centre', 7, false,
     array['KE03','KE04','PE07'], $md$
 ## What you're measuring
 
-The **load centre** is the horizontal distance from the **vertical face of the tynes** (where the load sits against the backrest) to the load's **centre of gravity**.
+The **load centre** is the distance from the **front face of the tynes** (where the load sits against the backrest) to the **middle of the load's weight** (its centre of gravity).
 
-## Even (uniform) loads hard against the backrest
+Most forklift data plates are rated at a **600 mm** load centre.
+
+## Even loads pushed hard against the backrest
 
 If the weight is spread evenly, the centre of gravity is in the **middle** of the load.
 
-**Load centre = depth of the load ÷ 2**
+**Load centre = depth of the load ÷ 2** (half the depth)
 
-> A uniform crate **1,200 mm** deep, pushed hard against the backrest → 1,200 ÷ 2 = **600 mm**.
+> A crate **1,200 mm** deep, pushed hard against the backrest → 1,200 ÷ 2 = **600 mm**.
 
 ## If there's a gap
 
 If the load **isn't hard against the backrest**, add the gap.
 
-**Load centre = gap + (depth ÷ 2)**
+**Load centre = gap + half the depth**
 
-> A **1,000 mm** deep load sitting **200 mm** forward of the backrest → 200 + 500 = **700 mm**.
+> A **1,000 mm** deep load sitting **200 mm** away from the backrest → 200 + 500 = **700 mm**.
 
-That's why you **insert the tynes fully** — a gap moves the load centre forward and cuts capacity.
+That's why you **insert the tynes fully** — a gap pushes the load centre forward and cuts how much you can lift.
 
 ## Uneven loads
 
-If one end is heavier (e.g. a machine with the motor at one end), the centre of gravity **isn't in the middle**. Check markings or documentation for the centre of gravity, put the **heavy end towards the mast**, and ask your supervisor if you're unsure.
+If one end is heavier (e.g. a machine with the motor at one end), the centre of gravity **isn't in the middle**. Check markings or paperwork for the centre of gravity, put the **heavy end towards the mast**, and ask your supervisor if you're unsure.
 $md$);
 
   perform pg_temp.add_lesson(mc, c, 3, 'reading-a-load-chart', 'Reading a load chart, step by step', 10, false,
     array['KE03','KE05','PE01'], $md$
-## The four steps
+## Four steps
 
-1. **Weight** — work out the total weight of the load.
-2. **Load centre** — work out where its centre of gravity sits.
-3. **Lift height** — how high must the load go?
-4. **Read the chart** and check: **load weight ≤ capacity**. If it's over, **don't lift**.
+1. **Weight** — how heavy is the load?
+2. **Load centre** — how far out is the middle of the load?
+3. **Height** — how high does it need to go?
+4. **Read the chart** — find the row and the column. If the load weighs **more** than the number in the chart, **don't lift it**.
 
-### Rules for reading between values
+### When your number falls between two lines
 
-- If the load centre is **between two rows**, use the **larger load centre** (the lower capacity).
-- If the lift height is **between two columns**, use the **higher lift height** (the lower capacity).
+- Load centre **between two rows**? Use the **bigger load centre** (the row further down).
+- Lift height **between two columns**? Use the **higher lift** (the column to the right).
 
-In other words: **when in doubt, use the smaller number.** Never average.
+Both rules give you the **smaller** capacity — the safe choice. **Never take an average.**
 
 Only use the chart for the **forklift and attachment actually fitted**.
 
 ## Practice chart (fictional)
 $md$ || chart || $md$
 
-## Worked example 1
+## Worked example 1 — OK to lift
 
-A **1,900 kg** pallet, load centre **600 mm**, lifted to **3,000 mm**.
-Row 600 mm, column "up to 3,300 mm" → **2,080 kg**. 1,900 ≤ 2,080 → **OK to lift.**
+A **1,900 kg** pallet, load centre **600 mm**, lifted to **2,500 mm**.
+Row 600 mm, column "up to 3,000 mm" → **2,500 kg**. 1,900 is less than 2,500 → **OK to lift.**
 
-## Worked example 2
+## Worked example 2 — too heavy
 
-The same pallet must go to a shelf at **4,200 mm**.
-4,200 mm is above 3,300 mm, so use the "up to 4,500 mm" column → **1,830 kg**. 1,900 > 1,830 → **Do not lift** — it's 70 kg over.
+A **2,200 kg** pallet, load centre **600 mm**, going to a shelf at **4,000 mm**.
+4,000 mm is above 3,000 mm, so use the "up to 4,500 mm" column → **2,000 kg**. 2,200 is more than 2,000 → **Do not lift** — it's 200 kg over.
 
-## Worked example 3
+## Worked example 3 — between two rows
 
-A uniform crate **1,300 mm** deep, weighing **1,700 kg**, lifted to **3,000 mm**.
-Load centre = 1,300 ÷ 2 = **650 mm** — between rows, so use the **700 mm** row → **1,780 kg**. 1,700 ≤ 1,780 → **OK to lift.**
+A crate **1,300 mm** deep, weighing **2,000 kg**, lifted to **2,500 mm**.
+Load centre = 1,300 ÷ 2 = **650 mm**. That's between the 600 and 700 rows, so use the **700 mm** row → **2,100 kg**. 2,000 is less than 2,100 → **OK to lift.**
 $md$);
 
   insert into public.quizzes (course_id, module_id, title, pass_mark) values (c, mc, 'Module 5 quiz — calculations', 80) returning id into q;
   perform pg_temp.add_cq(q, 1, array['KE05'],
-    'A pallet holds 6 layers of 10 cartons. Each carton weighs 12 kg and the pallet weighs 30 kg. What is the total weight?',
-    '6 × 10 = 60 cartons. 60 × 12 = 720 kg. 720 + 30 = 750 kg.', 2,
-    array['720 kg', '750 kg', '780 kg', '762 kg']);
+    'A pallet holds 5 layers of 10 cartons. Each carton weighs 20 kg and the pallet weighs 30 kg. What is the total weight?',
+    '5 × 10 = 50 cartons. 50 × 20 = 1,000 kg. 1,000 + 30 = 1,030 kg.', 2,
+    array['1,000 kg', '1,030 kg', '1,050 kg', '1,300 kg']);
   perform pg_temp.add_cq(q, 2, array['KE05'],
-    'A consignment note shows a load of 1.6 t. How many kilograms is that?',
-    '1 tonne = 1,000 kg, so 1.6 × 1,000 = 1,600 kg.', 3,
-    array['16 kg', '160 kg', '1,600 kg', '16,000 kg']);
+    'A consignment note shows a load of 1.5 t. How many kilograms is that?',
+    '1 tonne = 1,000 kg, so 1.5 × 1,000 = 1,500 kg.', 3,
+    array['15 kg', '150 kg', '1,500 kg', '15,000 kg']);
   perform pg_temp.add_cq(q, 3, array['KE05'],
-    'One pallet (25 kg) carries three items: 420 kg, 380 kg and 615 kg. What is the total weight?',
-    '420 + 380 + 615 = 1,415 kg. Add the 25 kg pallet = 1,440 kg.', 2,
-    array['1,415 kg', '1,440 kg', '1,390 kg', '1,540 kg']);
+    'One pallet (50 kg) carries three items: 400 kg, 350 kg and 600 kg. What is the total weight?',
+    '400 + 350 + 600 = 1,350 kg. Add the 50 kg pallet = 1,400 kg.', 2,
+    array['1,350 kg', '1,400 kg', '1,450 kg', '1,300 kg']);
   perform pg_temp.add_cq(q, 4, array['KE05'],
-    'A weighbridge docket shows the loaded truck at 18,450 kg and the empty truck at 12,300 kg. The load is 5 identical pallets. How much does each pallet weigh?',
-    'Load = 18,450 − 12,300 = 6,150 kg. 6,150 ÷ 5 = 1,230 kg per pallet.', 1,
-    array['1,230 kg', '2,460 kg', '3,690 kg', '6,150 kg']);
+    'A weighbridge docket shows the loaded truck at 18,000 kg and the empty truck at 12,000 kg. The load is 4 identical pallets. How much does each pallet weigh?',
+    'Load = 18,000 − 12,000 = 6,000 kg. 6,000 ÷ 4 = 1,500 kg per pallet.', 1,
+    array['1,500 kg', '3,000 kg', '4,500 kg', '6,000 kg']);
   perform pg_temp.add_cq(q, 5, array['KE05'],
-    'You may lift a maximum of 1,000 kg. The pallet weighs 40 kg and each carton weighs 24 kg. What is the most cartons you can load?',
-    '(1,000 − 40) ÷ 24 = 40 cartons. 40 × 24 + 40 = 1,000 kg.', 2,
-    array['38', '40', '41', '42']);
+    'You may lift a maximum of 1,000 kg. The pallet weighs 40 kg and each carton weighs 30 kg. What is the most cartons you can load?',
+    '1,000 − 40 = 960. 960 ÷ 30 = 32 cartons. Check: 32 × 30 + 40 = 1,000 kg.', 2,
+    array['30', '32', '33', '34']);
   perform pg_temp.add_cq(q, 6, array['KE05'],
-    'You may lift a maximum of 1,000 kg. The pallet weighs 25 kg and each carton weighs 35 kg. What is the most cartons you can load?',
-    '(1,000 − 25) ÷ 35 = 27.86 — always round down: 27. 28 cartons would weigh 1,005 kg including the pallet.', 1,
-    array['27', '28', '29', '26']);
+    'You may lift a maximum of 1,000 kg. The pallet weighs 20 kg and each carton weighs 30 kg. What is the most cartons you can load?',
+    '1,000 − 20 = 980. 980 ÷ 30 = 32.67 — always round DOWN: 32. 33 cartons would weigh 1,010 kg with the pallet.', 1,
+    array['32', '33', '34', '31']);
   perform pg_temp.add_cq(q, 7, array['KE03'],
-    'A uniform crate is 1,200 mm deep and sits hard against the backrest. What is its load centre?',
-    'For a uniform load against the backrest, load centre = depth ÷ 2 = 600 mm.', 2,
+    'An evenly loaded crate is 1,200 mm deep and sits hard against the backrest. What is its load centre?',
+    'Half the depth: 1,200 ÷ 2 = 600 mm.', 2,
     array['300 mm', '600 mm', '1,200 mm', '2,400 mm']);
   perform pg_temp.add_cq(q, 8, array['KE03','PE07'],
-    'A uniform load 1,000 mm deep is sitting 200 mm forward of the backrest. What is its load centre?',
-    'Load centre = gap + depth ÷ 2 = 200 + 500 = 700 mm.', 3,
+    'An evenly loaded crate 1,000 mm deep is sitting 200 mm away from the backrest. What is its load centre?',
+    'Gap + half the depth = 200 + 500 = 700 mm.', 3,
     array['500 mm', '600 mm', '700 mm', '1,200 mm']);
   perform pg_temp.add_cq(q, 9, array['KE03','PE01'],
-    E'Using the chart, can Forklift A lift a 1,900 kg load with a 600 mm load centre to 3,000 mm?\n\n' || chart,
-    'Row 600 mm, column up to 3,300 mm = 2,080 kg. 1,900 kg is within capacity.', 1,
-    array['Yes — capacity is 2,080 kg', 'No — capacity is 1,830 kg', 'No — capacity is 1,780 kg', 'Yes — capacity is 2,500 kg']);
+    E'Using the chart, can Forklift A lift a 1,900 kg load with a 600 mm load centre to 2,500 mm?\n\n' || chart,
+    'Row 600 mm, column up to 3,000 mm = 2,500 kg. 1,900 kg is less, so it''s within capacity.', 1,
+    array['Yes — capacity is 2,500 kg', 'No — capacity is 2,000 kg', 'No — capacity is 1,800 kg', 'Yes — capacity is 2,100 kg']);
   perform pg_temp.add_cq(q, 10, array['KE03','PE01'],
-    E'The same 1,900 kg load (600 mm load centre) must be placed on a shelf at 4,200 mm. Can Forklift A do it?\n\n' || chart,
-    '4,200 mm is above 3,300 mm, so use the up to 4,500 mm column: 1,830 kg. 1,900 kg is 70 kg over — do not lift.', 2,
-    array['Yes — capacity is 2,080 kg', 'No — capacity is 1,830 kg', 'Yes — capacity is 2,200 kg', 'No — capacity is 1,570 kg']);
+    E'A 2,200 kg load (600 mm load centre) must go on a shelf at 4,000 mm. Can Forklift A do it?\n\n' || chart,
+    '4,000 mm is above 3,000 mm, so use the up to 4,500 mm column: 2,000 kg. 2,200 kg is 200 kg over — do not lift.', 2,
+    array['Yes — capacity is 2,500 kg', 'No — capacity is 2,000 kg', 'Yes — capacity is 2,100 kg', 'No — capacity is 1,700 kg']);
   perform pg_temp.add_cq(q, 11, array['KE03','KE05'],
-    E'A uniform crate 1,600 mm deep weighs 1,500 kg and sits hard against the backrest. It must be lifted to 2,500 mm. Can Forklift A do it?\n\n' || chart,
-    'Load centre = 1,600 ÷ 2 = 800 mm. Row 800 mm, column up to 3,300 mm = 1,560 kg. 1,500 kg is within capacity.', 1,
-    array['Yes — load centre 800 mm, capacity 1,560 kg', 'No — load centre 800 mm, capacity 1,370 kg', 'Yes — load centre 500 mm, capacity 2,500 kg', 'No — load centre 1,600 mm is off the chart']);
+    E'An evenly loaded crate 1,600 mm deep weighs 1,700 kg and sits hard against the backrest. It must be lifted to 2,500 mm. Can Forklift A do it?\n\n' || chart,
+    'Load centre = 1,600 ÷ 2 = 800 mm. Row 800 mm, column up to 3,000 mm = 1,800 kg. 1,700 kg is within capacity.', 1,
+    array['Yes — load centre 800 mm, capacity 1,800 kg', 'No — load centre 800 mm, capacity 1,500 kg', 'Yes — load centre 600 mm, capacity 2,500 kg', 'No — load centre 1,600 mm is off the chart']);
   perform pg_temp.add_cq(q, 12, array['KE03','PE01'],
-    E'A 1,800 kg load has a load centre of 650 mm and will be lifted to 3,000 mm. Using the chart, can Forklift A lift it?\n\n' || chart,
-    '650 mm is between rows, so use the larger load centre (700 mm): 1,780 kg. 1,800 kg is over — do not lift. Never average rows.', 2,
-    array['Yes — use the 600 mm row: 2,080 kg', 'No — use the 700 mm row: 1,780 kg', 'Yes — average the rows: 1,930 kg', 'Yes — use the 500 mm row: 2,500 kg']);
+    E'A 2,200 kg load has a load centre of 650 mm and will be lifted to 2,500 mm. Using the chart, can Forklift A lift it?\n\n' || chart,
+    '650 mm is between rows, so use the bigger load centre (700 mm): 2,100 kg. 2,200 kg is over — do not lift. Never take an average.', 2,
+    array['Yes — use the 600 mm row: 2,500 kg', 'No — use the 700 mm row: 2,100 kg', 'Yes — average the rows: 2,300 kg', 'Yes — round down to the 600 mm row']);
   perform pg_temp.add_cq(q, 13, array['KE03'],
-    E'What is the maximum load Forklift A can lift with a 700 mm load centre to a height of 4,000 mm?\n\n' || chart,
-    '4,000 mm is above 3,300 mm, so use the up to 4,500 mm column. Row 700 mm = 1,570 kg.', 2,
-    array['1,780 kg', '1,570 kg', '1,370 kg', '2,200 kg']);
+    E'What is the most Forklift A can lift with a 700 mm load centre to a height of 4,000 mm?\n\n' || chart,
+    '4,000 mm is above 3,000 mm, so use the up to 4,500 mm column. Row 700 mm = 1,700 kg.', 2,
+    array['2,100 kg', '1,700 kg', '1,500 kg', '2,000 kg']);
   perform pg_temp.add_cq(q, 14, array['KE05','KE03'],
-    E'A pallet holds 40 cartons of 44 kg each. The pallet weighs 30 kg. The load centre is 600 mm and it must go to 4,400 mm. Is the lift within capacity?\n\n' || chart,
-    'Weight = 40 × 44 + 30 = 1,790 kg. Row 600 mm, column up to 4,500 mm = 1,830 kg. 1,790 kg is within capacity.', 1,
-    array['Yes — 1,790 kg is within 1,830 kg', 'No — 1,790 kg exceeds 1,570 kg', 'No — 1,790 kg exceeds 1,780 kg', 'Yes — 1,760 kg is within 2,080 kg']);
+    E'A pallet holds 40 cartons of 40 kg each. The pallet weighs 50 kg. The load centre is 700 mm and it must go to 4,000 mm. Is the lift within capacity?\n\n' || chart,
+    'Weight = 40 × 40 + 50 = 1,650 kg. Row 700 mm, column up to 4,500 mm = 1,700 kg. 1,650 kg is within capacity.', 1,
+    array['Yes — 1,650 kg is within 1,700 kg', 'No — 1,650 kg is more than 1,500 kg', 'No — 1,650 kg is more than 1,300 kg', 'Yes — 1,600 kg is within 2,100 kg']);
 
   -- ════════════════════════════════════════════════════════════════════
   -- Module 6 — Safe operation and load handling
@@ -1342,9 +1400,9 @@ $md$);
   perform pg_temp.add_q(q, 17, array['KE03'], 'Where do you find the maximum load for a given load centre and lift height?',
     'On the manufacturer''s data plate / load chart.', 2,
     array['The fuel gauge', 'The data plate / load chart', 'The traffic management plan', 'The racking label only']);
-  perform pg_temp.add_cq(q, 18, array['KE05'], 'A pallet holds 60 cartons of 18 kg each. The pallet weighs 25 kg. What is the total load weight?',
-    '60 × 18 = 1,080 kg, plus the 25 kg pallet = 1,105 kg.', 3,
-    array['1,080 kg', '1,098 kg', '1,105 kg', '1,500 kg']);
+  perform pg_temp.add_cq(q, 18, array['KE05'], 'A pallet holds 50 cartons of 20 kg each. The pallet weighs 25 kg. What is the total load weight?',
+    '50 × 20 = 1,000 kg, plus the 25 kg pallet = 1,025 kg.', 3,
+    array['1,000 kg', '1,020 kg', '1,025 kg', '1,250 kg']);
   perform pg_temp.add_q(q, 19, array['KE05'], 'Which document records a load''s weight measured at a weighbridge?',
     'A weighbridge docket shows the measured weight.', 4,
     array['A pre-start checklist', 'A SWMS', 'A hazard report', 'A weighbridge docket']);
@@ -1369,24 +1427,27 @@ $md$);
 
   -- Final exam: calculation questions
   perform pg_temp.add_cq(q, 26, array['KE05'],
-    'A pallet holds 7 layers of 9 cartons. Each carton weighs 16 kg and the pallet weighs 22 kg. What is the total weight?',
-    '7 × 9 = 63 cartons. 63 × 16 = 1,008 kg. 1,008 + 22 = 1,030 kg.', 2,
-    array['1,008 kg', '1,030 kg', '1,052 kg', '1,130 kg']);
+    'A pallet holds 6 layers of 5 cartons. Each carton weighs 20 kg and the pallet weighs 20 kg. What is the total weight?',
+    '6 × 5 = 30 cartons. 30 × 20 = 600 kg. 600 + 20 = 620 kg.', 2,
+    array['600 kg', '620 kg', '640 kg', '720 kg']);
   perform pg_temp.add_cq(q, 27, array['KE05'],
-    'A running sheet lists a load as 2.25 t. How many kilograms is that?',
-    '2.25 × 1,000 = 2,250 kg.', 3,
-    array['225 kg', '2,025 kg', '2,250 kg', '22,500 kg']);
+    'A running sheet lists a load as 2.5 t. How many kilograms is that?',
+    '2.5 × 1,000 = 2,500 kg.', 3,
+    array['250 kg', '2,050 kg', '2,500 kg', '25,000 kg']);
   perform pg_temp.add_cq(q, 28, array['KE03','KE05','PE01'],
-    E'A uniform crate 1,300 mm deep weighs 1,700 kg and sits hard against the backrest. It will be lifted to 3,000 mm. Using the chart, can Forklift A lift it?\n\n' || chart,
-    'Load centre = 1,300 ÷ 2 = 650 mm. Between rows, so use the larger load centre (700 mm): 1,780 kg. 1,700 kg is within capacity.', 1,
-    array['Yes — use the 700 mm row: 1,780 kg', 'No — use the 700 mm row: 1,570 kg', 'No — use the 800 mm row: 1,560 kg', 'Yes — use the 600 mm row: 2,080 kg']);
+    E'An evenly loaded crate 1,300 mm deep weighs 2,000 kg and sits hard against the backrest. It will be lifted to 2,500 mm. Using the chart, can Forklift A lift it?\n\n' || chart,
+    'Load centre = 1,300 ÷ 2 = 650 mm. That''s between rows, so use the bigger load centre (700 mm): 2,100 kg. 2,000 kg is within capacity.', 1,
+    array['Yes — use the 700 mm row: 2,100 kg', 'No — use the 700 mm row: 1,700 kg', 'No — use the 800 mm row: 1,800 kg', 'Yes — use the 600 mm row: 2,500 kg']);
   perform pg_temp.add_cq(q, 29, array['KE03','PE01'],
     E'Using the chart, which ONE of these lifts is within Forklift A''s capacity?\n\n' || chart,
-    '2,100 kg at 500 mm to 4,200 mm uses the up to 4,500 mm column: 2,200 kg — within capacity. The others exceed 2,080 kg, 1,560 kg and 1,570 kg.', 2,
-    array['2,100 kg, 600 mm load centre, lifted to 3,000 mm', '2,100 kg, 500 mm load centre, lifted to 4,200 mm', '1,600 kg, 800 mm load centre, lifted to 3,000 mm', '1,600 kg, 700 mm load centre, lifted to 4,500 mm']);
+    '1,900 kg at 600 mm to 4,200 mm uses the up to 4,500 mm column: 2,000 kg — within capacity. The others are over 2,100 kg, 1,800 kg and 1,500 kg.', 2,
+    array['2,200 kg, 700 mm load centre, lifted to 2,500 mm', '1,900 kg, 600 mm load centre, lifted to 4,200 mm', '1,900 kg, 800 mm load centre, lifted to 2,500 mm', '1,600 kg, 800 mm load centre, lifted to 4,500 mm']);
   perform pg_temp.add_cq(q, 30, array['KE05'],
-    'The load chart allows 1,370 kg for this lift. The pallet weighs 25 kg and each carton weighs 32 kg. What is the most cartons you can load?',
-    '(1,370 − 25) ÷ 32 = 42.03 — round down to 42. 42 × 32 + 25 = 1,369 kg. 43 cartons would be 1,401 kg.', 2,
-    array['41', '42', '43', '44']);
+    'The load chart allows 1,300 kg for this lift. The pallet weighs 25 kg and each carton weighs 25 kg. What is the most cartons you can load?',
+    '1,300 − 25 = 1,275. 1,275 ÷ 25 = 51 cartons. Check: 51 × 25 + 25 = 1,300 kg. 52 cartons would be 1,325 kg.', 2,
+    array['50', '51', '52', '53']);
+  perform pg_temp.add_q(q, 31, array['KE07','PE03'], 'A forklift has touched a powerline. When is it safe to go back to it?',
+    'Only once the electricity network operator confirms the power is off. Until then, stay at least 8 m away.', 3,
+    array['As soon as the mast is no longer touching the line', 'After waiting 5 minutes', 'Only when the electricity network operator confirms the power is off', 'When it stops sparking']);
 end
 $seed$;

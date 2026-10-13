@@ -4,6 +4,7 @@ import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { allLessonsComplete } from "@/lib/enrollment";
 import { QuestionPrompt } from "@/components/QuestionPrompt";
+import { Calculator } from "@/components/Calculator";
 import { submitQuiz } from "./actions";
 
 type Props = {
@@ -153,10 +154,11 @@ export default async function QuizPage({ params, searchParams }: Props) {
       {header}
       {calcCount > 0 && (
         <p className="mt-4 rounded-md border-l-4 border-hivis bg-[#fff8e1] px-3 py-2 text-sm">
-          🧮 {calcCount} {calcCount === 1 ? "question needs" : "questions need"} a calculation — have a calculator and
-          paper ready, and show your working like you would in the assessment.
+          🧮 {calcCount} {calcCount === 1 ? "question needs" : "questions need"} a calculation. Use the calculator
+          button in the corner, and write each step down: count → multiply → add the pallet.
         </p>
       )}
+      {calcCount > 0 && <Calculator />}
       <form action={submitQuiz} className="mt-8 space-y-5">
         <input type="hidden" name="quizId" value={quizId} />
         <input type="hidden" name="slug" value={slug} />

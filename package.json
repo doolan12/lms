@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "coverage": "node scripts/coverage-report.mjs",
-    "setup-sql": "node scripts/build-setup-sql.mjs"
+    "setup-sql": "node scripts/build-setup-sql.mjs",
+    "content:sync": "node scripts/content-sync.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",

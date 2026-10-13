@@ -10,6 +10,7 @@ import {
 } from "@/lib/courses";
 import { fulfillCheckoutById } from "@/lib/enrollment";
 import { ProgressBar } from "@/components/ProgressBar";
+import { FREE_PREVIEW_VIDEO_MODULES, MODULE_VIDEOS, videoMinutes } from "@/content/videos";
 import { startEnrollment } from "./actions";
 
 type Props = {
@@ -107,6 +108,15 @@ export default async function CoursePage({ params, searchParams }: Props) {
                   </span>
                   <h3 className="font-bold">{m.title}</h3>
                 </div>
+                {MODULE_VIDEOS[m.position] && (
+                  <VideoRow
+                    slug={slug}
+                    position={m.position}
+                    minutes={videoMinutes(MODULE_VIDEOS[m.position])}
+                    canWatch={enrolled || FREE_PREVIEW_VIDEO_MODULES.has(m.position)}
+                    showPreviewBadge={!enrolled && FREE_PREVIEW_VIDEO_MODULES.has(m.position)}
+                  />
+                )}
                 <ul className="divide-y divide-line">
                   {m.lessons.map((l) => {
                     const canOpen = enrolled || l.is_preview;
@@ -178,6 +188,36 @@ export default async function CoursePage({ params, searchParams }: Props) {
         )}
       </section>
     </div>
+  );
+}
+
+function VideoRow({
+  slug,
+  position,
+  minutes,
+  canWatch,
+  showPreviewBadge,
+}: {
+  slug: string;
+  position: number;
+  minutes: number;
+  canWatch: boolean;
+  showPreviewBadge: boolean;
+}) {
+  const content = (
+    <div className="flex items-center gap-3 border-b border-line px-5 py-3">
+      <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-hivis text-[10px] text-ink">▶</span>
+      <span className={canWatch ? "font-medium" : "text-muted"}>Watch the module video</span>
+      {showPreviewBadge && <span className="rounded bg-hivis/20 px-2 py-0.5 text-xs font-semibold">Free preview</span>}
+      <span className="ml-auto text-sm text-muted">{minutes} min</span>
+    </div>
+  );
+  return canWatch ? (
+    <Link href={`/courses/${slug}/modules/${position}/watch`} className="block hover:bg-paper">
+      {content}
+    </Link>
+  ) : (
+    content
   );
 }
 

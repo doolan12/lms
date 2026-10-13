@@ -5,6 +5,7 @@ import remarkGfm from "remark-gfm";
 import { createClient, getUser } from "@/lib/supabase/server";
 import { getCompletedLessonIds, getCourseOutline, isEnrolled } from "@/lib/courses";
 import { setLessonComplete } from "../../actions";
+import { FREE_PREVIEW_VIDEO_MODULES, MODULE_VIDEOS, videoMinutes } from "@/content/videos";
 
 type Props = { params: Promise<{ slug: string; lessonSlug: string }> };
 
@@ -56,6 +57,21 @@ export default async function LessonPage({ params }: Props) {
       <p className="mt-2 text-sm text-muted">
         Lesson {index + 1} of {lessons.length} · {lesson.duration_minutes} min
       </p>
+
+      {MODULE_VIDEOS[mod.position] && (enrolled || FREE_PREVIEW_VIDEO_MODULES.has(mod.position)) && (
+        <Link
+          href={`/courses/${slug}/modules/${mod.position}/watch`}
+          className="mt-4 flex items-center gap-3 rounded-lg border border-line bg-white px-4 py-3 hover:border-ink"
+        >
+          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-hivis text-ink">▶</span>
+          <span>
+            <span className="block font-semibold">Prefer to watch?</span>
+            <span className="block text-sm text-muted">
+              Module {mod.position} video with pictures and narration · about {videoMinutes(MODULE_VIDEOS[mod.position])} min
+            </span>
+          </span>
+        </Link>
+      )}
 
       {!content ? (
         <div className="mt-8 rounded-xl border border-line bg-card p-8 text-center">

@@ -84,7 +84,20 @@ supabase/
 
 ## Editing course content
 
-For now, content is edited in Supabase (Table Editor or SQL). Lesson bodies are Markdown in `lesson_content.body_md`; set `video_url` to an embeddable URL (e.g. `https://player.vimeo.com/video/…` or `https://www.youtube.com/embed/…`).
+The source of truth for course content is `supabase/seed.sql`. Lesson bodies are Markdown; set `video_url` on a lesson to embed a recorded video (e.g. `https://player.vimeo.com/video/…` or `https://www.youtube.com/embed/…`).
+
+**Updating content on the live site — without touching students' data:**
+
+1. Edit `supabase/seed.sql` and commit nothing yet.
+2. `npm run coverage -- --check` — every requirement still covered?
+3. `npm run content:sync -- --name what-changed` — compares the last committed seed with your edits and writes the changes to `supabase/content-updates/`. It proves on a test copy that the update reproduces a fresh install exactly and keeps enrolments, progress and quiz attempts.
+4. Run the generated part files, in order, in Supabase → SQL Editor. Then commit.
+
+Never re-run `seed.sql` on the live database — it deletes and recreates the course, which removes everyone's enrolments and progress.
+
+## Module videos
+
+Each module has a narrated "video": a slideshow with diagrams and captions, read aloud by the student's device voice. Scripts live in `src/content/videos/` (one entry per slide: what's shown, and what's said); diagrams are SVG components in `src/components/video/diagrams.tsx`. Module 1's video is a free preview. Edit the text and redeploy — no re-recording needed. If the load chart in `seed.sql` changes, update `CHART_ROWS` in `modules-4-7.ts` to match.
 
 ## Curriculum coverage (TLILIC0003)
 
