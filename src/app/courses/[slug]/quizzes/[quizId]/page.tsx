@@ -3,6 +3,7 @@ import { notFound, redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { createAdminClient } from "@/lib/supabase/admin";
 import { allLessonsComplete } from "@/lib/enrollment";
+import { QuestionPrompt } from "@/components/QuestionPrompt";
 import { submitQuiz } from "./actions";
 
 type Props = {
@@ -11,7 +12,14 @@ type Props = {
 };
 
 type Option = { id: string; text: string; position: number; is_correct?: boolean };
-type Question = { id: string; prompt: string; position: number; explanation?: string; options: Option[] };
+type Question = {
+  id: string;
+  prompt: string;
+  position: number;
+  explanation?: string;
+  is_calculation?: boolean;
+  options: Option[];
+};
 
 const byPosition = <T extends { position: number }>(a: T, b: T) => a.position - b.position;
 
@@ -91,9 +99,7 @@ export default async function QuizPage({ params, searchParams }: Props) {
             const right = chosen === correctOpt?.id;
             return (
               <li key={q.id} className="rounded-xl border border-line bg-card p-5">
-                <p className="font-semibold">
-                  {i + 1}. {q.prompt}
-                </p>
+                <QuestionPrompt number={i + 1} text={q.prompt} />
                 <ul className="mt-3 space-y-1.5 text-sm">
                   {q.options.sort(byPosition).map((o) => (
                     <li
@@ -137,22 +143,27 @@ export default async function QuizPage({ params, searchParams }: Props) {
   // ── Take-the-quiz view ───────────────────────────────────────
   const { data: questions } = await supabase
     .from("questions")
-    .select("id, prompt, position, options(id, text, position)")
+    .select("id, prompt, position, is_calculation, options(id, text, position)")
     .eq("quiz_id", quizId);
   const sorted = ((questions ?? []) as Question[]).sort(byPosition);
+  const calcCount = sorted.filter((q) => q.is_calculation).length;
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8">
       {header}
+      {calcCount > 0 && (
+        <p className="mt-4 rounded-md border-l-4 border-hivis bg-[#fff8e1] px-3 py-2 text-sm">
+          🧮 {calcCount} {calcCount === 1 ? "question needs" : "questions need"} a calculation — have a calculator and
+          paper ready, and show your working like you would in the assessment.
+        </p>
+      )}
       <form action={submitQuiz} className="mt-8 space-y-5">
         <input type="hidden" name="quizId" value={quizId} />
         <input type="hidden" name="slug" value={slug} />
         {sorted.map((q, i) => (
           <fieldset key={q.id} className="rounded-xl border border-line bg-card p-5">
             <legend className="sr-only">Question {i + 1}</legend>
-            <p className="font-semibold">
-              {i + 1}. {q.prompt}
-            </p>
+            <QuestionPrompt number={i + 1} text={q.prompt} />
             <div className="mt-3 space-y-2">
               {q.options.sort(byPosition).map((o) => (
                 <label

@@ -35,7 +35,8 @@ const lessons = await rows(`
   select l.title, l.refs, m.position as module from lessons l join modules m on m.id = l.module_id
   order by m.position, l.position`);
 const questions = await rows(`
-  select qn.prompt, qn.refs, qz.title as quiz, qz.is_final, qn.position
+  select split_part(qn.prompt, E'\n', 1) as prompt, qn.refs, qn.is_calculation,
+         qz.title as quiz, qz.is_final, qn.position
   from questions qn join quizzes qz on qz.id = qn.quiz_id
   left join modules m on m.id = qz.module_id
   order by qz.is_final, m.position nulls last, qn.position`);
@@ -86,6 +87,30 @@ summary("knowledge");
 lines.push("## Performance Evidence (underpinning knowledge)", "");
 summary("performance");
 
+// Calculation questions
+const MIN_CALC_TOTAL = 15;
+const MIN_CALC_FINAL = 5;
+const calc = questions.filter((q) => q.is_calculation);
+const calcFinal = calc.filter((q) => q.is_final);
+const quizTitles = [...new Set(questions.map((q) => q.quiz))];
+lines.push("## Calculation questions", "");
+lines.push(
+  `${calc.length} calculation questions (minimum ${MIN_CALC_TOTAL}), ${calcFinal.length} in the final exam ` +
+    `(minimum ${MIN_CALC_FINAL}). They cover total load weight from cartons, layers and multiple items, ` +
+    "tonnes to kilograms, weighbridge dockets, the most cartons you can load, load centre (including a gap " +
+    "from the backrest), and reading a load chart by load centre and lift height.",
+  "",
+  "| Quiz | Calculation questions | Total questions |",
+  "|---|---:|---:|",
+);
+for (const t of quizTitles) {
+  const all = questions.filter((q) => q.quiz === t);
+  lines.push(`| ${t} | ${all.filter((q) => q.is_calculation).length} | ${all.length} |`);
+}
+lines.push("", "**All calculation questions:**", "");
+for (const q of calc) lines.push(`- _${q.quiz} Q${q.position}:_ ${q.prompt}`);
+lines.push("");
+
 lines.push("## Detail by requirement", "");
 for (const i of items) {
   lines.push(`### ${i.code} — ${i.description}`, "");
@@ -110,5 +135,10 @@ console.log(`Wrote ${out}`);
 console.log(`${totals.lessons} lessons, ${totals.questions} questions, ${items.length} requirements`);
 console.log(gaps.length ? `UNCOVERED: ${gaps.map((g) => g.code).join(", ")}` : "Every requirement has at least one question.");
 if (untagged.length) console.log(`Untagged questions: ${untagged.length}`);
+const calcShort = calc.length < MIN_CALC_TOTAL || calcFinal.length < MIN_CALC_FINAL;
+console.log(
+  `Calculation questions: ${calc.length} total (min ${MIN_CALC_TOTAL}), ${calcFinal.length} in final (min ${MIN_CALC_FINAL})` +
+    (calcShort ? " — TOO FEW" : ""),
+);
 
-if (process.argv.includes("--check") && (gaps.length || untagged.length)) process.exit(1);
+if (process.argv.includes("--check") && (gaps.length || untagged.length || calcShort)) process.exit(1);
