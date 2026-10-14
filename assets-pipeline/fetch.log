@@ -1,4 +1,4 @@
-ok assets-pipeline/canva-test/thumb.jpg 9187
+ok assets-pipeline/canva-test/thumb.jpg 6050
 FAIL assets-pipeline/canva-test/big.jpg https://media.canva.com/v2/image-resize/format:JPG/height:944/quality:75/uri:ifs%3A%2F%2FM%2F87acbe43-a883-4535-a72c-c0f2a7f16a51/watermark:F/width:1680?csig=AAAAAAAAAAAAAAAAAAAAAFGQXrPgHyP1K_MNMYZAIufCcdm-RbMzHwAmQqOrgbhV&exp=1791956513&osig=AAAAAAAAAAAAAAAAAAAAACMsJyKui6k3DUAEKJAPKaYGuP8iQapkfpa_e--4ypMj&signer=media-rpc&token=AAIAAU0AJDg3YWNiZTQzLWE4ODMtNDUzNS1hNzJjLWMwZjJhN2YxNmE1MQAAAAABoTjucOjrWlt4saSMAcd3KMqzRWVdcLOGp6cmX4dNpEBFCBK6Yg&x-canva-quality=thumbnail
 FAIL assets-pipeline/canva-test/big2.jpg https://media.canva.com/v2/image-resize/format:JPG/height:944/quality:75/uri:ifs%3A%2F%2FM%2F87acbe43-a883-4535-a72c-c0f2a7f16a51/watermark:F/width:1680?csig=AAAAAAAAAAAAAAAAAAAAAFGQXrPgHyP1K_MNMYZAIufCcdm-RbMzHwAmQqOrgbhV&exp=1791956513&osig=AAAAAAAAAAAAAAAAAAAAACMsJyKui6k3DUAEKJAPKaYGuP8iQapkfpa_e--4ypMj&signer=media-rpc&token=AAIAAU0AJDg3YWNiZTQzLWE4ODMtNDUzNS1hNzJjLWMwZjJhN2YxNmE1MQAAAAABoTjucOjrWlt4saSMAcd3KMqzRWVdcLOGp6cmX4dNpEBFCBK6Yg
 ok assets-pipeline/review/QGie3dtuXVI.jpg 68606
