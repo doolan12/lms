@@ -1,0 +1,17 @@
+ok assets-pipeline/canva-test/thumb.jpg 9187
+FAIL assets-pipeline/canva-test/big.jpg https://media.canva.com/v2/image-resize/format:JPG/height:944/quality:75/uri:ifs%3A%2F%2FM%2F87acbe43-a883-4535-a72c-c0f2a7f16a51/watermark:F/width:1680?csig=AAAAAAAAAAAAAAAAAAAAAFGQXrPgHyP1K_MNMYZAIufCcdm-RbMzHwAmQqOrgbhV&exp=1791956513&osig=AAAAAAAAAAAAAAAAAAAAACMsJyKui6k3DUAEKJAPKaYGuP8iQapkfpa_e--4ypMj&signer=media-rpc&token=AAIAAU0AJDg3YWNiZTQzLWE4ODMtNDUzNS1hNzJjLWMwZjJhN2YxNmE1MQAAAAABoTjucOjrWlt4saSMAcd3KMqzRWVdcLOGp6cmX4dNpEBFCBK6Yg&x-canva-quality=thumbnail
+FAIL assets-pipeline/canva-test/big2.jpg https://media.canva.com/v2/image-resize/format:JPG/height:944/quality:75/uri:ifs%3A%2F%2FM%2F87acbe43-a883-4535-a72c-c0f2a7f16a51/watermark:F/width:1680?csig=AAAAAAAAAAAAAAAAAAAAAFGQXrPgHyP1K_MNMYZAIufCcdm-RbMzHwAmQqOrgbhV&exp=1791956513&osig=AAAAAAAAAAAAAAAAAAAAACMsJyKui6k3DUAEKJAPKaYGuP8iQapkfpa_e--4ypMj&signer=media-rpc&token=AAIAAU0AJDg3YWNiZTQzLWE4ODMtNDUzNS1hNzJjLWMwZjJhN2YxNmE1MQAAAAABoTjucOjrWlt4saSMAcd3KMqzRWVdcLOGp6cmX4dNpEBFCBK6Yg
+ok assets-pipeline/review/QGie3dtuXVI.jpg 68606
+ok assets-pipeline/review/xKxdWu-HDfI.jpg 56607
+ok assets-pipeline/review/6LWh4WaGv6s.jpg 91148
+ok assets-pipeline/review/jgVX6cdeU4M.jpg 57842
+ok assets-pipeline/review/IcB8U3l9Slg.jpg 66512
+ok assets-pipeline/review/B1g2dSaAq6Q.jpg 55928
+ok assets-pipeline/review/p0VP_TOAd5E.jpg 87966
+ok assets-pipeline/review/i2I0_u98Rh4.jpg 55298
+ok assets-pipeline/review/BvpTdaKbCcQ.jpg 54157
+ok assets-pipeline/review/08ai5EDtn9k.jpg 48631
+ok assets-pipeline/review/FFaDpgMAJyA.jpg 47549
+ok assets-pipeline/review/c_4eaGRDSVU.jpg 86933
+ok assets-pipeline/review/-aCrA9FmT8Y.jpg 100720
+ok assets-pipeline/review/BG6YySKVXL0.jpg 67512
