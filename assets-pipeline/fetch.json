@@ -1,19 +1,90 @@
 {
-  "note": "Files to download into the repo. Unsplash photos are hotlinked in the app; these copies are for review only (review/).",
-  "items": [
-    {"label": "QGie3dtuXVI cab", "url": "https://images.unsplash.com/photo-1779155413504-7608a08d4873?w=640", "out": "assets-pipeline/review/QGie3dtuXVI.jpg"},
-    {"label": "xKxdWu-HDfI bricks truck", "url": "https://images.unsplash.com/photo-1763752194641-3c5638aec65e?w=640", "out": "assets-pipeline/review/xKxdWu-HDfI.jpg"},
-    {"label": "6LWh4WaGv6s clamp", "url": "https://images.unsplash.com/photo-1763665814546-27c2c003317e?w=640", "out": "assets-pipeline/review/6LWh4WaGv6s.jpg"},
-    {"label": "jgVX6cdeU4M driving", "url": "https://images.unsplash.com/photo-1668786710595-afc9d92f304e?w=640", "out": "assets-pipeline/review/jgVX6cdeU4M.jpg"},
-    {"label": "IcB8U3l9Slg parked orange", "url": "https://images.unsplash.com/photo-1770827730773-cc7848b2ee61?w=640", "out": "assets-pipeline/review/IcB8U3l9Slg.jpg"},
-    {"label": "B1g2dSaAq6Q parked red", "url": "https://images.unsplash.com/photo-1782515875218-0cdfea5edd31?w=640", "out": "assets-pipeline/review/B1g2dSaAq6Q.jpg"},
-    {"label": "p0VP_TOAd5E warehouse", "url": "https://images.unsplash.com/photo-1740733448722-82e16d3468bb?w=640", "out": "assets-pipeline/review/p0VP_TOAd5E.jpg"},
-    {"label": "i2I0_u98Rh4 pallets", "url": "https://images.unsplash.com/photo-1573209680076-bd7ec7007616?w=640", "out": "assets-pipeline/review/i2I0_u98Rh4.jpg"},
-    {"label": "BvpTdaKbCcQ power poles", "url": "https://images.unsplash.com/photo-1552965734-5b9e868808b6?w=640", "out": "assets-pipeline/review/BvpTdaKbCcQ.jpg"},
-    {"label": "08ai5EDtn9k transmission", "url": "https://images.unsplash.com/photo-1574173799345-e672ea143892?w=640", "out": "assets-pipeline/review/08ai5EDtn9k.jpg"},
-    {"label": "FFaDpgMAJyA loading dock", "url": "https://images.unsplash.com/photo-1725781535657-29d825bc7824?w=640", "out": "assets-pipeline/review/FFaDpgMAJyA.jpg"},
-    {"label": "c_4eaGRDSVU aisle walkers", "url": "https://images.unsplash.com/photo-1586528116022-aeda1613c63d?w=640", "out": "assets-pipeline/review/c_4eaGRDSVU.jpg"},
-    {"label": "-aCrA9FmT8Y boxes", "url": "https://images.unsplash.com/photo-1684695749267-233af13276d0?w=640", "out": "assets-pipeline/review/-aCrA9FmT8Y.jpg"},
-    {"label": "BG6YySKVXL0 vest", "url": "https://images.unsplash.com/photo-1705579609022-a7a2266b6226?w=640", "out": "assets-pipeline/review/BG6YySKVXL0.jpg"}
-  ]
+ "note": "Files to download into the repo. Unsplash photos are hotlinked in the app; these copies are for review only (review/).",
+ "items": [
+  {
+   "label": "canva hero thumb",
+   "url": "https://media.canva.com/v2/image-resize/format:JPG/height:112/quality:75/uri:ifs%3A%2F%2FM%2F87acbe43-a883-4535-a72c-c0f2a7f16a51/watermark:F/width:200?csig=AAAAAAAAAAAAAAAAAAAAAFGQXrPgHyP1K_MNMYZAIufCcdm-RbMzHwAmQqOrgbhV&exp=1791956513&osig=AAAAAAAAAAAAAAAAAAAAACMsJyKui6k3DUAEKJAPKaYGuP8iQapkfpa_e--4ypMj&signer=media-rpc&token=AAIAAU0AJDg3YWNiZTQzLWE4ODMtNDUzNS1hNzJjLWMwZjJhN2YxNmE1MQAAAAABoTjucOjrWlt4saSMAcd3KMqzRWVdcLOGp6cmX4dNpEBFCBK6Yg&x-canva-quality=thumbnail",
+   "out": "assets-pipeline/canva-test/thumb.jpg"
+  },
+  {
+   "label": "canva hero big",
+   "url": "https://media.canva.com/v2/image-resize/format:JPG/height:944/quality:75/uri:ifs%3A%2F%2FM%2F87acbe43-a883-4535-a72c-c0f2a7f16a51/watermark:F/width:1680?csig=AAAAAAAAAAAAAAAAAAAAAFGQXrPgHyP1K_MNMYZAIufCcdm-RbMzHwAmQqOrgbhV&exp=1791956513&osig=AAAAAAAAAAAAAAAAAAAAACMsJyKui6k3DUAEKJAPKaYGuP8iQapkfpa_e--4ypMj&signer=media-rpc&token=AAIAAU0AJDg3YWNiZTQzLWE4ODMtNDUzNS1hNzJjLWMwZjJhN2YxNmE1MQAAAAABoTjucOjrWlt4saSMAcd3KMqzRWVdcLOGp6cmX4dNpEBFCBK6Yg&x-canva-quality=thumbnail",
+   "out": "assets-pipeline/canva-test/big.jpg"
+  },
+  {
+   "label": "canva hero big noquality",
+   "url": "https://media.canva.com/v2/image-resize/format:JPG/height:944/quality:75/uri:ifs%3A%2F%2FM%2F87acbe43-a883-4535-a72c-c0f2a7f16a51/watermark:F/width:1680?csig=AAAAAAAAAAAAAAAAAAAAAFGQXrPgHyP1K_MNMYZAIufCcdm-RbMzHwAmQqOrgbhV&exp=1791956513&osig=AAAAAAAAAAAAAAAAAAAAACMsJyKui6k3DUAEKJAPKaYGuP8iQapkfpa_e--4ypMj&signer=media-rpc&token=AAIAAU0AJDg3YWNiZTQzLWE4ODMtNDUzNS1hNzJjLWMwZjJhN2YxNmE1MQAAAAABoTjucOjrWlt4saSMAcd3KMqzRWVdcLOGp6cmX4dNpEBFCBK6Yg",
+   "out": "assets-pipeline/canva-test/big2.jpg"
+  },
+  {
+   "label": "QGie3dtuXVI cab",
+   "url": "https://images.unsplash.com/photo-1779155413504-7608a08d4873?w=640",
+   "out": "assets-pipeline/review/QGie3dtuXVI.jpg"
+  },
+  {
+   "label": "xKxdWu-HDfI bricks truck",
+   "url": "https://images.unsplash.com/photo-1763752194641-3c5638aec65e?w=640",
+   "out": "assets-pipeline/review/xKxdWu-HDfI.jpg"
+  },
+  {
+   "label": "6LWh4WaGv6s clamp",
+   "url": "https://images.unsplash.com/photo-1763665814546-27c2c003317e?w=640",
+   "out": "assets-pipeline/review/6LWh4WaGv6s.jpg"
+  },
+  {
+   "label": "jgVX6cdeU4M driving",
+   "url": "https://images.unsplash.com/photo-1668786710595-afc9d92f304e?w=640",
+   "out": "assets-pipeline/review/jgVX6cdeU4M.jpg"
+  },
+  {
+   "label": "IcB8U3l9Slg parked orange",
+   "url": "https://images.unsplash.com/photo-1770827730773-cc7848b2ee61?w=640",
+   "out": "assets-pipeline/review/IcB8U3l9Slg.jpg"
+  },
+  {
+   "label": "B1g2dSaAq6Q parked red",
+   "url": "https://images.unsplash.com/photo-1782515875218-0cdfea5edd31?w=640",
+   "out": "assets-pipeline/review/B1g2dSaAq6Q.jpg"
+  },
+  {
+   "label": "p0VP_TOAd5E warehouse",
+   "url": "https://images.unsplash.com/photo-1740733448722-82e16d3468bb?w=640",
+   "out": "assets-pipeline/review/p0VP_TOAd5E.jpg"
+  },
+  {
+   "label": "i2I0_u98Rh4 pallets",
+   "url": "https://images.unsplash.com/photo-1573209680076-bd7ec7007616?w=640",
+   "out": "assets-pipeline/review/i2I0_u98Rh4.jpg"
+  },
+  {
+   "label": "BvpTdaKbCcQ power poles",
+   "url": "https://images.unsplash.com/photo-1552965734-5b9e868808b6?w=640",
+   "out": "assets-pipeline/review/BvpTdaKbCcQ.jpg"
+  },
+  {
+   "label": "08ai5EDtn9k transmission",
+   "url": "https://images.unsplash.com/photo-1574173799345-e672ea143892?w=640",
+   "out": "assets-pipeline/review/08ai5EDtn9k.jpg"
+  },
+  {
+   "label": "FFaDpgMAJyA loading dock",
+   "url": "https://images.unsplash.com/photo-1725781535657-29d825bc7824?w=640",
+   "out": "assets-pipeline/review/FFaDpgMAJyA.jpg"
+  },
+  {
+   "label": "c_4eaGRDSVU aisle walkers",
+   "url": "https://images.unsplash.com/photo-1586528116022-aeda1613c63d?w=640",
+   "out": "assets-pipeline/review/c_4eaGRDSVU.jpg"
+  },
+  {
+   "label": "-aCrA9FmT8Y boxes",
+   "url": "https://images.unsplash.com/photo-1684695749267-233af13276d0?w=640",
+   "out": "assets-pipeline/review/-aCrA9FmT8Y.jpg"
+  },
+  {
+   "label": "BG6YySKVXL0 vest",
+   "url": "https://images.unsplash.com/photo-1705579609022-a7a2266b6226?w=640",
+   "out": "assets-pipeline/review/BG6YySKVXL0.jpg"
+  }
+ ]
 }
