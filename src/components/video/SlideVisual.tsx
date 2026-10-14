@@ -18,17 +18,54 @@ export function SlideVisual({ visual, step, sayCount }: { visual: Visual; step: 
   switch (visual.kind) {
     case "title":
       return (
-        <div className="flex h-full flex-col justify-center bg-ink px-[7cqw] text-white">
+        <div className="relative flex h-full flex-col justify-center bg-ink px-[7cqw] text-white">
+          {visual.image && (
+            <>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={visual.image} alt="" className="absolute inset-y-0 right-0 h-full w-[62%] object-cover" />
+              <div className="absolute inset-y-0 right-0 w-[62%] bg-gradient-to-r from-ink via-ink/40 to-transparent" />
+            </>
+          )}
           <div className="hazard-stripe absolute inset-x-0 top-0 h-[1.6cqw]" />
           {visual.subtitle && (
-            <p className="font-semibold uppercase tracking-[0.2em] text-hivis" style={{ fontSize: "2.3cqw" }}>
+            <p className="relative font-semibold uppercase tracking-[0.2em] text-hivis" style={{ fontSize: "2.3cqw" }}>
               {visual.subtitle}
             </p>
           )}
-          <h2 className="mt-[1.5cqw] font-display font-bold uppercase leading-[1.05]" style={{ fontSize: "6cqw" }}>
+          <h2
+            className={`relative mt-[1.5cqw] font-display font-bold uppercase leading-[1.05] ${visual.image ? "max-w-[55%]" : ""}`}
+            style={{ fontSize: visual.image ? "5.2cqw" : "6cqw" }}
+          >
             {visual.title}
           </h2>
           <div className="hazard-stripe absolute inset-x-0 bottom-0 h-[1.6cqw]" />
+        </div>
+      );
+
+    case "photo":
+      return (
+        <div className="relative h-full bg-ink">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={visual.src} alt={visual.alt} className="absolute inset-0 h-full w-full object-cover" />
+          {visual.caption && (
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/90 via-ink/60 to-transparent px-[5cqw] pb-[3.5cqw] pt-[10cqw]">
+              <p className="font-display font-bold uppercase leading-tight text-white" style={{ fontSize: "4cqw" }}>
+                {visual.caption}
+              </p>
+            </div>
+          )}
+          {visual.credit && (
+            <p className="absolute right-[1.5cqw] top-[1.2cqw] rounded bg-ink/60 px-[1cqw] py-[0.4cqw] text-white/85" style={{ fontSize: "1.4cqw" }}>
+              Photo:{" "}
+              <a href={`${visual.credit.url}?utm_source=forklift_lms&utm_medium=referral`} target="_blank" rel="noreferrer" className="underline">
+                {visual.credit.name}
+              </a>{" "}
+              on{" "}
+              <a href="https://unsplash.com/?utm_source=forklift_lms&utm_medium=referral" target="_blank" rel="noreferrer" className="underline">
+                Unsplash
+              </a>
+            </p>
+          )}
         </div>
       );
 

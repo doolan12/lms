@@ -23,7 +23,15 @@ export type DiagramName =
   | "lpg";
 
 export type Visual =
-  | { kind: "title"; title: string; subtitle?: string }
+  | { kind: "title"; title: string; subtitle?: string; image?: string }
+  | {
+      kind: "photo";
+      src: string;
+      alt: string;
+      caption?: string;
+      /** Unsplash photos must credit the photographer with links. */
+      credit?: { name: string; url: string };
+    }
   | { kind: "points"; title?: string; items: { icon?: string; text: string }[] }
   | { kind: "steps"; title?: string; tone?: "danger" | "normal"; items: { label: string; text?: string }[] }
   | { kind: "sum"; title?: string; lines: { text: string; result?: boolean }[] }

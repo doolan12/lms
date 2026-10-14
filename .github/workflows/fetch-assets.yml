@@ -44,7 +44,7 @@ jobs:
         run: |
           git config user.name "asset-bot"
           git config user.email "asset-bot@users.noreply.github.com"
-          git add -A assets-pipeline public/images || true
+          for d in assets-pipeline public/images; do [ -e "$d" ] && git add -A "$d"; done; true
           git commit -m "Fetched media assets [skip ci]" || exit 0
           git pull --rebase -q origin main
           git push
