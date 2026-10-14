@@ -1,0 +1,44 @@
+name: Live site check
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/live-check.yml", "assets-pipeline/live-check.trigger"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the live site
+        run: |
+          sleep 90  # let Vercel finish deploying
+          B=https://lms-bay-rho.vercel.app
+          out=assets-pipeline/live-check.md
+          echo "# Live check $(date -u)" > $out
+          code() { curl -s -o /dev/null -w "%{http_code} %{content_type} %{size_download}B" "$1"; }
+          echo "## Files" >> $out
+          for p in images/illustrations/hero.jpg images/illustrations/m1.jpg images/illustrations/m2.jpg images/illustrations/m3.jpg images/illustrations/m4.jpg images/illustrations/m5.jpg images/illustrations/m6.jpg images/illustrations/m7.jpg $(python3 -c "import json;print(' '.join('audio/'+i+'.mp3' for i in json.load(open('src/content/videos/audio-manifest.json'))['ids']))"); do
+            echo "- $p: $(code $B/$p)" >> $out
+          done
+          echo "## Pages" >> $out
+          curl -s "$B/?x=$RANDOM" > home.html
+          curl -s "$B/courses/forklift-licence-theory?x=$RANDOM" > course.html
+          curl -s "$B/courses/forklift-licence-theory/modules/1/watch?x=$RANDOM" > watch1.html
+          echo "- home hero image: $(grep -o 'illustrations/hero.jpg' home.html | wc -l)" >> $out
+          echo "- course page thumbnails: $(grep -o 'illustrations/m[0-9].jpg' course.html | sort -u | tr '\n' ' ')" >> $out
+          echo "- module 1 video title image: $(grep -o 'illustrations/m1.jpg' watch1.html | wc -l)" >> $out
+          echo "- module 1 video recorded lines: $(grep -o '/audio/[0-9a-f]*\.mp3' watch1.html | sort -u | wc -l)" >> $out
+          echo "- module 1 video Unsplash photo: $(grep -o 'photo-1684695749267' watch1.html | wc -l)" >> $out
+          bad=$(grep -c -v ': 200 ' <(grep '^- \(images\|audio\)' $out)); echo "## Files not OK: $bad" >> $out
+          cat $out | grep -v ': 200 ' 
+      - name: Commit report
+        if: always()
+        run: |
+          git config user.name "${{ github.repository_owner }}"
+          git config user.email "${{ github.repository_owner_id }}+${{ github.repository_owner }}@users.noreply.github.com"
+          git add assets-pipeline/live-check.md
+          git commit -m "Live site check [skip ci]" || exit 0
+          git pull --rebase -q origin main
+          git push
