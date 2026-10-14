@@ -1,0 +1,50 @@
+name: Fetch media assets
+on:
+  push:
+    branches: [main]
+    paths:
+      - "assets-pipeline/fetch.json"
+      - ".github/workflows/fetch-assets.yml"
+permissions:
+  contents: write
+concurrency:
+  group: fetch-assets
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download
+        run: |
+          mkdir -p assets-pipeline
+          : > assets-pipeline/fetch.log
+          jq -c '.items[]' assets-pipeline/fetch.json | while read -r it; do
+            url=$(jq -r .url <<<"$it"); out=$(jq -r .out <<<"$it")
+            mkdir -p "$(dirname "$out")"
+            if curl -fsSL --retry 3 -o "$out" "$url"; then echo "ok $out $(stat -c%s "$out")" >> assets-pipeline/fetch.log
+            else echo "FAIL $out $url" >> assets-pipeline/fetch.log; fi
+          done
+          cat assets-pipeline/fetch.log
+      - name: Contact sheet of review images
+        run: |
+          shopt -s nullglob
+          files=(assets-pipeline/review/*.jpg assets-pipeline/review/*.png)
+          [ ${#files[@]} -eq 0 ] && exit 0
+          which montage || (sudo apt-get update -q && sudo apt-get install -yq imagemagick)
+          for f in "${files[@]}"; do
+            montage -label "$(basename "${f%.*}")" "$f" -geometry 480x320+6+6 -pointsize 20 "/tmp/$(basename "${f%.*}").png"
+          done
+          i=0; batch=()
+          for f in /tmp/*.png; do batch+=("$f"); if [ ${#batch[@]} -eq 4 ]; then montage "${batch[@]}" -tile 2x2 -geometry +4+4 "assets-pipeline/sheet-$i.jpg"; i=$((i+1)); batch=(); fi; done
+          [ ${#batch[@]} -gt 0 ] && montage "${batch[@]}" -tile 2x2 -geometry +4+4 "assets-pipeline/sheet-$i.jpg"
+          ls -la assets-pipeline
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "asset-bot"
+          git config user.email "asset-bot@users.noreply.github.com"
+          git add -A assets-pipeline public/images || true
+          git commit -m "Fetched media assets [skip ci]" || exit 0
+          git pull --rebase -q origin main
+          git push

@@ -32,10 +32,13 @@ export function VideoPlayer({
   video,
   lessonsHref,
   quizHref,
+  audio,
 }: {
   video: ModuleVideo;
   lessonsHref: string;
   quizHref?: string;
+  /** Recorded narration per slide and segment (null where a line has no recording yet). */
+  audio?: (string | null)[][];
 }) {
   const slides = video.slides;
   const [index, setIndex] = useState(0);
@@ -51,6 +54,9 @@ export function VideoPlayer({
   const resumeSeg = useRef(0);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const voice = useRef<SpeechSynthesisVoice | null>(null);
+  // One reused <audio> element: once a tap has unlocked it, phones let it keep playing.
+  const player = useRef<HTMLAudioElement | null>(null);
+  const hasRecording = useMemo(() => !!audio?.some((s) => s.some(Boolean)), [audio]);
   const settings = useRef({ soundOn, rate });
   settings.current = { soundOn, rate };
 
@@ -68,8 +74,10 @@ export function VideoPlayer({
   // Load voices (they arrive asynchronously in most browsers)
   useEffect(() => {
     if (typeof window === "undefined" || !("speechSynthesis" in window)) {
-      setSpeechOk(false);
-      setSoundOn(false);
+      if (!hasRecording) {
+        setSpeechOk(false);
+        setSoundOn(false);
+      }
       return;
     }
     const load = () => {
@@ -81,13 +89,18 @@ export function VideoPlayer({
       window.speechSynthesis.removeEventListener?.("voiceschanged", load);
       window.speechSynthesis.cancel();
     };
-  }, []);
+  }, [hasRecording]);
 
   const stopAll = useCallback(() => {
     token.current++;
     if (timer.current) clearTimeout(timer.current);
     timer.current = null;
     if (typeof window !== "undefined" && "speechSynthesis" in window) window.speechSynthesis.cancel();
+    const a = player.current;
+    if (a) {
+      a.onended = a.onerror = null;
+      a.pause();
+    }
   }, []);
 
   useEffect(() => stopAll, [stopAll]);
@@ -113,7 +126,34 @@ export function VideoPlayer({
       };
 
       const { soundOn: sound, rate: r } = settings.current;
-      if (sound && "speechSynthesis" in window) {
+      const src = audio?.[si]?.[seg];
+      const gap = seg + 1 < slides[si].say.length ? 250 : 700;
+      if (sound && src) {
+        // Recorded human-sounding narration
+        const a = (player.current ??= new Audio());
+        a.preload = "auto";
+        let done = false;
+        const finish = (delay: number) => {
+          if (done || token.current !== my) return;
+          done = true;
+          advance(delay);
+        };
+        a.onended = () => finish(gap);
+        a.onerror = () => finish(readMs(text) / r); // file missing: keep the captions going
+        a.src = src;
+        a.playbackRate = r;
+        a.play().catch(() => finish(readMs(text) / r));
+        // Preload the next line so there's no pause between lines
+        const nextSrc = audio?.[si]?.[seg + 1] ?? audio?.[si + 1]?.[0];
+        if (nextSrc) {
+          const l = document.createElement("link");
+          l.rel = "prefetch";
+          l.as = "audio";
+          l.href = nextSrc;
+          document.head.appendChild(l);
+          setTimeout(() => l.remove(), 30000);
+        }
+      } else if (sound && "speechSynthesis" in window) {
         const u = new SpeechSynthesisUtterance(text);
         if (voice.current) u.voice = voice.current;
         u.lang = voice.current?.lang ?? "en-AU";
@@ -126,7 +166,7 @@ export function VideoPlayer({
         u.onend = () => {
           if (done) return;
           done = true;
-          advance(seg + 1 < slides[si].say.length ? 250 : 700);
+          advance(gap);
         };
         u.onerror = (e) => {
           if (done || e.error === "interrupted" || e.error === "canceled") return;
@@ -155,7 +195,7 @@ export function VideoPlayer({
         advance(readMs(text) / r);
       }
     },
-    [slides],
+    [slides, audio],
   );
 
   const play = useCallback(() => {
@@ -332,7 +372,7 @@ export function VideoPlayer({
       <p className="mt-4 min-h-[4.5rem] rounded-lg bg-ink px-4 py-3 text-lg leading-snug text-white" aria-live="polite">
         {caption}
       </p>
-      {voiceFailed && (
+      {voiceFailed && !hasRecording && (
         <p className="mt-2 text-sm text-muted">
           The voice didn&apos;t start on this device, so the captions are playing on their own. Turn the voice back on to
           try again.

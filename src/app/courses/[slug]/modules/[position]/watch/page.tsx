@@ -4,6 +4,7 @@ import { getUser } from "@/lib/supabase/server";
 import { getCourseOutline, isEnrolled } from "@/lib/courses";
 import { FREE_PREVIEW_VIDEO_MODULES, MODULE_VIDEOS, videoMinutes } from "@/content/videos";
 import { VideoPlayer } from "@/components/video/VideoPlayer";
+import { narrationAudio } from "@/content/videos/audio";
 
 type Props = { params: Promise<{ slug: string; position: string }> };
 
@@ -46,7 +47,7 @@ export default async function WatchModulePage({ params }: Props) {
       <div className="mt-6">
         {canWatch ? (
           // Only the slide data for this module is sent to the browser, and only to students who can watch it.
-          <VideoPlayer video={video} lessonsHref={lessonsHref} quizHref={quizHref} />
+          <VideoPlayer video={video} lessonsHref={lessonsHref} quizHref={quizHref} audio={narrationAudio(video)} />
         ) : (
           <div className="rounded-xl border border-line bg-card p-8 text-center">
             <p className="text-lg font-semibold">This video is part of the full course.</p>
@@ -62,8 +63,8 @@ export default async function WatchModulePage({ params }: Props) {
       </div>
 
       <p className="mt-4 text-xs text-muted">
-        Narration uses your device&apos;s built-in voice. On a phone, check the silent switch is off and the volume is
-        up. Tip: press space to play or pause, and the arrow keys to skip.
+        On a phone, check the silent switch is off and the volume is up. Tip: press space to play or pause, and the
+        arrow keys to skip.
       </p>
 
       <div className="mt-8 flex flex-wrap justify-between gap-3 border-t border-line pt-6 text-sm font-medium">
