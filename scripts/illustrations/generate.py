@@ -7,7 +7,15 @@ from PIL import Image
 cfg = json.load(open("assets-pipeline/illustrations.json"))
 out = "public/images/illustrations"
 os.makedirs(out, exist_ok=True)
-client = Client(cfg["space"], hf_token=os.environ.get("HF_TOKEN") or None)
+tok = os.environ.get("HF_TOKEN") or None
+try:
+    client = Client(cfg["space"], token=tok)
+except TypeError:
+    client = Client(cfg["space"], hf_token=tok)
+try:
+    print(json.dumps(client.view_api(return_format="dict", print_info=False), default=str)[:3000])
+except Exception as e:
+    print("view_api failed", e)
 failed = 0
 for it in cfg["items"]:
     dest = f"{out}/{it['name']}.jpg"
