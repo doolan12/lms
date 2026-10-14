@@ -38,8 +38,8 @@ jobs:
       - name: Commit audio
         if: always()
         run: |
-          git config user.name "narration-bot"
-          git config user.email "narration-bot@users.noreply.github.com"
+          git config user.name "${{ github.repository_owner }}"
+          git config user.email "${{ github.repository_owner_id }}+${{ github.repository_owner }}@users.noreply.github.com"
           git add -A public/audio src/content/videos/audio-manifest.json assets-pipeline/narration.log || true
           git commit -m "Record video narration (Kokoro, af_heart)" || exit 0
           git pull --rebase -q origin main
