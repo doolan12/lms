@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/runner/work/lms/lms/scripts/illustrations/generate.py", line 10, in <module>
+    client = Client(cfg["space"], hf_token=os.environ.get("HF_TOKEN") or None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Client.__init__() got an unexpected keyword argument 'hf_token'
