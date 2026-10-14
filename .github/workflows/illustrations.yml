@@ -1,0 +1,46 @@
+name: Generate illustrations
+on:
+  push:
+    branches: [main]
+    paths:
+      - "assets-pipeline/illustrations.json"
+      - "scripts/illustrations/**"
+      - ".github/workflows/illustrations.yml"
+permissions:
+  contents: write
+concurrency:
+  group: illustrations
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q gradio_client pillow
+      - name: Generate
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          mkdir -p assets-pipeline
+          python scripts/illustrations/generate.py 2>&1 | tee assets-pipeline/illustrations.log
+      - name: Contact sheet
+        if: always()
+        run: |
+          shopt -s nullglob
+          files=(public/images/illustrations/*.jpg)
+          [ ${#files[@]} -eq 0 ] && exit 0
+          which montage || (sudo apt-get update -q && sudo apt-get install -yq imagemagick)
+          montage -label '%t' "${files[@]}" -geometry 800x450+6+6 -tile 2x -pointsize 22 assets-pipeline/illustrations-sheet.jpg
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "asset-bot"
+          git config user.email "asset-bot@users.noreply.github.com"
+          for d in assets-pipeline public/images; do [ -e "$d" ] && git add -A "$d"; done; true
+          git commit -m "Generated illustrations [skip ci]" || exit 0
+          git pull --rebase -q origin main
+          git push

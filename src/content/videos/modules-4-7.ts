@@ -85,6 +85,19 @@ export const module4: ModuleVideo = {
     },
     {
       visual: {
+        kind: "photo",
+        src: "https://images.unsplash.com/photo-1763665814546-27c2c003317e?auto=format&fit=crop&w=1600&h=900&q=80",
+        alt: "A red forklift fitted with a large clamp attachment",
+        caption: "Attachments change the numbers",
+        credit: { name: "Sergej *****", url: "https://unsplash.com/@skstrannik" },
+      },
+      say: [
+        "This forklift has a clamp attachment fitted instead of plain tynes.",
+        "It does a special job, but it also changes how much the forklift can safely lift.",
+      ],
+    },
+    {
+      visual: {
         kind: "points",
         title: "Attachments",
         items: [
@@ -358,6 +371,19 @@ export const module7: ModuleVideo = {
     {
       visual: { kind: "title", title: "Shutdown, refuelling and recharging", subtitle: "Module 7" },
       say: ["Module 7, the last one. How to park and shut down, change a gas bottle, and charge a battery safely."],
+    },
+    {
+      visual: {
+        kind: "photo",
+        src: "https://images.unsplash.com/photo-1770827730773-cc7848b2ee61?auto=format&fit=crop&w=1600&h=900&q=80",
+        alt: "An LPG forklift parked outside a building with its forks lowered",
+        caption: "Finish the shift safely",
+        credit: { name: "Osmany M Leyva Aldana", url: "https://unsplash.com/photos/IcB8U3l9Slg" },
+      },
+      say: [
+        "At the end of the shift, the job isn't over until the forklift is parked safely.",
+        "This one runs on LPG. You can see the gas cylinder on the back.",
+      ],
     },
     {
       visual: { kind: "diagram", name: "parked" },

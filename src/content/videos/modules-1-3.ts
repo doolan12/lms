@@ -11,6 +11,19 @@ export const module1: ModuleVideo = {
       ],
     },
     {
+      visual: {
+        kind: "photo",
+        src: "https://images.unsplash.com/photo-1684695749267-233af13276d0?auto=format&fit=crop&w=1600&h=900&q=80",
+        alt: "A large warehouse with tall racking full of stock",
+        caption: "Busy sites need licensed operators",
+        credit: { name: "Alberto Rodr\u00edguez", url: "https://unsplash.com/@albertorodriguez" },
+      },
+      say: [
+        "Forklifts work in busy places like this, close to people, racking and other vehicles.",
+        "One mistake can injure or kill someone. That's why the law treats forklift driving as high risk work.",
+      ],
+    },
+    {
       visual: { kind: "diagram", name: "licenceCard" },
       say: [
         "Driving a forklift is high risk work. To do it, you need a High Risk Work Licence, class L F.",
@@ -178,6 +191,19 @@ export const module2: ModuleVideo = {
       ],
     },
     {
+      visual: {
+        kind: "photo",
+        src: "https://images.unsplash.com/photo-1574173799345-e672ea143892?auto=format&fit=crop&w=1600&h=900&q=80",
+        alt: "Looking up at a high-voltage transmission tower and lines",
+        caption: "Outside? Look up.",
+        credit: { name: "Jonathan Hanna", url: "https://unsplash.com/@funnelhead" },
+      },
+      say: [
+        "When you work outside, always look up before you lift.",
+        "High-voltage electricity can jump across a gap, so you don't have to touch a powerline to be killed by it.",
+      ],
+    },
+    {
       visual: { kind: "diagram", name: "powerlineContact", props: { phase: "approach" } },
       say: [
         "Overhead powerlines can kill. Electricity can jump across a gap, so you don't even have to touch the line.",
@@ -261,6 +287,19 @@ export const module2: ModuleVideo = {
       ],
     },
     {
+      visual: {
+        kind: "photo",
+        src: "https://images.unsplash.com/photo-1586528116022-aeda1613c63d?auto=format&fit=crop&w=1600&h=900&q=80",
+        alt: "Workers walking along a marked aisle in a large warehouse",
+        caption: "People share your workplace",
+        credit: { name: "Adrian Sulyok", url: "https://unsplash.com/photos/c_4eaGRDSVU" },
+      },
+      say: [
+        "In a real warehouse, people walk the same aisles you drive.",
+        "Marked walkways, barriers and exclusion zones keep pedestrians and forklifts apart.",
+      ],
+    },
+    {
       visual: { kind: "diagram", name: "exclusionZone" },
       say: [
         "A traffic management plan keeps people and forklifts apart, with walkways, crossings, speed limits and signs. Follow it every time.",
@@ -282,6 +321,19 @@ export const module3: ModuleVideo = {
     {
       visual: { kind: "title", title: "Checks, faults and failures", subtitle: "Module 3" },
       say: ["Module 3 covers the checks you do every shift, what to do when you find a fault, and what to do if something fails while you're driving."],
+    },
+    {
+      visual: {
+        kind: "photo",
+        src: "https://images.unsplash.com/photo-1779155413504-7608a08d4873?auto=format&fit=crop&w=1600&h=900&q=80",
+        alt: "A forklift operator's seat, steering wheel and controls",
+        caption: "Your pre-start check starts here",
+        credit: { name: "Cooper Kuppens", url: "https://unsplash.com/@ckuppens" },
+      },
+      say: [
+        "Before every shift, you check the forklift, inside and out.",
+        "That includes the seat, seatbelt, controls and gauges, as well as the outside of the machine.",
+      ],
     },
     {
       visual: { kind: "diagram", name: "prestart" },
