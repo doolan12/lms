@@ -1,14 +1,39 @@
 {
-  "space": "mcp-tools/Qwen-Image-Fast",
-  "style": "Clean modern flat vector illustration for a workplace safety training course, calm professional palette of charcoal grey, safety yellow and white, soft shading, uncluttered. Absolutely no text, letters, numbers or logos anywhere.",
-  "items": [
-    {"name": "hero", "prompt": "A yellow counterbalance forklift driving slowly in a bright tidy warehouse. The operator is seated, wearing a hi-vis yellow vest and a seatbelt. The forks are lowered just above the floor carrying one shrink-wrapped pallet, mast tilted back. A walkway marked with yellow painted lines runs alongside with no people in it. Pallet racking in the background."},
-    {"name": "m1", "prompt": "A smiling forklift operator in a hi-vis yellow vest and safety boots standing beside a parked yellow counterbalance forklift, holding up a small blank photo ID card. The forklift's forks rest flat on the floor. Bright warehouse background."},
-    {"name": "m2", "prompt": "An outdoor work yard on a sunny day. A yellow counterbalance forklift is parked far away from overhead powerlines strung between timber power poles, its forks resting flat on the ground. A worker in a hi-vis vest and hard hat stands near the forklift and points up at the powerlines. Orange traffic cones mark a safe zone."},
-    {"name": "m3", "prompt": "A forklift operator in a hi-vis vest crouching beside a parked yellow counterbalance forklift doing a pre-start check, holding a clipboard and inspecting the front tyre. The forks rest flat on the floor. Bright warehouse background."},
-    {"name": "m4", "prompt": "Side view of a stationary yellow counterbalance forklift carrying one evenly stacked shrink-wrapped pallet of boxes, pushed fully back against the carriage, forks low just above the floor, mast tilted slightly back. Plain light warehouse background."},
-    {"name": "m5", "prompt": "A trainee in a hi-vis vest sitting at a desk studying, with a calculator, a notepad and a printed table chart, and a small toy forklift model on the desk. Warehouse visible through a window behind."},
-    {"name": "m6", "prompt": "A yellow counterbalance forklift stopped squarely in front of pallet racking, carefully placing a wrapped pallet onto the lower rack beam. The operator is seated with seatbelt on and wears a hi-vis vest. Yellow floor markings, no pedestrians nearby."},
-    {"name": "m7", "prompt": "A yellow electric forklift parked in a marked charging bay in a warehouse, forks lowered flat on the floor, plugged into a wall-mounted battery charger. A red fire extinguisher and an eyewash station are mounted on the wall nearby."}
-  ]
+ "space": "mcp-tools/Qwen-Image-Fast",
+ "style": "Clean modern flat vector illustration for a workplace safety training course, calm professional palette of charcoal grey, safety yellow and white, soft shading, uncluttered. Absolutely no text, letters, numbers or logos anywhere.",
+ "items": [
+  {
+   "name": "hero",
+   "prompt": "A yellow counterbalance forklift driving slowly in a bright tidy warehouse. The operator is seated, wearing a hi-vis yellow vest and a seatbelt. The forks are lowered just above the floor carrying one shrink-wrapped pallet, mast tilted back. A walkway marked with yellow painted lines runs alongside with no people in it. Pallet racking in the background."
+  },
+  {
+   "name": "m1",
+   "prompt": "A smiling forklift operator in a hi-vis yellow vest and safety boots standing beside a parked yellow counterbalance forklift, holding up a small blank photo ID card. The forklift's forks rest flat on the floor. Bright warehouse background."
+  },
+  {
+   "name": "m2",
+   "prompt": "An outdoor work yard on a sunny day. A yellow counterbalance forklift is parked far away from overhead powerlines strung between timber power poles, its forks resting flat on the ground. A worker in a hi-vis vest and hard hat stands near the forklift and points up at the powerlines. Orange traffic cones mark a safe zone."
+  },
+  {
+   "name": "m3",
+   "prompt": "A forklift operator in a hi-vis vest crouching beside a parked yellow counterbalance forklift doing a pre-start check, holding a clipboard and inspecting the front tyre. The forks rest flat on the floor. Bright warehouse background."
+  },
+  {
+   "name": "m4",
+   "prompt": "Close side view of a stationary yellow counterbalance forklift carrying one evenly stacked shrink-wrapped pallet of boxes. The pallet is pushed all the way back so the boxes touch the fork carriage and load backrest, with no gap between the load and the mast. Forks low just above the floor, mast tilted slightly back. Plain light warehouse background.",
+   "seed": 21
+  },
+  {
+   "name": "m5",
+   "prompt": "A trainee in a hi-vis vest sitting at a desk studying, with a calculator, a notepad and a printed table chart, and a small toy forklift model on the desk. Warehouse visible through a window behind."
+  },
+  {
+   "name": "m6",
+   "prompt": "A yellow counterbalance forklift stopped squarely in front of pallet racking, carefully placing a wrapped pallet onto the lower rack beam. The operator is seated with seatbelt on and wears a hi-vis vest. Yellow floor markings, no pedestrians nearby."
+  },
+  {
+   "name": "m7",
+   "prompt": "A yellow electric forklift parked in a marked charging bay in a warehouse, forks lowered flat on the floor, plugged into a wall-mounted battery charger. A red fire extinguisher and an eyewash station are mounted on the wall nearby."
+  }
+ ]
 }
