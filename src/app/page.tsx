@@ -1,18 +1,33 @@
 import Link from "next/link";
 import { formatPrice, listCourses } from "@/lib/courses";
+import { illustration } from "@/content/illustrations";
 
 export default async function HomePage() {
   const courses = await listCourses();
+  const hero = illustration("hero");
 
   return (
     <>
-      <section className="bg-ink text-white">
-        <div className="mx-auto max-w-5xl px-4 py-16 md:py-24">
+      <section className="relative overflow-hidden bg-ink text-white">
+        {hero && (
+          <>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={hero}
+              alt="A forklift operator wearing a hi-vis vest and seatbelt carrying a pallet low in a warehouse"
+              className="absolute inset-y-0 right-0 hidden h-full w-[58%] object-cover md:block"
+            />
+            <div className="absolute inset-y-0 right-0 hidden w-[58%] bg-gradient-to-r from-ink via-ink/50 to-transparent md:block" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={hero} alt="" className="block aspect-video w-full object-cover md:hidden" />
+          </>
+        )}
+        <div className="relative mx-auto max-w-5xl px-4 py-12 md:py-24">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-hivis">Australia · Licence class LF</p>
-          <h1 className="mt-4 max-w-3xl font-display text-4xl font-bold uppercase leading-[1.05] md:text-6xl">
+          <h1 className="mt-4 max-w-xl font-display text-4xl font-bold uppercase leading-[1.05] md:text-6xl">
             Walk into your forklift assessment knowing the theory cold.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-white/75">
+          <p className="mt-6 max-w-xl text-lg text-white/75">
             Short lessons, module quizzes and a final practice exam covering WHS law, pre-start checks, load charts,
             stability and safe operation. Study on your phone, at your own pace.
           </p>

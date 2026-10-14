@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { illustration } from "@/content/illustrations";
 import { notFound } from "next/navigation";
 import { getUser } from "@/lib/supabase/server";
 import {
@@ -204,9 +205,20 @@ function VideoRow({
   canWatch: boolean;
   showPreviewBadge: boolean;
 }) {
+  const thumb = illustration(`m${position}`);
   const content = (
     <div className="flex items-center gap-3 border-b border-line px-5 py-3">
-      <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-hivis text-[10px] text-ink">▶</span>
+      {thumb ? (
+        <span className="relative block aspect-video w-24 shrink-0 overflow-hidden rounded-md bg-ink sm:w-32">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={thumb} alt="" loading="lazy" className="h-full w-full object-cover" />
+          <span className="absolute inset-0 flex items-center justify-center bg-ink/25">
+            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-hivis text-xs text-ink shadow">▶</span>
+          </span>
+        </span>
+      ) : (
+        <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-hivis text-[10px] text-ink">▶</span>
+      )}
       <span className={canWatch ? "font-medium" : "text-muted"}>Watch the module video</span>
       {showPreviewBadge && <span className="rounded bg-hivis/20 px-2 py-0.5 text-xs font-semibold">Free preview</span>}
       <span className="ml-auto text-sm text-muted">{minutes} min</span>

@@ -35,4 +35,7 @@ for it in cfg["items"]:
     except Exception as e:
         failed += 1
         print("FAIL", it["name"], repr(e)[:500])
+have = sorted(f[:-4] for f in os.listdir(out) if f.endswith(".jpg"))
+json.dump({"have": have}, open("src/content/illustrations.json", "w"))
+print("have:", have)
 sys.exit(1 if failed == len(cfg["items"]) else 0)

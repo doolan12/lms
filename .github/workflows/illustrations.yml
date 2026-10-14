@@ -6,6 +6,9 @@ on:
       - "assets-pipeline/illustrations.json"
       - "scripts/illustrations/**"
       - ".github/workflows/illustrations.yml"
+  # The free Hugging Face allowance is small, so retry every 6 hours; finished images are skipped.
+  schedule:
+    - cron: "17 */6 * * *"
 permissions:
   contents: write
 concurrency:
@@ -21,7 +24,17 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -q gradio_client pillow
+      - name: Anything left to make?
+        id: todo
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os
+          items = json.load(open("assets-pipeline/illustrations.json"))["items"]
+          missing = [i["name"] for i in items if not os.path.exists(f"public/images/illustrations/{i['name']}.jpg")]
+          print("missing=" + ",".join(missing))
+          PY
       - name: Generate
+        if: steps.todo.outputs.missing != ''
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
@@ -40,7 +53,7 @@ jobs:
         run: |
           git config user.name "asset-bot"
           git config user.email "asset-bot@users.noreply.github.com"
-          for d in assets-pipeline public/images; do [ -e "$d" ] && git add -A "$d"; done; true
+          for d in assets-pipeline public/images src/content/illustrations.json; do [ -e "$d" ] && git add -A "$d"; done; true
           git commit -m "Generated illustrations [skip ci]" || exit 0
           git pull --rebase -q origin main
           git push

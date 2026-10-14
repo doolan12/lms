@@ -5,14 +5,22 @@ import { getCourseOutline, isEnrolled } from "@/lib/courses";
 import { FREE_PREVIEW_VIDEO_MODULES, MODULE_VIDEOS, videoMinutes } from "@/content/videos";
 import { VideoPlayer } from "@/components/video/VideoPlayer";
 import { narrationAudio } from "@/content/videos/audio";
+import { illustration } from "@/content/illustrations";
 
 type Props = { params: Promise<{ slug: string; position: string }> };
 
 export default async function WatchModulePage({ params }: Props) {
   const { slug, position } = await params;
   const pos = Number(position);
-  const video = MODULE_VIDEOS[pos];
-  if (!video) notFound();
+  const base = MODULE_VIDEOS[pos];
+  if (!base) notFound();
+  const art = illustration(`m${pos}`);
+  const video = {
+    ...base,
+    slides: base.slides.map((s, i) =>
+      i === 0 && s.visual.kind === "title" && art ? { ...s, visual: { ...s.visual, image: art } } : s,
+    ),
+  };
 
   const outline = await getCourseOutline(slug);
   if (!outline) notFound();
