@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { ModuleVideo } from "@/content/videos/types";
 import { SlideVisual } from "./SlideVisual";
+import type { Lang } from "@/lib/i18n/languages";
 
 const RATES = [0.85, 1, 1.15];
 
@@ -33,12 +34,17 @@ export function VideoPlayer({
   lessonsHref,
   quizHref,
   audio,
+  lang,
+  translated,
 }: {
   video: ModuleVideo;
   lessonsHref: string;
   quizHref?: string;
   /** Recorded narration per slide and segment (null where a line has no recording yet). */
   audio?: (string | null)[][];
+  /** Learner's translation language, and each line's translation (null where missing). */
+  lang?: Lang;
+  translated?: (string | null)[][];
 }) {
   const slides = video.slides;
   const [index, setIndex] = useState(0);
@@ -258,6 +264,8 @@ export function VideoPlayer({
   const slide = slides[index];
   const position = segmentsBefore[index] + step + (finished ? 1 : 0);
   const caption = playing ? slide.say[step] : slide.say.join(" ");
+  const trLines = translated?.[index] ?? [];
+  const trCaption = playing ? trLines[step] : trLines.filter(Boolean).join(" ");
   const started = playing || finished || index > 0 || step > 0;
 
   return (
@@ -372,6 +380,16 @@ export function VideoPlayer({
       <p className="mt-4 min-h-[4.5rem] rounded-lg bg-ink px-4 py-3 text-lg leading-snug text-white" aria-live="polite">
         {caption}
       </p>
+      {lang && trCaption && (
+        <p
+          lang={lang.code}
+          dir={lang.dir}
+          className="mt-1 rounded-lg border-hivis bg-[#fffbea] px-4 py-2 text-base leading-snug text-ink"
+          aria-live="polite"
+        >
+          {trCaption}
+        </p>
+      )}
       {voiceFailed && !hasRecording && (
         <p className="mt-2 text-sm text-muted">
           The voice didn&apos;t start on this device, so the captions are playing on their own. Turn the voice back on to
@@ -390,6 +408,11 @@ export function VideoPlayer({
               <button onClick={() => goTo(i)} className="text-left hover:underline">
                 {s.say.join(" ")}
               </button>
+              {lang && translated?.[i]?.some(Boolean) && (
+                <span lang={lang.code} dir={lang.dir} className="mt-1 block text-ink">
+                  {translated[i].filter(Boolean).join(" ")}
+                </span>
+              )}
             </li>
           ))}
         </ol>

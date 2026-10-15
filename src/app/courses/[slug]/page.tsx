@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { illustration } from "@/content/illustrations";
+import { getTranslator } from "@/lib/i18n/server";
+import { Translation } from "@/components/i18n/Translation";
 import { notFound } from "next/navigation";
 import { getUser } from "@/lib/supabase/server";
 import {
@@ -42,6 +44,7 @@ export default async function CoursePage({ params, searchParams }: Props) {
   const finalPassed = finalQuiz ? scores.get(finalQuiz.id)?.passed : false;
   const nextLesson = lessons.find((l) => !completed.has(l.id)) ?? lessons[0];
   const totalMinutes = lessons.reduce((sum, l) => sum + l.duration_minutes, 0);
+  const tr = await getTranslator();
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-10">
@@ -53,6 +56,7 @@ export default async function CoursePage({ params, searchParams }: Props) {
         <div>
           <h1 className="font-display text-3xl font-bold uppercase md:text-4xl">{course.title}</h1>
           <p className="mt-4 text-lg text-ink-soft">{course.description}</p>
+          {tr && <Translation lang={tr.lang} text={tr.t("C:description", course.description)} markdown={false} className="mt-2" />}
           <p className="mt-3 text-sm text-muted">
             {modules.length} modules · {lessons.length} lessons · about {Math.round(totalMinutes / 5) * 5} minutes of
             reading · {quizIds.length} quizzes
@@ -111,7 +115,14 @@ export default async function CoursePage({ params, searchParams }: Props) {
                   <span className="flex h-7 w-7 items-center justify-center rounded bg-ink text-sm font-bold text-hivis">
                     {m.position}
                   </span>
-                  <h3 className="font-bold">{m.title}</h3>
+                  <div>
+                    <h3 className="font-bold">{m.title}</h3>
+                    {tr && (
+                      <p lang={tr.lang.code} dir={tr.lang.dir} className="text-sm text-ink-soft">
+                        {tr.t(`M:${m.position}`, m.title)}
+                      </p>
+                    )}
+                  </div>
                 </div>
                 {MODULE_VIDEOS[m.position] && (
                   <VideoRow
@@ -136,7 +147,14 @@ export default async function CoursePage({ params, searchParams }: Props) {
                         >
                           {done ? "✓" : ""}
                         </span>
-                        <span className={canOpen ? "font-medium" : "text-muted"}>{l.title}</span>
+                        <span className={canOpen ? "font-medium" : "text-muted"}>
+                          {l.title}
+                          {tr && tr.t(`T:${l.slug}`, l.title) && (
+                            <span lang={tr.lang.code} dir={tr.lang.dir} className="block text-sm font-normal text-ink-soft">
+                              {tr.t(`T:${l.slug}`, l.title)}
+                            </span>
+                          )}
+                        </span>
                         {l.is_preview && !enrolled && (
                           <span className="rounded bg-hivis/20 px-2 py-0.5 text-xs font-semibold">Free preview</span>
                         )}

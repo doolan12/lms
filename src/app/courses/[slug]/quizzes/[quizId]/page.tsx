@@ -6,6 +6,30 @@ import { allLessonsComplete } from "@/lib/enrollment";
 import { QuestionPrompt } from "@/components/QuestionPrompt";
 import { Calculator } from "@/components/Calculator";
 import { submitQuiz } from "./actions";
+import { getTranslator, type Translator } from "@/lib/i18n/server";
+import { Translation, TranslationNotice } from "@/components/i18n/Translation";
+
+/** Collapsible translation of a question and its options (same order as the English). */
+function QuestionTranslation({ tr, qk, q, options }: { tr: Translator; qk: string; q: Question; options: Option[] }) {
+  const prompt = tr.t(`Q:${qk}:${q.position}:p`, q.prompt);
+  if (!prompt) return null;
+  const opts = options.map((o) => tr.t(`Q:${qk}:${q.position}:o${o.position}`, o.text));
+  return (
+    <details className="mt-3 rounded-md border border-line bg-white px-3 py-2 text-sm">
+      <summary className="cursor-pointer font-semibold" lang={tr.lang.code}>
+        🌐 {tr.lang.show}
+      </summary>
+      <Translation lang={tr.lang} text={prompt} className="mt-2 font-semibold" />
+      <ol className="mt-2 space-y-1" dir={tr.lang.dir} lang={tr.lang.code}>
+        {opts.map((t, i) => (
+          <li key={i} className="rounded bg-[#fffbea] px-3 py-1.5">
+            {t ?? options[i].text}
+          </li>
+        ))}
+      </ol>
+    </details>
+  );
+}
 
 type Props = {
   params: Promise<{ slug: string; quizId: string }>;
@@ -36,7 +60,7 @@ export default async function QuizPage({ params, searchParams }: Props) {
 
   const { data: quiz } = await supabase
     .from("quizzes")
-    .select("id, title, pass_mark, is_final, course_id")
+    .select("id, title, pass_mark, is_final, course_id, modules(position)")
     .eq("id", quizId)
     .maybeSingle();
   if (!quiz) notFound();
@@ -50,13 +74,24 @@ export default async function QuizPage({ params, searchParams }: Props) {
   if (!enrollment) redirect(`/courses/${slug}`);
   if (quiz.is_final && !(await allLessonsComplete(user.id, quiz.course_id))) redirect(`/courses/${slug}`);
 
+  // Translation keys use the module position (or "final") so they survive database IDs changing.
+  const mod = quiz.modules as unknown as { position: number } | null;
+  const qk = quiz.is_final || !mod ? "final" : String(mod.position);
+  const tr = await getTranslator();
+
   const header = (
     <>
       <Link href={`/courses/${slug}`} className="text-sm text-muted hover:text-ink">
         ← Back to course
       </Link>
       <h1 className="mt-3 font-display text-3xl font-bold uppercase">{quiz.title}</h1>
+      {tr && <Translation lang={tr.lang} text={tr.t(`Z:${qk}`, quiz.title)} markdown={false} className="mt-2 font-semibold" />}
       <p className="mt-1 text-sm text-muted">Pass mark {quiz.pass_mark}%</p>
+      {tr && (
+        <div className="mt-4">
+          <TranslationNotice lang={tr.lang} />
+        </div>
+      )}
     </>
   );
 
@@ -119,8 +154,19 @@ export default async function QuizPage({ params, searchParams }: Props) {
                   ))}
                 </ul>
                 {!right && q.explanation && (
-                  <p className="mt-3 border-l-4 border-hivis bg-[#fff8e1] px-3 py-2 text-sm">{q.explanation}</p>
+                  <>
+                    <p className="mt-3 border-l-4 border-hivis bg-[#fff8e1] px-3 py-2 text-sm">{q.explanation}</p>
+                    {tr && (
+                      <Translation
+                        lang={tr.lang}
+                        text={tr.t(`Q:${qk}:${q.position}:e`, q.explanation)}
+                        markdown={false}
+                        className="mt-1 text-sm"
+                      />
+                    )}
+                  </>
                 )}
+                {tr && <QuestionTranslation tr={tr} qk={qk} q={q} options={[...q.options].sort(byPosition)} />}
               </li>
             );
           })}
@@ -177,6 +223,7 @@ export default async function QuizPage({ params, searchParams }: Props) {
                 </label>
               ))}
             </div>
+            {tr && <QuestionTranslation tr={tr} qk={qk} q={q} options={[...q.options].sort(byPosition)} />}
           </fieldset>
         ))}
         <button className="w-full rounded-md bg-hivis py-3.5 font-semibold text-ink hover:bg-hivis-dark">

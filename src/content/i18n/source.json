@@ -1,0 +1,4710 @@
+{
+ "C:title": {
+  "h": "c61daf3b6f",
+  "t": "Forklift Theory Practice (LF)"
+ },
+ "C:summary": {
+  "h": "e3770aad44",
+  "t": "Learn and practise forklift theory for your LF licence assessment — at your own pace, on any device."
+ },
+ "C:description": {
+  "h": "0d31bac367",
+  "t": "Learn and practise the forklift theory you'll be assessed on for your LF High Risk Work Licence: WHS law and standards, hazards, ground conditions and weather, traffic management, pre-start and operational checks, faults and lock out/tag out, stability, rated capacity, load weight and load centre calculations, attachments, safe operating and stacking, shutdown, refuelling and recharging. Each module ends with a quiz, and a final practice exam helps you check your knowledge. An independent study aid to use alongside your training with an RTO — not nationally recognised training, and it does not give you a licence."
+ },
+ "M:1": {
+  "h": "3f56233514",
+  "t": "Licensing, law and standards"
+ },
+ "M:2": {
+  "h": "7f7af8060e",
+  "t": "Planning, hazards and traffic management"
+ },
+ "M:3": {
+  "h": "bfac3d8f78",
+  "t": "Checks, faults and failures"
+ },
+ "M:4": {
+  "h": "6c1e2a1319",
+  "t": "Loads, stability and attachments"
+ },
+ "M:5": {
+  "h": "5518018810",
+  "t": "Load calculations"
+ },
+ "M:6": {
+  "h": "df9027801b",
+  "t": "Safe operation and load handling"
+ },
+ "M:7": {
+  "h": "92a32f2f90",
+  "t": "Shutdown, refuelling and recharging"
+ },
+ "T:high-risk-work-licence": {
+  "h": "4b35045a5f",
+  "t": "The forklift High Risk Work Licence"
+ },
+ "L:high-risk-work-licence:0": {
+  "h": "e0a147eefa",
+  "t": "## Why you need a licence"
+ },
+ "L:high-risk-work-licence:1": {
+  "h": "350eb5aead",
+  "t": "Operating a forklift is **high risk work** under Australia's Work Health and Safety (WHS) laws. To operate one you must hold a **High Risk Work Licence (HRWL)** for the right class — or be a trainee working under supervision while you train."
+ },
+ "L:high-risk-work-licence:2": {
+  "h": "bd00d784fc",
+  "t": "| Class | Covers |\n|---|---|\n| **LF** | Forklift truck (counterbalance, reach trucks and similar) |\n| **LO** | Order-picking forklift truck |"
+ },
+ "L:high-risk-work-licence:3": {
+  "h": "21f38e4e98",
+  "t": "### How you get licensed"
+ },
+ "L:high-risk-work-licence:4": {
+  "h": "2a4477c8e2",
+  "t": "1. Train with a **Registered Training Organisation (RTO)**."
+ },
+ "L:high-risk-work-licence:5": {
+  "h": "527847febd",
+  "t": "2. Pass a knowledge **and** practical assessment with an **accredited assessor**."
+ },
+ "L:high-risk-work-licence:6": {
+  "h": "10fbfffa78",
+  "t": "3. Apply to your state or territory regulator (e.g. SafeWork NSW, WorkSafe Victoria, WorkSafe Queensland) within the required time."
+ },
+ "L:high-risk-work-licence:7": {
+  "h": "2bbe8634ca",
+  "t": "You must be **at least 18**. Licences are recognised nationally and must be renewed (generally every five years)."
+ },
+ "L:high-risk-work-licence:8": {
+  "h": "8b65a24806",
+  "t": "> This online course is theory preparation. It does not on its own give you a licence."
+ },
+ "T:whs-duties": {
+  "h": "bb553ac0cf",
+  "t": "Your duties under WHS law"
+ },
+ "L:whs-duties:0": {
+  "h": "3c35d2d814",
+  "t": "## Everyone has duties"
+ },
+ "L:whs-duties:1": {
+  "h": "1075e9fc16",
+  "t": "WHS laws (in Victoria, the OHS Act) place duties on everyone at a workplace."
+ },
+ "L:whs-duties:2": {
+  "h": "136226bfe6",
+  "t": "**The business (PCBU / employer) must**, so far as is reasonably practicable:\n- provide safe plant — a forklift that is maintained and fit for use\n- provide information, training, instruction and supervision\n- set up safe systems of work, such as a **traffic management plan**"
+ },
+ "L:whs-duties:3": {
+  "h": "0534e38212",
+  "t": "**As an operator you must:**\n- take reasonable care for your own health and safety\n- take reasonable care that what you do (or don't do) doesn't harm others\n- follow reasonable instructions, policies and **workplace procedures**\n- **report hazards, incidents and defects**"
+ },
+ "L:whs-duties:4": {
+  "h": "5da12c2063",
+  "t": "### Work plans and procedures"
+ },
+ "L:whs-duties:5": {
+  "h": "97d428284a",
+  "t": "Your instructions may come as a **verbal** instruction from a supervisor, a **written** job sheet, safe work procedure or SWMS, or an **electronic** work order on a scanner or tablet. Whatever form they take: read or listen carefully, ask questions if anything is unclear, and follow them."
+ },
+ "L:whs-duties:6": {
+  "h": "f85cc81386",
+  "t": "If you're unsure, **stop and ask**."
+ },
+ "T:standards-codes-records": {
+  "h": "a2d1b6572e",
+  "t": "Standards, codes of practice and records"
+ },
+ "L:standards-codes-records:0": {
+  "h": "e14a751ead",
+  "t": "## Where the rules come from"
+ },
+ "L:standards-codes-records:1": {
+  "h": "208efffeda",
+  "t": "| Source | What it is |\n|---|---|\n| **WHS Act and Regulations** | The law. Must be followed. |\n| **Codes of practice** | Practical guidance on meeting the law — e.g. Safe Work Australia's *Managing the risks of plant in the workplace*. Courts can use them as evidence of what is reasonably practicable. |\n| **Australian Standards** | Technical requirements — e.g. the **AS 2359** series for powered industrial trucks (forklifts). |\n| **Guidelines** | Further guidance — e.g. Safe Work Australia's *General guide for workplace traffic management*. |\n| **Manufacturer's manual** | How *this* forklift must be operated, checked and maintained. |\n| **Workplace procedures** | How *your site* does things — traffic plan, SWMS, emergency procedures. |"
+ },
+ "L:standards-codes-records:2": {
+  "h": "326c1ea9e1",
+  "t": "## Records you keep"
+ },
+ "L:standards-codes-records:3": {
+  "h": "cd289fa6d4",
+  "t": "Good records prove checks were done and problems were followed up:"
+ },
+ "L:standards-codes-records:4": {
+  "h": "214ba5dc93",
+  "t": "- **Pre-start checklists** — every shift"
+ },
+ "L:standards-codes-records:5": {
+  "h": "35eb75cad0",
+  "t": "- **Defect and fault reports**"
+ },
+ "L:standards-codes-records:6": {
+  "h": "24cf8649cf",
+  "t": "- **Incident and near-miss reports**"
+ },
+ "L:standards-codes-records:7": {
+  "h": "d87155acea",
+  "t": "- **Maintenance and service records** for the forklift"
+ },
+ "L:standards-codes-records:8": {
+  "h": "08206bc81a",
+  "t": "- **Trainee logbook** — if you're training, record your supervised operating hours"
+ },
+ "L:standards-codes-records:9": {
+  "h": "9f14094ac6",
+  "t": "Records must be **accurate, legible, dated and signed**, and kept where your workplace procedures say."
+ },
+ "T:planning-and-communication": {
+  "h": "13a5236ace",
+  "t": "Planning the task and communicating"
+ },
+ "L:planning-and-communication:0": {
+  "h": "038dff1726",
+  "t": "## Plan before you lift"
+ },
+ "L:planning-and-communication:1": {
+  "h": "b920bc3f2a",
+  "t": "- **The load** — weight, size, shape, centre of gravity; is it stable and secure?"
+ },
+ "L:planning-and-communication:2": {
+  "h": "daeca78383",
+  "t": "- **The forklift** — is the load within its **rated capacity**? Is the right attachment fitted?"
+ },
+ "L:planning-and-communication:3": {
+  "h": "0b39a44c69",
+  "t": "- **The route** — surfaces, slopes, doorways, overhead clearances, blind corners."
+ },
+ "L:planning-and-communication:4": {
+  "h": "2ca8bda9eb",
+  "t": "- **The destination** — racking capacity, where the load will be placed."
+ },
+ "L:planning-and-communication:5": {
+  "h": "2c1b1873cf",
+  "t": "- **People** — who else is working nearby, and how will you communicate?"
+ },
+ "L:planning-and-communication:6": {
+  "h": "2bad3c0f38",
+  "t": "## Communication methods"
+ },
+ "L:planning-and-communication:7": {
+  "h": "987de40c8f",
+  "t": "| Method | Use it for |\n|---|---|\n| **Warning devices** — horn, flashing beacon, reversing alarm, lights | Alerting people to the forklift |\n| **Hand signals** | Directions from a spotter or observer. Agree the signals **before** starting. |\n| **Two-way radio** | Coordinating over distance. Use clear, short messages and confirm you've understood. |\n| **Signage and traffic warning systems** | Speed limits, pedestrian crossings, no-go zones, warning lights at doorways |\n| **Written instructions** | Job sheets, work orders, SWMS, consignment paperwork |\n| **Verbal instructions and questioning** | Ask questions to check you understand — e.g. \"So you want these three pallets in bay 4, top level?\" |"
+ },
+ "L:planning-and-communication:8": {
+  "h": "40c794aa0a",
+  "t": "Always make **eye contact with pedestrians** before moving near them."
+ },
+ "T:hazards-and-controls": {
+  "h": "b959a86c0f",
+  "t": "Identifying hazards and choosing controls"
+ },
+ "L:hazards-and-controls:0": {
+  "h": "c66d4cdc4a",
+  "t": "## Common forklift hazards"
+ },
+ "L:hazards-and-controls:1": {
+  "h": "c67c7c6f95",
+  "t": "- **Pedestrians**, other plant and vehicles — collision risk"
+ },
+ "L:hazards-and-controls:2": {
+  "h": "9abcb6fb4d",
+  "t": "- **Overhead hazards** — powerlines (see the next lesson), low beams, doorways, sprinklers, lights, fixed structures"
+ },
+ "L:hazards-and-controls:3": {
+  "h": "8ef7458927",
+  "t": "- **Poor lighting** and blind corners"
+ },
+ "L:hazards-and-controls:4": {
+  "h": "9fb45827af",
+  "t": "- **Dangerous goods** — check labels/placards and the Safety Data Sheet (SDS); know the spill procedure"
+ },
+ "L:hazards-and-controls:5": {
+  "h": "9bc661ef65",
+  "t": "- **Restricted or poorly ventilated areas** — LPG, petrol and diesel forklifts give off **carbon monoxide** in exhaust"
+ },
+ "L:hazards-and-controls:6": {
+  "h": "5545400024",
+  "t": "- **Ground conditions** and **weather** (later in this module)"
+ },
+ "L:hazards-and-controls:7": {
+  "h": "e09c1a96f0",
+  "t": "- Unstable or damaged loads"
+ },
+ "L:hazards-and-controls:8": {
+  "h": "9b7a9bc418",
+  "t": "## Hazard or risk — what's the difference?"
+ },
+ "L:hazards-and-controls:9": {
+  "h": "167bf0ec0a",
+  "t": "- A **hazard** is anything that **could cause harm** — injury, illness or damage. It's the *thing* or *situation*: a pedestrian near your work area, an oil spill, a powerline, a pothole, a damaged pallet."
+ },
+ "L:hazards-and-controls:10": {
+  "h": "64369b46d1",
+  "t": "- A **risk** is the **chance that the hazard will actually hurt someone, and how bad it would be**. It's about *likelihood* and *consequence*."
+ },
+ "L:hazards-and-controls:11": {
+  "h": "8d877709ea",
+  "t": "| Hazard (what could cause harm) | Risk (how likely, and how bad) |\n|---|---|\n| Pedestrians walking through the loading area | Being struck by the forklift — likely in a busy area, and could be fatal |\n| Oil spill on the floor | The forklift skids or someone slips — likely if it's on your route |\n| Overhead powerline near the yard | Electrocution if the mast gets close — less likely if you plan, but the consequence is death |\n| Damaged pallet | The load collapses or falls — injury or damaged stock |"
+ },
+ "L:hazards-and-controls:12": {
+  "h": "7dcd92ec6c",
+  "t": "> **Spot the hazard → assess the risk → control it.** The hazard is the thing; the risk is how likely and how serious the harm is."
+ },
+ "L:hazards-and-controls:13": {
+  "h": "d9d3874b87",
+  "t": "## Assessing the risk"
+ },
+ "L:hazards-and-controls:14": {
+  "h": "f6d4abebdb",
+  "t": "Ask two questions about each hazard:"
+ },
+ "L:hazards-and-controls:15": {
+  "h": "805e28252b",
+  "t": "1. **Likelihood** — how likely is it to cause harm? (*Rare, possible, likely*)"
+ },
+ "L:hazards-and-controls:16": {
+  "h": "3952e6e7b5",
+  "t": "2. **Consequence** — if it does, how bad would it be? (*Minor first aid, serious injury, death*)"
+ },
+ "L:hazards-and-controls:17": {
+  "h": "0962df90f6",
+  "t": "A hazard that is **likely** to happen **and** could cause **serious injury or death** is a **high risk** — fix it before you start work. Low risks still need controlling."
+ },
+ "L:hazards-and-controls:18": {
+  "h": "b5d6d01745",
+  "t": "## The risk management steps"
+ },
+ "L:hazards-and-controls:19": {
+  "h": "d3ee5d79f5",
+  "t": "1. **Identify** the hazards — walk the route and look around before you start."
+ },
+ "L:hazards-and-controls:20": {
+  "h": "98909042dd",
+  "t": "2. **Assess** the risk — likelihood and consequence."
+ },
+ "L:hazards-and-controls:21": {
+  "h": "ab805ba9cb",
+  "t": "3. **Control** it using the hierarchy of control."
+ },
+ "L:hazards-and-controls:22": {
+  "h": "5a598a7ada",
+  "t": "4. **Review** — are the controls working? Has anything changed?"
+ },
+ "L:hazards-and-controls:23": {
+  "h": "63f9520184",
+  "t": "## The hierarchy of control"
+ },
+ "L:hazards-and-controls:24": {
+  "h": "9a08f01252",
+  "t": "Use the most effective control you can, then work down:"
+ },
+ "L:hazards-and-controls:25": {
+  "h": "3e6410c38c",
+  "t": "1. **Eliminate** the hazard"
+ },
+ "L:hazards-and-controls:26": {
+  "h": "f2bd4d5bbb",
+  "t": "2. **Substitute** with something safer"
+ },
+ "L:hazards-and-controls:27": {
+  "h": "019f33e996",
+  "t": "3. **Isolate** people from it (barriers, separate walkways, exclusion zones)"
+ },
+ "L:hazards-and-controls:28": {
+  "h": "cce9246743",
+  "t": "4. **Engineering controls** (mirrors, warning lights, speed limiters)"
+ },
+ "L:hazards-and-controls:29": {
+  "h": "eefe435100",
+  "t": "5. **Administrative controls** (procedures, signage, training, traffic plans)"
+ },
+ "L:hazards-and-controls:30": {
+  "h": "ec50c8c111",
+  "t": "6. **PPE** — the last line of defence"
+ },
+ "L:hazards-and-controls:31": {
+  "h": "1dd8cde02f",
+  "t": "If a control is missing or not working, **report it**."
+ },
+ "T:powerlines": {
+  "h": "e2cc0cf9d9",
+  "t": "Powerlines: keep clear, and the 5-step contact protocol"
+ },
+ "L:powerlines:0": {
+  "h": "9af295f518",
+  "t": "## Look up and live"
+ },
+ "L:powerlines:1": {
+  "h": "bd2370118e",
+  "t": "Overhead powerlines are one of the deadliest hazards for forklift operators. Electricity can **jump (arc)** across a gap — you don't have to touch the line to be electrocuted. Treat **every line as live**."
+ },
+ "L:powerlines:2": {
+  "h": "8888d1507f",
+  "t": "Before you start work outdoors or near doorways and awnings:"
+ },
+ "L:powerlines:3": {
+  "h": "00642deaaf",
+  "t": "- **Look up** — find every overhead line before you move or raise the mast."
+ },
+ "L:powerlines:4": {
+  "h": "84fef30ada",
+  "t": "- **Keep the minimum approach distance** for your state and the line's voltage. For example, SafeWork NSW sets **3 m** for lines up to 132,000 volts, **6 m** up to 330,000 volts and **8 m** above that. Your site may set a bigger distance."
+ },
+ "L:powerlines:5": {
+  "h": "a87ebffcd4",
+  "t": "- Remember lines **sag** in heat and **swing** in wind — and a raised mast or load is higher than you think."
+ },
+ "L:powerlines:6": {
+  "h": "20163ced4e",
+  "t": "- **Lower the mast and tynes** before you travel near lines."
+ },
+ "L:powerlines:7": {
+  "h": "590d7acae2",
+  "t": "- Use a **spotter** when working near lines, and ask for the power to be **switched off or the lines covered** if you have to work close to them."
+ },
+ "L:powerlines:8": {
+  "h": "4b6731b8c0",
+  "t": "## If the forklift touches a powerline — the 5 steps"
+ },
+ "L:powerlines:9": {
+  "h": "2b098170f4",
+  "t": "**Stay → Warn → Break → Call → Jump**"
+ },
+ "L:powerlines:10": {
+  "h": "430acd112d",
+  "t": "1. **STAY on the forklift.** Stay calm, stay seated and don't touch any metal parts. The forklift may be live — the ground around it can be too."
+ },
+ "L:powerlines:11": {
+  "h": "75a4957092",
+  "t": "2. **WARN others.** Shout to everyone to keep **at least 8 metres** away. No one should touch the forklift or try to help you."
+ },
+ "L:powerlines:12": {
+  "h": "d68e4d1a38",
+  "t": "3. **BREAK contact — only if it's safe.** Lower the mast or tynes, or drive the forklift clear of the line, but only if it won't cause another hazard."
+ },
+ "L:powerlines:13": {
+  "h": "416b812e87",
+  "t": "4. **CALL for help.** Call **000** and the local electricity network operator (e.g. Ausgrid 13 13 88, Endeavour Energy 13 10 03, Essential Energy 13 20 80) and ask them to switch the power off. **Stay where you are** until they confirm the power is off."
+ },
+ "L:powerlines:14": {
+  "h": "c08eeed331",
+  "t": "5. **JUMP clear — only if you must** (e.g. the forklift is on fire). Jump well clear with your **feet together**, never touching the forklift and the ground at the same time. Land with feet together, then **shuffle or bunny-hop** with feet together until you are **at least 8 metres** away. **Never go back** until the power is confirmed off."
+ },
+ "L:powerlines:15": {
+  "h": "88dc77ee20",
+  "t": "## Afterwards"
+ },
+ "L:powerlines:16": {
+  "h": "ed528c9157",
+  "t": "- Don't use the forklift again until it has been **inspected**."
+ },
+ "L:powerlines:17": {
+  "h": "7b824f5554",
+  "t": "- Report it to your supervisor straight away. Contact with a powerline is a **notifiable incident** — your employer must notify the WHS regulator."
+ },
+ "L:powerlines:18": {
+  "h": "326a860cd1",
+  "t": "> If you see someone else's machine touching a line: **stay back at least 8 m**, call 000 and the network operator, and tell them to stay on the machine."
+ },
+ "T:ground-and-weather": {
+  "h": "8f1036b227",
+  "t": "Ground surfaces and weather"
+ },
+ "L:ground-and-weather:0": {
+  "h": "9d509410ac",
+  "t": "## Is the surface suitable?"
+ },
+ "L:ground-and-weather:1": {
+  "h": "3fdd4a7af9",
+  "t": "A loaded forklift is extremely heavy — the counterweight alone can weigh more than the load. Check the surface can take it."
+ },
+ "L:ground-and-weather:2": {
+  "h": "114e30891e",
+  "t": "| Surface | Risk / what to do |\n|---|---|\n| **Backfilled ground** (e.g. over a trench) | May collapse — avoid unless confirmed compacted and suitable |\n| **Soft soil, mud, sand** | Wheels sink, forklift can tip — avoid or use suitable equipment |\n| **Hard compacted soil** | Usually OK, but check after rain |\n| **Damaged or cracked concrete / bitumen, potholes** | Jolts the load and forklift — slow down, go around, report |\n| **Railway tracks** | Cross slowly and at an angle where possible so wheels don't drop into the gap |\n| **Rough or sloped terrain** | Instability — slow down, keep the load low, follow ramp rules |\n| **Steel decks, grates, trench covers, dock plates** | Must be rated for the **combined weight** of forklift and load, and secured |"
+ },
+ "L:ground-and-weather:3": {
+  "h": "b903b4c18f",
+  "t": "## Unsafe weather and conditions"
+ },
+ "L:ground-and-weather:4": {
+  "h": "87ef9f3166",
+  "t": "| Condition | Response |\n|---|---|\n| **Strong wind** | Large flat loads (sheet material, boards) act like a sail — slow down or stop work if unsafe |\n| **Lightning** | Stop outdoor work, park safely and take shelter |\n| **Rain, wet or icy surfaces** | Reduce speed, brake and turn gently, allow much longer stopping distances |\n| **Extreme heat** | Drink water, take breaks, watch for heat stress; watch engine temperature |\n| **UV exposure** | Sun protection — hat, long sleeves, sunscreen, sunglasses |"
+ },
+ "L:ground-and-weather:5": {
+  "h": "5da3364d0b",
+  "t": "If conditions make the job unsafe, **stop and tell your supervisor**."
+ },
+ "T:traffic-management-exclusion-zones": {
+  "h": "b9bac77476",
+  "t": "Traffic management plans and exclusion zones"
+ },
+ "L:traffic-management-exclusion-zones:0": {
+  "h": "3dfbd57afc",
+  "t": "## Traffic management plans"
+ },
+ "L:traffic-management-exclusion-zones:1": {
+  "h": "12752edc47",
+  "t": "Workplaces where forklifts operate should have a **traffic management plan (TMP)**. It typically sets out:"
+ },
+ "L:traffic-management-exclusion-zones:2": {
+  "h": "a5007e09c7",
+  "t": "- **forklift routes** and **pedestrian walkways**, separated where possible"
+ },
+ "L:traffic-management-exclusion-zones:3": {
+  "h": "7605b5ddcc",
+  "t": "- **pedestrian crossing points** and no-go zones"
+ },
+ "L:traffic-management-exclusion-zones:4": {
+  "h": "1c125da4da",
+  "t": "- **speed limits**"
+ },
+ "L:traffic-management-exclusion-zones:5": {
+  "h": "ed1a838ce0",
+  "t": "- **one-way systems**, loading and parking areas"
+ },
+ "L:traffic-management-exclusion-zones:6": {
+  "h": "3dcaf39d97",
+  "t": "- **signage**, line marking, mirrors and warning lights"
+ },
+ "L:traffic-management-exclusion-zones:7": {
+  "h": "fff1597783",
+  "t": "- rules for visitors and delivery drivers"
+ },
+ "L:traffic-management-exclusion-zones:8": {
+  "h": "c4354f35ec",
+  "t": "Know the TMP for your site and **follow it every time**."
+ },
+ "L:traffic-management-exclusion-zones:9": {
+  "h": "90c9970dc4",
+  "t": "## Exclusion zones"
+ },
+ "L:traffic-management-exclusion-zones:10": {
+  "h": "4e82ab9523",
+  "t": "An **exclusion zone** is an area around forklift work that people must not enter. Set one up with **barriers, bollards, cones, bunting and signs** — for example while loading a truck or stacking at height."
+ },
+ "L:traffic-management-exclusion-zones:11": {
+  "h": "5ec42c70ec",
+  "t": "- Check the zone is in place before you start."
+ },
+ "L:traffic-management-exclusion-zones:12": {
+  "h": "b3357b77a0",
+  "t": "- **Stop** if anyone enters it."
+ },
+ "L:traffic-management-exclusion-zones:13": {
+  "h": "2243bb69a1",
+  "t": "- If a control is missing or damaged (a broken barrier, a faded walkway, a mirror knocked out of position), **report it** to your supervisor."
+ },
+ "T:pre-start-checks": {
+  "h": "57558d1eae",
+  "t": "Pre-start (visual) checks"
+ },
+ "L:pre-start-checks:0": {
+  "h": "40e6f7a9d4",
+  "t": "## Do it every shift"
+ },
+ "L:pre-start-checks:1": {
+  "h": "3cd9417917",
+  "t": "Carry out a pre-start check **before every shift**, using the site checklist and the operator's manual. With the engine **off**, walk around and check:"
+ },
+ "L:pre-start-checks:2": {
+  "h": "ca45a61e5a",
+  "t": "- **Data plate** — present, legible, and **correct for the attachment fitted**"
+ },
+ "L:pre-start-checks:3": {
+  "h": "87bfc68f93",
+  "t": "- **Structure** — look for **cracked or stressed welds** and **paint separation** (cracked or flaking paint at joints can show a crack underneath)"
+ },
+ "L:pre-start-checks:4": {
+  "h": "a255bcf367",
+  "t": "- **Tynes (forks) / attachments** — cracks, bends, heel wear; **locking pins in place** and attachments **secure**"
+ },
+ "L:pre-start-checks:5": {
+  "h": "09b47d0c52",
+  "t": "- **Mast, chains and carriage** — damage, wear, chain tension"
+ },
+ "L:pre-start-checks:6": {
+  "h": "4b19351c71",
+  "t": "- **Hydraulics** — hoses, fittings and the ground underneath for **leaks**"
+ },
+ "L:pre-start-checks:7": {
+  "h": "46726654b0",
+  "t": "- **Fluids** — engine oil, hydraulic oil, coolant, **fuel / LPG level**"
+ },
+ "L:pre-start-checks:8": {
+  "h": "1d34dcb5c6",
+  "t": "- **Battery** (electric) — **charge level**, cables and connectors, no damage"
+ },
+ "L:pre-start-checks:9": {
+  "h": "769fc44a7d",
+  "t": "- **Tyres and wheels** — damage, wear, **correct inflation**, wheel nuts"
+ },
+ "L:pre-start-checks:10": {
+  "h": "150d671ca5",
+  "t": "- **Overhead guard and load backrest** — fitted and undamaged"
+ },
+ "L:pre-start-checks:11": {
+  "h": "23cd688265",
+  "t": "- **Lights, safety equipment** (e.g. fire extinguisher if fitted) and **signs and labels** — present and legible"
+ },
+ "L:pre-start-checks:12": {
+  "h": "d35d85e0e8",
+  "t": "- **Logbook / checklist** — available, and previous defects followed up"
+ },
+ "L:pre-start-checks:13": {
+  "h": "5faa51c316",
+  "t": "## Getting on and off"
+ },
+ "L:pre-start-checks:14": {
+  "h": "b6bbb2f14c",
+  "t": "Use the steps and handholds and keep **three points of contact** (two hands and a foot, or two feet and a hand). Never jump down."
+ },
+ "L:pre-start-checks:15": {
+  "h": "c43327a846",
+  "t": "Once seated, **adjust the seat and mirrors** and **fasten and test the seatbelt**."
+ },
+ "L:pre-start-checks:16": {
+  "h": "5320986588",
+  "t": "Record the check, and **record any damage** you find."
+ },
+ "T:operational-checks-and-defects": {
+  "h": "870c2b7cb6",
+  "t": "Operational checks and lock out / tag out"
+ },
+ "L:operational-checks-and-defects:0": {
+  "h": "06f430b441",
+  "t": "## Operational checks (engine running)"
+ },
+ "L:operational-checks-and-defects:1": {
+  "h": "6d276bccc7",
+  "t": "Start the forklift **as the manufacturer requires** and check:"
+ },
+ "L:operational-checks-and-defects:2": {
+  "h": "43586731bd",
+  "t": "- **Locate, identify and test every control**"
+ },
+ "L:operational-checks-and-defects:3": {
+  "h": "ac69ae7c71",
+  "t": "- **Gauges and warning lights**"
+ },
+ "L:operational-checks-and-defects:4": {
+  "h": "967233da8b",
+  "t": "- **Horn, lights, beacon and reversing alarm**"
+ },
+ "L:operational-checks-and-defects:5": {
+  "h": "19f11229d2",
+  "t": "- **Steering** — smooth, no excessive play"
+ },
+ "L:operational-checks-and-defects:6": {
+  "h": "7f2427b201",
+  "t": "- **Transmission** — forward, neutral, reverse, inching"
+ },
+ "L:operational-checks-and-defects:7": {
+  "h": "4b332cf69a",
+  "t": "- **Service and park brakes**"
+ },
+ "L:operational-checks-and-defects:8": {
+  "h": "22aba86ebd",
+  "t": "- **Hydraulics** — run lift, tilt and side shift through their **full range**; movement should be smooth"
+ },
+ "L:operational-checks-and-defects:9": {
+  "h": "abf19a1fbe",
+  "t": "- **Attachments** — operate smoothly"
+ },
+ "L:operational-checks-and-defects:10": {
+  "h": "32ce52d6b3",
+  "t": "- **Listen** for unusual noises"
+ },
+ "L:operational-checks-and-defects:11": {
+  "h": "e599ac4bb1",
+  "t": "Record the results on the checklist."
+ },
+ "L:operational-checks-and-defects:12": {
+  "h": "6fce22dd13",
+  "t": "## Lock out / tag out (LOTO)"
+ },
+ "L:operational-checks-and-defects:13": {
+  "h": "f82a8e5716",
+  "t": "If you find a fault, the forklift must not be used until it's fixed:"
+ },
+ "L:operational-checks-and-defects:14": {
+  "h": "73f5df4bf3",
+  "t": "1. **Stop** and park safely."
+ },
+ "L:operational-checks-and-defects:15": {
+  "h": "f1c1722c07",
+  "t": "2. **Isolate** the power — turn off, remove the key, close the LPG valve or disconnect the battery as your procedure says."
+ },
+ "L:operational-checks-and-defects:16": {
+  "h": "2507668a11",
+  "t": "3. **Tag** it — attach an \"Out of service / Do not operate\" tag (and a lock if your site uses them)."
+ },
+ "L:operational-checks-and-defects:17": {
+  "h": "417ab2c328",
+  "t": "4. **Report** the fault to your supervisor and record it."
+ },
+ "L:operational-checks-and-defects:18": {
+  "h": "1e699b0cfa",
+  "t": "Only an **authorised person** may remove the tag, once the repair is done and checked."
+ },
+ "T:faults-failures-routine-problems": {
+  "h": "f0fc655448",
+  "t": "Equipment failure and routine problems"
+ },
+ "L:faults-failures-routine-problems:0": {
+  "h": "17186663c0",
+  "t": "## If something fails while operating"
+ },
+ "L:faults-failures-routine-problems:1": {
+  "h": "dda267d3f6",
+  "t": "| Failure | What to do |\n|---|---|\n| **Brake failure** | Take your foot off the accelerator, **warn others with the horn**, steer away from people and obstacles, and use the park brake to bring the forklift to a stop. Lower the load. Tag out and report. |\n| **Steering failure** | Stop as quickly and safely as you can, warn others, lower the load. Tag out and report. |\n| **Hydraulic failure** (load drops or won't hold) | Keep everyone clear of the load, stop, lower it if you can. Tag out and report. |\n| **Forklift starts to tip** | **Do not jump.** Stay in the seat with the seatbelt on, hold the steering wheel firmly, brace your feet and **lean away** from the direction of the fall. |"
+ },
+ "L:faults-failures-routine-problems:2": {
+  "h": "f502f1335b",
+  "t": "Equipment failure on a ramp, at height or near people is very dangerous — which is why pre-start and operational checks matter."
+ },
+ "L:faults-failures-routine-problems:3": {
+  "h": "8c9a09b548",
+  "t": "## Common routine problems"
+ },
+ "L:faults-failures-routine-problems:4": {
+  "h": "ea2e72e7f7",
+  "t": "| Sign | Likely cause | Correction |\n|---|---|---|\n| Engine stutters / loses power (LPG) | Cylinder running empty | Park safely, change the cylinder following the procedure |\n| Battery indicator low | Battery discharged | Return to the charging area; charge or swap |\n| Hydraulics slow or jerky | Low hydraulic oil or a leak | Check the level per the manual; if leaking, **tag out** and report |\n| Temperature gauge high | Overheating | Stop, shut down, let it cool — never open a hot radiator cap. Report it. |\n| Light, horn or alarm not working | Globe, fuse or fault | Report it — don't operate until fixed |\n| Tyre looks low or damaged | Puncture / wear | Report — repairs by a competent person only |"
+ },
+ "L:faults-failures-routine-problems:5": {
+  "h": "eed6125247",
+  "t": "Only fix problems that are **within your competence** and allowed by your workplace procedures. Everything else: tag out and report."
+ },
+ "T:stability-triangle": {
+  "h": "ee2eedfa27",
+  "t": "Centre of gravity and the stability triangle"
+ },
+ "L:stability-triangle:0": {
+  "h": "7a8d3dd0f2",
+  "t": "## How a counterbalance forklift stays upright"
+ },
+ "L:stability-triangle:1": {
+  "h": "5937b24b16",
+  "t": "A counterbalance forklift works like a **see-saw**: the front wheels are the pivot (fulcrum), the load is on one side and the counterweight on the other."
+ },
+ "L:stability-triangle:2": {
+  "h": "66b25189d5",
+  "t": "Most counterbalance forklifts have **three-point suspension**: the two front wheels and the pivot point of the rear axle. These form the **stability triangle**."
+ },
+ "L:stability-triangle:3": {
+  "h": "c6bb14497a",
+  "t": "- The **combined centre of gravity** of the forklift and load must stay **inside the stability triangle**."
+ },
+ "L:stability-triangle:4": {
+  "h": "58d09c220a",
+  "t": "- If it moves outside, the forklift tips."
+ },
+ "L:stability-triangle:5": {
+  "h": "a7e96cbbbe",
+  "t": "### Causes of instability"
+ },
+ "L:stability-triangle:6": {
+  "h": "bd1050082f",
+  "t": "- **Overloading** — lifting more than the rated capacity"
+ },
+ "L:stability-triangle:7": {
+  "h": "d65c1750ed",
+  "t": "- **Lifting high** — raises the centre of gravity"
+ },
+ "L:stability-triangle:8": {
+  "h": "7d79009934",
+  "t": "- **Tilting forward** with a raised load"
+ },
+ "L:stability-triangle:9": {
+  "h": "6c4a2c2be0",
+  "t": "- **Turning sharply or too fast**"
+ },
+ "L:stability-triangle:10": {
+  "h": "7406ce8130",
+  "t": "- **Ramps, slopes and uneven surfaces**"
+ },
+ "L:stability-triangle:11": {
+  "h": "681228102e",
+  "t": "- **Ground giving way** — soft, backfilled or deteriorating ground"
+ },
+ "L:stability-triangle:12": {
+  "h": "174e492095",
+  "t": "- **Irregular or unbalanced loads**"
+ },
+ "L:stability-triangle:13": {
+  "h": "592202aec1",
+  "t": "- **Picking up or placing loads** carelessly — e.g. catching a rack, dropping a load"
+ },
+ "L:stability-triangle:14": {
+  "h": "7271e6c984",
+  "t": "- **Restricted spaces** that force tight turns or awkward approaches"
+ },
+ "L:stability-triangle:15": {
+  "h": "66af57a823",
+  "t": "- **Sudden braking or acceleration**"
+ },
+ "L:stability-triangle:16": {
+  "h": "e5cccfcfa8",
+  "t": "That's why you **travel with the load low and tilted back**, turn slowly, and never turn on a slope."
+ },
+ "T:load-charts": {
+  "h": "1da437721b",
+  "t": "The data plate and rated capacity"
+ },
+ "L:load-charts:0": {
+  "h": "39f8857ac2",
+  "t": "## Rated capacity"
+ },
+ "L:load-charts:1": {
+  "h": "6535c487a4",
+  "t": "Every forklift has a manufacturer's **data plate**. It shows the forklift's **rated capacity** — the **maximum weight it can safely lift**."
+ },
+ "L:load-charts:2": {
+  "h": "14f0a90345",
+  "t": "> **Never lift more than the rated capacity.** If the load is heavier, don't lift it."
+ },
+ "L:load-charts:3": {
+  "h": "c9a3485540",
+  "t": "The data plate also shows the **load centre** the capacity is rated at. The most common is **600 mm**."
+ },
+ "L:load-charts:4": {
+  "h": "cf8510615d",
+  "t": "- **Load centre** — the distance from the vertical face of the tynes to the load's centre of gravity (the middle of its weight)."
+ },
+ "L:load-charts:5": {
+  "h": "f2fc7f5ca4",
+  "t": "- The rated capacity applies when the load centre is **no more than** the one on the data plate. If a load's centre of gravity is **further out** than that (for example a long crate), **don't lift it** — ask your supervisor."
+ },
+ "L:load-charts:6": {
+  "h": "37a309e6b1",
+  "t": "- **Attachments** — when an attachment is fitted, use the data plate for that attachment."
+ },
+ "L:load-charts:7": {
+  "h": "4449a6ab6c",
+  "t": "### Example"
+ },
+ "L:load-charts:8": {
+  "h": "6d4bbd77dc",
+  "t": "Forklift A's data plate says **2,500 kg at a 600 mm load centre**. A pallet weighing **1,900 kg** with its load centre at **600 mm** is within capacity — **OK to lift**. A machine weighing **2,700 kg** is **200 kg over** — **don't lift it**."
+ },
+ "L:load-charts:9": {
+  "h": "081d1f9fba",
+  "t": "> Never add extra counterweight or put people on the back to \"balance\" a load."
+ },
+ "L:load-charts:10": {
+  "h": "8efbe0d08f",
+  "t": "Only use attachments and modifications **approved by the manufacturer**, with a matching data plate."
+ },
+ "T:working-out-load-weight": {
+  "h": "2f07a187b3",
+  "t": "Working out the weight of a load"
+ },
+ "L:working-out-load-weight:0": {
+  "h": "9a4a72bd6b",
+  "t": "## Know the weight before you lift"
+ },
+ "L:working-out-load-weight:1": {
+  "h": "3a8935a43a",
+  "t": "You can't check the load against the rated capacity if you don't know the weight. Ways to find it:"
+ },
+ "L:working-out-load-weight:2": {
+  "h": "9a0d37eeb7",
+  "t": "- **Load labels and markings** on the item or pallet"
+ },
+ "L:working-out-load-weight:3": {
+  "h": "4a46e04edc",
+  "t": "- **Consignment notes** and **running sheets** from the transport company"
+ },
+ "L:working-out-load-weight:4": {
+  "h": "0d26953afc",
+  "t": "- **Weighbridge dockets**"
+ },
+ "L:working-out-load-weight:5": {
+  "h": "dddec2b019",
+  "t": "- **Manufacturer's documentation** (e.g. for a machine or tank)"
+ },
+ "L:working-out-load-weight:6": {
+  "h": "7c283f0c41",
+  "t": "- **The data plate** on equipment being moved (many machines show their own weight)"
+ },
+ "L:working-out-load-weight:7": {
+  "h": "5649d76b93",
+  "t": "- **Weighing** — weigh one carton and multiply, or use scales / a load-weighing indicator on the forklift"
+ },
+ "L:working-out-load-weight:8": {
+  "h": "a7cf8ea070",
+  "t": "If you can't confirm the weight — **don't lift it**. Ask your supervisor."
+ },
+ "L:working-out-load-weight:9": {
+  "h": "8c7a51bfee",
+  "t": "## Calculating from cartons"
+ },
+ "L:working-out-load-weight:10": {
+  "h": "35a38a4db1",
+  "t": "**Total weight = (number of cartons × weight of one carton) + weight of the pallet**"
+ },
+ "L:working-out-load-weight:11": {
+  "h": "1af412d0de",
+  "t": "### Worked example"
+ },
+ "L:working-out-load-weight:12": {
+  "h": "4a04962879",
+  "t": "A pallet holds **5 layers of 8 cartons**. Each carton weighs **20 kg**. The pallet weighs **25 kg**."
+ },
+ "L:working-out-load-weight:13": {
+  "h": "818598f4ac",
+  "t": "1. **Count** the cartons: 5 × 8 = **40 cartons**"
+ },
+ "L:working-out-load-weight:14": {
+  "h": "6398189424",
+  "t": "2. **Multiply** by the carton weight: 40 × 20 = **800 kg**"
+ },
+ "L:working-out-load-weight:15": {
+  "h": "1dee86522a",
+  "t": "3. **Add** the pallet: 800 + 25 = **825 kg**"
+ },
+ "L:working-out-load-weight:16": {
+  "h": "89677ba4bd",
+  "t": "Then compare it with the forklift's **rated capacity** on the data plate. If 825 kg is less than or equal to the rated capacity, it's OK to lift."
+ },
+ "L:working-out-load-weight:17": {
+  "h": "ea9272f1b4",
+  "t": "> **Count → Multiply → Add the pallet.** Use a calculator and write each step down — that's what you'll do in the assessment too."
+ },
+ "T:attachments": {
+  "h": "dd08c3391e",
+  "t": "Attachments and their capacity"
+ },
+ "L:attachments:0": {
+  "h": "a39f3f89e3",
+  "t": "## Attachments reduce capacity"
+ },
+ "L:attachments:1": {
+  "h": "65f1e400d6",
+  "t": "An attachment **adds weight** to the front of the forklift and usually **moves the load centre forward**. Both reduce how much you can safely lift."
+ },
+ "L:attachments:2": {
+  "h": "d609a27ce6",
+  "t": "- Only fit attachments **approved by the manufacturer** for that forklift."
+ },
+ "L:attachments:3": {
+  "h": "84e45ecca9",
+  "t": "- The forklift must have a **data plate that covers the attachment**."
+ },
+ "L:attachments:4": {
+  "h": "d27e2ccb97",
+  "t": "- Check the attachment is **secured** (locking pins, bolts, hydraulic connections) before use."
+ },
+ "L:attachments:5": {
+  "h": "04f9b427ee",
+  "t": "- Follow the **attachment manufacturer's instructions**."
+ },
+ "L:attachments:6": {
+  "h": "e455e76d8b",
+  "t": "## Common attachments"
+ },
+ "L:attachments:7": {
+  "h": "b30ed53312",
+  "t": "| Attachment | Used for | Key safety points |\n|---|---|---|\n| **Side shifter** | Moving the tynes sideways to line up loads | Centre the load before travelling |\n| **Fork extensions (slippers)** | Long or deep loads | Must be rated and the right size for the tynes, fully secured; capacity reduces |\n| **Jib** | Lifting a load from a hook | The suspended load **swings** — move slowly; capacity varies by hook position |\n| **Carpet spike / pole** | Carpet rolls, coils | Insert fully; watch for loads sliding off |\n| **Drum carrier / clamp** | Drums | Drum must be gripped securely; liquids can slosh |\n| **Bale clamp** | Bales (wool, cotton, hay, paper) | Correct clamp pressure — too little drops it, too much damages it |\n| **Paper roll clamp** | Large paper rolls | Correct clamp pressure; rolls are heavy for their size |\n| **Rotator** | Rotating or tipping loads | Rotating shifts the centre of gravity — rotate with the load low and the forklift stationary |\n| **Personnel (work) platform** | Lifting people to work at height | Only a purpose-built platform designed for the forklift, secured to it, with the operator at the controls. **Never** lift people on the tynes or a pallet. |"
+ },
+ "T:unusual-loads": {
+  "h": "1d85c20d26",
+  "t": "Unbalanced, irregular and dynamic loads"
+ },
+ "L:unusual-loads:0": {
+  "h": "2edbfa0039",
+  "t": "## Unbalanced loads"
+ },
+ "L:unusual-loads:1": {
+  "h": "047da41a47",
+  "t": "If the weight isn't centred, the centre of gravity shifts **sideways** and the forklift is easier to tip in a turn."
+ },
+ "L:unusual-loads:2": {
+  "h": "66a0f2197f",
+  "t": "- Position the tynes so the load is **centred** between them — use the side shift if fitted."
+ },
+ "L:unusual-loads:3": {
+  "h": "c428bae50a",
+  "t": "- If a load is badly stacked, have it **restacked** before lifting."
+ },
+ "L:unusual-loads:4": {
+  "h": "6ad3b2004a",
+  "t": "## Irregular loads"
+ },
+ "L:unusual-loads:5": {
+  "h": "6ea5f478af",
+  "t": "Long, wide, tall or odd-shaped loads (pipes, timber, machinery):"
+ },
+ "L:unusual-loads:6": {
+  "h": "a793b866fa",
+  "t": "- Spread the tynes **as wide as practical** for the load."
+ },
+ "L:unusual-loads:7": {
+  "h": "eee7bd0763",
+  "t": "- Allow **extra clearance** — long loads swing wide on turns."
+ },
+ "L:unusual-loads:8": {
+  "h": "93f3153456",
+  "t": "- Use an **observer** if the load blocks your view."
+ },
+ "L:unusual-loads:9": {
+  "h": "0b51017c4c",
+  "t": "- Secure the load if needed."
+ },
+ "L:unusual-loads:10": {
+  "h": "01e9a4f14f",
+  "t": "## Dynamic loads"
+ },
+ "L:unusual-loads:11": {
+  "h": "121e443c3a",
+  "t": "A **dynamic load** moves while you're carrying it — liquids in drums or IBCs, or a load hanging from a jib. The movement adds force and shifts the centre of gravity."
+ },
+ "L:unusual-loads:12": {
+  "h": "b75a8624e5",
+  "t": "- Accelerate, brake and turn **smoothly**."
+ },
+ "L:unusual-loads:13": {
+  "h": "7d2e52f25a",
+  "t": "- Travel **slowly**, with the load low."
+ },
+ "L:unusual-loads:14": {
+  "h": "b2956a24f6",
+  "t": "- Avoid sudden stops — a swinging load keeps moving."
+ },
+ "L:unusual-loads:15": {
+  "h": "fdff5297d5",
+  "t": "## Loads without pallets"
+ },
+ "L:unusual-loads:16": {
+  "h": "33b21af510",
+  "t": "Use **gluts or dunnage** (timber blocks or bearers) under loads so the tynes can be inserted and withdrawn without damaging the load."
+ },
+ "T:weights-and-quantities": {
+  "h": "7b81773460",
+  "t": "Load weights: units, totals and maximum quantities"
+ },
+ "L:weights-and-quantities:0": {
+  "h": "0e8a92c48b",
+  "t": "## Maths made simple"
+ },
+ "L:weights-and-quantities:1": {
+  "h": "b94485bbb8",
+  "t": "Every load calculation uses the same few steps. Take it slowly, **use a calculator**, and **write each step down**."
+ },
+ "L:weights-and-quantities:2": {
+  "h": "e05f605403",
+  "t": "> **Count → Multiply → Add the pallet**"
+ },
+ "L:weights-and-quantities:3": {
+  "h": "a8de5a1c06",
+  "t": "## Tonnes and kilograms"
+ },
+ "L:weights-and-quantities:4": {
+  "h": "29b689a685",
+  "t": "Rated capacity on the data plate is in **kilograms (kg)**. Paperwork sometimes uses **tonnes (t)**."
+ },
+ "L:weights-and-quantities:5": {
+  "h": "b1809f0810",
+  "t": "**1 tonne = 1,000 kg.** To change tonnes into kilograms, **multiply by 1,000**."
+ },
+ "L:weights-and-quantities:6": {
+  "h": "7524ac86cc",
+  "t": "| Tonnes | Kilograms |\n|---|---|\n| 0.5 t | 500 kg |\n| 1.5 t | 1,500 kg |\n| 2.5 t | 2,500 kg |"
+ },
+ "L:weights-and-quantities:7": {
+  "h": "2fa9784ae6",
+  "t": "## Adding up several items"
+ },
+ "L:weights-and-quantities:8": {
+  "h": "e5ca1ed0d7",
+  "t": "When a pallet has different items on it, **add every item, then add the pallet**."
+ },
+ "L:weights-and-quantities:9": {
+  "h": "9e52782781",
+  "t": "> A pallet weighing **50 kg** carries items of **400 kg**, **350 kg** and **600 kg**.\n> 400 + 350 + 600 = 1,350 kg → add the pallet: 1,350 + 50 = **1,400 kg**"
+ },
+ "L:weights-and-quantities:10": {
+  "h": "ca1e26e6b5",
+  "t": "## Cartons in layers"
+ },
+ "L:weights-and-quantities:11": {
+  "h": "a85e98aa44",
+  "t": "1. **Count:** layers × cartons in each layer"
+ },
+ "L:weights-and-quantities:12": {
+  "h": "dfbc0a61e3",
+  "t": "2. **Multiply:** number of cartons × weight of one carton"
+ },
+ "L:weights-and-quantities:13": {
+  "h": "f6952eba0b",
+  "t": "3. **Add** the pallet"
+ },
+ "L:weights-and-quantities:14": {
+  "h": "46c29ba834",
+  "t": "> 5 layers of 10 cartons, 20 kg each, on a 30 kg pallet:\n> 5 × 10 = 50 cartons → 50 × 20 = 1,000 kg → 1,000 + 30 = **1,030 kg**"
+ },
+ "L:weights-and-quantities:15": {
+  "h": "2abaec3fe2",
+  "t": "## Weighbridge dockets"
+ },
+ "L:weights-and-quantities:16": {
+  "h": "a5ff847195",
+  "t": "A weighbridge weighs the whole truck. **Load = loaded truck − empty truck.**"
+ },
+ "L:weights-and-quantities:17": {
+  "h": "cd61aac29c",
+  "t": "> Loaded truck **18,000 kg**, empty truck **12,000 kg** → load = **6,000 kg**.\n> If that's **4 identical pallets**: 6,000 ÷ 4 = **1,500 kg each**."
+ },
+ "L:weights-and-quantities:18": {
+  "h": "b56eeae78e",
+  "t": "## The most cartons you can carry"
+ },
+ "L:weights-and-quantities:19": {
+  "h": "c90966059f",
+  "t": "1. Take the pallet off the limit: **limit − pallet**"
+ },
+ "L:weights-and-quantities:20": {
+  "h": "735d851043",
+  "t": "2. Divide by the weight of one carton"
+ },
+ "L:weights-and-quantities:21": {
+  "h": "5e7433278b",
+  "t": "3. If the answer has a decimal, **round DOWN** — never up"
+ },
+ "L:weights-and-quantities:22": {
+  "h": "c846c4e03d",
+  "t": "> Limit **1,000 kg**, pallet **20 kg**, cartons **30 kg** each:\n> 1,000 − 20 = 980 → 980 ÷ 30 = 32.67 → **32 cartons**.\n> Check: 33 cartons would be 33 × 30 + 20 = **1,010 kg** — over the limit."
+ },
+ "T:working-out-load-centre": {
+  "h": "d85a832d70",
+  "t": "Working out the load centre"
+ },
+ "L:working-out-load-centre:0": {
+  "h": "892d9733a2",
+  "t": "## What you're measuring"
+ },
+ "L:working-out-load-centre:1": {
+  "h": "af593caff0",
+  "t": "The **load centre** is the distance from the **front face of the tynes** (where the load sits against the backrest) to the **middle of the load's weight** (its centre of gravity)."
+ },
+ "L:working-out-load-centre:2": {
+  "h": "3b840b391e",
+  "t": "Most forklift data plates are rated at a **600 mm** load centre."
+ },
+ "L:working-out-load-centre:3": {
+  "h": "0398b1c5a7",
+  "t": "## Even loads pushed hard against the backrest"
+ },
+ "L:working-out-load-centre:4": {
+  "h": "9dbeb2c70d",
+  "t": "If the weight is spread evenly, the centre of gravity is in the **middle** of the load."
+ },
+ "L:working-out-load-centre:5": {
+  "h": "a924a20366",
+  "t": "**Load centre = depth of the load ÷ 2** (half the depth)"
+ },
+ "L:working-out-load-centre:6": {
+  "h": "16a8884067",
+  "t": "> A crate **1,200 mm** deep, pushed hard against the backrest → 1,200 ÷ 2 = **600 mm**."
+ },
+ "L:working-out-load-centre:7": {
+  "h": "669855258a",
+  "t": "## If there's a gap"
+ },
+ "L:working-out-load-centre:8": {
+  "h": "1eb0637bb0",
+  "t": "If the load **isn't hard against the backrest**, add the gap."
+ },
+ "L:working-out-load-centre:9": {
+  "h": "3dde99a471",
+  "t": "**Load centre = gap + half the depth**"
+ },
+ "L:working-out-load-centre:10": {
+  "h": "f76175705f",
+  "t": "> A **1,000 mm** deep load sitting **200 mm** away from the backrest → 200 + 500 = **700 mm**."
+ },
+ "L:working-out-load-centre:11": {
+  "h": "79fbaac087",
+  "t": "That's why you **insert the tynes fully** — a gap pushes the load centre forward, past the 600 mm the rated capacity is based on. If the load centre is more than the data plate's load centre, **don't lift** — ask your supervisor."
+ },
+ "L:working-out-load-centre:12": {
+  "h": "d0e3a9256f",
+  "t": "## Uneven loads"
+ },
+ "L:working-out-load-centre:13": {
+  "h": "e4abff7c7d",
+  "t": "If one end is heavier (e.g. a machine with the motor at one end), the centre of gravity **isn't in the middle**. Check markings or paperwork for the centre of gravity, put the **heavy end towards the mast**, and ask your supervisor if you're unsure."
+ },
+ "T:reading-a-load-chart": {
+  "h": "c46ccdbf99",
+  "t": "Checking a load against rated capacity, step by step"
+ },
+ "L:reading-a-load-chart:0": {
+  "h": "6cba82b08f",
+  "t": "## Three steps"
+ },
+ "L:reading-a-load-chart:1": {
+  "h": "71bd56424e",
+  "t": "1. **Weight** — work out how heavy the load is (Count → Multiply → Add the pallet)."
+ },
+ "L:reading-a-load-chart:2": {
+  "h": "1f4219501f",
+  "t": "2. **Load centre** — check the load's centre is **no more than** the data plate's load centre (usually **600 mm**). If it's further out, **don't lift** — ask your supervisor."
+ },
+ "L:reading-a-load-chart:3": {
+  "h": "36124f14ab",
+  "t": "3. **Compare** — is the load **less than or equal to** the **rated capacity**? Yes → OK to lift. No → **do not lift**."
+ },
+ "L:reading-a-load-chart:4": {
+  "h": "48c07a2874",
+  "t": "## Practice data plate (fictional)"
+ },
+ "L:reading-a-load-chart:5": {
+  "h": "bc982deb7d",
+  "t": "**Forklift A — rated capacity 2,500 kg at a 600 mm load centre.**"
+ },
+ "L:reading-a-load-chart:6": {
+  "h": "17f93f9021",
+  "t": "## Worked example 1 — OK to lift"
+ },
+ "L:reading-a-load-chart:7": {
+  "h": "b33129ea74",
+  "t": "A pallet weighs **1,900 kg** and its load centre is **600 mm**.\n1,900 is less than 2,500 → **OK to lift.** You have 2,500 − 1,900 = **600 kg** to spare."
+ },
+ "L:reading-a-load-chart:8": {
+  "h": "f1509f16a6",
+  "t": "## Worked example 2 — too heavy"
+ },
+ "L:reading-a-load-chart:9": {
+  "h": "5a4a2c2758",
+  "t": "A crate weighs **2.7 t**. 2.7 × 1,000 = **2,700 kg**.\n2,700 is more than 2,500 → **Do not lift** — it's **200 kg over**."
+ },
+ "L:reading-a-load-chart:10": {
+  "h": "8b6dcb849c",
+  "t": "## Worked example 3 — cartons"
+ },
+ "L:reading-a-load-chart:11": {
+  "h": "0689d42f75",
+  "t": "48 cartons of **50 kg** on a **30 kg** pallet: 48 × 50 = 2,400 → + 30 = **2,430 kg**.\n2,430 is less than 2,500 → **OK to lift**, with **70 kg** to spare."
+ },
+ "L:reading-a-load-chart:12": {
+  "h": "8b50b719d6",
+  "t": "## Worked example 4 — the most you can lift"
+ },
+ "L:reading-a-load-chart:13": {
+  "h": "02b6ab0061",
+  "t": "How many **600 kg** drums can Forklift A carry at once (on a drum carrier rated 2,500 kg)?\n2,500 ÷ 600 = 4.17 → round **down** → **4 drums** (2,400 kg). Five would be 3,000 kg — too heavy."
+ },
+ "L:reading-a-load-chart:14": {
+  "h": "48045a89b7",
+  "t": "> If the answer has a decimal, **always round down**. Rounding up puts you over the rated capacity."
+ },
+ "T:travelling-safely": {
+  "h": "a18323e3c8",
+  "t": "Travelling, ramps and visibility"
+ },
+ "L:travelling-safely:0": {
+  "h": "5a9a7aded6",
+  "t": "## Travelling"
+ },
+ "L:travelling-safely:1": {
+  "h": "810732074d",
+  "t": "- Wear your **seatbelt**."
+ },
+ "L:travelling-safely:2": {
+  "h": "1047cd9301",
+  "t": "- Travel with the load **low** — just high enough to clear the ground and suit the surface (commonly around 100–150 mm) — and the mast **tilted back**."
+ },
+ "L:travelling-safely:3": {
+  "h": "031c7db9af",
+  "t": "- Keep a **safe speed** for the load, surface and surroundings, within site limits."
+ },
+ "L:travelling-safely:4": {
+  "h": "02cd71d3c6",
+  "t": "- **Look in the direction of travel.** If the load blocks your forward view, **travel in reverse** or use an **observer (spotter)**."
+ },
+ "L:travelling-safely:5": {
+  "h": "936b38f7f8",
+  "t": "- Use your **mirrors** and **sound the horn** at blind corners, doorways and intersections."
+ },
+ "L:travelling-safely:6": {
+  "h": "8a2f868fee",
+  "t": "- Turn **slowly** — especially when carrying a load."
+ },
+ "L:travelling-safely:7": {
+  "h": "32b0926ae2",
+  "t": "- **Never carry passengers.**"
+ },
+ "L:travelling-safely:8": {
+  "h": "7d607d4517",
+  "t": "- Keep arms, legs and head **inside** the overhead guard."
+ },
+ "L:travelling-safely:9": {
+  "h": "5ea1edf9c7",
+  "t": "## Ramps and slopes"
+ },
+ "L:travelling-safely:10": {
+  "h": "02b5a17676",
+  "t": "- **Loaded:** keep the **load on the uphill side** — drive **forwards up**, **reverse down**."
+ },
+ "L:travelling-safely:11": {
+  "h": "0547386d89",
+  "t": "- **Unloaded:** keep the **tynes pointing downhill** — reverse up, drive forwards down."
+ },
+ "L:travelling-safely:12": {
+  "h": "c0eb94ebcf",
+  "t": "- **Never turn** on a ramp or slope, and never travel across it."
+ },
+ "L:travelling-safely:13": {
+  "h": "57816bc945",
+  "t": "## Pedestrians"
+ },
+ "L:travelling-safely:14": {
+  "h": "72da45221e",
+  "t": "Follow the traffic management plan, use forklift routes, make eye contact, and **stop** if anyone enters your work area."
+ },
+ "T:picking-up-and-stacking": {
+  "h": "312f3e1ef8",
+  "t": "Picking up, the trial lift and stacking"
+ },
+ "L:picking-up-and-stacking:0": {
+  "h": "52fda7e513",
+  "t": "## Picking up a load"
+ },
+ "L:picking-up-and-stacking:1": {
+  "h": "79fd0ff65d",
+  "t": "1. Approach **slowly and squarely**, tynes level, at the right height."
+ },
+ "L:picking-up-and-stacking:2": {
+  "h": "4b5b33327b",
+  "t": "2. **Position the tynes** to suit the pallet or load — spread as wide as practical, load centred."
+ },
+ "L:picking-up-and-stacking:3": {
+  "h": "ce171227c2",
+  "t": "3. Insert the tynes **fully**, so the load is against the backrest."
+ },
+ "L:picking-up-and-stacking:4": {
+  "h": "43df36e8bd",
+  "t": "4. **Trial lift:** lift the load just clear of its support and check — is the forklift stable? Is the load secure and balanced? If the rear wheels feel light or anything moves, **lower it straight away** and reassess."
+ },
+ "L:picking-up-and-stacking:5": {
+  "h": "76a8e809c3",
+  "t": "5. **Tilt back** slightly, check behind you, and reverse out slowly."
+ },
+ "L:picking-up-and-stacking:6": {
+  "h": "6b50a42079",
+  "t": "6. **Lower to travel height** before moving off."
+ },
+ "L:picking-up-and-stacking:7": {
+  "h": "76c7d74d26",
+  "t": "## Placing a load at height (racking)"
+ },
+ "L:picking-up-and-stacking:8": {
+  "h": "f8702d03aa",
+  "t": "- Check the **racking is compliant** and its capacity suits the load."
+ },
+ "L:picking-up-and-stacking:9": {
+  "h": "f784fb47b5",
+  "t": "- Approach squarely and **stop** before the rack."
+ },
+ "L:picking-up-and-stacking:10": {
+  "h": "bc25b11ca9",
+  "t": "- Only raise or lower the load **when stationary**."
+ },
+ "L:picking-up-and-stacking:11": {
+  "h": "0751828f5c",
+  "t": "- Raise to the required height, **level the tynes**, then **inch forward**."
+ },
+ "L:picking-up-and-stacking:12": {
+  "h": "8967bc2aaa",
+  "t": "- Use **tilt and side shift** to position the load accurately."
+ },
+ "L:picking-up-and-stacking:13": {
+  "h": "3f0da7d060",
+  "t": "- Lower onto the beams, withdraw the tynes, then lower to travel height before moving."
+ },
+ "L:picking-up-and-stacking:14": {
+  "h": "17411414c4",
+  "t": "Use an **observer** whenever your view is restricted — agree hand signals first."
+ },
+ "L:picking-up-and-stacking:15": {
+  "h": "720bfb369a",
+  "t": "## Placing on an elevated flat surface (e.g. a mezzanine or truck deck)"
+ },
+ "L:picking-up-and-stacking:16": {
+  "h": "a6883d9c02",
+  "t": "The surface must be **flat, stable and strong enough**. Use **gluts or dunnage** under unpalletised loads so you can withdraw the tynes cleanly."
+ },
+ "T:loading-trucks": {
+  "h": "983d84c519",
+  "t": "Loading and unloading trucks"
+ },
+ "L:loading-trucks:0": {
+  "h": "388677a30b",
+  "t": "## Before you start"
+ },
+ "L:loading-trucks:1": {
+  "h": "ab522b28f7",
+  "t": "- Check the truck **can't move** — handbrake on, wheels chocked or vehicle restraint engaged, driver in a safe area away from the loading zone."
+ },
+ "L:loading-trucks:2": {
+  "h": "12f41e9a52",
+  "t": "- Set up an **exclusion zone** around the truck."
+ },
+ "L:loading-trucks:3": {
+  "h": "dd2543b6ae",
+  "t": "- Check **dock plates** are secure and rated for the forklift plus load."
+ },
+ "L:loading-trucks:4": {
+  "h": "8df2e12223",
+  "t": "- Check the trailer floor is sound and can take the weight."
+ },
+ "L:loading-trucks:5": {
+  "h": "8c6fa25cc1",
+  "t": "- Watch for **dock edges** — keep well back."
+ },
+ "L:loading-trucks:6": {
+  "h": "8bbdea555a",
+  "t": "## Side loading from the ground"
+ },
+ "L:loading-trucks:7": {
+  "h": "50d4e66bf4",
+  "t": "- Check **overhead hazards** — powerlines, awnings."
+ },
+ "L:loading-trucks:8": {
+  "h": "ebe6579b43",
+  "t": "- Make sure the ground is **firm and level**."
+ },
+ "L:loading-trucks:9": {
+  "h": "6fe34f9abc",
+  "t": "- Watch for loads shifting on the deck when straps are removed — **check before unstrapping**."
+ },
+ "T:shutting-down": {
+  "h": "d592abe0de",
+  "t": "Shutting down and parking"
+ },
+ "L:shutting-down:0": {
+  "h": "cd4b0800fd",
+  "t": "## Parking the forklift"
+ },
+ "L:shutting-down:1": {
+  "h": "614ce36722",
+  "t": "Park in a **designated safe area** — never on a slope, and never blocking exits, walkways, fire equipment or electrical switchboards."
+ },
+ "L:shutting-down:2": {
+  "h": "2c130990c1",
+  "t": "1. Stop and select **neutral**."
+ },
+ "L:shutting-down:3": {
+  "h": "397f6de0a8",
+  "t": "2. Apply the **park brake**."
+ },
+ "L:shutting-down:4": {
+  "h": "d530f593e4",
+  "t": "3. **Lower the tynes** (or attachment) fully to the ground, tilted forward so the tips rest on the floor."
+ },
+ "L:shutting-down:5": {
+  "h": "5ebec492be",
+  "t": "4. Shut down as the manufacturer requires, **isolate the power source** (e.g. LPG valve or battery isolator, per site procedure) and **remove the key**."
+ },
+ "L:shutting-down:6": {
+  "h": "8fa69bf03f",
+  "t": "5. Secure the forklift against **unauthorised use**."
+ },
+ "L:shutting-down:7": {
+  "h": "4e911534b4",
+  "t": "6. Do a **post-operational check** and record and report any defects from the shift."
+ },
+ "T:lpg-and-batteries": {
+  "h": "6e74b5c1f5",
+  "t": "Refuelling and recharging"
+ },
+ "L:lpg-and-batteries:0": {
+  "h": "a7d4347d98",
+  "t": "## Changing an LPG cylinder"
+ },
+ "L:lpg-and-batteries:1": {
+  "h": "60fce457e3",
+  "t": "- Only in a **well-ventilated area**, away from ignition sources — **no smoking** or naked flames."
+ },
+ "L:lpg-and-batteries:2": {
+  "h": "80e461b1c3",
+  "t": "- Wear **PPE** — gloves and eye protection. LPG can cause **cold burns**."
+ },
+ "L:lpg-and-batteries:3": {
+  "h": "db47e1489c",
+  "t": "- **Close the cylinder valve** and let the engine run until it stops, then turn the ignition off."
+ },
+ "L:lpg-and-batteries:4": {
+  "h": "2c9f10f27c",
+  "t": "- Disconnect and remove the cylinder; check the new cylinder's **valve, O-ring/seal and connection** for damage."
+ },
+ "L:lpg-and-batteries:5": {
+  "h": "7ffe5bb5cb",
+  "t": "- Fit it with the **locating pin** in place and the cylinder secured."
+ },
+ "L:lpg-and-batteries:6": {
+  "h": "c7e0518533",
+  "t": "- Open the valve slowly and **check for leaks** with soapy water or leak-detection solution — **never a flame**."
+ },
+ "L:lpg-and-batteries:7": {
+  "h": "451d30a837",
+  "t": "## Petrol and diesel"
+ },
+ "L:lpg-and-batteries:8": {
+  "h": "255ee3b3a1",
+  "t": "- Engine **off**, no smoking, in the designated refuelling area."
+ },
+ "L:lpg-and-batteries:9": {
+  "h": "5628de0a8a",
+  "t": "- Don't overfill; clean up spills straight away."
+ },
+ "L:lpg-and-batteries:10": {
+  "h": "ceb2f11ab3",
+  "t": "## Charging electric forklift batteries"
+ },
+ "L:lpg-and-batteries:11": {
+  "h": "d2d57bdcf3",
+  "t": "- Only in the **designated charging area**."
+ },
+ "L:lpg-and-batteries:12": {
+  "h": "e65069d213",
+  "t": "- Charging gives off **hydrogen gas**, which is explosive — the area must be **ventilated** and free of ignition sources."
+ },
+ "L:lpg-and-batteries:13": {
+  "h": "6a2a2bf075",
+  "t": "- Wear **PPE** — battery acid is corrosive. Know where the **eyewash** station is."
+ },
+ "L:lpg-and-batteries:14": {
+  "h": "dbe1eaca45",
+  "t": "- **Turn the charger off before connecting or disconnecting** the battery, to avoid sparks."
+ },
+ "L:lpg-and-batteries:15": {
+  "h": "cd37ed58ec",
+  "t": "- Check cables and plugs for damage; follow the manufacturer's instructions for electrolyte levels."
+ },
+ "Z:1": {
+  "h": "7b86cbbc44",
+  "t": "Module 1 quiz"
+ },
+ "Q:1:1:p": {
+  "h": "9802d64263",
+  "t": "Which licence class covers a standard counterbalance forklift?"
+ },
+ "Q:1:1:e": {
+  "h": "91e19bc52c",
+  "t": "LF is the forklift truck class. LO covers order-picking forklifts."
+ },
+ "Q:1:1:o1": {
+  "h": "7152fdfeed",
+  "t": "LO"
+ },
+ "Q:1:1:o2": {
+  "h": "91a07087a5",
+  "t": "LF"
+ },
+ "Q:1:1:o3": {
+  "h": "cb7d29f43f",
+  "t": "C2"
+ },
+ "Q:1:1:o4": {
+  "h": "a0a26f2e80",
+  "t": "WP"
+ },
+ "Q:1:2:p": {
+  "h": "7b75ae77af",
+  "t": "What is the minimum age to hold a High Risk Work Licence?"
+ },
+ "Q:1:2:e": {
+  "h": "8abc59e5bb",
+  "t": "You must be at least 18 years old."
+ },
+ "Q:1:3:p": {
+  "h": "04a98e513b",
+  "t": "You notice the forklift's horn isn't working. Under WHS law you must:"
+ },
+ "Q:1:3:e": {
+  "h": "45671f2c09",
+  "t": "Workers have a duty to report defects and hazards. Do not operate it until it's fixed."
+ },
+ "Q:1:3:o1": {
+  "h": "e751065f37",
+  "t": "Report it and not use the forklift until it is fixed"
+ },
+ "Q:1:3:o2": {
+  "h": "88d53bc426",
+  "t": "Use it carefully and mention it at the end of the shift"
+ },
+ "Q:1:3:o3": {
+  "h": "5c47873dfb",
+  "t": "Fix it yourself without telling anyone"
+ },
+ "Q:1:3:o4": {
+  "h": "382cae0549",
+  "t": "Ignore it if the area is quiet"
+ },
+ "Q:1:4:p": {
+  "h": "c925b46dc2",
+  "t": "What is the main purpose of a code of practice?"
+ },
+ "Q:1:4:e": {
+  "h": "846c601b55",
+  "t": "Codes of practice give practical guidance on how to meet duties under WHS laws."
+ },
+ "Q:1:4:o1": {
+  "h": "e5d57542b4",
+  "t": "It replaces the WHS Act"
+ },
+ "Q:1:4:o2": {
+  "h": "945c734220",
+  "t": "It is the manufacturer's operating manual"
+ },
+ "Q:1:4:o3": {
+  "h": "338b37c18c",
+  "t": "It gives practical guidance on how to meet your WHS duties"
+ },
+ "Q:1:4:o4": {
+  "h": "eca24d7bb8",
+  "t": "It is only for supervisors"
+ },
+ "Q:1:5:p": {
+  "h": "b1a1fe3235",
+  "t": "Where would you find how a particular forklift must be operated and serviced?"
+ },
+ "Q:1:5:e": {
+  "h": "52cac37555",
+  "t": "The manufacturer's operator manual sets the requirements for that machine."
+ },
+ "Q:1:5:o1": {
+  "h": "0981551c08",
+  "t": "A newspaper article"
+ },
+ "Q:1:5:o2": {
+  "h": "cdc59ce103",
+  "t": "A general WHS poster"
+ },
+ "Q:1:5:o3": {
+  "h": "01e3c88e58",
+  "t": "The site's fire plan"
+ },
+ "Q:1:5:o4": {
+  "h": "09eb85da1f",
+  "t": "The manufacturer's operator manual"
+ },
+ "Q:1:6:p": {
+  "h": "7734054c07",
+  "t": "Which of these is a workplace record a forklift operator should complete?"
+ },
+ "Q:1:6:e": {
+  "h": "ae99e30eca",
+  "t": "Pre-start checklists, defect reports and incident reports are all records operators complete."
+ },
+ "Q:1:6:o1": {
+  "h": "0773dd3f72",
+  "t": "The company's tax return"
+ },
+ "Q:1:6:o2": {
+  "h": "ef35dbaa63",
+  "t": "The pre-start checklist"
+ },
+ "Q:1:6:o3": {
+  "h": "9341d6fb93",
+  "t": "The forklift purchase invoice"
+ },
+ "Q:1:6:o4": {
+  "h": "d737bb468e",
+  "t": "The visitor sign-in book only"
+ },
+ "Z:2": {
+  "h": "0ae5d2d73e",
+  "t": "Module 2 quiz"
+ },
+ "Q:2:1:p": {
+  "h": "9726d7f355",
+  "t": "Which control is the MOST effective in the hierarchy of control?"
+ },
+ "Q:2:1:e": {
+  "h": "aca77bb107",
+  "t": "Elimination removes the hazard entirely."
+ },
+ "Q:2:1:o1": {
+  "h": "52b274f44e",
+  "t": "Elimination"
+ },
+ "Q:2:1:o2": {
+  "h": "539bb533a2",
+  "t": "PPE"
+ },
+ "Q:2:1:o3": {
+  "h": "3d4e3288ba",
+  "t": "Signage"
+ },
+ "Q:2:1:o4": {
+  "h": "b6fe7f5e79",
+  "t": "Training"
+ },
+ "Q:2:2:p": {
+  "h": "11b220787b",
+  "t": "Separating forklifts and pedestrians with physical barriers is an example of:"
+ },
+ "Q:2:2:e": {
+  "h": "20c46830e8",
+  "t": "Physically separating people from the hazard is isolation."
+ },
+ "Q:2:2:o1": {
+  "h": "03bf457162",
+  "t": "Substitution"
+ },
+ "Q:2:2:o2": {
+  "h": "539bb533a2",
+  "t": "PPE"
+ },
+ "Q:2:2:o3": {
+  "h": "616318d9db",
+  "t": "Isolation"
+ },
+ "Q:2:2:o4": {
+  "h": "e3649e15de",
+  "t": "An administrative control"
+ },
+ "Q:2:3:p": {
+  "h": "bd23728e1f",
+  "t": "Before a spotter guides you with hand signals, you should:"
+ },
+ "Q:2:3:e": {
+  "h": "8389caefde",
+  "t": "Agree on the signals before starting so there is no confusion."
+ },
+ "Q:2:3:o1": {
+  "h": "4769e2ff5c",
+  "t": "Turn off your horn"
+ },
+ "Q:2:3:o2": {
+  "h": "366da3e6ec",
+  "t": "Agree on the signals you will both use"
+ },
+ "Q:2:3:o3": {
+  "h": "dd3c83024d",
+  "t": "Ask them to stand behind the forklift"
+ },
+ "Q:2:3:o4": {
+  "h": "050ead1117",
+  "t": "Raise the load so they can see it"
+ },
+ "Q:2:4:p": {
+  "h": "342079d906",
+  "t": "Why is operating an LPG forklift in a poorly ventilated area a hazard?"
+ },
+ "Q:2:4:e": {
+  "h": "9285ec5095",
+  "t": "LPG, petrol and diesel engines produce carbon monoxide, which builds up in poorly ventilated areas."
+ },
+ "Q:2:4:o1": {
+  "h": "c559b2110c",
+  "t": "The tyres overheat"
+ },
+ "Q:2:4:o2": {
+  "h": "ea3bb3996b",
+  "t": "The horn can't be heard"
+ },
+ "Q:2:4:o3": {
+  "h": "2741b28e38",
+  "t": "The mast won't lift"
+ },
+ "Q:2:4:o4": {
+  "h": "049fd2cdde",
+  "t": "Carbon monoxide from the exhaust can build up"
+ },
+ "Q:2:5:p": {
+  "h": "17a8f339c1",
+  "t": "You need to drive over a steel trench cover. What must you check first?"
+ },
+ "Q:2:5:e": {
+  "h": "81873772f7",
+  "t": "It must be rated for the combined weight of the forklift and load, and secured."
+ },
+ "Q:2:5:o1": {
+  "h": "238a4f1a7a",
+  "t": "That it is rated for the combined weight of the forklift and load"
+ },
+ "Q:2:5:o2": {
+  "h": "2257b2aebc",
+  "t": "That it has been painted"
+ },
+ "Q:2:5:o3": {
+  "h": "32e83de2b4",
+  "t": "That it is wider than the forklift"
+ },
+ "Q:2:5:o4": {
+  "h": "5dcd3ced37",
+  "t": "Nothing — steel is always strong enough"
+ },
+ "Q:2:6:p": {
+  "h": "9265863294",
+  "t": "A thunderstorm with lightning moves in while you're working outside. You should:"
+ },
+ "Q:2:6:e": {
+  "h": "2daf90d08e",
+  "t": "Stop outdoor work, park the forklift safely and take shelter."
+ },
+ "Q:2:6:o1": {
+  "h": "12a5b3e2b3",
+  "t": "Speed up to finish the job"
+ },
+ "Q:2:6:o2": {
+  "h": "6650c9cb26",
+  "t": "Raise the mast to keep loads dry"
+ },
+ "Q:2:6:o3": {
+  "h": "d5c81efc64",
+  "t": "Stop work, park safely and take shelter"
+ },
+ "Q:2:6:o4": {
+  "h": "9fd9392bf1",
+  "t": "Keep working but stay in the seat"
+ },
+ "Q:2:7:p": {
+  "h": "12b363cd15",
+  "t": "The yard is wet after rain. How should you change the way you drive?"
+ },
+ "Q:2:7:e": {
+  "h": "3e89b0b15a",
+  "t": "Wet surfaces reduce grip: slow down, brake and turn gently, and allow longer stopping distances."
+ },
+ "Q:2:7:o1": {
+  "h": "407f2ae588",
+  "t": "No change is needed"
+ },
+ "Q:2:7:o2": {
+  "h": "426bd14d8e",
+  "t": "Reduce speed and allow longer stopping distances"
+ },
+ "Q:2:7:o3": {
+  "h": "0df13b6856",
+  "t": "Drive faster to get out of the rain"
+ },
+ "Q:2:7:o4": {
+  "h": "009a70c1af",
+  "t": "Brake harder than usual"
+ },
+ "Q:2:8:p": {
+  "h": "7bcf2c6699",
+  "t": "A pedestrian walks into the exclusion zone while you're loading a truck. You:"
+ },
+ "Q:2:8:e": {
+  "h": "b4a9bf8848",
+  "t": "Stop work immediately until the person has left the zone, then report the breach if required."
+ },
+ "Q:2:8:o1": {
+  "h": "75bb12c1ec",
+  "t": "Sound the horn and keep working"
+ },
+ "Q:2:8:o2": {
+  "h": "4307d8bdf0",
+  "t": "Keep going — they should know better"
+ },
+ "Q:2:8:o3": {
+  "h": "ccd70a255a",
+  "t": "Raise the load higher so it's out of the way"
+ },
+ "Q:2:8:o4": {
+  "h": "ddffeb34c0",
+  "t": "Stop work until they have left the zone"
+ },
+ "Q:2:9:p": {
+  "h": "b833337c1c",
+  "t": "The mast of your forklift touches an overhead powerline. What should you do FIRST?"
+ },
+ "Q:2:9:e": {
+  "h": "97e88a259c",
+  "t": "Step 1 is STAY: stay seated on the forklift and don't touch any metal parts. Getting off could electrocute you."
+ },
+ "Q:2:9:o1": {
+  "h": "346983420d",
+  "t": "Jump off and run"
+ },
+ "Q:2:9:o2": {
+  "h": "f5c19b86ef",
+  "t": "Stay on the forklift and don't touch any metal parts"
+ },
+ "Q:2:9:o3": {
+  "h": "a2ff0dd8e8",
+  "t": "Climb down using three points of contact"
+ },
+ "Q:2:9:o4": {
+  "h": "f5e7ad04d7",
+  "t": "Push the line away with a piece of timber"
+ },
+ "Q:2:10:p": {
+  "h": "f082ff0437",
+  "t": "A forklift is touching a powerline. How far away should everyone else stay?"
+ },
+ "Q:2:10:e": {
+  "h": "e660891033",
+  "t": "Step 2 is WARN: keep everyone at least 8 metres away, and no one touches the forklift."
+ },
+ "Q:2:10:o1": {
+  "h": "06501f9fef",
+  "t": "1 metre"
+ },
+ "Q:2:10:o2": {
+  "h": "baceab8da5",
+  "t": "3 metres"
+ },
+ "Q:2:10:o3": {
+  "h": "faefe71b85",
+  "t": "At least 8 metres"
+ },
+ "Q:2:10:o4": {
+  "h": "10b8026613",
+  "t": "It is safe to stand next to it if you don't touch it"
+ },
+ "Q:2:11:p": {
+  "h": "c14ff73703",
+  "t": "Your forklift is touching a powerline and catches fire. How should you get off?"
+ },
+ "Q:2:11:e": {
+  "h": "44e067004b",
+  "t": "Step 5 is JUMP — only if you must. Jump clear with feet together, never touching the forklift and the ground at the same time, then shuffle with feet together at least 8 m away."
+ },
+ "Q:2:11:o1": {
+  "h": "97d614ec80",
+  "t": "Jump clear with feet together, then shuffle with feet together at least 8 m away"
+ },
+ "Q:2:11:o2": {
+  "h": "84455e0df6",
+  "t": "Climb down slowly holding the handrail"
+ },
+ "Q:2:11:o3": {
+  "h": "47857b68c5",
+  "t": "Step down and run away as fast as you can"
+ },
+ "Q:2:11:o4": {
+  "h": "17d2fa4c21",
+  "t": "Stay on the forklift no matter what"
+ },
+ "Q:2:12:p": {
+  "h": "b183b37834",
+  "t": "What is the correct order of the 5-step powerline contact protocol?"
+ },
+ "Q:2:12:e": {
+  "h": "6f2588a3db",
+  "t": "Stay → Warn → Break contact (if safe) → Call for help → Jump clear (only if you must)."
+ },
+ "Q:2:12:o1": {
+  "h": "4db402ed50",
+  "t": "Jump, Call, Warn, Stay, Break"
+ },
+ "Q:2:12:o2": {
+  "h": "4f77667785",
+  "t": "Call, Jump, Stay, Break, Warn"
+ },
+ "Q:2:12:o3": {
+  "h": "4b54420518",
+  "t": "Break, Jump, Warn, Call, Stay"
+ },
+ "Q:2:12:o4": {
+  "h": "16d7dd4887",
+  "t": "Stay, Warn, Break contact, Call, Jump clear"
+ },
+ "Q:2:13:p": {
+  "h": "dcaeecb27c",
+  "t": "What is a hazard?"
+ },
+ "Q:2:13:e": {
+  "h": "21ec8d1968",
+  "t": "A hazard is anything that could cause harm — injury, illness or damage. Risk is the chance it will cause harm, and how bad that harm would be."
+ },
+ "Q:2:13:o1": {
+  "h": "8cf3970719",
+  "t": "Anything that could cause harm"
+ },
+ "Q:2:13:o2": {
+  "h": "e67c010d8f",
+  "t": "The chance that someone will be hurt"
+ },
+ "Q:2:13:o3": {
+  "h": "d716217618",
+  "t": "A report you fill in after an incident"
+ },
+ "Q:2:13:o4": {
+  "h": "00ec6c85ee",
+  "t": "A control such as a barrier"
+ },
+ "Q:2:14:p": {
+  "h": "92eece26ea",
+  "t": "What is a risk?"
+ },
+ "Q:2:14:e": {
+  "h": "651039ec34",
+  "t": "Risk combines likelihood (how likely the hazard is to cause harm) and consequence (how bad the harm would be)."
+ },
+ "Q:2:14:o1": {
+  "h": "507ea29585",
+  "t": "Any object in the workplace"
+ },
+ "Q:2:14:o2": {
+  "h": "3572e5f7da",
+  "t": "A sign that warns people"
+ },
+ "Q:2:14:o3": {
+  "h": "554a6da236",
+  "t": "How likely a hazard is to cause harm, and how bad the harm would be"
+ },
+ "Q:2:14:o4": {
+  "h": "e98e814345",
+  "t": "The cost of fixing a forklift"
+ },
+ "Q:2:15:p": {
+  "h": "ff3cfd92e5",
+  "t": "Pedestrians often walk through the loading bay where you work. Which statement is correct?"
+ },
+ "Q:2:15:e": {
+  "h": "215af1b834",
+  "t": "The pedestrians in your work area are the hazard. Being struck by the forklift — likely, and possibly fatal — is the risk."
+ },
+ "Q:2:15:o1": {
+  "h": "cf62922f58",
+  "t": "The pedestrians are the risk; being hit is the hazard"
+ },
+ "Q:2:15:o2": {
+  "h": "9811f3ccf3",
+  "t": "The pedestrians are the hazard; the chance of hitting one, and how bad it would be, is the risk"
+ },
+ "Q:2:15:o3": {
+  "h": "b085964df1",
+  "t": "There is no hazard if pedestrians wear hi-vis"
+ },
+ "Q:2:15:o4": {
+  "h": "fde880fb7e",
+  "t": "Hazards and risks mean exactly the same thing"
+ },
+ "Q:2:16:p": {
+  "h": "4e646a6a49",
+  "t": "A hazard is likely to happen and could kill someone. How should you rate the risk?"
+ },
+ "Q:2:16:e": {
+  "h": "7b9fea0b3b",
+  "t": "Likely + a serious consequence = high risk. Control it before you start work."
+ },
+ "Q:2:16:o1": {
+  "h": "a1055a7ca3",
+  "t": "Low — it hasn't happened yet"
+ },
+ "Q:2:16:o2": {
+  "h": "39c0a5003c",
+  "t": "Medium — it depends on the day"
+ },
+ "Q:2:16:o3": {
+  "h": "a20d5d1290",
+  "t": "No risk if you are careful"
+ },
+ "Q:2:16:o4": {
+  "h": "42a61b3b89",
+  "t": "High — control it before you start work"
+ },
+ "Z:3": {
+  "h": "5b9bda45a6",
+  "t": "Module 3 quiz"
+ },
+ "Q:3:1:p": {
+  "h": "b5c0d0462a",
+  "t": "When should a pre-start check be carried out?"
+ },
+ "Q:3:1:e": {
+  "h": "bb6f71ac1c",
+  "t": "Pre-start checks are done before every shift, before the forklift is used."
+ },
+ "Q:3:1:o1": {
+  "h": "521f6443f2",
+  "t": "Once a week"
+ },
+ "Q:3:1:o2": {
+  "h": "8228c154ab",
+  "t": "Before every shift"
+ },
+ "Q:3:1:o3": {
+  "h": "5c257b62bb",
+  "t": "Only after a breakdown"
+ },
+ "Q:3:1:o4": {
+  "h": "58886a711c",
+  "t": "Only when a supervisor asks"
+ },
+ "Q:3:2:p": {
+  "h": "2032495081",
+  "t": "A side shifter has been fitted to the forklift. What must you check on the data plate?"
+ },
+ "Q:3:2:e": {
+  "h": "a366a9a988",
+  "t": "The data plate must match the attachment fitted, because attachments change capacity."
+ },
+ "Q:3:2:o1": {
+  "h": "5e29ee0d2d",
+  "t": "That it shows the purchase date"
+ },
+ "Q:3:2:o2": {
+  "h": "07283ff987",
+  "t": "That it is the same colour as the forklift"
+ },
+ "Q:3:2:o3": {
+  "h": "a1aa38e182",
+  "t": "That it is correct for the attachment fitted"
+ },
+ "Q:3:2:o4": {
+  "h": "a8c9cdc48d",
+  "t": "Nothing — attachments don't matter"
+ },
+ "Q:3:3:p": {
+  "h": "d736dd2fc5",
+  "t": "During the walk-around you see flaking paint around a weld on the mast. This could indicate:"
+ },
+ "Q:3:3:e": {
+  "h": "3c2fbf4305",
+  "t": "Paint separation around welds can be a sign of a crack or stressed weld underneath. Record and report it."
+ },
+ "Q:3:3:o1": {
+  "h": "755a7c47ba",
+  "t": "A crack or stressed weld underneath"
+ },
+ "Q:3:3:o2": {
+  "h": "b731ed5899",
+  "t": "The forklift needs washing"
+ },
+ "Q:3:3:o3": {
+  "h": "2a3fd1e537",
+  "t": "Normal wear that can be ignored"
+ },
+ "Q:3:3:o4": {
+  "h": "abdc5d0992",
+  "t": "Low tyre pressure"
+ },
+ "Q:3:4:p": {
+  "h": "fc06229fa4",
+  "t": "How should you get on and off a forklift?"
+ },
+ "Q:3:4:e": {
+  "h": "3d058a5859",
+  "t": "Use the steps and handholds with three points of contact. Never jump."
+ },
+ "Q:3:4:o1": {
+  "h": "af0a70ea39",
+  "t": "Jump down to save time"
+ },
+ "Q:3:4:o2": {
+  "h": "027a549c9e",
+  "t": "Use the steering wheel to swing off"
+ },
+ "Q:3:4:o3": {
+  "h": "01d8c94c93",
+  "t": "Step on the forks"
+ },
+ "Q:3:4:o4": {
+  "h": "51a659d64c",
+  "t": "Use the steps and handholds with three points of contact"
+ },
+ "Q:3:5:p": {
+  "h": "73945f5b2a",
+  "t": "During operational checks, the hydraulic functions should be:"
+ },
+ "Q:3:5:e": {
+  "h": "9623fd933c",
+  "t": "Run lift, tilt and side shift through their full range and check they move smoothly."
+ },
+ "Q:3:5:o1": {
+  "h": "fcfd5d8414",
+  "t": "Tested only if the load is heavy"
+ },
+ "Q:3:5:o2": {
+  "h": "0f924f3273",
+  "t": "Run through their full range to check smooth operation"
+ },
+ "Q:3:5:o3": {
+  "h": "708bfb5ffa",
+  "t": "Left untested to save time"
+ },
+ "Q:3:5:o4": {
+  "h": "43441dc40e",
+  "t": "Tested with a full load at maximum height"
+ },
+ "Q:3:6:p": {
+  "h": "4c9e8ef197",
+  "t": "What is the correct order for lock out / tag out?"
+ },
+ "Q:3:6:e": {
+  "h": "9f14fdf92e",
+  "t": "Stop and park safely, isolate the power, tag it out of service, then report and record the fault."
+ },
+ "Q:3:6:o1": {
+  "h": "21bb19c7f4",
+  "t": "Stop, isolate the power, tag it, report it"
+ },
+ "Q:3:6:o2": {
+  "h": "d1996db989",
+  "t": "Report it, then keep using it until it's collected"
+ },
+ "Q:3:6:o3": {
+  "h": "f0015c4c59",
+  "t": "Tag it, keep the engine running, report it"
+ },
+ "Q:3:6:o4": {
+  "h": "f1e14bcb4a",
+  "t": "Remove the tag, then report it"
+ },
+ "Q:3:7:p": {
+  "h": "cd414ef6af",
+  "t": "Your forklift begins to tip over sideways. What should you do?"
+ },
+ "Q:3:7:e": {
+  "h": "05d6d542d5",
+  "t": "Never jump. Stay in the seat with the belt on, hold the wheel, brace your feet and lean away from the fall."
+ },
+ "Q:3:7:o1": {
+  "h": "b59a3716f3",
+  "t": "Jump clear on the low side"
+ },
+ "Q:3:7:o2": {
+  "h": "c33e15982c",
+  "t": "Jump clear on the high side"
+ },
+ "Q:3:7:o3": {
+  "h": "b6cbfd07e2",
+  "t": "Stay seated with the seatbelt on, hold the wheel, brace and lean away from the fall"
+ },
+ "Q:3:7:o4": {
+  "h": "e92ef896f3",
+  "t": "Raise the mast to rebalance it"
+ },
+ "Q:3:8:p": {
+  "h": "c4b109d3a0",
+  "t": "Your LPG forklift starts to stutter and lose power. The most likely cause is:"
+ },
+ "Q:3:8:e": {
+  "h": "eb8b23c4fa",
+  "t": "A stuttering LPG engine usually means the cylinder is running empty. Park safely and change it following procedure."
+ },
+ "Q:3:8:o1": {
+  "h": "84bf10b6a9",
+  "t": "A flat tyre"
+ },
+ "Q:3:8:o2": {
+  "h": "97bd0c5283",
+  "t": "The gas cylinder is running empty"
+ },
+ "Q:3:8:o3": {
+  "h": "f7dc6b5488",
+  "t": "The seatbelt is undone"
+ },
+ "Q:3:8:o4": {
+  "h": "bd806d3be3",
+  "t": "The forks are too low"
+ },
+ "Z:4": {
+  "h": "11cfd65336",
+  "t": "Module 4 quiz"
+ },
+ "Q:4:1:p": {
+  "h": "c927fa27f5",
+  "t": "The stability triangle of a counterbalance forklift is formed by:"
+ },
+ "Q:4:1:e": {
+  "h": "e8c9c82baa",
+  "t": "The two front wheels and the rear axle pivot point form the stability triangle."
+ },
+ "Q:4:1:o1": {
+  "h": "40d66998cb",
+  "t": "All four wheels"
+ },
+ "Q:4:1:o2": {
+  "h": "3fc537c8b9",
+  "t": "The two front wheels and the rear axle pivot point"
+ },
+ "Q:4:1:o3": {
+  "h": "da0699e338",
+  "t": "The mast and the two front wheels"
+ },
+ "Q:4:1:o4": {
+  "h": "e4493249a0",
+  "t": "The tynes and the counterweight"
+ },
+ "Q:4:2:p": {
+  "h": "c8b08229a5",
+  "t": "What does the rated capacity on a forklift's data plate tell you?"
+ },
+ "Q:4:2:e": {
+  "h": "18c1ffa523",
+  "t": "The rated capacity is the maximum weight the forklift can safely lift. Never lift more than it."
+ },
+ "Q:4:2:o1": {
+  "h": "51063e52b3",
+  "t": "The forklift's top speed"
+ },
+ "Q:4:2:o2": {
+  "h": "d35203afbc",
+  "t": "How much fuel it holds"
+ },
+ "Q:4:2:o3": {
+  "h": "a5a826d0df",
+  "t": "The maximum weight it can safely lift"
+ },
+ "Q:4:2:o4": {
+  "h": "7816db77b1",
+  "t": "How high the mast can reach"
+ },
+ "Q:4:3:p": {
+  "h": "d5ac101b5c",
+  "t": "A pallet has 40 cartons weighing 20 kg each. The pallet weighs 20 kg. What is the total weight?"
+ },
+ "Q:4:3:e": {
+  "h": "e2d98cf2b8",
+  "t": "40 × 20 = 800 kg, plus the 20 kg pallet = 820 kg."
+ },
+ "Q:4:3:o1": {
+  "h": "5ad0d1f57d",
+  "t": "800 kg"
+ },
+ "Q:4:3:o2": {
+  "h": "e8361eed9b",
+  "t": "820 kg"
+ },
+ "Q:4:3:o3": {
+  "h": "4e95eb9d3e",
+  "t": "840 kg"
+ },
+ "Q:4:3:o4": {
+  "h": "73ee08d903",
+  "t": "860 kg"
+ },
+ "Q:4:4:p": {
+  "h": "b1c707da0d",
+  "t": "Which document from a transport company may show the weight of a load?"
+ },
+ "Q:4:4:e": {
+  "h": "6bfa00a39c",
+  "t": "Consignment notes and running sheets often list the weight of each item."
+ },
+ "Q:4:4:o1": {
+  "h": "0d08382ee3",
+  "t": "A consignment note"
+ },
+ "Q:4:4:o2": {
+  "h": "e587e91915",
+  "t": "A pre-start checklist"
+ },
+ "Q:4:4:o3": {
+  "h": "fd66340cc3",
+  "t": "A traffic management plan"
+ },
+ "Q:4:4:o4": {
+  "h": "0d89290cb5",
+  "t": "A fire evacuation map"
+ },
+ "Q:4:5:p": {
+  "h": "6cfc664c85",
+  "t": "You can't find the weight of a load anywhere. What should you do?"
+ },
+ "Q:4:5:e": {
+  "h": "4325128258",
+  "t": "Never guess. Don't lift until the weight is confirmed — ask your supervisor or weigh it."
+ },
+ "Q:4:5:o1": {
+  "h": "9393b5f271",
+  "t": "Lift it slowly and see what happens"
+ },
+ "Q:4:5:o2": {
+  "h": "e60217980a",
+  "t": "Estimate it by eye"
+ },
+ "Q:4:5:o3": {
+  "h": "ca8bb4bd06",
+  "t": "Lift it on the strongest forklift available"
+ },
+ "Q:4:5:o4": {
+  "h": "9e1617684a",
+  "t": "Don't lift it until you've confirmed the weight"
+ },
+ "Q:4:6:p": {
+  "h": "99a93f6b30",
+  "t": "Fitting an attachment to a forklift will usually:"
+ },
+ "Q:4:6:e": {
+  "h": "5679645572",
+  "t": "Attachments add weight and move the load centre forward, so capacity goes down."
+ },
+ "Q:4:6:o1": {
+  "h": "41771de8a1",
+  "t": "Reduce its lifting capacity"
+ },
+ "Q:4:6:o2": {
+  "h": "64bfbde7e6",
+  "t": "Increase its lifting capacity"
+ },
+ "Q:4:6:o3": {
+  "h": "08e140535b",
+  "t": "Have no effect on capacity"
+ },
+ "Q:4:6:o4": {
+  "h": "88e9dc77a5",
+  "t": "Allow it to carry passengers"
+ },
+ "Q:4:7:p": {
+  "h": "060d10987c",
+  "t": "Which is the ONLY acceptable way to lift a person with a forklift?"
+ },
+ "Q:4:7:e": {
+  "h": "e88a1b5503",
+  "t": "Only a purpose-built work platform designed for the forklift, secured to it, with the operator at the controls."
+ },
+ "Q:4:7:o1": {
+  "h": "b7333e3280",
+  "t": "Standing on the tynes"
+ },
+ "Q:4:7:o2": {
+  "h": "d90fa64916",
+  "t": "Standing on a pallet"
+ },
+ "Q:4:7:o3": {
+  "h": "0a0bf51875",
+  "t": "In a purpose-built work platform secured to the forklift"
+ },
+ "Q:4:7:o4": {
+  "h": "56c7589554",
+  "t": "Sitting on the load"
+ },
+ "Q:4:8:p": {
+  "h": "3313d9e647",
+  "t": "Which is an example of a dynamic load?"
+ },
+ "Q:4:8:e": {
+  "h": "acdd87ed34",
+  "t": "Liquid in a drum or IBC moves while you travel, shifting the centre of gravity."
+ },
+ "Q:4:8:o1": {
+  "h": "e04673edb7",
+  "t": "A pallet of bricks"
+ },
+ "Q:4:8:o2": {
+  "h": "d269087645",
+  "t": "A drum of liquid"
+ },
+ "Q:4:8:o3": {
+  "h": "61a9629b32",
+  "t": "A stack of timber"
+ },
+ "Q:4:8:o4": {
+  "h": "25399bde72",
+  "t": "A crate of tiles"
+ },
+ "Q:4:9:p": {
+  "h": "29b8abc12e",
+  "t": "A load is heavier on one side. Before lifting, you should:"
+ },
+ "Q:4:9:e": {
+  "h": "e577a51e6d",
+  "t": "Position the tynes (or use side shift) so the load is centred, or have it restacked."
+ },
+ "Q:4:9:o1": {
+  "h": "63e643ce18",
+  "t": "Lift it high to balance it"
+ },
+ "Q:4:9:o2": {
+  "h": "ef36393c94",
+  "t": "Drive faster so it doesn't tip"
+ },
+ "Q:4:9:o3": {
+  "h": "ccba1a56bf",
+  "t": "Centre the load on the tynes or have it restacked"
+ },
+ "Q:4:9:o4": {
+  "h": "9e575d5b26",
+  "t": "Tilt the mast forward"
+ },
+ "Z:5": {
+  "h": "49f9eea4e1",
+  "t": "Module 5 quiz — calculations"
+ },
+ "Q:5:1:p": {
+  "h": "f2407b67b5",
+  "t": "A pallet holds 5 layers of 10 cartons. Each carton weighs 20 kg and the pallet weighs 30 kg. What is the total weight?"
+ },
+ "Q:5:1:e": {
+  "h": "3d1165f438",
+  "t": "5 × 10 = 50 cartons. 50 × 20 = 1,000 kg. 1,000 + 30 = 1,030 kg."
+ },
+ "Q:5:1:o1": {
+  "h": "c5bdd7f07c",
+  "t": "1,000 kg"
+ },
+ "Q:5:1:o2": {
+  "h": "ad95269dc2",
+  "t": "1,030 kg"
+ },
+ "Q:5:1:o3": {
+  "h": "0561609125",
+  "t": "1,050 kg"
+ },
+ "Q:5:1:o4": {
+  "h": "10240a9263",
+  "t": "1,300 kg"
+ },
+ "Q:5:2:p": {
+  "h": "d3577ed2b1",
+  "t": "A consignment note shows a load of 1.5 t. How many kilograms is that?"
+ },
+ "Q:5:2:e": {
+  "h": "68fa596131",
+  "t": "1 tonne = 1,000 kg, so 1.5 × 1,000 = 1,500 kg."
+ },
+ "Q:5:2:o1": {
+  "h": "d45884c834",
+  "t": "15 kg"
+ },
+ "Q:5:2:o2": {
+  "h": "9fb3b2bb70",
+  "t": "150 kg"
+ },
+ "Q:5:2:o3": {
+  "h": "16e43e9e87",
+  "t": "1,500 kg"
+ },
+ "Q:5:2:o4": {
+  "h": "295ef23fb4",
+  "t": "15,000 kg"
+ },
+ "Q:5:3:p": {
+  "h": "88506fa1b4",
+  "t": "One pallet (50 kg) carries three items: 400 kg, 350 kg and 600 kg. What is the total weight?"
+ },
+ "Q:5:3:e": {
+  "h": "4f9e7a5adb",
+  "t": "400 + 350 + 600 = 1,350 kg. Add the 50 kg pallet = 1,400 kg."
+ },
+ "Q:5:3:o1": {
+  "h": "94f220bc36",
+  "t": "1,350 kg"
+ },
+ "Q:5:3:o2": {
+  "h": "d43a7ee53c",
+  "t": "1,400 kg"
+ },
+ "Q:5:3:o3": {
+  "h": "42fc8ffddc",
+  "t": "1,450 kg"
+ },
+ "Q:5:3:o4": {
+  "h": "10240a9263",
+  "t": "1,300 kg"
+ },
+ "Q:5:4:p": {
+  "h": "a9a27e209a",
+  "t": "A weighbridge docket shows the loaded truck at 18,000 kg and the empty truck at 12,000 kg. The load is 4 identical pallets. How much does each pallet weigh?"
+ },
+ "Q:5:4:e": {
+  "h": "aa8b35b0b8",
+  "t": "Load = 18,000 − 12,000 = 6,000 kg. 6,000 ÷ 4 = 1,500 kg per pallet."
+ },
+ "Q:5:4:o1": {
+  "h": "16e43e9e87",
+  "t": "1,500 kg"
+ },
+ "Q:5:4:o2": {
+  "h": "a3b31ccf93",
+  "t": "3,000 kg"
+ },
+ "Q:5:4:o3": {
+  "h": "f8e6230684",
+  "t": "4,500 kg"
+ },
+ "Q:5:4:o4": {
+  "h": "55e0748557",
+  "t": "6,000 kg"
+ },
+ "Q:5:5:p": {
+  "h": "ebb233dc5b",
+  "t": "You may lift a maximum of 1,000 kg. The pallet weighs 40 kg and each carton weighs 30 kg. What is the most cartons you can load?"
+ },
+ "Q:5:5:e": {
+  "h": "49624629a9",
+  "t": "1,000 − 40 = 960. 960 ÷ 30 = 32 cartons. Check: 32 × 30 + 40 = 1,000 kg."
+ },
+ "Q:5:6:p": {
+  "h": "8006497a07",
+  "t": "You may lift a maximum of 1,000 kg. The pallet weighs 20 kg and each carton weighs 30 kg. What is the most cartons you can load?"
+ },
+ "Q:5:6:e": {
+  "h": "520541b961",
+  "t": "1,000 − 20 = 980. 980 ÷ 30 = 32.67 — always round DOWN: 32. 33 cartons would weigh 1,010 kg with the pallet."
+ },
+ "Q:5:7:p": {
+  "h": "109ae0c2ce",
+  "t": "An evenly loaded crate is 1,200 mm deep and sits hard against the backrest. What is its load centre?"
+ },
+ "Q:5:7:e": {
+  "h": "0319ad9d39",
+  "t": "Half the depth: 1,200 ÷ 2 = 600 mm."
+ },
+ "Q:5:7:o1": {
+  "h": "be02c896ce",
+  "t": "300 mm"
+ },
+ "Q:5:7:o2": {
+  "h": "0c0aa35068",
+  "t": "600 mm"
+ },
+ "Q:5:7:o3": {
+  "h": "1d4b2860bb",
+  "t": "1,200 mm"
+ },
+ "Q:5:7:o4": {
+  "h": "a5b4f27f61",
+  "t": "2,400 mm"
+ },
+ "Q:5:8:p": {
+  "h": "88ebf1e475",
+  "t": "An evenly loaded crate 1,000 mm deep is sitting 200 mm away from the backrest. What is its load centre?"
+ },
+ "Q:5:8:e": {
+  "h": "fe20429f27",
+  "t": "Gap + half the depth = 200 + 500 = 700 mm."
+ },
+ "Q:5:8:o1": {
+  "h": "02611675bb",
+  "t": "500 mm"
+ },
+ "Q:5:8:o2": {
+  "h": "0c0aa35068",
+  "t": "600 mm"
+ },
+ "Q:5:8:o3": {
+  "h": "73ec350ec2",
+  "t": "700 mm"
+ },
+ "Q:5:8:o4": {
+  "h": "1d4b2860bb",
+  "t": "1,200 mm"
+ },
+ "Q:5:9:p": {
+  "h": "7b3607ec34",
+  "t": "Forklift A has a rated capacity of 2,500 kg at a 600 mm load centre. Can it lift a 1,900 kg pallet with a 600 mm load centre?"
+ },
+ "Q:5:9:e": {
+  "h": "f1fb18db7f",
+  "t": "1,900 kg is less than the 2,500 kg rated capacity, and the load centre is 600 mm — OK to lift, with 600 kg to spare."
+ },
+ "Q:5:9:o1": {
+  "h": "a78c722e1f",
+  "t": "Yes — it's 600 kg under the rated capacity"
+ },
+ "Q:5:9:o2": {
+  "h": "fc43acbef5",
+  "t": "No — it's 600 kg over the rated capacity"
+ },
+ "Q:5:9:o3": {
+  "h": "f0fb886e78",
+  "t": "No — the load centre is too far out"
+ },
+ "Q:5:9:o4": {
+  "h": "3ba7ef52f8",
+  "t": "Only if someone sits on the back"
+ },
+ "Q:5:10:p": {
+  "h": "6c68ea30cd",
+  "t": "Forklift A is rated at 2,500 kg. A crate on a consignment note weighs 2.7 t. Can it lift the crate?"
+ },
+ "Q:5:10:e": {
+  "h": "e280f3d4df",
+  "t": "2.7 × 1,000 = 2,700 kg. That's 200 kg more than the 2,500 kg rated capacity — do not lift."
+ },
+ "Q:5:10:o1": {
+  "h": "14caf47925",
+  "t": "Yes — 2.7 t is less than 2,500 kg"
+ },
+ "Q:5:10:o2": {
+  "h": "2c9e270dde",
+  "t": "No — it's 200 kg over the rated capacity"
+ },
+ "Q:5:10:o3": {
+  "h": "fc31e70a89",
+  "t": "Yes — it's only 200 kg over"
+ },
+ "Q:5:10:o4": {
+  "h": "bd31b9ab5b",
+  "t": "No — it's 2,000 kg over"
+ },
+ "Q:5:11:p": {
+  "h": "b5b42bc0d3",
+  "t": "A forklift is rated at 2,000 kg. A pallet holds 48 cartons of 40 kg each, and the pallet weighs 30 kg. Is the load within the rated capacity?"
+ },
+ "Q:5:11:e": {
+  "h": "9662471021",
+  "t": "48 × 40 = 1,920 kg. 1,920 + 30 = 1,950 kg. That's 50 kg under the 2,000 kg rated capacity — OK to lift."
+ },
+ "Q:5:11:o1": {
+  "h": "a6da8ebd20",
+  "t": "Yes — 1,950 kg is within 2,000 kg"
+ },
+ "Q:5:11:o2": {
+  "h": "08ea579a73",
+  "t": "No — 2,050 kg is over 2,000 kg"
+ },
+ "Q:5:11:o3": {
+  "h": "102f99ec86",
+  "t": "No — 1,950 kg is over 1,920 kg"
+ },
+ "Q:5:11:o4": {
+  "h": "e2b418d3e6",
+  "t": "Yes — 1,920 kg is within 2,000 kg"
+ },
+ "Q:5:12:p": {
+  "h": "0e7fd786f8",
+  "t": "A forklift is rated at 1,500 kg. Paperwork says the load is 1.8 t. What should you do?"
+ },
+ "Q:5:12:e": {
+  "h": "77049d0429",
+  "t": "1.8 × 1,000 = 1,800 kg — 300 kg over the 1,500 kg rated capacity. Don't lift it; tell your supervisor."
+ },
+ "Q:5:12:o1": {
+  "h": "e51b23a8fb",
+  "t": "Lift it slowly"
+ },
+ "Q:5:12:o2": {
+  "h": "50253b3d05",
+  "t": "Lift it with the load tilted back"
+ },
+ "Q:5:12:o3": {
+  "h": "362053f022",
+  "t": "Don't lift it — it's 300 kg over the rated capacity"
+ },
+ "Q:5:12:o4": {
+  "h": "7535c32fd0",
+  "t": "Lift it if the ground is flat"
+ },
+ "Q:5:13:p": {
+  "h": "1604d2cfe2",
+  "t": "A forklift with a drum carrier is rated at 2,500 kg. Each full drum weighs 600 kg. What is the most drums it can carry at once?"
+ },
+ "Q:5:13:e": {
+  "h": "f83ff35cc0",
+  "t": "2,500 ÷ 600 = 4.17 — always round down: 4 drums (2,400 kg). Five drums would be 3,000 kg."
+ },
+ "Q:5:14:p": {
+  "h": "2b5f6361af",
+  "t": "A forklift is rated at 2,500 kg. It is carrying a 1,800 kg crate. How much more weight could be added without going over the rated capacity?"
+ },
+ "Q:5:14:e": {
+  "h": "6968016890",
+  "t": "2,500 − 1,800 = 700 kg."
+ },
+ "Q:5:14:o1": {
+  "h": "d17ef032b7",
+  "t": "700 kg"
+ },
+ "Q:5:14:o2": {
+  "h": "5ad0d1f57d",
+  "t": "800 kg"
+ },
+ "Q:5:14:o3": {
+  "h": "03e3ad5e82",
+  "t": "1,700 kg"
+ },
+ "Q:5:14:o4": {
+  "h": "021e370024",
+  "t": "4,300 kg"
+ },
+ "Z:6": {
+  "h": "56fd516d4a",
+  "t": "Module 6 quiz"
+ },
+ "Q:6:1:p": {
+  "h": "3083504bf5",
+  "t": "You are carrying a load up a ramp. How should you travel?"
+ },
+ "Q:6:1:e": {
+  "h": "ea4b6ffcca",
+  "t": "Loaded, keep the load uphill: forwards up, reverse down."
+ },
+ "Q:6:1:o1": {
+  "h": "28d6ee5b09",
+  "t": "Drive forwards up the ramp, load uphill"
+ },
+ "Q:6:1:o2": {
+  "h": "00ea4fbec5",
+  "t": "Reverse up the ramp, load downhill"
+ },
+ "Q:6:1:o3": {
+  "h": "ea74241ca1",
+  "t": "Drive across the ramp diagonally"
+ },
+ "Q:6:1:o4": {
+  "h": "89270b4222",
+  "t": "Raise the load high for better visibility"
+ },
+ "Q:6:2:p": {
+  "h": "b695d69a7a",
+  "t": "The load is blocking your forward view. What should you do?"
+ },
+ "Q:6:2:e": {
+  "h": "fe48166888",
+  "t": "Travel in reverse, looking in the direction of travel, or use an observer."
+ },
+ "Q:6:2:o1": {
+  "h": "822db2d71a",
+  "t": "Raise the load higher"
+ },
+ "Q:6:2:o2": {
+  "h": "77bf7e4165",
+  "t": "Travel in reverse or use an observer"
+ },
+ "Q:6:2:o3": {
+  "h": "26cd3e7f1a",
+  "t": "Lean out the side and drive forwards"
+ },
+ "Q:6:2:o4": {
+  "h": "25134479bf",
+  "t": "Sound the horn continuously and drive forwards"
+ },
+ "Q:6:3:p": {
+  "h": "67c13e79f6",
+  "t": "What is the purpose of a trial lift?"
+ },
+ "Q:6:3:e": {
+  "h": "8e0e22913d",
+  "t": "Lifting just clear of the support lets you confirm the forklift is stable and the load is secure before moving."
+ },
+ "Q:6:3:o1": {
+  "h": "db8cdc87fe",
+  "t": "To test the horn"
+ },
+ "Q:6:3:o2": {
+  "h": "b1d7602f74",
+  "t": "To warm up the hydraulics"
+ },
+ "Q:6:3:o3": {
+  "h": "f25e063d45",
+  "t": "To check the forklift is stable and the load is secure before moving"
+ },
+ "Q:6:3:o4": {
+  "h": "f66eeb89cf",
+  "t": "To measure the height of the rack"
+ },
+ "Q:6:4:p": {
+  "h": "6e3c5b0db5",
+  "t": "When may you raise or lower a load?"
+ },
+ "Q:6:4:e": {
+  "h": "986e4df1f2",
+  "t": "Only when the forklift is stationary."
+ },
+ "Q:6:4:o1": {
+  "h": "692d95f5ba",
+  "t": "While turning"
+ },
+ "Q:6:4:o2": {
+  "h": "e1e20fc087",
+  "t": "While travelling slowly"
+ },
+ "Q:6:4:o3": {
+  "h": "b9982f1bad",
+  "t": "Only when the forklift is stationary"
+ },
+ "Q:6:4:o4": {
+  "h": "aadb8114e2",
+  "t": "Any time if the area is clear"
+ },
+ "Q:6:5:p": {
+  "h": "33601d26ee",
+  "t": "A crate has no pallet. How can you lift it without damaging it?"
+ },
+ "Q:6:5:e": {
+  "h": "69e6d09de0",
+  "t": "Place it on gluts or dunnage so the tynes can be inserted and withdrawn."
+ },
+ "Q:6:5:o1": {
+  "h": "1523437d61",
+  "t": "Push the tynes under it"
+ },
+ "Q:6:5:o2": {
+  "h": "6e7ba2615e",
+  "t": "Tip it onto its side"
+ },
+ "Q:6:5:o3": {
+  "h": "aceec93b2c",
+  "t": "Lift it with a chain around the mast"
+ },
+ "Q:6:5:o4": {
+  "h": "9afc4acb9e",
+  "t": "Place it on gluts or dunnage"
+ },
+ "Q:6:6:p": {
+  "h": "779d0cb1b9",
+  "t": "A co-worker asks for a lift across the warehouse on the forklift. You should:"
+ },
+ "Q:6:6:e": {
+  "h": "59e913bb5f",
+  "t": "Never carry passengers."
+ },
+ "Q:6:6:o1": {
+  "h": "f494fd1f1f",
+  "t": "Let them stand on the tynes"
+ },
+ "Q:6:6:o2": {
+  "h": "2873052fe7",
+  "t": "Let them sit on the counterweight"
+ },
+ "Q:6:6:o3": {
+  "h": "c862e0f115",
+  "t": "Drive slowly with them on board"
+ },
+ "Q:6:6:o4": {
+  "h": "c6a404eaae",
+  "t": "Refuse — forklifts must never carry passengers"
+ },
+ "Q:6:7:p": {
+  "h": "836b7dfa3c",
+  "t": "Before loading a truck at a dock, you must make sure:"
+ },
+ "Q:6:7:e": {
+  "h": "b4520b7123",
+  "t": "The truck must be secured so it can't move, and the dock plate must be secure and rated."
+ },
+ "Q:6:7:o1": {
+  "h": "6204ad6f76",
+  "t": "The truck's engine is running"
+ },
+ "Q:6:7:o2": {
+  "h": "7afdbfa105",
+  "t": "The truck is secured from moving and the dock plate is secure and rated"
+ },
+ "Q:6:7:o3": {
+  "h": "99f60dc080",
+  "t": "The truck driver stays in the cab"
+ },
+ "Q:6:7:o4": {
+  "h": "615fc60f94",
+  "t": "The dock plate is removed"
+ },
+ "Z:7": {
+  "h": "05d7bf6b28",
+  "t": "Module 7 quiz"
+ },
+ "Q:7:1:p": {
+  "h": "1b7b2cc123",
+  "t": "When parking a forklift, the tynes should be:"
+ },
+ "Q:7:1:e": {
+  "h": "660f803922",
+  "t": "Lower them fully to the ground with the tips resting on the floor."
+ },
+ "Q:7:1:o1": {
+  "h": "3b2c8983d6",
+  "t": "Raised to chest height"
+ },
+ "Q:7:1:o2": {
+  "h": "3eb15e68c3",
+  "t": "Fully lowered to the ground"
+ },
+ "Q:7:1:o3": {
+  "h": "ce713a9a56",
+  "t": "Raised slightly so they're visible"
+ },
+ "Q:7:1:o4": {
+  "h": "2a71db007e",
+  "t": "Left at travel height"
+ },
+ "Q:7:2:p": {
+  "h": "3a7da45f02",
+  "t": "Which gas is released when charging a lead-acid forklift battery?"
+ },
+ "Q:7:2:e": {
+  "h": "7c21ea6c96",
+  "t": "Charging releases hydrogen, which is explosive — ventilation is essential."
+ },
+ "Q:7:2:o1": {
+  "h": "41b680d81b",
+  "t": "Hydrogen"
+ },
+ "Q:7:2:o2": {
+  "h": "c69bd72e18",
+  "t": "Carbon dioxide"
+ },
+ "Q:7:2:o3": {
+  "h": "2755fd780a",
+  "t": "Nitrogen"
+ },
+ "Q:7:2:o4": {
+  "h": "ca1b7b558f",
+  "t": "Oxygen only"
+ },
+ "Q:7:3:p": {
+  "h": "901ca01302",
+  "t": "How should you check a newly fitted LPG cylinder for leaks?"
+ },
+ "Q:7:3:e": {
+  "h": "54b90887ff",
+  "t": "Use soapy water or a leak-detection solution. Never a flame."
+ },
+ "Q:7:3:o1": {
+  "h": "62f076e103",
+  "t": "With a lighter"
+ },
+ "Q:7:3:o2": {
+  "h": "83adf8d589",
+  "t": "By smell only"
+ },
+ "Q:7:3:o3": {
+  "h": "f2d99edc0b",
+  "t": "With soapy water or leak-detection solution"
+ },
+ "Q:7:3:o4": {
+  "h": "de6058a04a",
+  "t": "By running the engine at full revs"
+ },
+ "Q:7:4:p": {
+  "h": "17be7d7951",
+  "t": "What PPE should you wear when changing an LPG cylinder?"
+ },
+ "Q:7:4:e": {
+  "h": "d1ad1bb030",
+  "t": "Gloves and eye protection — LPG can cause cold burns."
+ },
+ "Q:7:4:o1": {
+  "h": "e288fb7359",
+  "t": "None is needed"
+ },
+ "Q:7:4:o2": {
+  "h": "4b5bc4d60e",
+  "t": "A hard hat only"
+ },
+ "Q:7:4:o3": {
+  "h": "b60baf83f8",
+  "t": "Hearing protection only"
+ },
+ "Q:7:4:o4": {
+  "h": "657bba43d8",
+  "t": "Gloves and eye protection"
+ },
+ "Q:7:5:p": {
+  "h": "1def72b2b0",
+  "t": "Where should you NOT park a forklift?"
+ },
+ "Q:7:5:e": {
+  "h": "35208153bb",
+  "t": "Never block exits, walkways, fire equipment or switchboards, and never park on a slope."
+ },
+ "Q:7:5:o1": {
+  "h": "de423ebfc1",
+  "t": "In the designated parking bay"
+ },
+ "Q:7:5:o2": {
+  "h": "9c78487588",
+  "t": "On level ground"
+ },
+ "Q:7:5:o3": {
+  "h": "a67b7b4e89",
+  "t": "Away from walkways"
+ },
+ "Q:7:5:o4": {
+  "h": "a13460ae2f",
+  "t": "In front of a fire extinguisher"
+ },
+ "Z:final": {
+  "h": "839ab94d39",
+  "t": "Final practice exam"
+ },
+ "Q:final:1:p": {
+  "h": "5d6cd2badb",
+  "t": "Who issues a High Risk Work Licence?"
+ },
+ "Q:final:1:e": {
+  "h": "a2507d0a4b",
+  "t": "The state or territory WHS regulator issues the licence after an accredited assessor assesses you."
+ },
+ "Q:final:1:o1": {
+  "h": "91372cef73",
+  "t": "Your employer"
+ },
+ "Q:final:1:o2": {
+  "h": "f5b9fa181e",
+  "t": "The forklift manufacturer"
+ },
+ "Q:final:1:o3": {
+  "h": "f9433ca8ba",
+  "t": "The state or territory WHS regulator"
+ },
+ "Q:final:1:o4": {
+  "h": "fd09e9ec89",
+  "t": "Any trainer on the spot"
+ },
+ "Q:final:2:p": {
+  "h": "c5fdbc45d0",
+  "t": "The AS 2359 series of Australian Standards relates to:"
+ },
+ "Q:final:2:e": {
+  "h": "437d202ad8",
+  "t": "AS 2359 covers powered industrial trucks — forklifts."
+ },
+ "Q:final:2:o1": {
+  "h": "e2c5f3f6b5",
+  "t": "Scaffolding"
+ },
+ "Q:final:2:o2": {
+  "h": "bafd5498a4",
+  "t": "Powered industrial trucks (forklifts)"
+ },
+ "Q:final:2:o3": {
+  "h": "adf243f78c",
+  "t": "Electrical wiring"
+ },
+ "Q:final:2:o4": {
+  "h": "19829cbb1e",
+  "t": "Cranes only"
+ },
+ "Q:final:3:p": {
+  "h": "aed4a26b7b",
+  "t": "Your supervisor gives you a verbal instruction you don't fully understand. You should:"
+ },
+ "Q:final:3:e": {
+  "h": "3aed664b78",
+  "t": "Use questioning to confirm the instruction before you start."
+ },
+ "Q:final:3:o1": {
+  "h": "799db93e57",
+  "t": "Ask questions to confirm what is needed before starting"
+ },
+ "Q:final:3:o2": {
+  "h": "ee669b205e",
+  "t": "Do what you think they meant"
+ },
+ "Q:final:3:o3": {
+  "h": "47715f926b",
+  "t": "Ignore it"
+ },
+ "Q:final:3:o4": {
+  "h": "9d3b03dd69",
+  "t": "Wait until the end of the shift"
+ },
+ "Q:final:4:p": {
+  "h": "08601d5056",
+  "t": "Which is a \"traffic warning system\"?"
+ },
+ "Q:final:4:e": {
+  "h": "762b4b03bd",
+  "t": "Warning lights and signs at doorways and intersections are traffic warning systems."
+ },
+ "Q:final:4:o1": {
+  "h": "d44d8d234b",
+  "t": "A fire extinguisher"
+ },
+ "Q:final:4:o2": {
+  "h": "e587e91915",
+  "t": "A pre-start checklist"
+ },
+ "Q:final:4:o3": {
+  "h": "80f10e5723",
+  "t": "A data plate"
+ },
+ "Q:final:4:o4": {
+  "h": "d95ae4b38e",
+  "t": "Flashing warning lights at a doorway"
+ },
+ "Q:final:5:p": {
+  "h": "6e3a73e38d",
+  "t": "PPE sits where in the hierarchy of control?"
+ },
+ "Q:final:5:e": {
+  "h": "ad1bb8477a",
+  "t": "PPE is the least effective control — the last line of defence."
+ },
+ "Q:final:5:o1": {
+  "h": "916d2abb73",
+  "t": "First — most effective"
+ },
+ "Q:final:5:o2": {
+  "h": "2a4bcae654",
+  "t": "Second"
+ },
+ "Q:final:5:o3": {
+  "h": "6ddb08949e",
+  "t": "In the middle"
+ },
+ "Q:final:5:o4": {
+  "h": "910fb2b3f1",
+  "t": "Last — least effective"
+ },
+ "Q:final:6:p": {
+  "h": "4f7fd3d03b",
+  "t": "Which of these is an overhead hazard?"
+ },
+ "Q:final:6:e": {
+  "h": "919c0fce83",
+  "t": "Powerlines, low beams and doorways can be struck by the mast or load."
+ },
+ "Q:final:6:o1": {
+  "h": "ab653f0495",
+  "t": "A pothole"
+ },
+ "Q:final:6:o2": {
+  "h": "0bcaedfc2b",
+  "t": "An oil spill"
+ },
+ "Q:final:6:o3": {
+  "h": "0e9abce925",
+  "t": "Electrical powerlines"
+ },
+ "Q:final:6:o4": {
+  "h": "7dd46a36a1",
+  "t": "A pedestrian walkway"
+ },
+ "Q:final:7:p": {
+  "h": "2d3bbd35cf",
+  "t": "Why should you avoid driving on recently backfilled ground?"
+ },
+ "Q:final:7:e": {
+  "h": "f9d8ff7880",
+  "t": "Backfilled ground may not be compacted and can collapse under the forklift."
+ },
+ "Q:final:7:o1": {
+  "h": "e4f8e71403",
+  "t": "It is too slippery"
+ },
+ "Q:final:7:o2": {
+  "h": "019c236aa0",
+  "t": "It may collapse under the weight of the forklift"
+ },
+ "Q:final:7:o3": {
+  "h": "8f8beff936",
+  "t": "It damages the tyres"
+ },
+ "Q:final:7:o4": {
+  "h": "973a4934d5",
+  "t": "It is always a pedestrian area"
+ },
+ "Q:final:8:p": {
+  "h": "c316157793",
+  "t": "You're moving sheets of plywood outdoors on a very windy day. The main risk is:"
+ },
+ "Q:final:8:e": {
+  "h": "e107025e4a",
+  "t": "Large flat loads catch the wind like a sail and can become unstable."
+ },
+ "Q:final:8:o1": {
+  "h": "f47510f226",
+  "t": "The load catches the wind and becomes unstable"
+ },
+ "Q:final:8:o2": {
+  "h": "09d7452566",
+  "t": "The engine overheats"
+ },
+ "Q:final:8:o3": {
+  "h": "519c1a4fdc",
+  "t": "The horn won't be heard"
+ },
+ "Q:final:8:o4": {
+  "h": "d44cc5e742",
+  "t": "The tyres lose pressure"
+ },
+ "Q:final:9:p": {
+  "h": "2737fe0ea0",
+  "t": "What is a sensible response to working in extreme heat?"
+ },
+ "Q:final:9:e": {
+  "h": "eefc7c3d78",
+  "t": "Drink water, take breaks and watch for heat stress; use sun protection outdoors."
+ },
+ "Q:final:9:o1": {
+  "h": "3f22b50a72",
+  "t": "Work faster to finish early"
+ },
+ "Q:final:9:o2": {
+  "h": "66e074462a",
+  "t": "Remove your seatbelt to stay cool"
+ },
+ "Q:final:9:o3": {
+  "h": "12dac9e4f7",
+  "t": "Drink water, take breaks and watch for heat stress"
+ },
+ "Q:final:9:o4": {
+  "h": "cfaaf3c7da",
+  "t": "Nothing — heat doesn't affect operators"
+ },
+ "Q:final:10:p": {
+  "h": "3b63cbeebe",
+  "t": "A traffic management plan is used to:"
+ },
+ "Q:final:10:e": {
+  "h": "c5bb6d637e",
+  "t": "It separates people and vehicles and sets routes, speed limits, crossings and signage."
+ },
+ "Q:final:10:o1": {
+  "h": "e1c184d315",
+  "t": "Record forklift fuel use"
+ },
+ "Q:final:10:o2": {
+  "h": "1cbe1ba42e",
+  "t": "Separate pedestrians and vehicles and set routes and speed limits"
+ },
+ "Q:final:10:o3": {
+  "h": "69b63a0561",
+  "t": "List the weight of loads"
+ },
+ "Q:final:10:o4": {
+  "h": "f75a5bc3d2",
+  "t": "Schedule forklift servicing"
+ },
+ "Q:final:11:p": {
+  "h": "57b4a8dbec",
+  "t": "During the pre-start you find a crack at the heel of a tyne. You should:"
+ },
+ "Q:final:11:e": {
+  "h": "d08657dc67",
+  "t": "A cracked tyne is a serious defect. Tag the forklift out and report it."
+ },
+ "Q:final:11:o1": {
+  "h": "4608a5cfa0",
+  "t": "Use the forklift for light loads only"
+ },
+ "Q:final:11:o2": {
+  "h": "3209a8f759",
+  "t": "Tag it out of service and report it"
+ },
+ "Q:final:11:o3": {
+  "h": "ab499d4e01",
+  "t": "Swap the tynes around"
+ },
+ "Q:final:11:o4": {
+  "h": "c681511700",
+  "t": "Continue and report at the end of the shift"
+ },
+ "Q:final:12:p": {
+  "h": "dfb310de49",
+  "t": "During operational checks you hear a grinding noise from the mast. You should:"
+ },
+ "Q:final:12:e": {
+  "h": "4d66cb00fe",
+  "t": "Unusual noises are a sign of a fault — stop, tag out and report."
+ },
+ "Q:final:12:o1": {
+  "h": "ce01791e0d",
+  "t": "Turn the radio up"
+ },
+ "Q:final:12:o2": {
+  "h": "9c3e6fdafc",
+  "t": "Keep working and see if it stops"
+ },
+ "Q:final:12:o3": {
+  "h": "f25ec47929",
+  "t": "Spray it with water"
+ },
+ "Q:final:12:o4": {
+  "h": "81b63a5568",
+  "t": "Stop, tag it out and report it"
+ },
+ "Q:final:13:p": {
+  "h": "2ddfdf41f3",
+  "t": "Who may remove an \"Out of service\" tag from a forklift?"
+ },
+ "Q:final:13:e": {
+  "h": "3b5e30a827",
+  "t": "Only an authorised person, once the repair has been completed and checked."
+ },
+ "Q:final:13:o1": {
+  "h": "2e6b3ec5e1",
+  "t": "Only an authorised person once the repair is done and checked"
+ },
+ "Q:final:13:o2": {
+  "h": "e287ed3c02",
+  "t": "Any operator who needs the forklift"
+ },
+ "Q:final:13:o3": {
+  "h": "64ec9d1a7f",
+  "t": "The person who found the fault, after lunch"
+ },
+ "Q:final:13:o4": {
+  "h": "b830e9317f",
+  "t": "Anyone, if the supervisor is away"
+ },
+ "Q:final:14:p": {
+  "h": "ce72ecfb48",
+  "t": "The service brakes fail while you are travelling. What should you do?"
+ },
+ "Q:final:14:e": {
+  "h": "6923cab311",
+  "t": "Take your foot off the accelerator, warn others with the horn, steer clear of people and obstacles, and use the park brake to stop."
+ },
+ "Q:final:14:o1": {
+  "h": "919e1eda1d",
+  "t": "Jump off the forklift"
+ },
+ "Q:final:14:o2": {
+  "h": "dba39ae70d",
+  "t": "Raise the load to slow down"
+ },
+ "Q:final:14:o3": {
+  "h": "0bb5bf33fa",
+  "t": "Warn others with the horn, steer to a safe area and use the park brake to stop"
+ },
+ "Q:final:14:o4": {
+  "h": "f94c0152dd",
+  "t": "Accelerate to get to the parking bay"
+ },
+ "Q:final:15:p": {
+  "h": "07b6a6bdd9",
+  "t": "The temperature gauge shows the engine is overheating. You should:"
+ },
+ "Q:final:15:e": {
+  "h": "2ae8d2c102",
+  "t": "Stop and shut down safely, let it cool, and report it. Never open a hot radiator cap."
+ },
+ "Q:final:15:o1": {
+  "h": "ec0a4132ec",
+  "t": "Open the radiator cap straight away"
+ },
+ "Q:final:15:o2": {
+  "h": "4258efc406",
+  "t": "Stop, shut down, let it cool and report it"
+ },
+ "Q:final:15:o3": {
+  "h": "6c07e54854",
+  "t": "Keep driving to cool it with airflow"
+ },
+ "Q:final:15:o4": {
+  "h": "1a6adeb02e",
+  "t": "Pour cold water on the engine"
+ },
+ "Q:final:16:p": {
+  "h": "ff91e6b6dd",
+  "t": "For the forklift to stay stable, the combined centre of gravity must stay:"
+ },
+ "Q:final:16:e": {
+  "h": "70ffa9bcdf",
+  "t": "It must stay within the stability triangle."
+ },
+ "Q:final:16:o1": {
+  "h": "11191a36d4",
+  "t": "Inside the stability triangle"
+ },
+ "Q:final:16:o2": {
+  "h": "6081802cef",
+  "t": "Over the tynes"
+ },
+ "Q:final:16:o3": {
+  "h": "e6a8cb93ee",
+  "t": "Behind the counterweight"
+ },
+ "Q:final:16:o4": {
+  "h": "e5d861c97e",
+  "t": "Above the mast"
+ },
+ "Q:final:17:p": {
+  "h": "1c7f80a2dd",
+  "t": "Where do you find a forklift's rated capacity?"
+ },
+ "Q:final:17:e": {
+  "h": "5ce3276cc5",
+  "t": "The rated capacity is on the manufacturer's data plate."
+ },
+ "Q:final:17:o1": {
+  "h": "f8c53b231e",
+  "t": "The fuel gauge"
+ },
+ "Q:final:17:o2": {
+  "h": "b117b744f1",
+  "t": "The data plate"
+ },
+ "Q:final:17:o3": {
+  "h": "34575e83a9",
+  "t": "The traffic management plan"
+ },
+ "Q:final:17:o4": {
+  "h": "86a94783be",
+  "t": "The racking label only"
+ },
+ "Q:final:18:p": {
+  "h": "9e57c39827",
+  "t": "A pallet holds 50 cartons of 20 kg each. The pallet weighs 25 kg. What is the total load weight?"
+ },
+ "Q:final:18:e": {
+  "h": "0fa8d60f42",
+  "t": "50 × 20 = 1,000 kg, plus the 25 kg pallet = 1,025 kg."
+ },
+ "Q:final:18:o1": {
+  "h": "c5bdd7f07c",
+  "t": "1,000 kg"
+ },
+ "Q:final:18:o2": {
+  "h": "86138a02de",
+  "t": "1,020 kg"
+ },
+ "Q:final:18:o3": {
+  "h": "00e7d6b22e",
+  "t": "1,025 kg"
+ },
+ "Q:final:18:o4": {
+  "h": "97642fa9f1",
+  "t": "1,250 kg"
+ },
+ "Q:final:19:p": {
+  "h": "b6c0ed4a18",
+  "t": "Which document records a load's weight measured at a weighbridge?"
+ },
+ "Q:final:19:e": {
+  "h": "30d417b1e8",
+  "t": "A weighbridge docket shows the measured weight."
+ },
+ "Q:final:19:o1": {
+  "h": "e587e91915",
+  "t": "A pre-start checklist"
+ },
+ "Q:final:19:o2": {
+  "h": "d4319b8d41",
+  "t": "A SWMS"
+ },
+ "Q:final:19:o3": {
+  "h": "267b1768e1",
+  "t": "A hazard report"
+ },
+ "Q:final:19:o4": {
+  "h": "06d7773e41",
+  "t": "A weighbridge docket"
+ },
+ "Q:final:20:p": {
+  "h": "38c063caac",
+  "t": "You're using a jib attachment. What extra hazard must you manage?"
+ },
+ "Q:final:20:e": {
+  "h": "6b9f2d461f",
+  "t": "A load hanging from a jib can swing — move slowly and smoothly; capacity depends on hook position."
+ },
+ "Q:final:20:o1": {
+  "h": "b4da7e902d",
+  "t": "The suspended load can swing"
+ },
+ "Q:final:20:o2": {
+  "h": "d90e913700",
+  "t": "The tyres wear faster"
+ },
+ "Q:final:20:o3": {
+  "h": "f7c5a1787c",
+  "t": "The horn stops working"
+ },
+ "Q:final:20:o4": {
+  "h": "50b9113e2b",
+  "t": "There are no extra hazards"
+ },
+ "Q:final:21:p": {
+  "h": "509df6300e",
+  "t": "Before using a rotator attachment to tip a load, you should:"
+ },
+ "Q:final:21:e": {
+  "h": "5ef46c5bf5",
+  "t": "Rotating shifts the centre of gravity — keep the load low and the forklift stationary."
+ },
+ "Q:final:21:o1": {
+  "h": "aea4b188c5",
+  "t": "Raise the load to full height"
+ },
+ "Q:final:21:o2": {
+  "h": "91d818638d",
+  "t": "Travel at speed"
+ },
+ "Q:final:21:o3": {
+  "h": "3d5b846be4",
+  "t": "Keep the load low and the forklift stationary"
+ },
+ "Q:final:21:o4": {
+  "h": "8f2202fcb6",
+  "t": "Remove the data plate"
+ },
+ "Q:final:22:p": {
+  "h": "f2af31fbc9",
+  "t": "Driving an unloaded forklift down a ramp, you should:"
+ },
+ "Q:final:22:e": {
+  "h": "e0994c5206",
+  "t": "Unloaded, keep the tynes pointing downhill: drive forwards down the ramp."
+ },
+ "Q:final:22:o1": {
+  "h": "f67c9756a5",
+  "t": "Reverse down with tynes uphill"
+ },
+ "Q:final:22:o2": {
+  "h": "02eac39d63",
+  "t": "Turn halfway down"
+ },
+ "Q:final:22:o3": {
+  "h": "0b0ee399b0",
+  "t": "Drive forwards down with the tynes pointing downhill"
+ },
+ "Q:final:22:o4": {
+  "h": "e35f6a1c6a",
+  "t": "Raise the tynes high"
+ },
+ "Q:final:23:p": {
+  "h": "9bd9824434",
+  "t": "During a trial lift the rear wheels start to feel light. You should:"
+ },
+ "Q:final:23:e": {
+  "h": "0ebc32d026",
+  "t": "The forklift is near its tipping point — lower the load straight away and reassess."
+ },
+ "Q:final:23:o1": {
+  "h": "1d4d5a4e3f",
+  "t": "Lift higher to rebalance"
+ },
+ "Q:final:23:o2": {
+  "h": "e151586698",
+  "t": "Lower the load straight away and reassess"
+ },
+ "Q:final:23:o3": {
+  "h": "0658f4ebaf",
+  "t": "Have someone sit on the back"
+ },
+ "Q:final:23:o4": {
+  "h": "8d2c3104e2",
+  "t": "Drive forwards quickly"
+ },
+ "Q:final:24:p": {
+  "h": "56134eaeb9",
+  "t": "Why must you turn the charger off before disconnecting a forklift battery?"
+ },
+ "Q:final:24:e": {
+  "h": "a25ea51689",
+  "t": "Disconnecting while charging can create a spark, which could ignite hydrogen gas."
+ },
+ "Q:final:24:o1": {
+  "h": "7290d625f2",
+  "t": "To avoid a spark that could ignite hydrogen gas"
+ },
+ "Q:final:24:o2": {
+  "h": "08e6c1929c",
+  "t": "To save electricity"
+ },
+ "Q:final:24:o3": {
+  "h": "ed65c227c5",
+  "t": "To reset the battery gauge"
+ },
+ "Q:final:24:o4": {
+  "h": "6f31d9acb6",
+  "t": "It doesn't matter"
+ },
+ "Q:final:25:p": {
+  "h": "63233c0f22",
+  "t": "After parking at the end of the shift, what else should you do?"
+ },
+ "Q:final:25:e": {
+  "h": "9e8862282e",
+  "t": "Do a post-operational check, then record and report any defects found during the shift."
+ },
+ "Q:final:25:o1": {
+  "h": "3dcbb68b70",
+  "t": "Leave the key in for the next operator"
+ },
+ "Q:final:25:o2": {
+  "h": "b5ecb73b5b",
+  "t": "Leave the tynes raised"
+ },
+ "Q:final:25:o3": {
+  "h": "b621166e7a",
+  "t": "Nothing else"
+ },
+ "Q:final:25:o4": {
+  "h": "19585c4c77",
+  "t": "Record and report any defects from the shift"
+ },
+ "Q:final:26:p": {
+  "h": "7dae19310c",
+  "t": "A pallet holds 6 layers of 5 cartons. Each carton weighs 20 kg and the pallet weighs 20 kg. What is the total weight?"
+ },
+ "Q:final:26:e": {
+  "h": "4588b3491f",
+  "t": "6 × 5 = 30 cartons. 30 × 20 = 600 kg. 600 + 20 = 620 kg."
+ },
+ "Q:final:26:o1": {
+  "h": "2a4cad68f6",
+  "t": "600 kg"
+ },
+ "Q:final:26:o2": {
+  "h": "756a51ea06",
+  "t": "620 kg"
+ },
+ "Q:final:26:o3": {
+  "h": "6d9526dab1",
+  "t": "640 kg"
+ },
+ "Q:final:26:o4": {
+  "h": "3b6c1503da",
+  "t": "720 kg"
+ },
+ "Q:final:27:p": {
+  "h": "e8b23da5c4",
+  "t": "A running sheet lists a load as 2.5 t. How many kilograms is that?"
+ },
+ "Q:final:27:e": {
+  "h": "f2b45f7f88",
+  "t": "2.5 × 1,000 = 2,500 kg."
+ },
+ "Q:final:27:o1": {
+  "h": "07cab37c20",
+  "t": "250 kg"
+ },
+ "Q:final:27:o2": {
+  "h": "eb26454899",
+  "t": "2,050 kg"
+ },
+ "Q:final:27:o3": {
+  "h": "374254f19b",
+  "t": "2,500 kg"
+ },
+ "Q:final:27:o4": {
+  "h": "80a9c31e22",
+  "t": "25,000 kg"
+ },
+ "Q:final:28:p": {
+  "h": "aad5caba1e",
+  "t": "An evenly loaded crate 1,100 mm deep weighs 2,200 kg and sits hard against the backrest. The forklift is rated at 2,500 kg at a 600 mm load centre. Can it lift the crate?"
+ },
+ "Q:final:28:e": {
+  "h": "1fe6517201",
+  "t": "Load centre = 1,100 ÷ 2 = 550 mm — within 600 mm. 2,200 kg is less than 2,500 kg. OK to lift."
+ },
+ "Q:final:28:o1": {
+  "h": "a23bfa5905",
+  "t": "Yes — load centre 550 mm, and 2,200 kg is within 2,500 kg"
+ },
+ "Q:final:28:o2": {
+  "h": "61fb757e09",
+  "t": "No — the load centre is 1,100 mm"
+ },
+ "Q:final:28:o3": {
+  "h": "7766afb0c3",
+  "t": "No — 2,200 kg is over 2,500 kg"
+ },
+ "Q:final:28:o4": {
+  "h": "5e3f48b12e",
+  "t": "Yes — but only below 3 metres"
+ },
+ "Q:final:29:p": {
+  "h": "4762494027",
+  "t": "A forklift is rated at 2,500 kg. Which ONE of these loads is within its rated capacity?"
+ },
+ "Q:final:29:e": {
+  "h": "c372e6a6b8",
+  "t": "45 × 50 = 2,250 kg + 30 kg pallet = 2,280 kg — within 2,500 kg. The others are 2,600 kg, 2,600 kg and 2,530 kg — all over."
+ },
+ "Q:final:29:o1": {
+  "h": "e73bfa22b5",
+  "t": "A machine weighing 2.6 t"
+ },
+ "Q:final:29:o2": {
+  "h": "eaa9da8502",
+  "t": "Two pallets of 1,300 kg each, lifted together"
+ },
+ "Q:final:29:o3": {
+  "h": "bc3f4770ca",
+  "t": "45 cartons of 50 kg on a 30 kg pallet"
+ },
+ "Q:final:29:o4": {
+  "h": "4c3d6a4ea2",
+  "t": "A 2,500 kg crate on a 30 kg pallet"
+ },
+ "Q:final:30:p": {
+  "h": "60e75b3a87",
+  "t": "The forklift's rated capacity is 1,300 kg. The pallet weighs 25 kg and each carton weighs 25 kg. What is the most cartons you can load?"
+ },
+ "Q:final:30:e": {
+  "h": "262113f186",
+  "t": "1,300 − 25 = 1,275. 1,275 ÷ 25 = 51 cartons. Check: 51 × 25 + 25 = 1,300 kg. 52 cartons would be 1,325 kg."
+ },
+ "Q:final:31:p": {
+  "h": "7603b03662",
+  "t": "A forklift has touched a powerline. When is it safe to go back to it?"
+ },
+ "Q:final:31:e": {
+  "h": "d5f64f6d3e",
+  "t": "Only once the electricity network operator confirms the power is off. Until then, stay at least 8 m away."
+ },
+ "Q:final:31:o1": {
+  "h": "79e34d444d",
+  "t": "As soon as the mast is no longer touching the line"
+ },
+ "Q:final:31:o2": {
+  "h": "43afa79a5a",
+  "t": "After waiting 5 minutes"
+ },
+ "Q:final:31:o3": {
+  "h": "2359bb8d02",
+  "t": "Only when the electricity network operator confirms the power is off"
+ },
+ "Q:final:31:o4": {
+  "h": "3c0d8ac2bb",
+  "t": "When it stops sparking"
+ },
+ "Q:final:32:p": {
+  "h": "67e0b64bf0",
+  "t": "Which of these is a HAZARD rather than a risk?"
+ },
+ "Q:final:32:e": {
+  "h": "f63eb1da93",
+  "t": "An oil spill is a hazard — something that could cause harm. The chance of skidding on it, and how bad that would be, is the risk."
+ },
+ "Q:final:32:o1": {
+  "h": "cfcba28d84",
+  "t": "The chance of a collision"
+ },
+ "Q:final:32:o2": {
+  "h": "33c803b021",
+  "t": "An oil spill on the forklift's route"
+ },
+ "Q:final:32:o3": {
+  "h": "d01502c7fd",
+  "t": "How serious an injury could be"
+ },
+ "Q:final:32:o4": {
+  "h": "9573a18947",
+  "t": "The likelihood of the load falling"
+ },
+ "Q:final:33:p": {
+  "h": "42bbeed7fa",
+  "t": "When you assess a risk, which two things do you consider?"
+ },
+ "Q:final:33:e": {
+  "h": "1e014e1994",
+  "t": "Risk = likelihood (how likely is harm?) and consequence (how bad would it be?)."
+ },
+ "Q:final:33:o1": {
+  "h": "4ea4d701a8",
+  "t": "How likely the harm is, and how bad it would be"
+ },
+ "Q:final:33:o2": {
+  "h": "a056fc427c",
+  "t": "The time of day and the weather"
+ },
+ "Q:final:33:o3": {
+  "h": "6c6e76d479",
+  "t": "The colour of the forklift and the load"
+ },
+ "Q:final:33:o4": {
+  "h": "35d367595e",
+  "t": "Who is to blame and the cost"
+ },
+ "V:1:0:0": {
+  "h": "a998195649",
+  "t": "Welcome to Module 1. In this short video we'll cover why you need a licence to drive a forklift, your duties under safety law, and where the safety rules come from."
+ },
+ "V:1:1:0": {
+  "h": "4ad4e4884c",
+  "t": "Forklifts work in busy places like this, close to people, racking and other vehicles."
+ },
+ "V:1:1:1": {
+  "h": "e96b90aaeb",
+  "t": "One mistake can injure or kill someone. That's why the law treats forklift driving as high risk work."
+ },
+ "V:1:2:0": {
+  "h": "2af6442a8e",
+  "t": "Driving a forklift is high risk work. To do it, you need a High Risk Work Licence, class L F."
+ },
+ "V:1:2:1": {
+  "h": "9e6ef16057",
+  "t": "There's also a class L O, for order-picking forklifts. This course prepares you for class L F."
+ },
+ "V:1:3:0": {
+  "h": "7a79ba848f",
+  "t": "Here's how you get your licence."
+ },
+ "V:1:3:1": {
+  "h": "a861f27c51",
+  "t": "First, train with a Registered Training Organisation."
+ },
+ "V:1:3:2": {
+  "h": "f1cff64e1b",
+  "t": "Second, pass both a theory and a practical assessment with an accredited assessor."
+ },
+ "V:1:3:3": {
+  "h": "eb1ca0c387",
+  "t": "Third, apply to your state or territory regulator. You must be at least eighteen, and you'll renew the licence about every five years."
+ },
+ "V:1:4:0": {
+  "h": "3c5283c758",
+  "t": "Everyone at work has safety duties. The business must do three main things."
+ },
+ "V:1:4:1": {
+  "h": "afbbd215f6",
+  "t": "Provide a forklift that's safe and properly maintained."
+ },
+ "V:1:4:2": {
+  "h": "50dfe479b1",
+  "t": "Give you the training, information and supervision you need."
+ },
+ "V:1:4:3": {
+  "h": "a50adb6b3e",
+  "t": "And set up safe ways of working, like a traffic management plan."
+ },
+ "V:1:5:0": {
+  "h": "cef3fad3b6",
+  "t": "As the operator, you have duties too."
+ },
+ "V:1:5:1": {
+  "h": "1042ca1e21",
+  "t": "Take care of your own safety."
+ },
+ "V:1:5:2": {
+  "h": "86890f34f2",
+  "t": "Take care that what you do doesn't hurt anyone else."
+ },
+ "V:1:5:3": {
+  "h": "0832486f2c",
+  "t": "Follow reasonable instructions and your site's procedures. If you don't understand an instruction, ask."
+ },
+ "V:1:5:4": {
+  "h": "2d295b5a40",
+  "t": "And report every hazard, incident and defect you find."
+ },
+ "V:1:6:0": {
+  "h": "fac9eb2d6e",
+  "t": "Safety rules come from a few places."
+ },
+ "V:1:6:1": {
+  "h": "c441cd86ca",
+  "t": "The Work Health and Safety Act and Regulations. That's the law."
+ },
+ "V:1:6:2": {
+  "h": "8c85a99ac5",
+  "t": "Codes of practice, which explain how to meet the law."
+ },
+ "V:1:6:3": {
+  "h": "724cf51789",
+  "t": "Australian Standards. For forklifts, that's the A S twenty-three fifty-nine series."
+ },
+ "V:1:6:4": {
+  "h": "e1bed6ebcf",
+  "t": "The manufacturer's manual for the forklift you're driving."
+ },
+ "V:1:6:5": {
+  "h": "b9593b9540",
+  "t": "And your own workplace's procedures."
+ },
+ "V:1:7:0": {
+  "h": "af0dc57a88",
+  "t": "Good records show checks were done and problems were fixed. Make them accurate, neat, dated and signed."
+ },
+ "V:1:7:1": {
+  "h": "d3c53b7edf",
+  "t": "Fill in a pre-start checklist every shift."
+ },
+ "V:1:7:2": {
+  "h": "7912711c2c",
+  "t": "Write up defect and fault reports."
+ },
+ "V:1:7:3": {
+  "h": "c5873db00b",
+  "t": "Report incidents, and near misses too."
+ },
+ "V:1:7:4": {
+  "h": "f2fb6764e0",
+  "t": "And if you're a trainee, keep your logbook of supervised hours up to date."
+ },
+ "V:1:8:0": {
+  "h": "6149944918",
+  "t": "That's Module 1. Next, read through the lessons, then take the quiz. And remember: if you're not sure, stop and ask."
+ },
+ "V:2:0:0": {
+  "h": "942f545d71",
+  "t": "Module 2 is about planning your work and spotting hazards before they hurt someone — including what to do if you hit a powerline."
+ },
+ "V:2:1:0": {
+  "h": "56c4362d1c",
+  "t": "Before you lift anything, think the job through."
+ },
+ "V:2:1:1": {
+  "h": "38bae0af4e",
+  "t": "The load. How heavy is it, how big, and is it secure?"
+ },
+ "V:2:1:2": {
+  "h": "b1439462c2",
+  "t": "The forklift. Can it lift this load, as high as you need?"
+ },
+ "V:2:1:3": {
+  "h": "869bdab928",
+  "t": "The route. Check the ground, slopes, doorways and anything overhead."
+ },
+ "V:2:1:4": {
+  "h": "6013d319f1",
+  "t": "The destination. Where exactly will the load go?"
+ },
+ "V:2:1:5": {
+  "h": "1f00e5e227",
+  "t": "And people. Who else is working nearby, and how will you talk to them?"
+ },
+ "V:2:2:0": {
+  "h": "f40fd67e7d",
+  "t": "Good communication prevents accidents."
+ },
+ "V:2:2:1": {
+  "h": "f507f1db3f",
+  "t": "Use your horn, beacon and reversing alarm."
+ },
+ "V:2:2:2": {
+  "h": "3669a99ece",
+  "t": "If a spotter is guiding you with hand signals, agree on the signals before you start."
+ },
+ "V:2:2:3": {
+  "h": "57baf536b6",
+  "t": "On a two-way radio, keep messages short and clear, and confirm you understood."
+ },
+ "V:2:2:4": {
+  "h": "2f89676e6d",
+  "t": "And always make eye contact with pedestrians before you move near them."
+ },
+ "V:2:3:0": {
+  "h": "b9bbcc966d",
+  "t": "Two words you need to know: hazard and risk. They're not the same thing."
+ },
+ "V:2:3:1": {
+  "h": "76b6ebc81c",
+  "t": "A hazard is anything that could cause harm. A pedestrian near your work, an oil spill, a powerline, a damaged pallet."
+ },
+ "V:2:3:2": {
+  "h": "fc183e6cef",
+  "t": "A risk is the chance that the hazard will actually hurt someone."
+ },
+ "V:2:3:3": {
+  "h": "951cc2cfc0",
+  "t": "And how bad the harm would be. A hazard that's likely to happen, and could kill someone, is a high risk."
+ },
+ "V:2:3:4": {
+  "h": "156d3cb7f2",
+  "t": "So: spot the hazard, assess the risk by asking how likely and how bad, then control it."
+ },
+ "V:2:4:0": {
+  "h": "f5d4f17b8d",
+  "t": "When you find a hazard, use the hierarchy of control. Start at the top — the most effective — and work down."
+ },
+ "V:2:4:1": {
+  "h": "602eff3c09",
+  "t": "One. Eliminate the hazard completely."
+ },
+ "V:2:4:2": {
+  "h": "336f93c6a8",
+  "t": "Two. Substitute it with something safer."
+ },
+ "V:2:4:3": {
+  "h": "9f64fb044a",
+  "t": "Three. Isolate people from it, with barriers or separate walkways."
+ },
+ "V:2:4:4": {
+  "h": "4e6492fa19",
+  "t": "Four. Engineering controls, like mirrors and warning lights."
+ },
+ "V:2:4:5": {
+  "h": "ca4116b580",
+  "t": "Five. Administrative controls, like procedures, signs and training."
+ },
+ "V:2:4:6": {
+  "h": "9b1b1a0389",
+  "t": "Six. Personal protective equipment. That's the last line of defence."
+ },
+ "V:2:5:0": {
+  "h": "4c61c4c7e0",
+  "t": "When you work outside, always look up before you lift."
+ },
+ "V:2:5:1": {
+  "h": "9958478838",
+  "t": "High-voltage electricity can jump across a gap, so you don't have to touch a powerline to be killed by it."
+ },
+ "V:2:6:0": {
+  "h": "17d0648059",
+  "t": "Overhead powerlines can kill. Electricity can jump across a gap, so you don't even have to touch the line."
+ },
+ "V:2:6:1": {
+  "h": "ec9fca4f63",
+  "t": "Always look up. Keep the minimum distance for your state. In New South Wales, that's three metres for most local lines, and more for bigger lines."
+ },
+ "V:2:6:2": {
+  "h": "4d3ae8ad9d",
+  "t": "Lower the mast before you travel, and use a spotter when you're working near lines."
+ },
+ "V:2:7:0": {
+  "h": "96d7e7f949",
+  "t": "If your forklift touches a powerline, remember five steps. Stay. Warn. Break. Call. Jump."
+ },
+ "V:2:7:1": {
+  "h": "07a3c5add6",
+  "t": "Step one. Stay on the forklift. Stay calm, and don't touch any metal parts."
+ },
+ "V:2:7:2": {
+  "h": "8a6db34c25",
+  "t": "Step two. Warn everyone to keep at least eight metres away. Nobody touches the forklift."
+ },
+ "V:2:7:3": {
+  "h": "252e8a2c27",
+  "t": "Step three. Break contact, by lowering the mast or driving clear — but only if it's safe."
+ },
+ "V:2:7:4": {
+  "h": "10184974c5",
+  "t": "Step four. Call triple zero and the electricity company, and ask them to turn the power off. Stay where you are until they say it's off."
+ },
+ "V:2:7:5": {
+  "h": "32454366f1",
+  "t": "Step five. Only if you must get off — for example, if there's a fire — jump clear."
+ },
+ "V:2:8:0": {
+  "h": "5cc76f2f93",
+  "t": "The ground around a live forklift can be live too. That's why the eight metre rule matters."
+ },
+ "V:2:8:1": {
+  "h": "d1f36d7239",
+  "t": "Everyone else stays at least eight metres away, and no one tries to help you until the power is confirmed off."
+ },
+ "V:2:9:0": {
+  "h": "e1002a196f",
+  "t": "If you have to get off, jump well clear with your feet together. Never touch the forklift and the ground at the same time."
+ },
+ "V:2:9:1": {
+  "h": "b1f1492f09",
+  "t": "Land with your feet together. Then shuffle or bunny-hop, keeping your feet together, until you're at least eight metres away."
+ },
+ "V:2:9:2": {
+  "h": "97ea00d064",
+  "t": "Don't go back until the electricity company confirms the power is off. Then report it — it's a notifiable incident."
+ },
+ "V:2:10:0": {
+  "h": "e3fbc8b5a7",
+  "t": "A loaded forklift is very heavy. Check the ground can take it."
+ },
+ "V:2:10:1": {
+  "h": "ae8fd0c66e",
+  "t": "Potholes and cracked concrete jolt the load. Slow down, or go around them, and report them."
+ },
+ "V:2:10:2": {
+  "h": "34aa63732a",
+  "t": "Soft soil and backfilled trenches can collapse. Avoid them."
+ },
+ "V:2:10:3": {
+  "h": "c20a9597ec",
+  "t": "Cross railway tracks slowly, at an angle if you can."
+ },
+ "V:2:10:4": {
+  "h": "1b53161b12",
+  "t": "And steel plates, grates and trench covers must be rated for the forklift and the load together."
+ },
+ "V:2:11:0": {
+  "h": "dfcda3d82d",
+  "t": "Weather changes the risks outside."
+ },
+ "V:2:11:1": {
+  "h": "8a205c71bd",
+  "t": "In strong wind, big flat loads like sheets of plywood catch the wind like a sail."
+ },
+ "V:2:11:2": {
+  "h": "d4c6f94512",
+  "t": "If there's lightning, stop work, park safely, and take shelter."
+ },
+ "V:2:11:3": {
+  "h": "bf8a91bcdc",
+  "t": "On wet or icy ground, slow down, brake gently, and leave a much bigger stopping distance."
+ },
+ "V:2:11:4": {
+  "h": "b57d12c39f",
+  "t": "In heat, drink water, take breaks, and protect yourself from the sun."
+ },
+ "V:2:12:0": {
+  "h": "7a7f306119",
+  "t": "In a real warehouse, people walk the same aisles you drive."
+ },
+ "V:2:12:1": {
+  "h": "ad6d11e2af",
+  "t": "Marked walkways, barriers and exclusion zones keep pedestrians and forklifts apart."
+ },
+ "V:2:13:0": {
+  "h": "f81f86fe7c",
+  "t": "A traffic management plan keeps people and forklifts apart, with walkways, crossings, speed limits and signs. Follow it every time."
+ },
+ "V:2:13:1": {
+  "h": "2a0059b0fb",
+  "t": "When you're loading a truck or stacking high, set up an exclusion zone with barriers and signs."
+ },
+ "V:2:13:2": {
+  "h": "4d2894e2f0",
+  "t": "If anyone walks into it, stop work until they've left."
+ },
+ "V:2:14:0": {
+  "h": "8649bd4694",
+  "t": "That's Module 2. Remember the powerline steps: stay, warn, break, call, jump. Now read the lessons and try the quiz."
+ },
+ "V:3:0:0": {
+  "h": "33e4f4ad4e",
+  "t": "Module 3 covers the checks you do every shift, what to do when you find a fault, and what to do if something fails while you're driving."
+ },
+ "V:3:1:0": {
+  "h": "df60de0fbd",
+  "t": "Before every shift, you check the forklift, inside and out."
+ },
+ "V:3:1:1": {
+  "h": "8cd2155e45",
+  "t": "That includes the seat, seatbelt, controls and gauges, as well as the outside of the machine."
+ },
+ "V:3:2:0": {
+  "h": "78c86623d3",
+  "t": "Do a pre-start check before every shift, with the engine off. Walk all the way around the forklift."
+ },
+ "V:3:2:1": {
+  "h": "fd1e200e23",
+  "t": "One. The tynes. Look for cracks, bends and wear, and check the locking pins."
+ },
+ "V:3:2:2": {
+  "h": "4dde09a71b",
+  "t": "Two. The mast and chains. Look for damage and worn or loose chains."
+ },
+ "V:3:2:3": {
+  "h": "62595a2149",
+  "t": "Three. Hydraulic hoses. Check for leaks, and look at the ground underneath."
+ },
+ "V:3:2:4": {
+  "h": "27b76c939b",
+  "t": "Four. Tyres and wheels. Check for damage, wear and the right pressure."
+ },
+ "V:3:2:5": {
+  "h": "2790000326",
+  "t": "Five. The overhead guard and load backrest must be fitted and undamaged."
+ },
+ "V:3:2:6": {
+  "h": "a2bbe046f4",
+  "t": "Six. The data plate must be there, readable, and match any attachment."
+ },
+ "V:3:2:7": {
+  "h": "d3b3d74500",
+  "t": "Seven. Fluids and fuel — oil, coolant, and the gas bottle or battery charge."
+ },
+ "V:3:3:0": {
+  "h": "001cd6121a",
+  "t": "Getting on and off is where a lot of injuries happen."
+ },
+ "V:3:3:1": {
+  "h": "bab784901b",
+  "t": "Use the steps and handholds with three points of contact. Never jump down."
+ },
+ "V:3:3:2": {
+  "h": "961059477d",
+  "t": "Once you're seated, adjust the seat and mirrors."
+ },
+ "V:3:3:3": {
+  "h": "f9be63a365",
+  "t": "Put your seatbelt on, and check it works."
+ },
+ "V:3:4:0": {
+  "h": "3d0402408d",
+  "t": "Next, start the forklift the way the manufacturer says, and do your operational checks."
+ },
+ "V:3:4:1": {
+  "h": "2f8f9c514f",
+  "t": "Test the horn, lights, beacon and reversing alarm."
+ },
+ "V:3:4:2": {
+  "h": "d3fe9dd6c7",
+  "t": "Find and test every control."
+ },
+ "V:3:4:3": {
+  "h": "f6c1c263e9",
+  "t": "Run the lift, tilt and side shift through their full range. They should move smoothly."
+ },
+ "V:3:4:4": {
+  "h": "3da05464c8",
+  "t": "Check the brakes, steering and transmission."
+ },
+ "V:3:4:5": {
+  "h": "2b2f7832f1",
+  "t": "And listen for any unusual noises. Write the results on your checklist."
+ },
+ "V:3:5:0": {
+  "h": "98e5096c96",
+  "t": "If you find a fault, the forklift can't be used until it's fixed. This is called lock out, tag out."
+ },
+ "V:3:5:1": {
+  "h": "0d6d1747e7",
+  "t": "Stop, and park safely."
+ },
+ "V:3:5:2": {
+  "h": "cf243c611c",
+  "t": "Isolate the power. Take the key out, turn the gas off, or disconnect the battery."
+ },
+ "V:3:5:3": {
+  "h": "73e0bdfce7",
+  "t": "Tag it out of service."
+ },
+ "V:3:5:4": {
+  "h": "12b5c94324",
+  "t": "Report the fault to your supervisor, and write it down."
+ },
+ "V:3:6:0": {
+  "h": "61644a1c3b",
+  "t": "The tag tells everyone the forklift must not be used. Only an authorised person can take it off, once the repair has been done and checked."
+ },
+ "V:3:7:0": {
+  "h": "36a8ce345f",
+  "t": "Sometimes things fail while you're driving."
+ },
+ "V:3:7:1": {
+  "h": "63483a6b00",
+  "t": "If the brakes fail, take your foot off the accelerator, use the horn to warn people, steer away from people and obstacles, and use the park brake to stop."
+ },
+ "V:3:7:2": {
+  "h": "8ab7542062",
+  "t": "If the steering fails, stop as safely as you can and warn people."
+ },
+ "V:3:7:3": {
+  "h": "c35cf5dfed",
+  "t": "If the hydraulics fail and the load drops, keep everyone clear of it. In every case, tag out and report."
+ },
+ "V:3:8:0": {
+  "h": "f1c357ab4e",
+  "t": "If the forklift starts to tip over, do not jump. People who jump are often crushed by the overhead guard."
+ },
+ "V:3:8:1": {
+  "h": "6011151e58",
+  "t": "Stay in the seat with your seatbelt on. Hold the steering wheel tight, brace your feet, and lean away from the direction it's falling."
+ },
+ "V:3:9:0": {
+  "h": "33bdc3cd2f",
+  "t": "Here are some common problems."
+ },
+ "V:3:9:1": {
+  "h": "5eb72aa422",
+  "t": "If a gas forklift starts to stutter, the bottle is probably running empty. Park safely and change it."
+ },
+ "V:3:9:2": {
+  "h": "28dc03b3cf",
+  "t": "If the battery is low, go back to the charging area."
+ },
+ "V:3:9:3": {
+  "h": "b51111f611",
+  "t": "If it's overheating, stop, turn it off and let it cool. Never open a hot radiator cap."
+ },
+ "V:3:9:4": {
+  "h": "213ae04a42",
+  "t": "If a light, horn or alarm isn't working, report it. Only fix things you're trained and allowed to fix."
+ },
+ "V:3:10:0": {
+  "h": "6178e42207",
+  "t": "That's Module 3. Check it every shift, tag it if it's faulty, and report it. Now read the lessons and try the quiz."
+ },
+ "V:4:0:0": {
+  "h": "c4ddc1a595",
+  "t": "Module 4 explains why forklifts tip over, how to read the data plate, how to work out a load's weight, and how attachments change things."
+ },
+ "V:4:1:0": {
+  "h": "a4068a9467",
+  "t": "A counterbalance forklift works like a see-saw. The front wheels are the pivot. The load is on one side, and the heavy counterweight is on the other."
+ },
+ "V:4:1:1": {
+  "h": "97ed7be0b1",
+  "t": "Seen from above, the two front wheels and the middle of the back axle make a triangle. This is the stability triangle."
+ },
+ "V:4:1:2": {
+  "h": "75db1e35a9",
+  "t": "The centre of gravity of the forklift and load together must stay inside this triangle."
+ },
+ "V:4:2:0": {
+  "h": "9b356633f6",
+  "t": "If the centre of gravity moves outside the triangle, the forklift tips over."
+ },
+ "V:4:2:1": {
+  "h": "cb54c71de5",
+  "t": "It moves when you overload, lift high, tilt forward with a raised load, turn too fast, brake hard, or drive on a slope. That's why you travel with the load low and tilted back."
+ },
+ "V:4:3:0": {
+  "h": "26d21220cb",
+  "t": "Every forklift has a data plate. It shows the rated capacity: the most weight the forklift can safely lift."
+ },
+ "V:4:3:1": {
+  "h": "f95c958519",
+  "t": "It also shows the load centre the capacity is rated at, usually six hundred millimetres. That's the distance from the front of the tynes to the middle of the load."
+ },
+ "V:4:3:2": {
+  "h": "a2dacc5ae7",
+  "t": "Never lift more than the rated capacity. And if the load's centre is further out than the data plate says, don't lift it. Ask your supervisor."
+ },
+ "V:4:4:0": {
+  "h": "4413b5bf24",
+  "t": "You need the weight before you can compare it with the rated capacity. Here's a pallet with five layers of eight cartons. Each carton is twenty kilos, and the pallet is twenty-five."
+ },
+ "V:4:4:1": {
+  "h": "2368928ef9",
+  "t": "Count. Five layers times eight cartons is forty cartons."
+ },
+ "V:4:4:2": {
+  "h": "ef04fdff5c",
+  "t": "Multiply. Forty cartons times twenty kilos is eight hundred kilos."
+ },
+ "V:4:4:3": {
+  "h": "4b4519b30b",
+  "t": "Add the pallet. Eight hundred plus twenty-five is eight hundred and twenty-five kilos."
+ },
+ "V:4:5:0": {
+  "h": "282ba84237",
+  "t": "Where do you find the weight?"
+ },
+ "V:4:5:1": {
+  "h": "8a023c613c",
+  "t": "Look for labels and markings on the load."
+ },
+ "V:4:5:2": {
+  "h": "5ef35ee191",
+  "t": "Check the consignment note or running sheet."
+ },
+ "V:4:5:3": {
+  "h": "eb722786b0",
+  "t": "Weighbridge dockets show what was weighed."
+ },
+ "V:4:5:4": {
+  "h": "894847e91f",
+  "t": "Manufacturers' documents list the weight of machines and tanks."
+ },
+ "V:4:5:5": {
+  "h": "81657e3dc2",
+  "t": "And if you can't find the weight, don't lift it. Ask your supervisor."
+ },
+ "V:4:6:0": {
+  "h": "5d470cad6a",
+  "t": "This forklift has a clamp attachment fitted instead of plain tynes."
+ },
+ "V:4:6:1": {
+  "h": "5198549254",
+  "t": "It does a special job, but it also changes how much the forklift can safely lift."
+ },
+ "V:4:7:0": {
+  "h": "3d9a951f15",
+  "t": "Attachments change how much you can lift."
+ },
+ "V:4:7:1": {
+  "h": "97d56e4059",
+  "t": "They add weight and push the load further out, so capacity goes down."
+ },
+ "V:4:7:2": {
+  "h": "893663efca",
+  "t": "Only use attachments approved by the manufacturer, with a data plate that matches."
+ },
+ "V:4:7:3": {
+  "h": "bfc6d9e93a",
+  "t": "With a jib, the hanging load can swing. Move slowly and smoothly."
+ },
+ "V:4:7:4": {
+  "h": "473a438891",
+  "t": "With a rotator, keep the load low and the forklift stopped while you rotate."
+ },
+ "V:4:7:5": {
+  "h": "749322034c",
+  "t": "And only ever lift a person in a purpose-built work platform. Never on the tynes or a pallet."
+ },
+ "V:4:8:0": {
+  "h": "37c57ac80a",
+  "t": "Some loads need extra care."
+ },
+ "V:4:8:1": {
+  "h": "b958e818d1",
+  "t": "If a load is heavier on one side, centre it on the tynes, or have it restacked."
+ },
+ "V:4:8:2": {
+  "h": "9136af50bf",
+  "t": "Long or wide loads swing out on turns. Give them extra room and use a spotter."
+ },
+ "V:4:8:3": {
+  "h": "23dd61aa7b",
+  "t": "Liquids slosh around and push the forklift. Accelerate, brake and turn smoothly and slowly."
+ },
+ "V:4:8:4": {
+  "h": "57ba8ece98",
+  "t": "And if there's no pallet, put the load on timber gluts or dunnage, so you can get the tynes in and out."
+ },
+ "V:4:9:0": {
+  "h": "199fb79f45",
+  "t": "That's Module 4. Keep the centre of gravity inside the triangle, and never go over the rated capacity. Next up is the maths — and we'll go through it step by step."
+ },
+ "V:5:0:0": {
+  "h": "0dd05be229",
+  "t": "Module 5 is the maths. Don't worry — we'll go slowly, one step at a time. Pause the video whenever you like and try it yourself."
+ },
+ "V:5:1:0": {
+  "h": "bc8203bbf5",
+  "t": "Three tips before we start."
+ },
+ "V:5:1:1": {
+  "h": "decdfd65ca",
+  "t": "Use a calculator. There's one built into the quizzes."
+ },
+ "V:5:1:2": {
+  "h": "1f10144f07",
+  "t": "Write every step down. That's what you'll do in your assessment too."
+ },
+ "V:5:1:3": {
+  "h": "0d587f2865",
+  "t": "And take your time. Check your answer makes sense."
+ },
+ "V:5:2:0": {
+  "h": "557f1285e3",
+  "t": "Rated capacity is in kilograms, but paperwork sometimes uses tonnes."
+ },
+ "V:5:2:1": {
+  "h": "e2589b9fd9",
+  "t": "One tonne is one thousand kilograms."
+ },
+ "V:5:2:2": {
+  "h": "089707c746",
+  "t": "So to change tonnes into kilograms, times by one thousand. One point five tonnes is fifteen hundred kilograms."
+ },
+ "V:5:3:0": {
+  "h": "78ac5729bc",
+  "t": "Here's a pallet with five layers. Each layer has ten cartons. Each carton is twenty kilos, and the pallet is thirty."
+ },
+ "V:5:3:1": {
+  "h": "dabaf97132",
+  "t": "Count. Five layers times ten cartons is fifty cartons."
+ },
+ "V:5:3:2": {
+  "h": "454c7315a6",
+  "t": "Multiply. Fifty cartons times twenty kilos is one thousand kilos."
+ },
+ "V:5:3:3": {
+  "h": "238fbd690e",
+  "t": "Add the pallet. One thousand plus thirty is one thousand and thirty kilos."
+ },
+ "V:5:4:0": {
+  "h": "d95dfe0b24",
+  "t": "A weighbridge weighs the whole truck. To get the load, take the empty truck away from the loaded truck."
+ },
+ "V:5:4:1": {
+  "h": "a72b32b929",
+  "t": "The loaded truck weighs eighteen thousand kilos."
+ },
+ "V:5:4:2": {
+  "h": "af339a2cf3",
+  "t": "The empty truck weighs twelve thousand."
+ },
+ "V:5:4:3": {
+  "h": "1a5ab81662",
+  "t": "So the load is six thousand kilos."
+ },
+ "V:5:4:4": {
+  "h": "0012b9323a",
+  "t": "If that's four pallets that are all the same, divide by four. Each pallet is fifteen hundred kilos."
+ },
+ "V:5:5:0": {
+  "h": "9325132bdf",
+  "t": "Sometimes you need the most cartons you can carry. Your limit is one thousand kilos, the pallet is twenty, and each carton is thirty."
+ },
+ "V:5:5:1": {
+  "h": "e9c5f43e97",
+  "t": "First, take the pallet off the limit. One thousand take away twenty is nine hundred and eighty."
+ },
+ "V:5:5:2": {
+  "h": "1500a94778",
+  "t": "Then divide by the carton weight. Nine hundred and eighty divided by thirty is thirty-two point six seven."
+ },
+ "V:5:5:3": {
+  "h": "91c8fa4763",
+  "t": "Always round down. So the answer is thirty-two cartons."
+ },
+ "V:5:5:4": {
+  "h": "2fb11332b7",
+  "t": "Why not round up? Thirty-three cartons would be one thousand and ten kilos. That's too heavy."
+ },
+ "V:5:6:0": {
+  "h": "7124fae5c6",
+  "t": "Now the load centre. It's the distance from the front of the tynes to the middle of the load's weight."
+ },
+ "V:5:6:1": {
+  "h": "52cc8ef877",
+  "t": "For an even load pushed right back against the backrest, it's half the depth of the load."
+ },
+ "V:5:6:2": {
+  "h": "8124431171",
+  "t": "This crate is twelve hundred millimetres deep. Half of twelve hundred is six hundred millimetres."
+ },
+ "V:5:7:0": {
+  "h": "4fa70d781f",
+  "t": "If there's a gap between the load and the backrest, add the gap."
+ },
+ "V:5:7:1": {
+  "h": "5f1a5ebaca",
+  "t": "This crate is a thousand millimetres deep, so half is five hundred. The gap is two hundred. Five hundred plus two hundred is seven hundred millimetres."
+ },
+ "V:5:7:2": {
+  "h": "7a9eeb7115",
+  "t": "Seven hundred is further out than the six hundred on the data plate. So push the tynes all the way in, with the load against the backrest."
+ },
+ "V:5:8:0": {
+  "h": "2271c6f430",
+  "t": "Now compare the load with the rated capacity. Forklift A's data plate says twenty-five hundred kilos at a six hundred millimetre load centre."
+ },
+ "V:5:8:1": {
+  "h": "8f7df37073",
+  "t": "Our pallet weighs nineteen hundred kilos, and its load centre is six hundred millimetres."
+ },
+ "V:5:8:2": {
+  "h": "dc5e046469",
+  "t": "Nineteen hundred is less than twenty-five hundred. It's OK to lift, with six hundred kilos to spare."
+ },
+ "V:5:9:0": {
+  "h": "1c75b0971f",
+  "t": "This crate's paperwork says two point seven tonnes. Times by one thousand: twenty-seven hundred kilos."
+ },
+ "V:5:9:1": {
+  "h": "d6e0bea508",
+  "t": "The rated capacity is twenty-five hundred kilos."
+ },
+ "V:5:9:2": {
+  "h": "9c8e5b3acc",
+  "t": "Twenty-seven hundred is two hundred kilos too heavy. Do not lift it."
+ },
+ "V:5:10:0": {
+  "h": "9741e5d54c",
+  "t": "How many six hundred kilo drums can it carry at once? Divide the rated capacity by the weight of one drum. Twenty-five hundred divided by six hundred is four point one seven."
+ },
+ "V:5:10:1": {
+  "h": "8926fac40e",
+  "t": "Always round down. So the answer is four drums."
+ },
+ "V:5:10:2": {
+  "h": "0d488de8ed",
+  "t": "Five drums would be three thousand kilos. That's too heavy."
+ },
+ "V:5:11:0": {
+  "h": "dc3f93a271",
+  "t": "That's the maths. Work out the weight, check the load centre, then compare it with the rated capacity. Have a go at the quiz — and use the calculator."
+ },
+ "V:6:0:0": {
+  "h": "c77339b808",
+  "t": "Module 6 is about driving safely, ramps, picking up loads, stacking, and loading trucks."
+ },
+ "V:6:1:0": {
+  "h": "466bdb4087",
+  "t": "When you travel, keep the load low — about a hundred to a hundred and fifty millimetres off the ground — and tilt the mast back."
+ },
+ "V:6:1:1": {
+  "h": "8177be5b67",
+  "t": "Look the way you're going. If the load blocks your view, drive in reverse, or use a spotter."
+ },
+ "V:6:1:2": {
+  "h": "a710d3d4ce",
+  "t": "Seatbelt on, no passengers ever, and slow down at corners, doorways and intersections."
+ },
+ "V:6:2:0": {
+  "h": "f7f985b7c5",
+  "t": "On a ramp with a load, keep the load on the uphill side. Drive forwards up, and reverse down."
+ },
+ "V:6:3:0": {
+  "h": "ccb1eae880",
+  "t": "With no load, it's the other way around. Keep the tynes pointing downhill. Reverse up, and drive forwards down."
+ },
+ "V:6:3:1": {
+  "h": "829348144b",
+  "t": "And never turn on a ramp or drive across it."
+ },
+ "V:6:4:0": {
+  "h": "d7cf94eafc",
+  "t": "Before you move any load, do a trial lift. Lift it just clear of the ground, and stop."
+ },
+ "V:6:4:1": {
+  "h": "b3e4bda7a4",
+  "t": "Is the forklift steady? Is the load secure and balanced? If the back wheels feel light, lower it straight away."
+ },
+ "V:6:5:0": {
+  "h": "8c0f963b96",
+  "t": "When you stack in racking, follow these steps."
+ },
+ "V:6:5:1": {
+  "h": "5da9c526cb",
+  "t": "Stop square to the rack."
+ },
+ "V:6:5:2": {
+  "h": "23514c5943",
+  "t": "Only raise or lower a load when you're stopped. Never while moving."
+ },
+ "V:6:5:3": {
+  "h": "e8ee01140d",
+  "t": "Level the tynes, then inch forward slowly."
+ },
+ "V:6:5:4": {
+  "h": "f29c347020",
+  "t": "Lower the load onto the beams, back out, and lower the tynes to travel height before you drive off."
+ },
+ "V:6:6:0": {
+  "h": "8a5f468d21",
+  "t": "Loading trucks."
+ },
+ "V:6:6:1": {
+  "h": "4227a38bba",
+  "t": "Make sure the truck can't move. Brakes on, wheels chocked, and the driver somewhere safe."
+ },
+ "V:6:6:2": {
+  "h": "020ab2897d",
+  "t": "Set up an exclusion zone around the truck."
+ },
+ "V:6:6:3": {
+  "h": "5bf73f5834",
+  "t": "Check the dock plate is secure, and rated for the forklift and the load."
+ },
+ "V:6:6:4": {
+  "h": "28e71369ee",
+  "t": "And keep well back from the dock edge."
+ },
+ "V:6:7:0": {
+  "h": "490b38aba7",
+  "t": "That's Module 6. Keep it low, keep it slow, and look where you're going. Read the lessons and try the quiz."
+ },
+ "V:7:0:0": {
+  "h": "3bde75c026",
+  "t": "Module 7, the last one. How to park and shut down, change a gas bottle, and charge a battery safely."
+ },
+ "V:7:1:0": {
+  "h": "53bd373ff0",
+  "t": "At the end of the shift, the job isn't over until the forklift is parked safely."
+ },
+ "V:7:1:1": {
+  "h": "32ab0f1a9a",
+  "t": "This one runs on LPG. You can see the gas cylinder on the back."
+ },
+ "V:7:2:0": {
+  "h": "622923dd63",
+  "t": "When you finish, park in a safe, level area. Never block exits, walkways, fire equipment or switchboards."
+ },
+ "V:7:2:1": {
+  "h": "2958900fed",
+  "t": "Select neutral. Put the park brake on. Lower the tynes flat on the ground."
+ },
+ "V:7:2:2": {
+  "h": "429bbb253d",
+  "t": "Turn it off, isolate the power, take the key, and report any defects from your shift."
+ },
+ "V:7:3:0": {
+  "h": "3faf83e63b",
+  "t": "Changing an L P G gas bottle? Do it in a well-ventilated area, with no flames and no smoking."
+ },
+ "V:7:3:1": {
+  "h": "b2c1456a0c",
+  "t": "Wear gloves and eye protection. L P G is so cold it can burn your skin."
+ },
+ "V:7:3:2": {
+  "h": "2c0d40ab34",
+  "t": "Close the valve, let the engine run until it stops, then swap the bottle. Make sure the locating pin is in and the bottle is secure."
+ },
+ "V:7:3:3": {
+  "h": "8543c4798d",
+  "t": "Check for leaks with soapy water. Bubbles mean a leak. Never use a flame."
+ },
+ "V:7:4:0": {
+  "h": "44271ba240",
+  "t": "Charging a forklift battery gives off hydrogen gas, which can explode. Only charge in the charging area, with good airflow."
+ },
+ "V:7:4:1": {
+  "h": "3bff829150",
+  "t": "Turn the charger off before you connect or disconnect the battery, so there's no spark."
+ },
+ "V:7:4:2": {
+  "h": "555eaa1183",
+  "t": "Battery acid burns. Wear your P P E, and know where the eyewash station is."
+ },
+ "V:7:5:0": {
+  "h": "27630aa058",
+  "t": "That's the last module. When you've finished all the lessons, try the final practice exam. Good luck with your assessment!"
+ }
+}
