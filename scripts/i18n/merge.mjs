@@ -37,6 +37,7 @@ for (const [key, { t: en }] of Object.entries(source)) {
   if (ol && !t0.startsWith(`${ol[1]}. `)) problems.push(`${key}: should start with "${ol[1]}. "`);
   const eb = (en.match(/\*\*/g) ?? []).length, tb = (t.match(/\*\*/g) ?? []).length;
   if (tb % 2) problems.push(`${key}: unbalanced ** (bold)`);
+  if (t.includes("****")) problems.push(`${key}: two bold phrases touch (****) — add a space`);
   if (eb > 0 && tb === 0) problems.push(`${key}: lost all bold`);
   const ep = pipes(en), tp = pipes(t);
   if (ep.length && JSON.stringify(ep) !== JSON.stringify(tp)) problems.push(`${key}: table shape differs (en ${ep.length} rows ${ep.join("/")} vs ${tp.length} rows ${tp.join("/")})`);
