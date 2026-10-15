@@ -59,7 +59,7 @@ export default async function WatchModulePage({ params }: Props) {
         ) : (
           <div className="rounded-xl border border-line bg-card p-8 text-center">
             <p className="text-lg font-semibold">This video is part of the full course.</p>
-            <p className="mt-2 text-muted">Enrol to unlock every video, lesson, quiz and the final practice exam.</p>
+            <p className="mt-2 text-muted">Get full access to unlock every video, lesson, quiz and the final practice exam.</p>
             <Link
               href={`/courses/${slug}`}
               className="mt-5 inline-block rounded-md bg-hivis px-5 py-3 font-semibold text-ink hover:bg-hivis-dark"

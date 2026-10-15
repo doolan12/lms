@@ -43,7 +43,7 @@ export default async function DashboardPage() {
         <h2 className="text-lg font-bold">Your courses</h2>
         {(enrollments ?? []).length === 0 ? (
           <div className="mt-4 rounded-xl border border-dashed border-line bg-card p-8 text-center">
-            <p className="text-muted">You&apos;re not enrolled in any courses yet.</p>
+            <p className="text-muted">You don&apos;t have access to any courses yet.</p>
             <Link href="/#courses" className="mt-3 inline-block font-semibold underline decoration-hivis decoration-2">
               Browse courses
             </Link>

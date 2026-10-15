@@ -118,9 +118,15 @@ When you add or edit questions, tag them with the right codes and rerun the repo
 
 > The content is original. Don't add questions copied from a SafeWork National Assessment Instrument (NAI) — NAIs are confidential to accredited assessors, and sharing them breaches the conditions of accreditation.
 
-## Compliance note
+## Positioning (legal)
 
-The sample content is general study material aligned to the topics of **TLILIC0003 Licence to operate a forklift truck**. Have your RTO or a qualified trainer review it before selling. This platform delivers theory preparation only — the licence itself is issued by the state or territory WHS regulator after assessment by an accredited assessor.
+This is an **independent study aid**, like a driver-knowledge-test practice app — not a Registered Training Organisation (RTO).
+
+- Don't describe it as accredited, nationally recognised, certified, a "licence course", or as delivering TLILIC0003. Only RTOs can deliver nationally recognised training; a non-RTO was convicted and fined under s123A of the *NVR Act 2011* for misrepresenting VET courses.
+- Never use or imitate the confidential National Assessment Instrument, and never call practice questions "the real exam".
+- No pass guarantees or regulator endorsements (Australian Consumer Law).
+- The footer disclaimer and the `/terms`, `/privacy` and `/refunds` pages set this out for students. Set `NEXT_PUBLIC_CONTACT_EMAIL` (and `NEXT_PUBLIC_ABN` once you have one) in Vercel so those pages show your contact details.
+- The content is internally mapped to TLILIC0003 so nothing is missed — keep that mapping internal. Have an experienced forklift trainer/assessor check the content for accuracy.
 
 ## Next steps
 

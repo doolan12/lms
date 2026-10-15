@@ -23,13 +23,17 @@ export default async function HomePage() {
           </>
         )}
         <div className="relative mx-auto max-w-5xl px-4 py-12 md:py-24">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-hivis">Australia · Licence class LF</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-hivis">Australia · Forklift (LF) theory practice</p>
           <h1 className="mt-4 max-w-xl font-display text-4xl font-bold uppercase leading-[1.05] md:text-6xl">
             Walk into your forklift assessment knowing the theory cold.
           </h1>
           <p className="mt-6 max-w-xl text-lg text-white/75">
             Short lessons, module quizzes and a final practice exam covering WHS law, pre-start checks, load charts,
             stability and safe operation. Study on your phone, at your own pace.
+          </p>
+          <p className="mt-3 max-w-xl text-sm text-white/60">
+            An independent study aid to use alongside your training with a Registered Training Organisation — like
+            practising for your driver knowledge test.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a

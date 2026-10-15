@@ -357,17 +357,20 @@ grant execute on function private.is_enrolled(uuid) to anon, authenticated, serv
 
 
 -- ════ seed.sql ════
--- Seed: Forklift Licence Theory (Australia) course
+-- Seed: Forklift Theory Practice (Australia) — an independent study aid.
 --
--- Original study material mapped to the public TLILIC0003 "Licence to operate
--- a forklift truck" Knowledge Evidence (KE) and Performance Evidence (PE).
+-- Original study material. Internally mapped to the public TLILIC0003 "Licence
+-- to operate a forklift truck" Knowledge Evidence (KE) and Performance Evidence
+-- (PE) so nothing is missed. Do NOT market it as delivering the unit — only RTOs
+-- can deliver nationally recognised training (NVR Act s123A).
 -- Every lesson and question carries `refs` so coverage can be audited
 -- (see the curriculum_coverage view / scripts/coverage-report.mjs).
 --
 -- This content does NOT reproduce any National Assessment Instrument (NAI)
 -- question — NAIs are confidential to accredited assessors.
--- Have your RTO / qualified trainer review before selling. Theory preparation
--- only: a High Risk Work Licence requires assessment by an accredited assessor.
+-- Have an experienced forklift trainer/assessor check the content for accuracy.
+-- Study aid only: a High Risk Work Licence requires training and assessment
+-- through an RTO and an accredited assessor.
 --
 -- Requires migrations 0001 and 0002. Safe to re-run.
 
@@ -430,13 +433,14 @@ begin
   insert into public.courses (slug, title, summary, description, price_cents, currency, published)
   values (
     'forklift-licence-theory',
-    'Forklift Licence Theory (LF)',
-    'Prepare for your forklift High Risk Work Licence theory assessment — at your own pace, on any device.',
-    'Covers every knowledge area of TLILIC0003 Licence to operate a forklift truck: WHS law and standards, '
-    || 'hazards, ground conditions and weather, traffic management, pre-start and operational checks, faults and '
-    || 'lock out/tag out, stability, load charts, load weight and load centre calculations, attachments, safe operating and '
-    || 'stacking, shutdown, refuelling and recharging. Each module ends with a quiz, and a final practice exam '
-    || 'checks you are ready for your assessment.',
+    'Forklift Theory Practice (LF)',
+    'Learn and practise forklift theory for your LF licence assessment — at your own pace, on any device.',
+    'Learn and practise the forklift theory you''ll be assessed on for your LF High Risk Work Licence: WHS law '
+    || 'and standards, hazards, ground conditions and weather, traffic management, pre-start and operational checks, '
+    || 'faults and lock out/tag out, stability, load charts, load weight and load centre calculations, attachments, '
+    || 'safe operating and stacking, shutdown, refuelling and recharging. Each module ends with a quiz, and a final '
+    || 'practice exam helps you check your knowledge. An independent study aid to use alongside your training with '
+    || 'an RTO — not nationally recognised training, and it does not give you a licence.',
     4900, 'aud', true
   ) returning id into c;
 

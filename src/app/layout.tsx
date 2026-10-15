@@ -6,7 +6,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Forklift Theory Online",
-  description: "Prepare for your forklift High Risk Work Licence theory assessment online.",
+  description:
+    "Learn and practise forklift theory for your LF High Risk Work Licence assessment. An independent study aid — not an RTO.",
 };
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -46,10 +47,23 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
         <main className="flex-1">{children}</main>
 
         <footer className="border-t border-line bg-white">
-          <div className="mx-auto max-w-5xl px-4 py-6 text-xs text-muted leading-relaxed">
-            This course is theory preparation only. A High Risk Work Licence (class LF) is issued by your state or
-            territory WHS regulator after you pass an assessment with an accredited assessor through a Registered
-            Training Organisation.
+          <div className="mx-auto max-w-5xl space-y-3 px-4 py-6 text-xs leading-relaxed text-muted">
+            <p>
+              <strong className="text-ink">Independent study aid.</strong> Forklift Theory is not a Registered Training
+              Organisation (RTO) and is not affiliated with SafeWork, WorkSafe or any other regulator. We don&apos;t provide
+              nationally recognised training, qualifications, statements of attainment or licences, and our practice
+              questions are not the official assessment.
+            </p>
+            <p>
+              To get a High Risk Work Licence (class LF) you must complete training and pass an assessment with an RTO and
+              an accredited assessor, then apply to your state or territory regulator. The information here is general —
+              always follow your workplace procedures, the manufacturer&apos;s instructions and your trainer.
+            </p>
+            <nav className="flex flex-wrap gap-x-4 gap-y-1 font-semibold text-ink">
+              <Link href="/terms" className="hover:underline">Terms of use</Link>
+              <Link href="/privacy" className="hover:underline">Privacy</Link>
+              <Link href="/refunds" className="hover:underline">Refunds</Link>
+            </nav>
           </div>
         </footer>
       </body>

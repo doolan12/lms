@@ -68,7 +68,7 @@ export default async function CoursePage({ params, searchParams }: Props) {
               <ProgressBar value={pct} label="Your progress" />
               {finalPassed && allLessonsDone ? (
                 <p className="mt-4 rounded-md bg-green-50 px-3 py-2 text-sm font-semibold text-go">
-                  Theory complete — you&apos;re ready for your practical assessment.
+                  You&apos;ve finished the practice material. Next step: book your training and assessment with an RTO.
                 </p>
               ) : null}
               {nextLesson && (
@@ -87,10 +87,14 @@ export default async function CoursePage({ params, searchParams }: Props) {
               <form action={startEnrollment} className="mt-4">
                 <input type="hidden" name="slug" value={slug} />
                 <button className="w-full rounded-md bg-hivis py-3 font-semibold text-ink hover:bg-hivis-dark">
-                  {course.price_cents === 0 ? "Enrol for free" : "Buy course"}
+                  {course.price_cents === 0 ? "Get free access" : "Get full access"}
                 </button>
               </form>
               {!user && <p className="mt-2 text-center text-xs text-muted">You&apos;ll create an account first.</p>}
+              <p className="mt-4 border-t border-line pt-3 text-xs leading-relaxed text-muted">
+                Study and practice only — not nationally recognised training, and it doesn&apos;t give you a licence. See{" "}
+                <Link href="/refunds" className="underline">refunds</Link>.
+              </p>
             </>
           )}
         </aside>
