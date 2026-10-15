@@ -24,6 +24,7 @@ jobs:
       matrix:
         lang: [zh-Hans, hi, es, it]
     concurrency:
+      # One recording per language at a time; a newer run replaces a queued one.
       group: narration-i18n-${{ matrix.lang }}
       cancel-in-progress: false
     steps:
@@ -50,4 +51,4 @@ jobs:
           git config user.email "${{ github.repository_owner_id }}+${{ github.repository_owner }}@users.noreply.github.com"
           git add -A public/audio src/content/videos/audio-manifest.${{ matrix.lang }}.json assets-pipeline/narration-${{ matrix.lang }}.log || true
           git commit -m "Record ${{ matrix.lang }} narration (Kokoro)" || exit 0
-          for i in 1 2 3 4 5; do git pull --rebase -q origin main && git push && break; sleep $((RANDOM % 20 + 5)); done
+          for i in 1 2 3 4 5; do (git pull --rebase -X theirs -q origin main || { git rebase --abort; false; }) && git push && break; sleep $((RANDOM % 20 + 5)); done
