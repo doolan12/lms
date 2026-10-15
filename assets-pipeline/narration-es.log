@@ -1,0 +1,237 @@
+es voice ef_dora: 230 lines, 230 to record
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
+  super().__init__("LSTM", *args, **kwargs)
+/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
+  WeightNorm.apply(module, name, dim)
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+1/230 e0e8e3c3426cfd3f 4.5s Bienvenido al módulo 1. En este video corto veremo
+2/230 3e16557a906337c2 1.9s Los montacargas trabajan en lugares con mucho movi
+3/230 e4d4fcd4ad3d6c2a 2.1s Un solo error puede lesionar o matar a alguien. Po
+4/230 525915f60f19ed11 2.2s Conducir un montacargas es trabajo de alto riesgo.
+5/230 5837ad845122d1b4 1.8s También existe la clase LO, para montacargas recog
+6/230 c99ad3efdde0ea9a 0.7s Así es como obtienes tu licencia.
+7/230 bbdfcc988968c541 1.2s Primero, capacítate con una organización de capaci
+8/230 39bd05d9e2b646a7 1.6s Segundo, aprueba una evaluación teórica y una eval
+9/230 dbbff9a09f3fa39e 2.9s Tercero, presenta tu solicitud al organismo regula
+10/230 563c4eb9f2b4a4cd 1.8s Todas las personas en el trabajo tienen obligacion
+11/230 13475886d78f21f9 1.1s Proporcionar un montacargas seguro y con el manten
+12/230 a0830bbad48c60c1 1.1s Darte la capacitación, la información y la supervi
+13/230 e154905e134bc94d 1.2s Y establecer formas de trabajo seguras, como un pl
+14/230 ab88b81d33c93d05 0.8s Como operador, tú también tienes obligaciones.
+15/230 28114ef40f940572 0.6s Cuidar tu propia seguridad.
+16/230 4deb0968ee6517ec 0.9s Cuidar que lo que haces no lastime a nadie más.
+17/230 6ffe1d5521105b01 2.0s Seguir las instrucciones razonables y los procedim
+18/230 a6e5d9e2a3616630 1.1s E informar todos los peligros, incidentes y defect
+19/230 216c573d50683a0b 0.9s Las reglas de seguridad vienen de varios lugares.
+20/230 1d7d422dab7aaa97 1.1s La Ley y el Reglamento de Salud y Seguridad en el 
+21/230 5730d7d227a191ff 1.0s Los códigos de práctica, que explican cómo cumplir
+22/230 0f9e81f45faaa1a2 1.6s Las normas australianas. Para los montacargas, es 
+23/230 9c54ff210974e5a0 1.0s El manual del fabricante del montacargas que condu
+24/230 3268a30a6e099fa0 0.9s Y los procedimientos de tu propio lugar de trabajo
+25/230 591d2ee0451fcba2 2.5s Los buenos registros demuestran que se hicieron la
+26/230 c2282fb74c88e504 1.2s Llena una lista de revisión previa al arranque en 
+27/230 92620f8e5e5d58ef 0.8s Redacta informes de defectos y fallas.
+28/230 17e0bf46f258143f 1.0s Informa los incidentes, y también los casi acciden
+29/230 da39aa7c884a52e3 1.2s Y si eres aprendiz, mantén al día tu libro de regi
+30/230 ed7d7831d17a453f 2.1s Eso es todo en el módulo 1. Ahora lee las leccione
+31/230 0a499e4e6826f57a 2.4s El módulo 2 trata sobre planificar tu trabajo y de
+32/230 9c901399c5a03502 1.0s Antes de levantar cualquier cosa, piensa bien el t
+33/230 dd31fa725d7eec9c 1.0s La carga. ¿Cuánto pesa, qué tamaño tiene y está as
+34/230 8c8e4e369db90507 1.1s El montacargas. ¿Puede levantar esta carga a la al
+35/230 5415bfa9f0f2f805 1.3s La ruta. Revisa el suelo, las pendientes, las puer
+36/230 eec44e661bd3d19c 0.9s El destino. ¿Dónde exactamente va a ir la carga?
+37/230 f65309f253cbc7d1 1.2s Y las personas. ¿Quién más trabaja cerca y cómo va
+38/230 a8c28c4f8faf944e 0.8s Una buena comunicación evita accidentes.
+39/230 74ba31a62915f7be 1.0s Usa la bocina, la luz giratoria y la alarma de rev
+40/230 eac139b776b6fae7 1.4s Si un señalero te guía con señales de las manos, a
+41/230 616946acd75b01f4 1.3s Por radio bidireccional, usa mensajes cortos y cla
+42/230 d2613168a612d86c 1.3s Y siempre haz contacto visual con los peatones ant
+43/230 f46cb3e48935292a 1.1s Dos palabras que debes conocer: peligro y riesgo. 
+44/230 6a7f1aa357469159 2.3s Un peligro es cualquier cosa que podría causar dañ
+45/230 87159b42d9c90fe8 1.3s Un riesgo es la probabilidad de que el peligro rea
+46/230 87a39c0daea0c26c 1.9s Y qué tan grave sería el daño. Un peligro que es p
+47/230 de085f653fa0f884 1.8s Entonces: detecta el peligro, evalúa el riesgo pre
+48/230 1a2b053a4a9fc279 1.7s Cuando encuentres un peligro, usa la jerarquía de 
+49/230 2940e7f6041b6f2d 0.8s Uno. Elimina el peligro por completo.
+50/230 9e9fc78ac12edb4a 0.8s Dos. Sustitúyelo por algo más seguro.
+51/230 f7f28e6ff27ea8b9 1.4s Tres. Aísla a las personas del peligro, con barrer
+52/230 616bf0e5e8b22c1f 1.2s Cuatro. Controles de ingeniería, como espejos y lu
+53/230 6f9e226f19da0ed0 1.3s Cinco. Controles administrativos, como procedimien
+54/230 55d95b5d275829bb 1.2s Seis. Equipo de protección personal. Es la última 
+55/230 e42346e57ffdceec 1.2s Cuando trabajes al aire libre, siempre mira hacia 
+56/230 08fae7ec03b9b766 2.0s La electricidad de alto voltaje puede saltar a tra
+57/230 1ac348997811a31b 2.2s Las líneas eléctricas aéreas pueden matar. La elec
+58/230 1eb5ad37c6fcd43d 2.9s Mira siempre hacia arriba. Mantén la distancia mín
+59/230 f7476aef8366b5d0 1.4s Baja el mástil antes de circular, y usa un señaler
+60/230 2f8fdb3fc0ccb09f 1.7s Si tu montacargas toca una línea eléctrica, recuer
+61/230 1a4f84c8cbc4abc1 1.5s Paso uno. Quédate en el montacargas. Mantén la cal
+62/230 d0af6e9bbe91a55e 1.7s Paso dos. Advierte a todos que se mantengan al men
+63/230 2999dd4b4102cbe5 1.6s Paso tres. Separa el contacto, bajando el mástil o
+64/230 f24fc3380ae8e0ad 2.4s Paso cuatro. Llama al 000 y a la compañía eléctric
+65/230 611a1d8746cb6f0a 1.3s Paso cinco. Solo si tienes que bajarte, por ejempl
+66/230 e32f6dabd6f4fb83 2.0s El suelo alrededor de un montacargas con corriente
+67/230 cd7da4bc1139853b 2.3s Todos los demás se mantienen al menos a 8 metros d
+68/230 714fa00f05fbcc87 1.8s Si tienes que bajarte, salta bien lejos con los pi
+69/230 6181fccc4897ce46 2.1s Cae con los pies juntos. Luego arrastra los pies o
+70/230 167799382057600e 2.4s No regreses hasta que la compañía eléctrica confir
+71/230 ba25c86b9ab7a2dc 1.4s Un montacargas cargado es muy pesado. Comprueba qu
+72/230 584b03282908192d 1.7s Los baches y el concreto agrietado sacuden la carg
+73/230 71b8d9a33ef4a797 1.1s La tierra blanda y las zanjas rellenadas pueden hu
+74/230 b4ff3c52de29a83c 1.0s Cruza las vías de tren despacio, en ángulo si pued
+75/230 f0de3fa9555c4f8f 1.9s Y las placas de acero, rejillas y tapas de zanjas 
+76/230 56c024cb52ecde1d 0.8s El clima cambia los riesgos al aire libre.
+77/230 0779e6ec8fb87dcf 1.9s Con viento fuerte, las cargas grandes y planas, co
+78/230 f889c2e020a8829b 1.3s Si hay rayos, detén el trabajo, estaciona de forma
+79/230 75570b2474b8acfb 1.8s En suelo mojado o helado, reduce la velocidad, fre
+80/230 411369bd2a07a333 1.1s Con calor, bebe agua, toma descansos y protégete d
+81/230 0724739b08fdc4e4 1.5s En un almacén real, las personas caminan por los m
+82/230 cfef4bb3a3948e52 2.0s Los pasillos peatonales marcados, las barreras y l
+83/230 61960cddaedd141b 2.8s Un plan de gestión del tráfico mantiene separados 
+84/230 f772341e64014613 1.7s Cuando cargues un camión o apiles en altura, delim
+85/230 b7bc9417d3a98f6e 1.0s Si alguien entra en ella, detén el trabajo hasta q
+86/230 88cd61d31a72ec4b 2.6s Eso es todo en el módulo 2. Recuerda los pasos par
+87/230 4ac7ba74df51881a 2.2s El módulo 3 cubre las revisiones que haces en cada
+88/230 6e9b47a0552eab1f 1.2s Antes de cada turno, revisas el montacargas por de
+89/230 dc824777652fbbba 1.8s Eso incluye el asiento, el cinturón de seguridad, 
+90/230 b13bde4645194c02 1.9s Haz una revisión previa al arranque antes de cada 
+91/230 cbdf70339b97188d 1.5s Uno. Las horquillas. Busca grietas, dobleces y des
+92/230 350ed033f31a8658 1.4s Dos. El mástil y las cadenas. Busca daños y cadena
+93/230 17f1bbb0b4418ef2 1.3s Tres. Las mangueras hidráulicas. Revisa si hay fug
+94/230 10c991d688cf5a36 1.8s Cuatro. Los neumáticos y las ruedas. Revisa que no
+95/230 08516a7c04a8e762 1.5s Cinco. El protector superior y el respaldo de carg
+96/230 ac74c7ba16cd9817 1.5s Seis. La placa de datos debe estar presente, ser l
+97/230 748b34cf4d9478dd 1.7s Siete. Fluidos y combustible: aceite, refrigerante
+98/230 d5eff5072cef8234 0.9s Al subir y bajar es cuando ocurren muchas lesiones
+99/230 97a2746fd710db1a 1.5s Usa los escalones y las agarraderas con tres punto
+100/230 8f2e7fb755dae691 0.9s Una vez sentado, ajusta el asiento y los espejos.
+101/230 5aabc9370447c19f 1.0s Ponte el cinturón de seguridad y comprueba que fun
+102/230 7f5eff4b4a261264 1.5s Después, arranca el montacargas como indica el fab
+103/230 cf3128eceb41f038 1.2s Prueba la bocina, las luces, la luz giratoria y la
+104/230 6d50a36dfd663b32 0.7s Ubica y prueba cada control.
+105/230 f5bfc6bb950d448d 1.8s Mueve la elevación, la inclinación y el desplazami
+106/230 af818a37c86a9e5f 0.9s Revisa los frenos, la dirección y la transmisión.
+107/230 d77e398a35836724 1.4s Y escucha si hay ruidos extraños. Anota los result
+108/230 235a9b4de46fdf3d 1.8s Si encuentras una falla, el montacargas no se pued
+109/230 c6d1748ca575d07b 0.8s Detente y estaciona de forma segura.
+110/230 db646e7b5dc5b464 1.2s Aísla la energía. Quita la llave, cierra el gas o 
+111/230 f64ba655cef9c76f 0.7s Etiquétalo como fuera de servicio.
+112/230 b7eb5b1f03aec961 0.9s Informa la falla a tu supervisor y anótala.
+113/230 be5f8c61aa128bd6 2.5s La etiqueta les dice a todos que el montacargas no
+114/230 3d96deaaf4238f9c 0.8s A veces las cosas fallan mientras conduces.
+115/230 2c020eef775aaad6 2.9s Si fallan los frenos, quita el pie del acelerador,
+116/230 78a1aaeb804d36ed 1.4s Si falla la dirección, detente de la forma más seg
+117/230 4364c6d4ed212c4f 2.5s Si falla el sistema hidráulico y la carga cae, man
+118/230 29b013997d82903c 2.1s Si el montacargas empieza a volcar, no saltes. Las
+119/230 565ae7044966808c 2.7s Quédate en el asiento con el cinturón de seguridad
+120/230 15de4017aeed0243 0.7s Estos son algunos problemas comunes.
+121/230 6104c38d4c1a9a21 2.1s Si un montacargas de gas empieza a tartamudear, pr
+122/230 9cde74c91c8dc1b1 1.0s Si la batería está baja, regresa a la zona de carg
+123/230 08cc25c0849d0491 1.9s Si se está sobrecalentando, detente, apágalo y dej
+124/230 974c593fcd17f931 2.1s Si una luz, la bocina o una alarma no funcionan, i
+125/230 f08c5c7f94fa820b 2.4s Eso es todo en el módulo 3. Revísalo en cada turno
+126/230 88086937f478a390 2.6s El módulo 4 explica por qué vuelcan los montacarga
+127/230 4717c5769c1e68cd 2.6s Un montacargas contrapesado funciona como un subib
+128/230 fd93835408a95346 2.1s Visto desde arriba, las dos ruedas delanteras y el
+129/230 56e48d27486565c1 1.5s El centro de gravedad del montacargas y la carga j
+130/230 30e7107444f22c44 1.1s Si el centro de gravedad se sale del triángulo, el
+131/230 f57693d91befcef2 3.8s Se mueve cuando sobrecargas, levantas alto, inclin
+132/230 bb6b1b4dd58d847e 2.2s Todo montacargas tiene una placa de datos. Muestra
+133/230 66562d2aa38fe0e5 2.8s También muestra el centro de carga para el que se 
+134/230 41bd405e4b04c2d9 2.8s Nunca levantes más que la capacidad nominal. Y si 
+135/230 a31ef4485b72966d 2.9s Necesitas el peso antes de poder compararlo con la
+136/230 997d98dcaab9d75f 1.0s Cuenta. 5 capas por 8 cajas son 40 cajas.
+137/230 299ea38e5d7e8da6 1.1s Multiplica. 40 cajas por 20 kilos son 800 kilos.
+138/230 9acec5ecd7fe054e 1.3s Suma el pallet. 800 más 25 son 825 kilos.
+139/230 cbe14cdfbaa4cbcb 0.6s ¿Dónde encuentras el peso?
+140/230 7b22a5e32a8af251 0.8s Busca etiquetas y marcas en la carga.
+141/230 f18b90c6059cc8f6 0.9s Revisa la nota de envío o la hoja de ruta.
+142/230 1e2738edde2ee730 1.0s Los comprobantes de báscula muestran lo que se pes
+143/230 5ed90b37cd453351 1.3s Los documentos del fabricante indican el peso de l
+144/230 ac2d014015c2b552 1.3s Y si no encuentras el peso, no la levantes. Pregún
+145/230 3921b9cafcf5a192 1.4s Este montacargas tiene instalado un accesorio de p
+146/230 5df68cfc5945cb99 1.6s Hace un trabajo especial, pero también cambia cuán
+147/230 87da67933e313326 0.9s Los accesorios cambian cuánto puedes levantar.
+148/230 632ca76fb380d811 1.4s Agregan peso y empujan la carga más hacia adelante
+149/230 6f50c7df0553ebc6 1.4s Usa solo accesorios aprobados por el fabricante, c
+150/230 93ac3c923507a757 1.4s Con una pluma, la carga colgada se puede balancear
+151/230 8c9c4f58af743eda 1.3s Con un rotador, mantén la carga baja y el montacar
+152/230 be3315801dfb1144 1.9s Y eleva a una persona solo en una plataforma de tr
+153/230 d29bf73e2924429f 0.9s Algunas cargas necesitan más cuidado.
+154/230 4c5a166125e76497 1.4s Si una carga pesa más de un lado, céntrala en las 
+155/230 e25fe737b834b1b1 1.5s Las cargas largas o anchas se abren en los giros. 
+156/230 c13b730671506db5 1.7s Los líquidos se mueven y empujan el montacargas. A
+157/230 98e945c05911171e 1.7s Y si no hay pallet, pon la carga sobre calzos o ma
+158/230 7edbd58128dd506c 2.9s Eso es todo en el módulo 4. Mantén el centro de gr
+159/230 3be407ffd60ae314 2.3s El módulo 5 son las matemáticas. No te preocupes: 
+160/230 9fef96dda26f2e29 0.7s Tres consejos antes de empezar.
+161/230 6b6cd48cf286b5f8 1.1s Usa una calculadora. Hay una incluida en los cuest
+162/230 d23e757412fbf651 1.1s Escribe cada paso. Eso es lo que harás también en 
+163/230 df77ef69ed972c1a 1.2s Y tómate tu tiempo. Comprueba que tu respuesta ten
+164/230 11157280a387e42d 1.4s La capacidad nominal está en kilogramos, pero a ve
+165/230 94a7263b9be4f94e 1.0s Una tonelada son 1,000 kilogramos.
+166/230 0e0dd47aa90dfa50 2.2s Así que para pasar de toneladas a kilogramos, mult
+167/230 07f78da7401232d2 1.9s Aquí hay un pallet con 5 capas. Cada capa tiene 10
+168/230 fa8a8d55956edcf5 1.1s Cuenta. 5 capas por 10 cajas son 50 cajas.
+169/230 cc1ff25b5946102d 1.3s Multiplica. 50 cajas por 20 kilos son 1,000 kilos.
+170/230 65c1b6b3d60fd6fb 1.3s Suma el pallet. 1,000 más 30 son 1,030 kilos.
+171/230 e922d191659a45d2 1.9s Una báscula para camiones pesa el camión completo.
+172/230 85b727994c33b33f 1.1s El camión cargado pesa 18,000 kilos.
+173/230 631a654736426ad9 1.0s El camión vacío pesa 12,000.
+174/230 840c0e4abf6f9891 1.0s Entonces la carga es de 6,000 kilos.
+175/230 c49b056128d534dc 1.6s Si son 4 pallets iguales, divide entre 4. Cada pal
+176/230 1628d8244821f35a 2.3s A veces necesitas saber el máximo de cajas que pue
+177/230 78167546a9871a22 1.6s Primero, resta el pallet al límite. 1,000 menos 20
+178/230 72be4738e8481d10 1.8s Luego divide entre el peso de una caja. 980 dividi
+179/230 f4dbbf6f6e4368ec 1.3s Siempre redondea hacia abajo. Así que la respuesta
+180/230 94ae85a875ed5005 1.8s ¿Por qué no redondear hacia arriba? 33 cajas sería
+181/230 777bbb860bd328b8 1.7s Ahora el centro de carga. Es la distancia desde el
+182/230 a8fd36d71fa64de8 1.7s Para una carga uniforme empujada bien atrás contra
+183/230 9d7094379453210a 1.8s Esta caja mide 1,200 milímetros de profundidad. La
+184/230 c7d1360de3a7749a 1.1s Si hay un espacio entre la carga y el respaldo, su
+185/230 c3a28c3fc55550c2 3.0s Esta caja mide 1,000 milímetros de profundidad, as
+186/230 ad2cda5ec8672e6c 2.3s 700 está más lejos que los 600 de la placa de dato
+187/230 f785767682501bf0 2.6s Ahora compara la carga con la capacidad nominal. L
+188/230 3185f25bcfdd65be 1.5s Nuestro pallet pesa 1,900 kilos, y su centro de ca
+189/230 49930005d1ac2cea 1.5s 1,900 es menos que 2,500. Se puede levantar, y sob
+190/230 3fb5013cc485f54e 1.9s Los documentos de esta caja dicen 2.7 toneladas. M
+191/230 eb5fe05de8e5c02a 0.9s La capacidad nominal es de 2,500 kilos.
+192/230 e1f9152bc93352fd 1.1s 2,700 son 200 kilos de más. No la levantes.
+193/230 84537db5b3f8dac0 2.7s ¿Cuántos bidones de 600 kilos puede llevar a la ve
+194/230 bb7c87b70b2ec6fe 1.2s Siempre redondea hacia abajo. Así que la respuesta
+195/230 088b9259ed29d67b 1.3s 5 bidones serían 3,000 kilos. Eso es demasiado pes
+196/230 3bb63af25acee51e 2.7s Esas son las matemáticas. Calcula el peso, revisa 
+197/230 b7bc223af8eadd2a 1.8s El módulo 6 trata sobre conducir de forma segura, 
+198/230 7d6f45753afc2c6d 2.0s Cuando circules, mantén la carga baja, a unos 100 
+199/230 6eb7c652922b99a7 1.5s Mira hacia donde vas. Si la carga te tapa la vista
+200/230 1031e4bbefba3346 1.7s Cinturón de seguridad puesto, nunca pasajeros, y r
+201/230 8594a949883f3c2f 1.8s En una rampa con carga, mantén la carga del lado d
+202/230 d6d9d315aa38b064 1.9s Sin carga, es al revés. Mantén las horquillas apun
+203/230 67a7836bb6f85453 0.9s Y nunca gires en una rampa ni la cruces de lado.
+204/230 680577b3c7047ad3 1.7s Antes de mover cualquier carga, haz una elevación 
+205/230 2d5e375c154ddace 2.1s ¿El montacargas está firme? ¿La carga está asegura
+206/230 70d56f3d8a471020 0.9s Cuando apiles en estanterías, sigue estos pasos.
+207/230 487289fb0ea47070 0.7s Detente de frente a la estantería.
+208/230 741573fb6f5ff1ec 1.3s Sube o baja una carga solo cuando estés detenido. 
+209/230 7cba1f3d49f29d16 1.0s Nivela las horquillas y luego avanza muy despacio.
+210/230 158560f7d5d86e17 1.7s Baja la carga sobre las vigas, retrocede y baja la
+211/230 f2ac7c184c1e4734 0.5s Cargar camiones.
+212/230 d71f06326d1d27fa 1.8s Asegúrate de que el camión no se pueda mover. Fren
+213/230 79823c4424a97145 0.9s Delimita una zona de exclusión alrededor del camió
+214/230 254238f3602e8466 1.5s Comprueba que la placa de muelle esté asegurada y 
+215/230 e403d43909e5d0be 0.9s Y mantente bien alejado del borde del muelle.
+216/230 266729725dac1ff0 2.0s Eso es todo en el módulo 6. Carga baja, velocidad 
+217/230 bbc30b853b0122bd 1.9s El módulo 7, el último. Cómo estacionar y apagar, 
+218/230 18258b9ec02daf00 1.6s Al final del turno, el trabajo no termina hasta qu
+219/230 a563ed5a9323bd77 1.4s Este funciona con LPG. Puedes ver el cilindro de g
+220/230 c97ec63a471a1f4f 2.5s Cuando termines, estaciona en un área segura y pla
+221/230 0bd24fceffb0044d 1.4s Pon neutro. Pon el freno de estacionamiento. Baja 
+222/230 3a1e9064fca0e612 1.4s Apágalo, aísla la energía, quita la llave e inform
+223/230 94c5535106e33fa9 1.7s ¿Vas a cambiar un cilindro de gas LPG? Hazlo en un
+224/230 99e3f6d5ff81f952 1.5s Usa guantes y protección para los ojos. El LPG es 
+225/230 82ac26638e428e22 2.7s Cierra la válvula, deja el motor en marcha hasta q
+226/230 a9a752387c81d07d 1.7s Revisa si hay fugas con agua jabonosa. Si salen bu
+227/230 86621e332a4a4831 2.3s Cargar la batería de un montacargas libera gas hid
+228/230 0f5ff9a13d0ad938 1.5s Apaga el cargador antes de conectar o desconectar 
+229/230 04f73043f46b6c5c 1.6s El ácido de batería quema. Usa tu PPE y debes sabe
+230/230 34cb46da5b724fa7 2.1s Ese es el último módulo. Cuando termines todas las
+manifest: 230/230 lines have audio
