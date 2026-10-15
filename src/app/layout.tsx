@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getUser } from "@/lib/supabase/server";
 import { signOut } from "@/app/login/actions";
+import { LanguagePicker } from "@/components/i18n/LanguagePicker";
+import { findLang, LANG_COOKIE } from "@/lib/i18n/languages";
+import { cookies } from "next/headers";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -12,6 +15,7 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const user = await getUser();
+  const lang = findLang((await cookies()).get(LANG_COOKIE)?.value) ?? null;
 
   return (
     <html lang="en-AU">
@@ -22,7 +26,8 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
             <Link href="/" className="font-display text-lg font-bold tracking-wide uppercase">
               Forklift<span className="text-hivis">Theory</span>
             </Link>
-            <div className="flex items-center gap-4 text-sm">
+            <div className="flex items-center gap-3 text-sm sm:gap-4">
+              <LanguagePicker current={lang?.code ?? null} />
               {user ? (
                 <>
                   <Link href="/dashboard" className="hover:text-hivis">

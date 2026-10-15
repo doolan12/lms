@@ -61,3 +61,13 @@ body {
 .prose-question p { margin: 0 0 0.5rem; }
 .prose-question p:last-child { margin-bottom: 0; }
 .prose-question table { display: block; overflow-x: auto; font-weight: 400; font-size: 0.9rem; white-space: nowrap; }
+
+/* Translations shown under the English */
+.translation p { margin: 0.25rem 0; }
+.translation ul, .translation ol { margin: 0.25rem 0; }
+.translation h2, .translation h3 { margin: 0.25rem 0; font-size: 1.05em; }
+.translation table { margin: 0.5rem 0; }
+.translation[dir="rtl"] th, .translation[dir="rtl"] td { text-align: right; }
+.translation[dir="rtl"] ul, .translation[dir="rtl"] ol { padding-left: 0; padding-right: 1.5rem; }
+.bilingual-block > ul, .bilingual-block > ol { margin-bottom: 0.25rem; }
+.prose-lesson .translation blockquote { margin: 0.25rem 0; }

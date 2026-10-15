@@ -6,6 +6,9 @@ import { createClient, getUser } from "@/lib/supabase/server";
 import { getCompletedLessonIds, getCourseOutline, isEnrolled } from "@/lib/courses";
 import { setLessonComplete } from "../../actions";
 import { FREE_PREVIEW_VIDEO_MODULES, MODULE_VIDEOS, videoMinutes } from "@/content/videos";
+import { getTranslator } from "@/lib/i18n/server";
+import { splitBlocks } from "@/lib/i18n/blocks";
+import { Translation, TranslationNotice } from "@/components/i18n/Translation";
 
 type Props = { params: Promise<{ slug: string; lessonSlug: string }> };
 
@@ -34,6 +37,7 @@ export default async function LessonPage({ params }: Props) {
     .eq("lesson_id", lesson.id)
     .maybeSingle();
 
+  const tr = await getTranslator();
   const done = user && enrolled ? (await getCompletedLessonIds(user.id, [lesson.id])).has(lesson.id) : false;
   const path = `/courses/${slug}/lessons/${lesson.slug}`;
   // After the last lesson of a module, send the student to that module's quiz.
@@ -54,6 +58,7 @@ export default async function LessonPage({ params }: Props) {
       </nav>
 
       <h1 className="mt-3 font-display text-3xl font-bold uppercase md:text-4xl">{lesson.title}</h1>
+      {tr && <Translation lang={tr.lang} text={tr.t(`T:${lesson.slug}`, lesson.title)} markdown={false} className="mt-2 text-lg font-semibold" />}
       <p className="mt-2 text-sm text-muted">
         Lesson {index + 1} of {lessons.length} · {lesson.duration_minutes} min
       </p>
@@ -97,9 +102,25 @@ export default async function LessonPage({ params }: Props) {
               />
             </div>
           )}
-          <article className="prose-lesson mt-6">
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>{content.body_md}</ReactMarkdown>
-          </article>
+          {tr ? (
+            <>
+              <div className="mt-6">
+                <TranslationNotice lang={tr.lang} />
+              </div>
+              <article className="prose-lesson mt-6">
+                {splitBlocks(content.body_md).map((block, i) => (
+                  <div key={i} className="bilingual-block">
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>{block}</ReactMarkdown>
+                    <Translation lang={tr.lang} text={tr.t(`L:${lesson.slug}:${i}`, block)} className="mb-4" />
+                  </div>
+                ))}
+              </article>
+            </>
+          ) : (
+            <article className="prose-lesson mt-6">
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>{content.body_md}</ReactMarkdown>
+            </article>
+          )}
         </>
       )}
 
