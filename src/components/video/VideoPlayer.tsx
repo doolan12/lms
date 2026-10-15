@@ -36,6 +36,8 @@ export function VideoPlayer({
   audio,
   lang,
   translated,
+  translatedAudio,
+  voiceLabel,
 }: {
   video: ModuleVideo;
   lessonsHref: string;
@@ -45,6 +47,10 @@ export function VideoPlayer({
   /** Learner's translation language, and each line's translation (null where missing). */
   lang?: Lang;
   translated?: (string | null)[][];
+  /** Recorded narration in the learner's language (null where a line isn't recorded). */
+  translatedAudio?: (string | null)[][];
+  /** Name of that language, for the voice switch. */
+  voiceLabel?: string;
 }) {
   const slides = video.slides;
   const [index, setIndex] = useState(0);
@@ -55,6 +61,7 @@ export function VideoPlayer({
   const [rate, setRate] = useState(1);
   const [speechOk, setSpeechOk] = useState(true);
   const [voiceFailed, setVoiceFailed] = useState(false);
+  const [voiceLang, setVoiceLang] = useState<"en" | "tr">(translatedAudio ? "tr" : "en");
 
   const token = useRef(0);
   const resumeSeg = useRef(0);
@@ -63,8 +70,8 @@ export function VideoPlayer({
   // One reused <audio> element: once a tap has unlocked it, phones let it keep playing.
   const player = useRef<HTMLAudioElement | null>(null);
   const hasRecording = useMemo(() => !!audio?.some((s) => s.some(Boolean)), [audio]);
-  const settings = useRef({ soundOn, rate });
-  settings.current = { soundOn, rate };
+  const settings = useRef({ soundOn, rate, voiceLang });
+  settings.current = { soundOn, rate, voiceLang };
 
   const totalSegments = useMemo(() => slides.reduce((n, s) => n + s.say.length, 0), [slides]);
   const segmentsBefore = useMemo(() => {
@@ -131,8 +138,8 @@ export function VideoPlayer({
         }, delay);
       };
 
-      const { soundOn: sound, rate: r } = settings.current;
-      const src = audio?.[si]?.[seg];
+      const { soundOn: sound, rate: r, voiceLang: vl } = settings.current;
+      const src = (vl === "tr" ? translatedAudio?.[si]?.[seg] : null) ?? audio?.[si]?.[seg];
       const gap = seg + 1 < slides[si].say.length ? 250 : 700;
       if (sound && src) {
         // Recorded human-sounding narration
@@ -150,7 +157,8 @@ export function VideoPlayer({
         a.playbackRate = r;
         a.play().catch(() => finish(readMs(text) / r));
         // Preload the next line so there's no pause between lines
-        const nextSrc = audio?.[si]?.[seg + 1] ?? audio?.[si + 1]?.[0];
+        const pick = (a: number, b: number) => (vl === "tr" ? translatedAudio?.[a]?.[b] : null) ?? audio?.[a]?.[b];
+        const nextSrc = pick(si, seg + 1) ?? pick(si + 1, 0);
         if (nextSrc) {
           const l = document.createElement("link");
           l.rel = "prefetch";
@@ -201,7 +209,7 @@ export function VideoPlayer({
         advance(readMs(text) / r);
       }
     },
-    [slides, audio],
+    [slides, audio, translatedAudio],
   );
 
   const play = useCallback(() => {
@@ -355,6 +363,23 @@ export function VideoPlayer({
             >
               {soundOn ? "🔊 Voice on" : "🔇 Voice off"}
             </button>
+          )}
+          {translatedAudio && voiceLabel && (
+            <label className="flex items-center gap-1 text-sm">
+              <span className="sr-only">Narration language</span>
+              <select
+                value={voiceLang}
+                onChange={(e) => {
+                  const v = e.target.value as "en" | "tr";
+                  settings.current.voiceLang = v;
+                  changeSetting(() => setVoiceLang(v));
+                }}
+                className="rounded-md border border-line bg-white px-2 py-2 text-sm font-semibold"
+              >
+                <option value="tr">🗣 {voiceLabel}</option>
+                <option value="en">🗣 English</option>
+              </select>
+            </label>
           )}
           <label className="flex items-center gap-1 text-sm">
             <span className="sr-only">Speed</span>

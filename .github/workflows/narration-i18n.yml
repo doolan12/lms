@@ -1,0 +1,53 @@
+name: Record translated narration
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/content/i18n/zh-Hans.json"
+      - "src/content/i18n/hi.json"
+      - "src/content/i18n/es.json"
+      - "src/content/i18n/it.json"
+      - "src/lib/i18n/speech.ts"
+      - "scripts/narration/manifest-i18n.mts"
+      - "scripts/narration/generate_i18n.py"
+      - ".github/workflows/narration-i18n.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        lang: [zh-Hans, hi, es, it]
+    concurrency:
+      group: narration-i18n-${{ matrix.lang }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install voice tools
+        run: |
+          sudo apt-get update -q && sudo apt-get install -yq espeak-ng ffmpeg
+          pip install -q "kokoro>=0.9" soundfile "misaki[zh]>=0.9"
+      - name: Record
+        run: |
+          mkdir -p assets-pipeline
+          node --experimental-strip-types scripts/narration/manifest-i18n.mts ${{ matrix.lang }} > /tmp/lines.json
+          python scripts/narration/generate_i18n.py /tmp/lines.json 2>&1 | tee assets-pipeline/narration-${{ matrix.lang }}.log
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "${{ github.repository_owner }}"
+          git config user.email "${{ github.repository_owner_id }}+${{ github.repository_owner }}@users.noreply.github.com"
+          git add -A public/audio src/content/videos/audio-manifest.${{ matrix.lang }}.json assets-pipeline/narration-${{ matrix.lang }}.log || true
+          git commit -m "Record ${{ matrix.lang }} narration (Kokoro)" || exit 0
+          for i in 1 2 3 4 5; do git pull --rebase -q origin main && git push && break; sleep $((RANDOM % 20 + 5)); done

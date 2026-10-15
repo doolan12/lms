@@ -4,7 +4,8 @@ import { getUser } from "@/lib/supabase/server";
 import { getCourseOutline, isEnrolled } from "@/lib/courses";
 import { FREE_PREVIEW_VIDEO_MODULES, MODULE_VIDEOS, videoMinutes } from "@/content/videos";
 import { VideoPlayer } from "@/components/video/VideoPlayer";
-import { narrationAudio } from "@/content/videos/audio";
+import { narrationAudio, translatedNarrationAudio } from "@/content/videos/audio";
+import { VOICED } from "@/lib/i18n/speech";
 import { illustration } from "@/content/illustrations";
 import { getTranslator } from "@/lib/i18n/server";
 import { Translation, TranslationNotice } from "@/components/i18n/Translation";
@@ -38,6 +39,7 @@ export default async function WatchModulePage({ params }: Props) {
   const quizHref = enrolled && mod.quiz ? `/courses/${slug}/quizzes/${mod.quiz.id}` : undefined;
   const tr = await getTranslator();
   const translated = tr ? base.slides.map((s, si) => s.say.map((t, k) => tr.t(`V:${pos}:${si}:${k}`, t))) : undefined;
+  const translatedAudio = tr && translated ? translatedNarrationAudio(tr.lang.code, translated) : undefined;
   const prev = MODULE_VIDEOS[pos - 1] ? pos - 1 : null;
   const next = MODULE_VIDEOS[pos + 1] ? pos + 1 : null;
 
@@ -73,6 +75,8 @@ export default async function WatchModulePage({ params }: Props) {
               audio={narrationAudio(video)}
               lang={tr?.lang}
               translated={translated}
+              translatedAudio={translatedAudio}
+              voiceLabel={tr ? VOICED[tr.lang.code]?.label : undefined}
             />
           </>
         ) : (

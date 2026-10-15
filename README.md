@@ -109,6 +109,7 @@ Learners pick a language from the 🌐 menu in the header. English always stays 
 
 - Translations live in `src/content/i18n/<lang>.json`. Each one stores a fingerprint of the English it came from; if the English changes, that translation is hidden until it's redone.
 - After editing content: `node --experimental-strip-types scripts/i18n/extract.mts && node scripts/i18n/status.mjs` lists what needs re-translating. Put new translations in `scripts/i18n/work/<lang>-NN.json` and run `node scripts/i18n/merge.mjs <lang>` — it checks markdown, tables and numbers match the English. Rules: `scripts/i18n/STYLE.md`.
+- **Spoken narration** in Mandarin, Hindi, Spanish and Italian is recorded by the *Record translated narration* GitHub Action (Kokoro voices `zf_xiaoxiao`, `hf_alpha`, `ef_dora`, `if_sara`; see `src/lib/i18n/speech.ts`). Learners with one of those languages selected get a voice switch on the video player. The English helper words in brackets aren't spoken.
 - These are machine translations. Before relying on them, have a native speaker (ideally with forklift experience) check at least the safety-critical lessons in each language.
 
 ## Curriculum coverage (TLILIC0003)
