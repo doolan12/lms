@@ -13,6 +13,8 @@ export function speakable(text: string) {
   return text
     .replace(/\s*[(（][^()（）]*[A-Za-z][^()（）]*[)）]/g, "")
     .replace(/[*_#>`]/g, "")
+    // "2,500" → "2500": in Spanish and Italian a comma is a decimal point, so the voice would misread it.
+    .replace(/(\d),(?=\d{3}\b)/g, "$1")
     .replace(/\s+/g, " ")
     .trim();
 }
