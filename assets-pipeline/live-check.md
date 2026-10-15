@@ -1,4 +1,4 @@
-# Live check Wed Oct 14 02:36:55 UTC 2026
+# Live check Thu Oct 15 21:26:55 UTC 2026
 ## Files
 - images/illustrations/hero.jpg: 200 image/jpeg 88432B
 - images/illustrations/m1.jpg: 200 image/jpeg 73930B
@@ -50,6 +50,11 @@
 - audio/da5e06286ad48a92.mp3: 200 audio/mpeg 46125B
 - audio/b04aee028c506aa7.mp3: 200 audio/mpeg 46509B
 - audio/965abc8e678972ba.mp3: 200 audio/mpeg 38829B
+- audio/f93d6634899e34db.mp3: 200 audio/mpeg 37677B
+- audio/786ce4755b665cee.mp3: 200 audio/mpeg 65709B
+- audio/adb9f86fe7ed152d.mp3: 200 audio/mpeg 36141B
+- audio/5db93280ed22217d.mp3: 200 audio/mpeg 55533B
+- audio/fa60e0f19f482f42.mp3: 200 audio/mpeg 53229B
 - audio/9092f432e614d317.mp3: 200 audio/mpeg 58029B
 - audio/9e5d0f196d6f379a.mp3: 200 audio/mpeg 23853B
 - audio/cf1e8f3d39e541e8.mp3: 200 audio/mpeg 24237B
@@ -134,10 +139,10 @@
 - audio/ca9e9a59fc352655.mp3: 200 audio/mpeg 44589B
 - audio/127417ca21c70e2c.mp3: 200 audio/mpeg 42861B
 - audio/080725fa429e0ebf.mp3: 200 audio/mpeg 95853B
-- audio/1d70a653aa42bf7c.mp3: 200 audio/mpeg 50157B
-- audio/173293db8476790d.mp3: 200 audio/mpeg 70317B
-- audio/639ad8371c70e513.mp3: 200 audio/mpeg 60909B
-- audio/f3cf4e4afa060f91.mp3: 200 audio/mpeg 82029B
+- audio/557908b46f8586ab.mp3: 200 audio/mpeg 61293B
+- audio/350526190fe49ea3.mp3: 200 audio/mpeg 83757B
+- audio/f2e42e185d702bbb.mp3: 200 audio/mpeg 75693B
+- audio/f00e4b8ee9af783b.mp3: 200 audio/mpeg 93933B
 - audio/2fc303bedc736e02.mp3: 200 audio/mpeg 35373B
 - audio/af809d397808a660.mp3: 200 audio/mpeg 42861B
 - audio/af397d2ee61f2b85.mp3: 200 audio/mpeg 46893B
@@ -160,13 +165,13 @@
 - audio/8b4c0b4bd0281a4d.mp3: 200 audio/mpeg 46317B
 - audio/a5b4820e63805669.mp3: 200 audio/mpeg 52461B
 - audio/bbae1b6c5866dd7c.mp3: 200 audio/mpeg 54189B
-- audio/b0f1c8e516cbc7ec.mp3: 200 audio/mpeg 84525B
+- audio/9bd48f9ea4c22a79.mp3: 200 audio/mpeg 92589B
 - audio/09087ab8dae290f9.mp3: 200 audio/mpeg 72621B
 - audio/67b3fc3d5e246e8d.mp3: 200 audio/mpeg 18285B
 - audio/3c4ee8b4f72d1067.mp3: 200 audio/mpeg 30573B
 - audio/57f5a14b4ade61d5.mp3: 200 audio/mpeg 34989B
 - audio/c29e31d3ee926fbf.mp3: 200 audio/mpeg 27117B
-- audio/7957bb6dd772449d.mp3: 200 audio/mpeg 39021B
+- audio/ab2164328aa7ba95.mp3: 200 audio/mpeg 44397B
 - audio/df4b2318ee508e27.mp3: 200 audio/mpeg 25389B
 - audio/36d738494eca21ea.mp3: 200 audio/mpeg 67437B
 - audio/beaf3160ec34f167.mp3: 200 audio/mpeg 65709B
@@ -188,20 +193,17 @@
 - audio/cdb08098e53b905e.mp3: 200 audio/mpeg 50925B
 - audio/17cfed294729f973.mp3: 200 audio/mpeg 31725B
 - audio/07f73bf9f70160f7.mp3: 200 audio/mpeg 80685B
-- audio/7227e89fa77b0cdc.mp3: 200 audio/mpeg 46701B
-- audio/a1e91b1521c35684.mp3: 200 audio/mpeg 94893B
-- audio/9f97fc402e689625.mp3: 200 audio/mpeg 36909B
-- audio/25afdb8ef962d72d.mp3: 200 audio/mpeg 62253B
-- audio/d5cd1ff01b68f7fa.mp3: 200 audio/mpeg 56493B
-- audio/0de6807bccbeaa73.mp3: 200 audio/mpeg 42285B
-- audio/a9071bb88984b7cf.mp3: 200 audio/mpeg 23853B
-- audio/f97b674031033b62.mp3: 200 audio/mpeg 46701B
-- audio/22f8a1e84d8aec97.mp3: 200 audio/mpeg 50925B
-- audio/6e0ab09081a6e7e5.mp3: 200 audio/mpeg 78189B
-- audio/a780f88647b1dcad.mp3: 200 audio/mpeg 20973B
-- audio/92dff7685030cd6e.mp3: 200 audio/mpeg 34029B
-- audio/8667610fc38470e4.mp3: 200 audio/mpeg 47469B
-- audio/ed2c70a4d40a0cbb.mp3: 200 audio/mpeg 59949B
+- audio/ee1c09371649a884.mp3: 200 audio/mpeg 71661B
+- audio/59199dbee50a10fc.mp3: 200 audio/mpeg 80685B
+- audio/f908748ec3afba2e.mp3: 200 audio/mpeg 47469B
+- audio/9b28882ae7f5860c.mp3: 200 audio/mpeg 57645B
+- audio/839aadbdc54e25ed.mp3: 200 audio/mpeg 59565B
+- audio/78380129f7e8dc0b.mp3: 200 audio/mpeg 31341B
+- audio/0aabf97c0cdc8c04.mp3: 200 audio/mpeg 39981B
+- audio/6812405675dbbb64.mp3: 200 audio/mpeg 99885B
+- audio/9f33de866eaeff33.mp3: 200 audio/mpeg 30765B
+- audio/1e67bfe75642acce.mp3: 200 audio/mpeg 34221B
+- audio/c8b06dd9898caf35.mp3: 200 audio/mpeg 77421B
 - audio/10c27d9794223ba4.mp3: 200 audio/mpeg 53037B
 - audio/51e16e9f00631c2e.mp3: 200 audio/mpeg 64941B
 - audio/ff1ccff429764d02.mp3: 200 audio/mpeg 47853B
@@ -242,3 +244,7 @@
 - module 1 video title image: 3
 - module 1 video recorded lines: 30
 - module 1 video Unsplash photo: 1
+## Translations
+- ar lesson translated blocks: 10, rtl: 6, video captions with lang: 12
+- vi lesson translated blocks: 10, rtl: 0, video captions with lang: 12
+- zh-Hans lesson translated blocks: 10, rtl: 0, video captions with lang: 12
