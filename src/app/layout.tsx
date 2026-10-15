@@ -22,11 +22,11 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
       <body className="min-h-screen antialiased flex flex-col">
         <header className="bg-ink text-white">
           <div className="hazard-stripe h-1.5" />
-          <nav className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3">
-            <Link href="/" className="font-display text-lg font-bold tracking-wide uppercase">
+          <nav className="mx-auto flex max-w-5xl items-center justify-between gap-2 px-4 py-3 sm:gap-4">
+            <Link href="/" className="shrink-0 font-display text-base font-bold tracking-wide uppercase sm:text-lg">
               Forklift<span className="text-hivis">Theory</span>
             </Link>
-            <div className="flex items-center gap-3 text-sm sm:gap-4">
+            <div className="flex flex-wrap items-center justify-end gap-x-3 gap-y-1 text-sm sm:gap-4">
               <LanguagePicker current={lang?.code ?? null} />
               {user ? (
                 <>
@@ -40,7 +40,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
               ) : (
                 <Link
                   href="/login"
-                  className="rounded-md bg-hivis px-3 py-1.5 font-semibold text-ink hover:bg-hivis-dark"
+                  className="whitespace-nowrap rounded-md bg-hivis px-3 py-1.5 font-semibold text-ink hover:bg-hivis-dark"
                 >
                   Sign in
                 </Link>

@@ -9,8 +9,8 @@ export function LanguagePicker({ current }: { current: string | null }) {
   const router = useRouter();
   const [pending, start] = useTransition();
   return (
-    <label className="flex items-center gap-1 text-sm" title="Show translations">
-      <span aria-hidden>🌐</span>
+    <label className="flex items-center gap-1 text-sm" title="Show translations in another language">
+      <span aria-hidden className="hidden sm:inline">🌐</span>
       <span className="sr-only">Show translations in</span>
       <select
         value={current ?? ""}
@@ -22,12 +22,12 @@ export function LanguagePicker({ current }: { current: string | null }) {
             : `${LANG_COOKIE}=; path=/; max-age=0; samesite=lax`;
           start(() => router.refresh());
         }}
-        className="max-w-[8.5rem] rounded-md border border-white/30 bg-ink px-1.5 py-1 text-white sm:max-w-none"
+        className="max-w-[6.5rem] rounded-md border border-white/30 bg-ink px-1 py-1 text-white sm:max-w-none sm:px-1.5"
       >
-        <option value="">English</option>
+        <option value="">🌐 English</option>
         {LANGUAGES.map((l) => (
           <option key={l.code} value={l.code}>
-            {l.native} — {l.english}
+            {l.native}
           </option>
         ))}
       </select>
