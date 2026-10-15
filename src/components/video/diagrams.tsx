@@ -471,7 +471,6 @@ function DataPlate({ step }: P) {
     ["Model", "FL-25"],
     ["Rated capacity", "2,500 kg"],
     ["Load centre", "600 mm"],
-    ["Max lift height", "4,500 mm"],
     ["Attachment", "Side shifter"],
   ];
   return (
@@ -505,10 +504,10 @@ function DataPlate({ step }: P) {
       })}
       <Reveal show={step >= 2}>
         <T x={400} y={395} size={21} weight={800} anchor="middle" fill={C.stop}>
-          Load further out → LESS capacity
+          Never lift more than the rated capacity
         </T>
         <T x={400} y={428} size={21} weight={800} anchor="middle" fill={C.stop}>
-          Lifted higher → LESS capacity
+          Load centre past 600 mm? Don&apos;t lift — ask
         </T>
       </Reveal>
     </g>

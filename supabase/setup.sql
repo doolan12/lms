@@ -416,17 +416,6 @@ do $seed$
 declare
   c uuid; m1 uuid; m2 uuid; m3 uuid; m4 uuid; m5 uuid; m6 uuid; mc uuid;
   q uuid;
-  -- Fictional load chart used in the calculations lessons and questions.
-  chart text := $chart$
-**Load chart — Forklift A (side shifter fitted)**
-
-| Load centre | Lift up to 3,000 mm | Lift up to 4,500 mm |
-|---|---:|---:|
-| 600 mm | 2,500 kg | 2,000 kg |
-| 700 mm | 2,100 kg | 1,700 kg |
-| 800 mm | 1,800 kg | 1,500 kg |
-| 900 mm | 1,600 kg | 1,300 kg |
-$chart$;
 begin
   delete from public.courses where slug = 'forklift-licence-theory';
 
@@ -437,11 +426,11 @@ begin
     'Learn and practise forklift theory for your LF licence assessment — at your own pace, on any device.',
     'Learn and practise the forklift theory you''ll be assessed on for your LF High Risk Work Licence: WHS law '
     || 'and standards, hazards, ground conditions and weather, traffic management, pre-start and operational checks, '
-    || 'faults and lock out/tag out, stability, load charts, load weight and load centre calculations, attachments, '
+    || 'faults and lock out/tag out, stability, rated capacity, load weight and load centre calculations, attachments, '
     || 'safe operating and stacking, shutdown, refuelling and recharging. Each module ends with a quiz, and a final '
     || 'practice exam helps you check your knowledge. An independent study aid to use alongside your training with '
     || 'an RTO — not nationally recognised training, and it does not give you a licence.',
-    4900, 'aud', true
+    1500, 'aud', true
   ) returning id into c;
 
   insert into public.modules (course_id, title, position) values (c, 'Licensing, law and standards', 1) returning id into m1;
@@ -555,7 +544,7 @@ $md$);
 ## Plan before you lift
 
 - **The load** — weight, size, shape, centre of gravity; is it stable and secure?
-- **The forklift** — is its capacity right for the load at the height and load centre needed? Is the right attachment fitted?
+- **The forklift** — is the load within its **rated capacity**? Is the right attachment fitted?
 - **The route** — surfaces, slopes, doorways, overhead clearances, blind corners.
 - **The destination** — racking capacity, where the load will be placed.
 - **People** — who else is working nearby, and how will you communicate?
@@ -586,12 +575,35 @@ $md$);
 - **Ground conditions** and **weather** (later in this module)
 - Unstable or damaged loads
 
-## Risk assessment
+## Hazard or risk — what's the difference?
 
-1. **Identify** the hazard.
-2. **Assess** the risk — how likely, how bad?
+- A **hazard** is anything that **could cause harm** — injury, illness or damage. It's the *thing* or *situation*: a pedestrian near your work area, an oil spill, a powerline, a pothole, a damaged pallet.
+- A **risk** is the **chance that the hazard will actually hurt someone, and how bad it would be**. It's about *likelihood* and *consequence*.
+
+| Hazard (what could cause harm) | Risk (how likely, and how bad) |
+|---|---|
+| Pedestrians walking through the loading area | Being struck by the forklift — likely in a busy area, and could be fatal |
+| Oil spill on the floor | The forklift skids or someone slips — likely if it's on your route |
+| Overhead powerline near the yard | Electrocution if the mast gets close — less likely if you plan, but the consequence is death |
+| Damaged pallet | The load collapses or falls — injury or damaged stock |
+
+> **Spot the hazard → assess the risk → control it.** The hazard is the thing; the risk is how likely and how serious the harm is.
+
+## Assessing the risk
+
+Ask two questions about each hazard:
+
+1. **Likelihood** — how likely is it to cause harm? (*Rare, possible, likely*)
+2. **Consequence** — if it does, how bad would it be? (*Minor first aid, serious injury, death*)
+
+A hazard that is **likely** to happen **and** could cause **serious injury or death** is a **high risk** — fix it before you start work. Low risks still need controlling.
+
+## The risk management steps
+
+1. **Identify** the hazards — walk the route and look around before you start.
+2. **Assess** the risk — likelihood and consequence.
 3. **Control** it using the hierarchy of control.
-4. **Review** — are the controls working?
+4. **Review** — are the controls working? Has anything changed?
 
 ## The hierarchy of control
 
@@ -729,6 +741,18 @@ $md$);
   perform pg_temp.add_q(q, 12, array['KE07'], 'What is the correct order of the 5-step powerline contact protocol?',
     'Stay → Warn → Break contact (if safe) → Call for help → Jump clear (only if you must).', 4,
     array['Jump, Call, Warn, Stay, Break', 'Call, Jump, Stay, Break, Warn', 'Break, Jump, Warn, Call, Stay', 'Stay, Warn, Break contact, Call, Jump clear']);
+  perform pg_temp.add_q(q, 13, array['KE10','PE03'], 'What is a hazard?',
+    'A hazard is anything that could cause harm — injury, illness or damage. Risk is the chance it will cause harm, and how bad that harm would be.', 1,
+    array['Anything that could cause harm', 'The chance that someone will be hurt', 'A report you fill in after an incident', 'A control such as a barrier']);
+  perform pg_temp.add_q(q, 14, array['KE10','PE03'], 'What is a risk?',
+    'Risk combines likelihood (how likely the hazard is to cause harm) and consequence (how bad the harm would be).', 3,
+    array['Any object in the workplace', 'A sign that warns people', 'How likely a hazard is to cause harm, and how bad the harm would be', 'The cost of fixing a forklift']);
+  perform pg_temp.add_q(q, 15, array['KE10','PE03'], 'Pedestrians often walk through the loading bay where you work. Which statement is correct?',
+    'The pedestrians in your work area are the hazard. Being struck by the forklift — likely, and possibly fatal — is the risk.', 2,
+    array['The pedestrians are the risk; being hit is the hazard', 'The pedestrians are the hazard; the chance of hitting one, and how bad it would be, is the risk', 'There is no hazard if pedestrians wear hi-vis', 'Hazards and risks mean exactly the same thing']);
+  perform pg_temp.add_q(q, 16, array['KE10','PE03'], 'A hazard is likely to happen and could kill someone. How should you rate the risk?',
+    'Likely + a serious consequence = high risk. Control it before you start work.', 4,
+    array['Low — it hasn''t happened yet', 'Medium — it depends on the day', 'No risk if you are careful', 'High — control it before you start work']);
 
   -- ════════════════════════════════════════════════════════════════════
   -- Module 3 — Checks, faults and failures
@@ -822,7 +846,7 @@ $md$);
     'Pre-start checks are done before every shift, before the forklift is used.', 2,
     array['Once a week', 'Before every shift', 'Only after a breakdown', 'Only when a supervisor asks']);
   perform pg_temp.add_q(q, 2, array['PE02','KE03'], 'A side shifter has been fitted to the forklift. What must you check on the data plate?',
-    'The data plate / load chart must match the attachment fitted, because attachments change capacity.', 3,
+    'The data plate must match the attachment fitted, because attachments change capacity.', 3,
     array['That it shows the purchase date', 'That it is the same colour as the forklift', 'That it is correct for the attachment fitted', 'Nothing — attachments don''t matter']);
   perform pg_temp.add_q(q, 3, array['PE02'], 'During the walk-around you see flaking paint around a weld on the mast. This could indicate:',
     'Paint separation around welds can be a sign of a crack or stressed weld underneath. Record and report it.', 1,
@@ -859,7 +883,7 @@ Most counterbalance forklifts have **three-point suspension**: the two front whe
 
 ### Causes of instability
 
-- **Overloading** — exceeding the load chart
+- **Overloading** — lifting more than the rated capacity
 - **Lifting high** — raises the centre of gravity
 - **Tilting forward** with a raised load
 - **Turning sharply or too fast**
@@ -873,22 +897,25 @@ Most counterbalance forklifts have **three-point suspension**: the two front whe
 That's why you **travel with the load low and tilted back**, turn slowly, and never turn on a slope.
 $md$);
 
-  perform pg_temp.add_lesson(m4, c, 2, 'load-charts', 'Reading the data plate and load chart', 9, false,
+  perform pg_temp.add_lesson(m4, c, 2, 'load-charts', 'The data plate and rated capacity', 9, false,
     array['KE03','PE01'], $md$
-## Rated capacity depends on load centre and lift height
+## Rated capacity
 
-Every forklift has a manufacturer's **data plate / load chart** showing the **maximum weight** it can lift at a given **load centre** and **lift height**, with the attachments fitted.
+Every forklift has a manufacturer's **data plate**. It shows the forklift's **rated capacity** — the **maximum weight it can safely lift**.
 
-- **Load centre** — the distance from the vertical face of the tynes to the load's centre of gravity. The most common load centre on forklift data plates is **600 mm**.
-- **Longer load centre → lower capacity.**
-- **Higher lift → usually lower capacity.**
-- **Attachments change capacity** — use the chart for the attachment fitted.
+> **Never lift more than the rated capacity.** If the load is heavier, don't lift it.
 
-### Example (illustrative only)
+The data plate also shows the **load centre** the capacity is rated at. The most common is **600 mm**.
 
-A forklift is rated **2,500 kg at a 600 mm load centre**. It picks up a long crate whose centre of gravity is **800 mm** from the tyne face. At 800 mm it can lift **less than 2,500 kg** — on the practice chart in Module 5 it's only **1,800 kg**. Always read the actual figure from the chart.
+- **Load centre** — the distance from the vertical face of the tynes to the load's centre of gravity (the middle of its weight).
+- The rated capacity applies when the load centre is **no more than** the one on the data plate. If a load's centre of gravity is **further out** than that (for example a long crate), **don't lift it** — ask your supervisor.
+- **Attachments** — when an attachment is fitted, use the data plate for that attachment.
 
-> Always use the manufacturer's chart. **Never exceed** the rated capacity. Never add extra counterweight or put people on the back to "balance" a load.
+### Example
+
+Forklift A's data plate says **2,500 kg at a 600 mm load centre**. A pallet weighing **1,900 kg** with its load centre at **600 mm** is within capacity — **OK to lift**. A machine weighing **2,700 kg** is **200 kg over** — **don't lift it**.
+
+> Never add extra counterweight or put people on the back to "balance" a load.
 
 Only use attachments and modifications **approved by the manufacturer**, with a matching data plate.
 $md$);
@@ -897,7 +924,7 @@ $md$);
     array['KE05','PE07'], $md$
 ## Know the weight before you lift
 
-You can't check the load chart if you don't know the weight. Ways to find it:
+You can't check the load against the rated capacity if you don't know the weight. Ways to find it:
 
 - **Load labels and markings** on the item or pallet
 - **Consignment notes** and **running sheets** from the transport company
@@ -920,7 +947,7 @@ A pallet holds **5 layers of 8 cartons**. Each carton weighs **20 kg**. The pall
 2. **Multiply** by the carton weight: 40 × 20 = **800 kg**
 3. **Add** the pallet: 800 + 25 = **825 kg**
 
-Then check: can the forklift lift **825 kg** at this load's load centre and the height you need?
+Then compare it with the forklift's **rated capacity** on the data plate. If 825 kg is less than or equal to the rated capacity, it's OK to lift.
 
 > **Count → Multiply → Add the pallet.** Use a calculator and write each step down — that's what you'll do in the assessment too.
 $md$);
@@ -932,7 +959,7 @@ $md$);
 An attachment **adds weight** to the front of the forklift and usually **moves the load centre forward**. Both reduce how much you can safely lift.
 
 - Only fit attachments **approved by the manufacturer** for that forklift.
-- The forklift must have a **data plate / load chart that covers the attachment**.
+- The forklift must have a **data plate that covers the attachment**.
 - Check the attachment is **secured** (locking pins, bolts, hydraulic connections) before use.
 - Follow the **attachment manufacturer's instructions**.
 
@@ -986,9 +1013,9 @@ $md$);
   perform pg_temp.add_q(q, 1, array['KE04'], 'The stability triangle of a counterbalance forklift is formed by:',
     'The two front wheels and the rear axle pivot point form the stability triangle.', 2,
     array['All four wheels', 'The two front wheels and the rear axle pivot point', 'The mast and the two front wheels', 'The tynes and the counterweight']);
-  perform pg_temp.add_q(q, 2, array['KE03'], 'What happens to rated capacity as the load centre increases?',
-    'A longer load centre increases leverage over the front wheels, so capacity decreases.', 3,
-    array['It increases', 'It stays the same', 'It decreases', 'It doubles']);
+  perform pg_temp.add_q(q, 2, array['KE03'], 'What does the rated capacity on a forklift''s data plate tell you?',
+    'The rated capacity is the maximum weight the forklift can safely lift. Never lift more than it.', 3,
+    array['The forklift''s top speed', 'How much fuel it holds', 'The maximum weight it can safely lift', 'How high the mast can reach']);
   perform pg_temp.add_cq(q, 3, array['KE05'], 'A pallet has 40 cartons weighing 20 kg each. The pallet weighs 20 kg. What is the total weight?',
     '40 × 20 = 800 kg, plus the 20 kg pallet = 820 kg.', 2,
     array['800 kg', '820 kg', '840 kg', '860 kg']);
@@ -1024,7 +1051,7 @@ Every load calculation uses the same few steps. Take it slowly, **use a calculat
 
 ## Tonnes and kilograms
 
-Load charts are in **kilograms (kg)**. Paperwork sometimes uses **tonnes (t)**.
+Rated capacity on the data plate is in **kilograms (kg)**. Paperwork sometimes uses **tonnes (t)**.
 
 **1 tonne = 1,000 kg.** To change tonnes into kilograms, **multiply by 1,000**.
 
@@ -1092,48 +1119,46 @@ If the load **isn't hard against the backrest**, add the gap.
 
 > A **1,000 mm** deep load sitting **200 mm** away from the backrest → 200 + 500 = **700 mm**.
 
-That's why you **insert the tynes fully** — a gap pushes the load centre forward and cuts how much you can lift.
+That's why you **insert the tynes fully** — a gap pushes the load centre forward, past the 600 mm the rated capacity is based on. If the load centre is more than the data plate's load centre, **don't lift** — ask your supervisor.
 
 ## Uneven loads
 
 If one end is heavier (e.g. a machine with the motor at one end), the centre of gravity **isn't in the middle**. Check markings or paperwork for the centre of gravity, put the **heavy end towards the mast**, and ask your supervisor if you're unsure.
 $md$);
 
-  perform pg_temp.add_lesson(mc, c, 3, 'reading-a-load-chart', 'Reading a load chart, step by step', 10, false,
+  perform pg_temp.add_lesson(mc, c, 3, 'reading-a-load-chart', 'Checking a load against rated capacity, step by step', 10, false,
     array['KE03','KE05','PE01'], $md$
-## Four steps
+## Three steps
 
-1. **Weight** — how heavy is the load?
-2. **Load centre** — how far out is the middle of the load?
-3. **Height** — how high does it need to go?
-4. **Read the chart** — find the row and the column. If the load weighs **more** than the number in the chart, **don't lift it**.
+1. **Weight** — work out how heavy the load is (Count → Multiply → Add the pallet).
+2. **Load centre** — check the load's centre is **no more than** the data plate's load centre (usually **600 mm**). If it's further out, **don't lift** — ask your supervisor.
+3. **Compare** — is the load **less than or equal to** the **rated capacity**? Yes → OK to lift. No → **do not lift**.
 
-### When your number falls between two lines
+## Practice data plate (fictional)
 
-- Load centre **between two rows**? Use the **bigger load centre** (the row further down).
-- Lift height **between two columns**? Use the **higher lift** (the column to the right).
-
-Both rules give you the **smaller** capacity — the safe choice. **Never take an average.**
-
-Only use the chart for the **forklift and attachment actually fitted**.
-
-## Practice chart (fictional)
-$md$ || chart || $md$
+**Forklift A — rated capacity 2,500 kg at a 600 mm load centre.**
 
 ## Worked example 1 — OK to lift
 
-A **1,900 kg** pallet, load centre **600 mm**, lifted to **2,500 mm**.
-Row 600 mm, column "up to 3,000 mm" → **2,500 kg**. 1,900 is less than 2,500 → **OK to lift.**
+A pallet weighs **1,900 kg** and its load centre is **600 mm**.
+1,900 is less than 2,500 → **OK to lift.** You have 2,500 − 1,900 = **600 kg** to spare.
 
 ## Worked example 2 — too heavy
 
-A **2,200 kg** pallet, load centre **600 mm**, going to a shelf at **4,000 mm**.
-4,000 mm is above 3,000 mm, so use the "up to 4,500 mm" column → **2,000 kg**. 2,200 is more than 2,000 → **Do not lift** — it's 200 kg over.
+A crate weighs **2.7 t**. 2.7 × 1,000 = **2,700 kg**.
+2,700 is more than 2,500 → **Do not lift** — it's **200 kg over**.
 
-## Worked example 3 — between two rows
+## Worked example 3 — cartons
 
-A crate **1,300 mm** deep, weighing **2,000 kg**, lifted to **2,500 mm**.
-Load centre = 1,300 ÷ 2 = **650 mm**. That's between the 600 and 700 rows, so use the **700 mm** row → **2,100 kg**. 2,000 is less than 2,100 → **OK to lift.**
+48 cartons of **50 kg** on a **30 kg** pallet: 48 × 50 = 2,400 → + 30 = **2,430 kg**.
+2,430 is less than 2,500 → **OK to lift**, with **70 kg** to spare.
+
+## Worked example 4 — the most you can lift
+
+How many **600 kg** drums can Forklift A carry at once (on a drum carrier rated 2,500 kg)?
+2,500 ÷ 600 = 4.17 → round **down** → **4 drums** (2,400 kg). Five would be 3,000 kg — too heavy.
+
+> If the answer has a decimal, **always round down**. Rounding up puts you over the rated capacity.
 $md$);
 
   insert into public.quizzes (course_id, module_id, title, pass_mark) values (c, mc, 'Module 5 quiz — calculations', 80) returning id into q;
@@ -1170,29 +1195,29 @@ $md$);
     'Gap + half the depth = 200 + 500 = 700 mm.', 3,
     array['500 mm', '600 mm', '700 mm', '1,200 mm']);
   perform pg_temp.add_cq(q, 9, array['KE03','PE01'],
-    E'Using the chart, can Forklift A lift a 1,900 kg load with a 600 mm load centre to 2,500 mm?\n\n' || chart,
-    'Row 600 mm, column up to 3,000 mm = 2,500 kg. 1,900 kg is less, so it''s within capacity.', 1,
-    array['Yes — capacity is 2,500 kg', 'No — capacity is 2,000 kg', 'No — capacity is 1,800 kg', 'Yes — capacity is 2,100 kg']);
+    'Forklift A has a rated capacity of 2,500 kg at a 600 mm load centre. Can it lift a 1,900 kg pallet with a 600 mm load centre?',
+    '1,900 kg is less than the 2,500 kg rated capacity, and the load centre is 600 mm — OK to lift, with 600 kg to spare.', 1,
+    array['Yes — it''s 600 kg under the rated capacity', 'No — it''s 600 kg over the rated capacity', 'No — the load centre is too far out', 'Only if someone sits on the back']);
   perform pg_temp.add_cq(q, 10, array['KE03','PE01'],
-    E'A 2,200 kg load (600 mm load centre) must go on a shelf at 4,000 mm. Can Forklift A do it?\n\n' || chart,
-    '4,000 mm is above 3,000 mm, so use the up to 4,500 mm column: 2,000 kg. 2,200 kg is 200 kg over — do not lift.', 2,
-    array['Yes — capacity is 2,500 kg', 'No — capacity is 2,000 kg', 'Yes — capacity is 2,100 kg', 'No — capacity is 1,700 kg']);
+    'Forklift A is rated at 2,500 kg. A crate on a consignment note weighs 2.7 t. Can it lift the crate?',
+    '2.7 × 1,000 = 2,700 kg. That''s 200 kg more than the 2,500 kg rated capacity — do not lift.', 2,
+    array['Yes — 2.7 t is less than 2,500 kg', 'No — it''s 200 kg over the rated capacity', 'Yes — it''s only 200 kg over', 'No — it''s 2,000 kg over']);
   perform pg_temp.add_cq(q, 11, array['KE03','KE05'],
-    E'An evenly loaded crate 1,600 mm deep weighs 1,700 kg and sits hard against the backrest. It must be lifted to 2,500 mm. Can Forklift A do it?\n\n' || chart,
-    'Load centre = 1,600 ÷ 2 = 800 mm. Row 800 mm, column up to 3,000 mm = 1,800 kg. 1,700 kg is within capacity.', 1,
-    array['Yes — load centre 800 mm, capacity 1,800 kg', 'No — load centre 800 mm, capacity 1,500 kg', 'Yes — load centre 600 mm, capacity 2,500 kg', 'No — load centre 1,600 mm is off the chart']);
-  perform pg_temp.add_cq(q, 12, array['KE03','PE01'],
-    E'A 2,200 kg load has a load centre of 650 mm and will be lifted to 2,500 mm. Using the chart, can Forklift A lift it?\n\n' || chart,
-    '650 mm is between rows, so use the bigger load centre (700 mm): 2,100 kg. 2,200 kg is over — do not lift. Never take an average.', 2,
-    array['Yes — use the 600 mm row: 2,500 kg', 'No — use the 700 mm row: 2,100 kg', 'Yes — average the rows: 2,300 kg', 'Yes — round down to the 600 mm row']);
-  perform pg_temp.add_cq(q, 13, array['KE03'],
-    E'What is the most Forklift A can lift with a 700 mm load centre to a height of 4,000 mm?\n\n' || chart,
-    '4,000 mm is above 3,000 mm, so use the up to 4,500 mm column. Row 700 mm = 1,700 kg.', 2,
-    array['2,100 kg', '1,700 kg', '1,500 kg', '2,000 kg']);
-  perform pg_temp.add_cq(q, 14, array['KE05','KE03'],
-    E'A pallet holds 40 cartons of 40 kg each. The pallet weighs 50 kg. The load centre is 700 mm and it must go to 4,000 mm. Is the lift within capacity?\n\n' || chart,
-    'Weight = 40 × 40 + 50 = 1,650 kg. Row 700 mm, column up to 4,500 mm = 1,700 kg. 1,650 kg is within capacity.', 1,
-    array['Yes — 1,650 kg is within 1,700 kg', 'No — 1,650 kg is more than 1,500 kg', 'No — 1,650 kg is more than 1,300 kg', 'Yes — 1,600 kg is within 2,100 kg']);
+    'A forklift is rated at 2,000 kg. A pallet holds 48 cartons of 40 kg each, and the pallet weighs 30 kg. Is the load within the rated capacity?',
+    '48 × 40 = 1,920 kg. 1,920 + 30 = 1,950 kg. That''s 50 kg under the 2,000 kg rated capacity — OK to lift.', 1,
+    array['Yes — 1,950 kg is within 2,000 kg', 'No — 2,050 kg is over 2,000 kg', 'No — 1,950 kg is over 1,920 kg', 'Yes — 1,920 kg is within 2,000 kg']);
+  perform pg_temp.add_cq(q, 12, array['KE03','KE05'],
+    'A forklift is rated at 1,500 kg. Paperwork says the load is 1.8 t. What should you do?',
+    '1.8 × 1,000 = 1,800 kg — 300 kg over the 1,500 kg rated capacity. Don''t lift it; tell your supervisor.', 3,
+    array['Lift it slowly', 'Lift it with the load tilted back', 'Don''t lift it — it''s 300 kg over the rated capacity', 'Lift it if the ground is flat']);
+  perform pg_temp.add_cq(q, 13, array['KE03','KE05'],
+    'A forklift with a drum carrier is rated at 2,500 kg. Each full drum weighs 600 kg. What is the most drums it can carry at once?',
+    '2,500 ÷ 600 = 4.17 — always round down: 4 drums (2,400 kg). Five drums would be 3,000 kg.', 2,
+    array['3', '4', '5', '6']);
+  perform pg_temp.add_cq(q, 14, array['KE03','KE05'],
+    'A forklift is rated at 2,500 kg. It is carrying a 1,800 kg crate. How much more weight could be added without going over the rated capacity?',
+    '2,500 − 1,800 = 700 kg.', 1,
+    array['700 kg', '800 kg', '1,700 kg', '4,300 kg']);
 
   -- ════════════════════════════════════════════════════════════════════
   -- Module 6 — Safe operation and load handling
@@ -1364,7 +1389,7 @@ $md$);
     array['Ask questions to confirm what is needed before starting', 'Do what you think they meant', 'Ignore it', 'Wait until the end of the shift']);
   perform pg_temp.add_q(q, 4, array['KE02'], 'Which is a "traffic warning system"?',
     'Warning lights and signs at doorways and intersections are traffic warning systems.', 4,
-    array['A fire extinguisher', 'A pre-start checklist', 'A load chart', 'Flashing warning lights at a doorway']);
+    array['A fire extinguisher', 'A pre-start checklist', 'A data plate', 'Flashing warning lights at a doorway']);
   perform pg_temp.add_q(q, 5, array['KE10'], 'PPE sits where in the hierarchy of control?',
     'PPE is the least effective control — the last line of defence.', 4,
     array['First — most effective', 'Second', 'In the middle', 'Last — least effective']);
@@ -1401,9 +1426,9 @@ $md$);
   perform pg_temp.add_q(q, 16, array['KE04'], 'For the forklift to stay stable, the combined centre of gravity must stay:',
     'It must stay within the stability triangle.', 1,
     array['Inside the stability triangle', 'Over the tynes', 'Behind the counterweight', 'Above the mast']);
-  perform pg_temp.add_q(q, 17, array['KE03'], 'Where do you find the maximum load for a given load centre and lift height?',
-    'On the manufacturer''s data plate / load chart.', 2,
-    array['The fuel gauge', 'The data plate / load chart', 'The traffic management plan', 'The racking label only']);
+  perform pg_temp.add_q(q, 17, array['KE03'], 'Where do you find a forklift''s rated capacity?',
+    'The rated capacity is on the manufacturer''s data plate.', 2,
+    array['The fuel gauge', 'The data plate', 'The traffic management plan', 'The racking label only']);
   perform pg_temp.add_cq(q, 18, array['KE05'], 'A pallet holds 50 cartons of 20 kg each. The pallet weighs 25 kg. What is the total load weight?',
     '50 × 20 = 1,000 kg, plus the 25 kg pallet = 1,025 kg.', 3,
     array['1,000 kg', '1,020 kg', '1,025 kg', '1,250 kg']);
@@ -1439,19 +1464,25 @@ $md$);
     '2.5 × 1,000 = 2,500 kg.', 3,
     array['250 kg', '2,050 kg', '2,500 kg', '25,000 kg']);
   perform pg_temp.add_cq(q, 28, array['KE03','KE05','PE01'],
-    E'An evenly loaded crate 1,300 mm deep weighs 2,000 kg and sits hard against the backrest. It will be lifted to 2,500 mm. Using the chart, can Forklift A lift it?\n\n' || chart,
-    'Load centre = 1,300 ÷ 2 = 650 mm. That''s between rows, so use the bigger load centre (700 mm): 2,100 kg. 2,000 kg is within capacity.', 1,
-    array['Yes — use the 700 mm row: 2,100 kg', 'No — use the 700 mm row: 1,700 kg', 'No — use the 800 mm row: 1,800 kg', 'Yes — use the 600 mm row: 2,500 kg']);
-  perform pg_temp.add_cq(q, 29, array['KE03','PE01'],
-    E'Using the chart, which ONE of these lifts is within Forklift A''s capacity?\n\n' || chart,
-    '1,900 kg at 600 mm to 4,200 mm uses the up to 4,500 mm column: 2,000 kg — within capacity. The others are over 2,100 kg, 1,800 kg and 1,500 kg.', 2,
-    array['2,200 kg, 700 mm load centre, lifted to 2,500 mm', '1,900 kg, 600 mm load centre, lifted to 4,200 mm', '1,900 kg, 800 mm load centre, lifted to 2,500 mm', '1,600 kg, 800 mm load centre, lifted to 4,500 mm']);
+    'An evenly loaded crate 1,100 mm deep weighs 2,200 kg and sits hard against the backrest. The forklift is rated at 2,500 kg at a 600 mm load centre. Can it lift the crate?',
+    'Load centre = 1,100 ÷ 2 = 550 mm — within 600 mm. 2,200 kg is less than 2,500 kg. OK to lift.', 1,
+    array['Yes — load centre 550 mm, and 2,200 kg is within 2,500 kg', 'No — the load centre is 1,100 mm', 'No — 2,200 kg is over 2,500 kg', 'Yes — but only below 3 metres']);
+  perform pg_temp.add_cq(q, 29, array['KE03','KE05','PE01'],
+    'A forklift is rated at 2,500 kg. Which ONE of these loads is within its rated capacity?',
+    '45 × 50 = 2,250 kg + 30 kg pallet = 2,280 kg — within 2,500 kg. The others are 2,600 kg, 2,600 kg and 2,530 kg — all over.', 3,
+    array['A machine weighing 2.6 t', 'Two pallets of 1,300 kg each, lifted together', '45 cartons of 50 kg on a 30 kg pallet', 'A 2,500 kg crate on a 30 kg pallet']);
   perform pg_temp.add_cq(q, 30, array['KE05'],
-    'The load chart allows 1,300 kg for this lift. The pallet weighs 25 kg and each carton weighs 25 kg. What is the most cartons you can load?',
+    'The forklift''s rated capacity is 1,300 kg. The pallet weighs 25 kg and each carton weighs 25 kg. What is the most cartons you can load?',
     '1,300 − 25 = 1,275. 1,275 ÷ 25 = 51 cartons. Check: 51 × 25 + 25 = 1,300 kg. 52 cartons would be 1,325 kg.', 2,
     array['50', '51', '52', '53']);
   perform pg_temp.add_q(q, 31, array['KE07','PE03'], 'A forklift has touched a powerline. When is it safe to go back to it?',
     'Only once the electricity network operator confirms the power is off. Until then, stay at least 8 m away.', 3,
     array['As soon as the mast is no longer touching the line', 'After waiting 5 minutes', 'Only when the electricity network operator confirms the power is off', 'When it stops sparking']);
+  perform pg_temp.add_q(q, 32, array['KE10','PE03'], 'Which of these is a HAZARD rather than a risk?',
+    'An oil spill is a hazard — something that could cause harm. The chance of skidding on it, and how bad that would be, is the risk.', 2,
+    array['The chance of a collision', 'An oil spill on the forklift''s route', 'How serious an injury could be', 'The likelihood of the load falling']);
+  perform pg_temp.add_q(q, 33, array['KE10','PE03'], 'When you assess a risk, which two things do you consider?',
+    'Risk = likelihood (how likely is harm?) and consequence (how bad would it be?).', 1,
+    array['How likely the harm is, and how bad it would be', 'The time of day and the weather', 'The colour of the forklift and the load', 'Who is to blame and the cost']);
 end
 $seed$;

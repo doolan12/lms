@@ -179,6 +179,25 @@ export const module2: ModuleVideo = {
       ],
     },
     {
+      visual: {
+        kind: "points",
+        title: "Hazard or risk?",
+        items: [
+          { icon: "⚠️", text: "Hazard — anything that could cause harm" },
+          { icon: "🎲", text: "Risk — how likely it is to cause harm…" },
+          { icon: "💥", text: "…and how bad the harm would be" },
+          { icon: "🔍", text: "Spot the hazard → assess the risk → control it" },
+        ],
+      },
+      say: [
+        "Two words you need to know: hazard and risk. They're not the same thing.",
+        "A hazard is anything that could cause harm. A pedestrian near your work, an oil spill, a powerline, a damaged pallet.",
+        "A risk is the chance that the hazard will actually hurt someone.",
+        "And how bad the harm would be. A hazard that's likely to happen, and could kill someone, is a high risk.",
+        "So: spot the hazard, assess the risk by asking how likely and how bad, then control it.",
+      ],
+    },
+    {
       visual: { kind: "diagram", name: "hierarchy" },
       say: [
         "When you find a hazard, use the hierarchy of control. Start at the top — the most effective — and work down.",

@@ -97,7 +97,7 @@ Never re-run `seed.sql` on the live database — it deletes and recreates the co
 
 ## Module videos
 
-Each module has a narrated "video": a slideshow with diagrams, photos and captions. Scripts live in `src/content/videos/` (one entry per slide: what's shown, and what's said); diagrams are SVG components in `src/components/video/diagrams.tsx`. Module 1's video is a free preview. If the load chart in `seed.sql` changes, update `CHART_ROWS` in `modules-4-7.ts` to match.
+Each module has a narrated "video": a slideshow with diagrams, photos and captions. Scripts live in `src/content/videos/` (one entry per slide: what's shown, and what's said); diagrams are SVG components in `src/components/video/diagrams.tsx`. Module 1's video is a free preview.
 
 **Narration** is recorded with [Kokoro](https://huggingface.co/hexgrad/Kokoro-82M) (free, open-source, Apache-2.0) by the *Record video narration* GitHub Action whenever a script changes. Only new or edited lines are recorded (`public/audio/`, listed in `audio-manifest.json`); any line without a recording falls back to the device's voice. To change the voice, set `NARRATION_VOICE` in `.github/workflows/narration.yml` (e.g. `bf_emma`, `bm_george`).
 

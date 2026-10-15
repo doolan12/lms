@@ -1,18 +1,4 @@
-import type { ModuleVideo, Visual } from "./types";
-
-// Must match the practice chart in supabase/seed.sql exactly.
-const CHART_HEAD = ["Load centre", "Lift up to 3,000 mm", "Lift up to 4,500 mm"];
-const CHART_ROWS = [
-  ["600 mm", "2,500 kg", "2,000 kg"],
-  ["700 mm", "2,100 kg", "1,700 kg"],
-  ["800 mm", "1,800 kg", "1,500 kg"],
-  ["900 mm", "1,600 kg", "1,300 kg"],
-];
-const chart = (
-  highlight: { row: number; col: number },
-  verdict: { text: string; ok: boolean },
-  title = "Practice chart — Forklift A",
-): Visual => ({ kind: "table", title, head: CHART_HEAD, rows: CHART_ROWS, highlight, verdict });
+import type { ModuleVideo } from "./types";
 
 export const module4: ModuleVideo = {
   module: 4,
@@ -40,9 +26,9 @@ export const module4: ModuleVideo = {
     {
       visual: { kind: "diagram", name: "dataPlate" },
       say: [
-        "Every forklift has a data plate or load chart. It tells you the most it can safely lift.",
-        "Most forklifts are rated at a six hundred millimetre load centre. That's the distance from the front of the tynes to the middle of the load.",
-        "The further out the load's weight is, and the higher you lift, the less the forklift can carry. Never go over the chart.",
+        "Every forklift has a data plate. It shows the rated capacity: the most weight the forklift can safely lift.",
+        "It also shows the load centre the capacity is rated at, usually six hundred millimetres. That's the distance from the front of the tynes to the middle of the load.",
+        "Never lift more than the rated capacity. And if the load's centre is further out than the data plate says, don't lift it. Ask your supervisor.",
       ],
     },
     {
@@ -56,7 +42,7 @@ export const module4: ModuleVideo = {
         ],
       },
       say: [
-        "You need the weight before you can use the chart. Here's a pallet with five layers of eight cartons. Each carton is twenty kilos, and the pallet is twenty-five.",
+        "You need the weight before you can compare it with the rated capacity. Here's a pallet with five layers of eight cartons. Each carton is twenty kilos, and the pallet is twenty-five.",
         "Count. Five layers times eight cartons is forty cartons.",
         "Multiply. Forty cartons times twenty kilos is eight hundred kilos.",
         "Add the pallet. Eight hundred plus twenty-five is eight hundred and twenty-five kilos.",
@@ -138,7 +124,7 @@ export const module4: ModuleVideo = {
     },
     {
       visual: { kind: "title", title: "Module 4 complete", subtitle: "Keep it inside the triangle" },
-      say: ["That's Module 4. Keep the centre of gravity inside the triangle, and never go over the chart. Next up is the maths — and we'll go through it step by step."],
+      say: ["That's Module 4. Keep the centre of gravity inside the triangle, and never go over the rated capacity. Next up is the maths — and we'll go through it step by step."],
     },
   ],
 };
@@ -175,7 +161,7 @@ export const module5: ModuleVideo = {
         lines: [{ text: "1 tonne = 1,000 kg" }, { text: "1.5 t × 1,000 = 1,500 kg", result: true }],
       },
       say: [
-        "Load charts use kilograms, but paperwork sometimes uses tonnes.",
+        "Rated capacity is in kilograms, but paperwork sometimes uses tonnes.",
         "One tonne is one thousand kilograms.",
         "So to change tonnes into kilograms, times by one thousand. One point five tonnes is fifteen hundred kilograms.",
       ],
@@ -248,39 +234,60 @@ export const module5: ModuleVideo = {
       say: [
         "If there's a gap between the load and the backrest, add the gap.",
         "This crate is a thousand millimetres deep, so half is five hundred. The gap is two hundred. Five hundred plus two hundred is seven hundred millimetres.",
-        "A bigger load centre means less capacity. So always push the tynes all the way in.",
+        "Seven hundred is further out than the six hundred on the data plate. So push the tynes all the way in, with the load against the backrest.",
       ],
     },
     {
-      visual: chart({ row: 0, col: 1 }, { text: "1,900 kg is under 2,500 kg → OK to lift", ok: true }),
+      visual: {
+        kind: "sum",
+        title: "Rated capacity \u2014 OK to lift",
+        lines: [
+          {"text": "Forklift A: rated capacity 2,500 kg"},
+          {"text": "Load: 1,900 kg, load centre 600 mm"},
+          {"text": "1,900 is less than 2,500 \u2192 OK to lift \u2713", "result": true},
+        ],
+      },
       say: [
-        "Now let's read a load chart. Here's the practice chart for Forklift A. Our load is nineteen hundred kilos, with a six hundred millimetre load centre, going up to two and a half metres.",
-        "First, find the row for the load centre. Six hundred millimetres.",
-        "Next, find the column for the height. Two and a half metres is under three thousand millimetres, so use the first column.",
-        "Where they meet: twenty-five hundred kilos. Our load is nineteen hundred. That's less, so it's OK to lift.",
+        "Now compare the load with the rated capacity. Forklift A's data plate says twenty-five hundred kilos at a six hundred millimetre load centre.",
+        "Our pallet weighs nineteen hundred kilos, and its load centre is six hundred millimetres.",
+        "Nineteen hundred is less than twenty-five hundred. It's OK to lift, with six hundred kilos to spare.",
       ],
     },
     {
-      visual: chart({ row: 0, col: 2 }, { text: "2,200 kg is over 2,000 kg → DO NOT LIFT", ok: false }),
+      visual: {
+        kind: "sum",
+        title: "Rated capacity \u2014 too heavy",
+        lines: [
+          {"text": "2.7 t \u00d7 1,000 = 2,700 kg"},
+          {"text": "Rated capacity: 2,500 kg"},
+          {"text": "2,700 is more than 2,500 \u2192 DO NOT LIFT \u2717", "result": true},
+        ],
+      },
       say: [
-        "This time the load is twenty-two hundred kilos, and it's going up to four metres.",
-        "Same row: six hundred millimetres.",
-        "Four metres is higher than three thousand millimetres, so move to the second column.",
-        "The chart says two thousand kilos. Our load is two hundred kilos too heavy. Do not lift it.",
+        "This crate's paperwork says two point seven tonnes. Times by one thousand: twenty-seven hundred kilos.",
+        "The rated capacity is twenty-five hundred kilos.",
+        "Twenty-seven hundred is two hundred kilos too heavy. Do not lift it.",
       ],
     },
     {
-      visual: chart({ row: 1, col: 1 }, { text: "700 mm row: 2,000 kg is under 2,100 kg → OK", ok: true }),
+      visual: {
+        kind: "sum",
+        title: "The most you can carry",
+        lines: [
+          {"text": "2,500 \u00f7 600 kg = 4.17"},
+          {"text": "Round DOWN \u2192 4 drums \u2713", "result": true},
+          {"text": "Check: 5 drums = 3,000 kg \u2717 too heavy"},
+        ],
+      },
       say: [
-        "What if the load centre is six hundred and fifty — between two rows? Always use the bigger load centre, the row further down. Never take an average.",
-        "So use the seven hundred row.",
-        "We're lifting to two and a half metres, so it's the first column.",
-        "Twenty-one hundred kilos. Our crate is two thousand kilos, so it's OK to lift.",
+        "How many six hundred kilo drums can it carry at once? Divide the rated capacity by the weight of one drum. Twenty-five hundred divided by six hundred is four point one seven.",
+        "Always round down. So the answer is four drums.",
+        "Five drums would be three thousand kilos. That's too heavy.",
       ],
     },
     {
-      visual: { kind: "title", title: "Module 5 complete", subtitle: "Weight → Load centre → Height → Chart" },
-      say: ["That's the maths. Weight, load centre, height, then read the chart. Have a go at the quiz — and use the calculator."],
+      visual: { kind: "title", title: "Module 5 complete", subtitle: "Weight → Load centre → Rated capacity" },
+      say: ["That's the maths. Work out the weight, check the load centre, then compare it with the rated capacity. Have a go at the quiz — and use the calculator."],
     },
   ],
 };
