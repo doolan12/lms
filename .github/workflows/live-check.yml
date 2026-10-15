@@ -31,6 +31,12 @@ jobs:
           echo "- module 1 video title image: $(grep -o 'illustrations/m1.jpg' watch1.html | wc -l)" >> $out
           echo "- module 1 video recorded lines: $(grep -o '/audio/[0-9a-f]*\.mp3' watch1.html | sort -u | wc -l)" >> $out
           echo "- module 1 video Unsplash photo: $(grep -o 'photo-1684695749267' watch1.html | wc -l)" >> $out
+          echo "## Translations" >> $out
+          for L in ar vi zh-Hans; do
+            curl -s -b "lang=$L" "$B/courses/forklift-licence-theory/lessons/high-risk-work-licence?x=$RANDOM" > l.html
+            curl -s -b "lang=$L" "$B/courses/forklift-licence-theory/modules/1/watch?x=$RANDOM" > w.html
+            echo "- $L lesson translated blocks: $(grep -o "class=\"translation " l.html | wc -l), rtl: $(grep -c 'dir="rtl"' l.html), video captions with lang: $(grep -o "lang=\"$L\"" w.html | wc -l)" >> $out
+          done
           bad=$(grep -c -v ': 200 ' <(grep '^- \(images\|audio\)' $out)); echo "## Files not OK: $bad" >> $out
           cat $out | grep -v ': 200 ' 
       - name: Commit report
