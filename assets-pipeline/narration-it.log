@@ -1,237 +1,28 @@
-it voice if_sara: 230 lines, 230 to record
+it voice if_sara: 230 lines, 21 to record
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
   super().__init__("LSTM", *args, **kwargs)
 /opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
   WeightNorm.apply(module, name, dim)
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-1/230 3b0df59f4e3c3418 8.2s Benvenuto nel Modulo 1. In questo breve video vedr
-2/230 decfc9ed76a2cb74 2.7s I carrelli elevatori lavorano in posti affollati c
-3/230 d2f312c3649fa48c 3.2s Un solo errore può ferire o uccidere qualcuno. Ecc
-4/230 4282481c43684acb 3.1s Guidare un carrello elevatore è un lavoro ad alto 
-5/230 78e4e38194c58e72 3.0s Esiste anche una classe LO, per i carrelli elevato
-6/230 a4a85616e481617a 1.0s Ecco come ottieni la licenza.
-7/230 6452f876386b422b 1.7s Primo, fai la formazione con un Ente di formazione
-8/230 47cba8107637b83c 2.2s Secondo, supera sia una valutazione teorica sia un
-9/230 242bf8dd1204637d 3.6s Terzo, fai domanda all'ente regolatore del tuo sta
-10/230 815458a35d7e76d8 2.2s Tutti al lavoro hanno obblighi di sicurezza. L'azi
-11/230 29151ea0a4548a34 1.6s Fornire un carrello elevatore sicuro e mantenuto b
-12/230 cf957f16b7e4b409 2.1s Darti la formazione, le informazioni e la supervis
-13/230 bc2020f06e88c145 2.0s E creare modi di lavorare sicuri, come un piano di
-14/230 64e06f2cc5f59e59 1.2s Come operatore, anche tu hai degli obblighi.
-15/230 367b59b34a21eca8 1.4s Prenditi cura della tua sicurezza.
-16/230 6ab65a9b363e0c8e 1.7s Fai attenzione che ciò che fai non faccia male a n
-17/230 970aa47b82f62df4 2.5s Segui le istruzioni ragionevoli e le procedure del
-18/230 30d3102cf801e59d 1.5s E segnala ogni pericolo, incidente e difetto che t
-19/230 823aa30d03420d6f 1.4s Le regole di sicurezza vengono da alcuni posti.
-20/230 39551b5b3a8c0ee0 1.7s Il Work Health and Safety Act e i Regolamenti. Que
-21/230 b8b0ccd9b80ec711 1.6s I codici di condotta, che spiegano come rispettare
-22/230 7a9dcabee5f1434f 2.4s Le norme australiane. Per i carrelli elevatori, è 
-23/230 de489fcb63f6547f 1.7s Il manuale del costruttore del carrello elevatore 
-24/230 562acb3432a83c57 1.2s E le procedure del tuo luogo di lavoro.
-25/230 a23fcd646c826ea9 3.3s Buoni registri mostrano che i controlli sono stati
-26/230 8b827510e5b286d1 1.5s Compila una lista di controllo pre-avviamento a og
-27/230 818759a9941d4787 1.3s Scrivi le segnalazioni di difetti e guasti.
-28/230 40e4008e194a773e 1.4s Segnala gli incidenti, e anche i quasi-incidenti.
-29/230 3e673951c3e9b713 2.0s E se sei un apprendista, tieni aggiornato il libre
-30/230 5945b577beeea78c 2.6s Questo è il Modulo 1. Ora leggi le lezioni, poi fa
-31/230 88b4d59fbeaeeceb 3.7s Il Modulo 2 parla di come pianificare il lavoro e 
-32/230 dcefdf54d6bc6415 1.5s Prima di sollevare qualsiasi cosa, pensa bene al l
-33/230 071a1ba26a22c055 1.5s Il carico. Quanto pesa, quanto è grande, ed è fiss
-34/230 ebf1bcb87e2456fc 1.9s Il carrello elevatore. Può sollevare questo carico
-35/230 9b8acfc8784be584 2.1s Il percorso. Controlla il terreno, le pendenze, le
-36/230 a11b2d7fceb3166f 1.4s La destinazione. Dove andrà esattamente il carico?
-37/230 b6f38dd08d640359 1.6s E le persone. Chi altro lavora vicino, e come parl
-38/230 1a9bacf1e14a4212 1.4s Una buona comunicazione previene gli incidenti.
-39/230 8b6c08bebfbf73d1 1.5s Usa il clacson, il lampeggiante e l'allarme di ret
-40/230 c4a790eed8c780ba 2.2s Se un segnalatore ti guida con i segnali delle man
-41/230 824df786baaa0097 2.0s Alla radio ricetrasmittente, fai messaggi brevi e 
-42/230 306c69d387194ed4 1.8s E cerca sempre il contatto visivo con i pedoni pri
-43/230 7875f74303f8a279 1.9s Due parole che devi conoscere: pericolo e rischio.
-44/230 32ad2072d8748fcb 3.7s Un pericolo è qualsiasi cosa che potrebbe causare 
-45/230 87047e5f17c06069 1.8s Un rischio è la probabilità che il pericolo faccia
-46/230 6a280d6a1030d2b0 2.7s E quanto sarebbe grave il danno. Un pericolo che è
-47/230 5857b9cc2556b9a2 2.6s Quindi: individua il pericolo, valuta il rischio c
-48/230 1ff51313acec7bb5 2.4s Quando trovi un pericolo, usa la gerarchia dei con
-49/230 494a0cd30f2d9bcf 1.2s Uno. Elimina completamente il pericolo.
-50/230 e2d8bc65c3825c50 1.3s Due. Sostituiscilo con qualcosa di più sicuro.
-51/230 6e73b5caba32eb14 2.0s Tre. Isola le persone dal pericolo, con barriere o
-52/230 438451032bc75000 1.4s Quattro. Controlli tecnici, come specchi e luci di
-53/230 4e823eb2e4d5f935 1.8s Cinque. Controlli amministrativi, come procedure, 
-54/230 a388f695cae987d2 1.9s Sei. Dispositivi di protezione individuale. Sono l
-55/230 df47c40423d34a4b 1.7s Quando lavori all'aperto, guarda sempre in alto pr
-56/230 a98307f6614ff29a 3.4s L'elettricità ad alta tensione può saltare attrave
-57/230 66f9e8968602860f 3.3s Le linee elettriche aeree possono uccidere. L'elet
-58/230 53e5b3abff883d8c 3.9s Guarda sempre in alto. Mantieni la distanza minima
-59/230 170d8c174c13b763 2.3s Abbassa il montante prima di muoverti, e usa un se
-60/230 8abaa49dab85e141 2.8s Se il tuo carrello elevatore tocca una linea elett
-61/230 0e32c1021137be6a 2.3s Passo uno. Resta sul carrello elevatore. Resta cal
-62/230 21befaabf39add59 2.5s Passo due. Avvisa tutti di stare ad almeno 8 metri
-63/230 73f02f155102f328 2.6s Passo tre. Interrompi il contatto, abbassando il m
-64/230 7b8d1a110beebc7f 3.6s Passo quattro. Chiama il triplo zero (000) e la co
-65/230 c26e3482c6aa6848 2.1s Passo cinque. Solo se devi scendere — per esempio,
-66/230 878de58d05cc3ab2 3.2s Il terreno intorno a un carrello elevatore in tens
-67/230 dd687b7a25bc4730 3.1s Tutti gli altri stanno ad almeno 8 metri di distan
-68/230 760f7d1c63bc1534 2.9s Se devi scendere, salta ben lontano a piedi uniti.
-69/230 2f91ac2a16ee6ad7 2.8s Atterra a piedi uniti. Poi striscia i piedi o salt
-70/230 2d135ac8c3b55b2c 3.1s Non tornare indietro finché la compagnia elettrica
-71/230 9bfdc23b6d60bdef 2.0s Un carrello elevatore carico è molto pesante. Cont
-72/230 00f2263107b56434 2.1s Buche e cemento crepato scuotono il carico. Rallen
-73/230 1557162c47bfe43e 1.5s Terra morbida e scavi riempiti possono cedere. Evi
-74/230 bacc3d26b94cb993 1.6s Attraversa i binari ferroviari piano, di traverso 
-75/230 2334443420428012 2.8s E piastre in acciaio, griglie e coperture di scavi
-76/230 2a352ba42005a5b0 1.1s Il meteo cambia i rischi all'aperto.
-77/230 2ae993fa074aa7f4 2.6s Con il vento forte, i carichi grandi e piatti come
-78/230 2eb7da209a150a53 1.9s Se ci sono fulmini, ferma il lavoro, parcheggia in
-79/230 b16f85356d537070 2.6s Su terreno bagnato o ghiacciato, rallenta, frena c
-80/230 b90009f617d8105e 1.5s Con il caldo, bevi acqua, fai pause, e proteggiti 
-81/230 ccd22c25c20d82c2 2.0s In un vero magazzino, le persone camminano negli s
-82/230 c8e443c856cf639b 2.5s Passaggi pedonali segnati, barriere e zone di escl
-83/230 af0ffa10a8af5bd8 3.9s Un piano di gestione del traffico tiene separati p
-84/230 fe74cc5bb26312b6 2.2s Quando carichi un camion o impili in alto, crea un
-85/230 ee7a32cb14658d2a 1.4s Se qualcuno ci entra, ferma il lavoro finché non è
-86/230 0fbe071dc31d1dc5 3.3s Questo è il Modulo 2. Ricorda i passi per le linee
-87/230 7301f94d1c8f0b17 3.0s Il Modulo 3 tratta i controlli che fai a ogni turn
-88/230 f0cd25f2e65c7a67 1.7s Prima di ogni turno, controlli il carrello elevato
-89/230 db4cb18adf92e765 2.6s Questo comprende il sedile, la cintura di sicurezz
-90/230 d42cec94480cb740 2.8s Fai un controllo pre-avviamento prima di ogni turn
-91/230 719100e202b37108 1.9s Uno. Le forche. Cerca crepe, piegature e usura, e 
-92/230 c07a88cb337c76ef 1.9s Due. Il montante e le catene. Cerca danni e catene
-93/230 05080c5e723c9046 2.0s Tre. I tubi idraulici. Controlla se ci sono perdit
-94/230 dfca964e0389ff6c 1.8s Quattro. Pneumatici e ruote. Controlla danni, usur
-95/230 c955bc71ae30b2b2 2.3s Cinque. Il tettuccio di protezione e la griglia re
-96/230 e12b747d14883211 2.2s Sei. La targhetta dati deve esserci, essere leggib
-97/230 818e967d8b811ff9 2.6s Sette. Liquidi e carburante — olio, liquido di raf
-98/230 ee676b84680adc9a 1.6s Salire e scendere è il momento in cui succedono mo
-99/230 1c92528e71b4e9d4 1.9s Usa i gradini e le maniglie con tre punti di conta
-100/230 1aed6b70faadaefa 1.3s Una volta seduto, regola il sedile e gli specchi.
-101/230 8f9c608fcf1b521d 1.5s Allaccia la cintura di sicurezza, e controlla che 
-102/230 ca96728a191dd11d 2.1s Poi, avvia il carrello elevatore come dice il cost
-103/230 e9d98461a20d4d31 1.7s Prova il clacson, le luci, il lampeggiante e l'all
-104/230 99785e22e0853a65 1.0s Trova e prova ogni comando.
-105/230 859faef462979c20 2.9s Fai fare al sollevamento, all'inclinazione e al tr
-106/230 d69c6022fe0a57f3 1.3s Controlla i freni, lo sterzo e la trasmissione.
-107/230 c537e43e805fc3f0 2.2s E ascolta se ci sono rumori strani. Scrivi i risul
-108/230 cce413cf0659d0df 2.9s Se trovi un guasto, il carrello elevatore non può 
-109/230 446bd8fe2a25f526 1.1s Fermati, e parcheggia in sicurezza.
-110/230 66a655307e451ea4 1.8s Isola l'alimentazione. Togli la chiave, chiudi il 
-111/230 17241468e28fcf56 1.0s Etichettalo fuori servizio.
-112/230 f8df369c1c9b2dda 1.4s Segnala il guasto al tuo supervisore, e scrivilo.
-113/230 99767a686c132ec2 4.0s Il cartellino dice a tutti che il carrello elevato
-114/230 62514fe02e390003 1.3s A volte le cose si guastano mentre stai guidando.
-115/230 9f29a4b156037d4c 4.0s Se i freni si guastano, togli il piede dall'accele
-116/230 03894d5e2cc407f0 1.9s Se lo sterzo si guasta, fermati nel modo più sicur
-117/230 815b539561006d0f 3.0s Se l'impianto idraulico si guasta e il carico scen
-118/230 3c599e72eb3768bd 2.8s Se il carrello elevatore inizia a ribaltarsi, non 
-119/230 5f36a0eed3f334ba 3.3s Resta sul sedile con la cintura allacciata. Tieni 
-120/230 23f95d0bbc463288 0.9s Ecco alcuni problemi comuni.
-121/230 ede0efaca7781e52 3.1s Se un carrello elevatore a gas inizia a perdere co
-122/230 5a1b4bac3ab365d6 1.4s Se la batteria è scarica, torna all'area di ricari
-123/230 3a4bbc4fed8d61ac 2.5s Se si surriscalda, fermati, spegnilo e lascialo ra
-124/230 0f89541bed8069df 2.9s Se una luce, il clacson o un allarme non funziona,
-125/230 ea0c8c9c239ccdaa 2.8s Questo è il Modulo 3. Controllalo a ogni turno, et
-126/230 5c5af7a4d4d6ad02 4.1s Il Modulo 4 spiega perché i carrelli elevatori si 
-127/230 ba5a1f5baa0090b3 4.2s Un carrello elevatore a contrappeso funziona come 
-128/230 8a88870d2366caea 2.9s Visti dall'alto, le due ruote anteriori e il centr
-129/230 7d85358ba096acfa 2.3s Il baricentro del carrello elevatore e del carico 
-130/230 8472802b81d90527 1.9s Se il baricentro esce fuori dal triangolo, il carr
-131/230 2a51706d6e470116 4.6s Si sposta quando sovraccarichi, sollevi in alto, i
-132/230 c5682f220147e216 3.3s Ogni carrello elevatore ha una targhetta dati. Mos
-133/230 9515b00bf4010f68 3.8s Mostra anche il centro del carico a cui è calcolat
-134/230 2a22b9c862daa8ed 3.7s Non sollevare mai più della portata nominale. E se
-135/230 80795e9d791831df 3.9s Ti serve il peso prima di poterlo confrontare con 
-136/230 b4f4b4b022822604 1.6s Conta. 5 strati per 8 cartoni fa 40 cartoni.
-137/230 e759be776bb18c5d 1.6s Moltiplica. 40 cartoni per 20 chili fa 800 chili.
-138/230 95fa03eae03cca37 2.0s Aggiungi il pallet. 800 più 25 fa 825 chili.
-139/230 3f4ee9bda4db3056 0.8s Dove trovi il peso?
-140/230 d6d52dd4b4e31547 1.2s Cerca etichette e marcature sul carico.
-141/230 0440fa887e5c3e87 1.4s Controlla la lettera di vettura o il foglio di via
-142/230 caaefb134cbb735f 1.5s Gli scontrini della pesa mostrano cosa è stato pes
-143/230 c46a5f2a56ce85a3 1.7s I documenti dei costruttori indicano il peso di ma
-144/230 04befdaf46b61b2a 1.7s E se non trovi il peso, non sollevarlo. Chiedi al 
-145/230 1adb2c22a745d2e7 1.9s Questo carrello elevatore ha una pinza montata al 
-146/230 29a290b318014e6f 2.3s Fa un lavoro speciale, ma cambia anche quanto il c
-147/230 623afe6a60550668 1.3s Le attrezzature cambiano quanto puoi sollevare.
-148/230 93d19c42f2fc19d3 1.9s Aggiungono peso e spingono il carico più in avanti
-149/230 837ed7b30c672994 2.2s Usa solo attrezzature approvate dal costruttore, c
-150/230 bfd5eb74e426aa9e 1.8s Con un braccio gru, il carico appeso può oscillare
-151/230 936d724776fbb9ae 2.0s Con un rotatore, tieni il carico basso e il carrel
-152/230 3a7ac28d4e7f1e97 2.6s E solleva una persona solo in una piattaforma di l
-153/230 9131dea9eebe4ed1 1.2s Alcuni carichi richiedono più attenzione.
-154/230 d5e6836910ebf4c0 2.0s Se un carico è più pesante da un lato, centralo su
-155/230 07a82d46ebb50bcb 2.2s I carichi lunghi o larghi si allargano nelle curve
-156/230 94e4860b71f4501f 2.5s I liquidi sbattono e spingono il carrello elevator
-157/230 afb42ce54abdada1 2.7s E se non c'è il pallet, metti il carico su distanz
-158/230 ce11fcfa78146554 3.8s Questo è il Modulo 4. Tieni il baricentro dentro i
-159/230 ea6acef9ac8304f5 3.4s Il Modulo 5 è la matematica. Non preoccuparti — an
-160/230 6ac56b2ab4f465eb 1.1s Tre consigli prima di iniziare.
-161/230 70defac77d694e3d 1.2s Usa una calcolatrice. Ce n'è una nei quiz.
-162/230 05a7aa276ab18429 1.8s Scrivi ogni passaggio. È quello che farai anche ne
-163/230 516b9aac5fc65fd2 1.6s E prenditi il tuo tempo. Controlla che la risposta
-164/230 909dff6b0fc9bbe7 2.0s La portata nominale è in chilogrammi, ma i documen
-165/230 35d219b10f42d37e 1.4s Una tonnellata è 1,000 chilogrammi.
-166/230 561a488cc5347268 3.3s Quindi per cambiare le tonnellate in chilogrammi, 
-167/230 78d85d8a42593361 2.7s Ecco un pallet con 5 strati. Ogni strato ha 10 car
-168/230 686d9dd692adb111 1.6s Conta. 5 strati per 10 cartoni fa 50 cartoni.
-169/230 e5859ec379fa0072 1.9s Moltiplica. 50 cartoni per 20 chili fa 1,000 chili
-170/230 b7b50540b18edf65 1.9s Aggiungi il pallet. 1,000 più 30 fa 1,030 chili.
-171/230 f6ff676910dd68f8 2.4s Una pesa a ponte pesa tutto il camion. Per avere i
-172/230 6d09e28b1140e769 1.5s Il camion carico pesa 18,000 chili.
-173/230 f43d78a18e2e237c 1.4s Il camion vuoto pesa 12,000.
-174/230 29a03b7fd0437d73 1.3s Quindi il carico è 6,000 chili.
-175/230 19a39e0fd0b88a3d 2.3s Se sono 4 pallet tutti uguali, dividi per 4. Ogni 
-176/230 4e2d429d64bddaa5 3.6s A volte ti serve il numero massimo di cartoni che 
-177/230 3c787cb6488b8294 2.2s Prima, togli il pallet dal limite. 1,000 meno 20 f
-178/230 1b04b158c196033e 2.4s Poi dividi per il peso del cartone. 980 diviso 30 
-179/230 c591a6acf3a0dabb 1.8s Arrotonda sempre per difetto. Quindi la risposta è
-180/230 1fc24d3698ed535b 2.5s Perché non arrotondare per eccesso? 33 cartoni sar
-181/230 5dd2159154d4cc3e 2.8s Ora il centro del carico. È la distanza dalla part
-182/230 fab266f666b1544c 2.5s Per un carico uniforme spinto bene contro la grigl
-183/230 7c6019bc54b550af 2.3s Questa cassa è profonda 1,200 millimetri. Metà di 
-184/230 3923aa764e275e4a 1.9s Se c'è uno spazio tra il carico e la griglia reggi
-185/230 90e452c51a79ad96 3.9s Questa cassa è profonda 1,000 millimetri, quindi l
-186/230 cb06dab80757550c 3.5s 700 è più lontano dei 600 sulla targhetta dati. Qu
-187/230 78828a60eab1b656 4.0s Ora confronta il carico con la portata nominale. L
-188/230 5145a02ad690cf3c 2.3s Il nostro pallet pesa 1,900 chili, e il suo centro
-189/230 9d813ba5ed6651dc 2.2s 1,900 è meno di 2,500. Puoi sollevarlo, con 600 ch
-190/230 61ab07a28731402e 2.8s I documenti di questa cassa dicono 2.7 tonnellate.
-191/230 64d8ac4e12539daf 1.3s La portata nominale è 2,500 chili.
-192/230 95e08660ba91d729 1.6s 2,700 è 200 chili di troppo. Non sollevarla.
-193/230 156a3d05a67cca2a 3.7s Quanti fusti da 600 chili può portare insieme? Div
-194/230 b87db96c5e6a268c 1.8s Arrotonda sempre per difetto. Quindi la risposta è
-195/230 f936be808a5c3d05 1.8s 5 fusti sarebbero 3,000 chili. È troppo pesante.
-196/230 8e2cb4d0e4da2557 3.6s Questa è la matematica. Calcola il peso, controlla
-197/230 1a5e51629123e41b 2.3s Il Modulo 6 parla di guida sicura, rampe, presa de
-198/230 95b4977b62ed9f77 2.9s Quando viaggi, tieni il carico basso — circa 100–1
-199/230 10c270bbe09b4ad7 2.5s Guarda dove stai andando. Se il carico ti blocca l
-200/230 c6756b1dfb995b67 2.1s Cintura allacciata, mai passeggeri, e rallenta all
-201/230 ce8fad513eae293b 2.6s Su una rampa con un carico, tieni il carico dalla 
-202/230 2eccfaee33de73ac 2.7s Senza carico, è il contrario. Tieni le forche rivo
-203/230 3a18cf1a68009f66 1.8s E non sterzare mai su una rampa e non attraversarl
-204/230 a6c339f0bc20697d 2.7s Prima di muovere qualsiasi carico, fai un sollevam
-205/230 d3971270705ceb11 2.9s Il carrello elevatore è stabile? Il carico è fissa
-206/230 5cdb2441f399a260 1.6s Quando impili nella scaffalatura, segui questi pas
-207/230 14ff781d32bbad0c 1.3s Fermati diritto davanti alla scaffalatura.
-208/230 c498e9a902d1d286 1.8s Alza o abbassa un carico solo quando sei fermo. Ma
-209/230 971cd687a1e171f3 1.4s Metti le forche in piano, poi avanza piano piano.
-210/230 4471caa778940136 2.6s Abbassa il carico sulle travi, esci in retromarcia
-211/230 df7308821d54f376 0.9s Caricare i camion.
-212/230 f7f749a733a5ab22 2.8s Assicurati che il camion non possa muoversi. Freni
-213/230 f50ca807b10df1f7 1.4s Crea una zona di esclusione intorno al camion.
-214/230 6c9067c3bc941c73 2.5s Controlla che la piastra di banchina sia fissata, 
-215/230 8d9f6e0da175911c 1.3s E stai ben lontano dal bordo della banchina.
-216/230 832b3ab5dbf6cb6e 2.3s Questo è il Modulo 6. Tienilo basso, vai piano, e 
-217/230 d0dd31e2a1a00554 2.9s Modulo 7, l'ultimo. Come parcheggiare e spegnere, 
-218/230 5a1f03b6dfa08384 2.5s Alla fine del turno, il lavoro non è finito finché
-219/230 ffe76ab3a78e8ce5 1.8s Questo funziona a LPG. Puoi vedere la bombola del 
-220/230 e08652ee76ad3cc6 3.4s Quando finisci, parcheggia in un'area sicura e in 
-221/230 1b13466f0af56626 2.0s Metti in folle. Tira il freno di stazionamento. Ab
-222/230 264e6de31a33ca40 2.2s Spegnilo, isola l'alimentazione, togli la chiave, 
-223/230 78472d98729a8cc4 2.5s Devi cambiare una bombola di LPG? Fallo in un'area
-224/230 52053208dac5b2fb 2.3s Indossa guanti e protezione per gli occhi. L'LPG è
-225/230 70cf2388ff63488f 3.8s Chiudi la valvola, lascia girare il motore finché 
-226/230 431a509f39967ff9 2.7s Controlla se ci sono perdite con acqua e sapone. L
-227/230 9083fee721d6e6f9 3.7s Ricaricare la batteria di un carrello elevatore em
-228/230 798c140d2a619b3c 2.4s Spegni il caricabatterie prima di collegare o scol
-229/230 efaedf5237ddd8c7 2.3s L'acido della batteria brucia. Indossa i tuoi PPE,
-230/230 3a52e498309471ad 3.0s Questo è l'ultimo modulo. Quando hai finito tutte 
+1/21 c715eb74ae2f9a66 2.6s Una tonnellata è 1000 chilogrammi.
+2/21 1f3eaff3fd08b25b 4.1s Quindi per cambiare le tonnellate in chilogrammi, 
+3/21 209d603aa4910bf6 2.1s Moltiplica. 50 cartoni per 20 chili fa 1000 chili.
+4/21 5ec29660bc301a95 1.9s Aggiungi il pallet. 1000 più 30 fa 1030 chili.
+5/21 9273d31c696170ae 1.7s Il camion carico pesa 18000 chili.
+6/21 553acbbb946aea23 1.5s Il camion vuoto pesa 12000.
+7/21 1ab73ef813af3068 1.4s Quindi il carico è 6000 chili.
+8/21 b785f0287018b683 3.7s Se sono 4 pallet tutti uguali, dividi per 4. Ogni 
+9/21 1bb854daa6cb1af8 4.2s A volte ti serve il numero massimo di cartoni che 
+10/21 5b4297c98904f0bd 2.4s Prima, togli il pallet dal limite. 1000 meno 20 fa
+11/21 90d1337fe718e2c8 3.2s Perché non arrotondare per eccesso? 33 cartoni sar
+12/21 f32942228e6dc33f 3.2s Questa cassa è profonda 1200 millimetri. Metà di 1
+13/21 05f7512cd2d4a0fb 4.7s Questa cassa è profonda 1000 millimetri, quindi la
+14/21 75812052e77a4395 5.2s Ora confronta il carico con la portata nominale. L
+15/21 ea038f21fa50b5e7 3.1s Il nostro pallet pesa 1900 chili, e il suo centro 
+16/21 79bc02974fc4035f 3.1s 1900 è meno di 2500. Puoi sollevarlo, con 600 chil
+17/21 5714d1792f98d3f0 3.4s I documenti di questa cassa dicono 2.7 tonnellate.
+18/21 601f87a3dab4bef1 1.8s La portata nominale è 2500 chili.
+19/21 1a6f457fc3a81d65 2.2s 2700 è 200 chili di troppo. Non sollevarla.
+20/21 384669459e31509d 5.1s Quanti fusti da 600 chili può portare insieme? Div
+21/21 61eae18279468884 2.0s 5 fusti sarebbero 3000 chili. È troppo pesante.
 manifest: 230/230 lines have audio
