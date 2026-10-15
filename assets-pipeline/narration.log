@@ -1,24 +1,2 @@
-voice af_heart: 230 lines, 22 to record
-1/22 f93d6634899e34db 4.1s  Two words you need to know: hazard and risk. They're not the
-2/22 786ce4755b665cee 5.8s  A hazard is anything that could cause harm. A pedestrian nea
-3/22 adb9f86fe7ed152d 2.7s  A risk is the chance that the hazard will actually hurt some
-4/22 5db93280ed22217d 4.3s  And how bad the harm would be. A hazard that's likely to hap
-5/22 fa60e0f19f482f42 4.0s  So: spot the hazard, assess the risk by asking how likely an
-6/22 557908b46f8586ab 4.6s  Every forklift has a data plate. It shows the rated capacity
-7/22 350526190fe49ea3 6.3s  It also shows the load centre the capacity is rated at, usua
-8/22 f2e42e185d702bbb 5.7s  Never lift more than the rated capacity. And if the load's c
-9/22 f00e4b8ee9af783b 7.2s  You need the weight before you can compare it with the rated
-10/22 9bd48f9ea4c22a79 7.0s  That's Module 4. Keep the centre of gravity inside the trian
-11/22 ab2164328aa7ba95 4.2s  Rated capacity is in kilograms, but paperwork sometimes uses
-12/22 ee1c09371649a884 6.3s  Seven hundred is further out than the six hundred on the dat
-13/22 59199dbee50a10fc 6.0s  Now compare the load with the rated capacity. Forklift A's d
-14/22 f908748ec3afba2e 3.6s  Our pallet weighs nineteen hundred kilos, and its load centr
-15/22 9b28882ae7f5860c 4.4s  Nineteen hundred is less than twenty-five hundred. It's OK t
-16/22 839aadbdc54e25ed 4.5s  This crate's paperwork says two point seven tonnes. Times by
-17/22 78380129f7e8dc0b 2.3s  The rated capacity is twenty-five hundred kilos.
-18/22 0aabf97c0cdc8c04 2.9s  Twenty-seven hundred is two hundred kilos too heavy. Do not 
-19/22 6812405675dbbb64 7.6s  How many six hundred kilo drums can it carry at once? Divide
-20/22 9f33de866eaeff33 2.3s  Always round down. So the answer is four drums.
-21/22 1e67bfe75642acce 2.5s  Five drums would be three thousand kilos. That's too heavy.
-22/22 c8b06dd9898caf35 5.7s  That's the maths. Work out the weight, check the load centre
+voice af_heart: 230 lines, 0 to record
 manifest: 230/230 lines have audio
