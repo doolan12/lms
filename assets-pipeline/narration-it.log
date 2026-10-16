@@ -1,28 +1,2 @@
-it voice if_sara: 230 lines, 21 to record
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/torch/nn/modules/rnn.py:1011: UserWarning: dropout option adds dropout after all but last recurrent layer, so non-zero dropout expects num_layers greater than 1, but got dropout=0.2 and num_layers=1
-  super().__init__("LSTM", *args, **kwargs)
-/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/torch/nn/utils/weight_norm.py:145: FutureWarning: `torch.nn.utils.weight_norm` is deprecated in favor of `torch.nn.utils.parametrizations.weight_norm`.
-  WeightNorm.apply(module, name, dim)
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-1/21 c715eb74ae2f9a66 2.6s Una tonnellata è 1000 chilogrammi.
-2/21 1f3eaff3fd08b25b 4.1s Quindi per cambiare le tonnellate in chilogrammi, 
-3/21 209d603aa4910bf6 2.1s Moltiplica. 50 cartoni per 20 chili fa 1000 chili.
-4/21 5ec29660bc301a95 1.9s Aggiungi il pallet. 1000 più 30 fa 1030 chili.
-5/21 9273d31c696170ae 1.7s Il camion carico pesa 18000 chili.
-6/21 553acbbb946aea23 1.5s Il camion vuoto pesa 12000.
-7/21 1ab73ef813af3068 1.4s Quindi il carico è 6000 chili.
-8/21 b785f0287018b683 3.7s Se sono 4 pallet tutti uguali, dividi per 4. Ogni 
-9/21 1bb854daa6cb1af8 4.2s A volte ti serve il numero massimo di cartoni che 
-10/21 5b4297c98904f0bd 2.4s Prima, togli il pallet dal limite. 1000 meno 20 fa
-11/21 90d1337fe718e2c8 3.2s Perché non arrotondare per eccesso? 33 cartoni sar
-12/21 f32942228e6dc33f 3.2s Questa cassa è profonda 1200 millimetri. Metà di 1
-13/21 05f7512cd2d4a0fb 4.7s Questa cassa è profonda 1000 millimetri, quindi la
-14/21 75812052e77a4395 5.2s Ora confronta il carico con la portata nominale. L
-15/21 ea038f21fa50b5e7 3.1s Il nostro pallet pesa 1900 chili, e il suo centro 
-16/21 79bc02974fc4035f 3.1s 1900 è meno di 2500. Puoi sollevarlo, con 600 chil
-17/21 5714d1792f98d3f0 3.4s I documenti di questa cassa dicono 2.7 tonnellate.
-18/21 601f87a3dab4bef1 1.8s La portata nominale è 2500 chili.
-19/21 1a6f457fc3a81d65 2.2s 2700 è 200 chili di troppo. Non sollevarla.
-20/21 384669459e31509d 5.1s Quanti fusti da 600 chili può portare insieme? Div
-21/21 61eae18279468884 2.0s 5 fusti sarebbero 3000 chili. È troppo pesante.
+it voice if_sara: 230 lines, 0 to record
 manifest: 230/230 lines have audio
