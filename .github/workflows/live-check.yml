@@ -37,7 +37,7 @@ jobs:
             curl -s -b "lang=$L" "$B/courses/forklift-licence-theory/modules/1/watch?x=$RANDOM" > w.html
             echo "- $L lesson translated blocks: $(grep -o "class=\"translation " l.html | wc -l), rtl: $(grep -c 'dir="rtl"' l.html), video captions with lang: $(grep -o "lang=\"$L\"" w.html | wc -l)" >> $out
           done
-          for L in zh-Hans hi es it; do
+          for L in zh-Hans hi es it ar vi zh-Hant pa el tl; do
             curl -s -b "lang=$L" "$B/courses/forklift-licence-theory/modules/1/watch?x=$RANDOM" > v.html
             n=$(python3 -c "import json,re,sys; ids=set(json.load(open('src/content/videos/audio-manifest.$L.json'))['ids']); page=open('v.html').read(); print(len(set(re.findall(r'/audio/([0-9a-f]{16})\.mp3', page)) & ids))")
             echo "- $L module 1 video: $n lines with $L voice" >> $out

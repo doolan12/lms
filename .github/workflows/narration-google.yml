@@ -1,0 +1,49 @@
+name: Record translated narration (Google voices)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/content/i18n/ar.json"
+      - "src/content/i18n/vi.json"
+      - "src/content/i18n/zh-Hant.json"
+      - "src/content/i18n/pa.json"
+      - "src/content/i18n/el.json"
+      - "src/content/i18n/tl.json"
+      - "src/lib/i18n/speech.ts"
+      - "scripts/narration/google-tts.mts"
+      - "assets-pipeline/google-tts.trigger"
+      - ".github/workflows/narration-google.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        lang: [ar, vi, zh-Hant, pa, el, tl]
+    concurrency:
+      group: narration-google-${{ matrix.lang }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Record
+        env:
+          GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+        run: |
+          mkdir -p assets-pipeline
+          node --experimental-strip-types scripts/narration/google-tts.mts ${{ matrix.lang }} 2>&1 | tee assets-pipeline/narration-${{ matrix.lang }}.log
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "${{ github.repository_owner }}"
+          git config user.email "${{ github.repository_owner_id }}+${{ github.repository_owner }}@users.noreply.github.com"
+          git add -A public/audio src/content/videos/audio-manifest.${{ matrix.lang }}.json assets-pipeline/narration-${{ matrix.lang }}.log || true
+          git commit -m "Record ${{ matrix.lang }} narration (Google)" || exit 0
+          for i in 1 2 3 4 5; do (git pull --rebase -X theirs -q origin main || { git rebase --abort; false; }) && git push && break; sleep $((RANDOM % 20 + 5)); done
