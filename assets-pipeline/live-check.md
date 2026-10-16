@@ -1,4 +1,4 @@
-# Live check Fri Oct 16 00:01:19 UTC 2026
+# Live check Fri Oct 16 21:21:40 UTC 2026
 ## Files
 - images/illustrations/hero.jpg: 200 image/jpeg 88432B
 - images/illustrations/m1.jpg: 200 image/jpeg 73930B
@@ -252,3 +252,9 @@
 - hi module 1 video: 30 lines with hi voice
 - es module 1 video: 30 lines with es voice
 - it module 1 video: 30 lines with it voice
+- ar module 1 video: 0 lines with ar voice
+- vi module 1 video: 0 lines with vi voice
+- zh-Hant module 1 video: 0 lines with zh-Hant voice
+- pa module 1 video: 0 lines with pa voice
+- el module 1 video: 0 lines with el voice
+- tl module 1 video: 0 lines with tl voice
