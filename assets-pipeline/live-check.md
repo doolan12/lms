@@ -1,4 +1,4 @@
-# Live check Thu Oct 15 21:26:55 UTC 2026
+# Live check Fri Oct 16 00:01:19 UTC 2026
 ## Files
 - images/illustrations/hero.jpg: 200 image/jpeg 88432B
 - images/illustrations/m1.jpg: 200 image/jpeg 73930B
@@ -248,3 +248,7 @@
 - ar lesson translated blocks: 10, rtl: 6, video captions with lang: 12
 - vi lesson translated blocks: 10, rtl: 0, video captions with lang: 12
 - zh-Hans lesson translated blocks: 10, rtl: 0, video captions with lang: 12
+- zh-Hans module 1 video: 30 lines with zh-Hans voice
+- hi module 1 video: 30 lines with hi voice
+- es module 1 video: 30 lines with es voice
+- it module 1 video: 30 lines with it voice
