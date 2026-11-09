@@ -30,6 +30,8 @@ jobs:
           echo "- course page thumbnails: $(grep -o 'illustrations/m[0-9].jpg' course.html | sort -u | tr '\n' ' ')" >> $out
           echo "- module 1 video title image: $(grep -o 'illustrations/m1.jpg' watch1.html | wc -l)" >> $out
           echo "- module 1 video recorded lines: $(grep -o '/audio/[0-9a-f]*\.mp3' watch1.html | sort -u | wc -l)" >> $out
+          echo "- module 1 download link: $(grep -o 'releases/download/videos/forklift-theory-module-1[^"]*\.mp4' watch1.html | head -1)" >> $out
+          echo "- module 1 MP4 download: $(curl -sL -o /dev/null -w '%{http_code} %{size_download}B' https://github.com/doolan12/lms/releases/download/videos/forklift-theory-module-1-licensing-law-and-standards.mp4)" >> $out
           echo "- module 1 video Unsplash photo: $(grep -o 'photo-1684695749267' watch1.html | wc -l)" >> $out
           echo "## Translations" >> $out
           for L in ar vi zh-Hans; do

@@ -6,6 +6,7 @@ import { FREE_PREVIEW_VIDEO_MODULES, MODULE_VIDEOS, videoMinutes } from "@/conte
 import { VideoPlayer } from "@/components/video/VideoPlayer";
 import { narrationAudio, translatedNarrationAudio } from "@/content/videos/audio";
 import { VOICED } from "@/lib/i18n/speech";
+import { videoDownloads } from "@/content/videos/download";
 import { illustration } from "@/content/illustrations";
 import { getTranslator } from "@/lib/i18n/server";
 import { Translation, TranslationNotice } from "@/components/i18n/Translation";
@@ -78,6 +79,19 @@ export default async function WatchModulePage({ params }: Props) {
               translatedAudio={translatedAudio}
               voiceLabel={tr ? VOICED[tr.lang.code]?.label : undefined}
             />
+            <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
+              <a
+                href={videoDownloads(base).mp4}
+                download
+                className="rounded-md border border-ink px-3 py-1.5 font-semibold hover:bg-ink hover:text-white"
+              >
+                ⬇ Download video (MP4)
+              </a>
+              <a href={videoDownloads(base).srt} download className="text-muted underline hover:text-ink">
+                Captions file (.srt)
+              </a>
+              <span className="text-xs text-muted">English narration and captions · watch offline</span>
+            </div>
           </>
         ) : (
           <div className="rounded-xl border border-line bg-card p-8 text-center">
