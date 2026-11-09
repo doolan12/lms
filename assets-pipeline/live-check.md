@@ -1,4 +1,4 @@
-# Live check Fri Oct 16 21:21:40 UTC 2026
+# Live check Mon Nov  9 03:01:40 UTC 2026
 ## Files
 - images/illustrations/hero.jpg: 200 image/jpeg 88432B
 - images/illustrations/m1.jpg: 200 image/jpeg 73930B
@@ -239,19 +239,21 @@
 - audio/74176b489c452bc1.mp3: 200 audio/mpeg 45549B
 - audio/004c6f70fb024c29.mp3: 200 audio/mpeg 63021B
 ## Pages
-- home hero image: 5
-- course page thumbnails: illustrations/m1.jpg illustrations/m2.jpg illustrations/m3.jpg illustrations/m4.jpg illustrations/m5.jpg illustrations/m6.jpg illustrations/m7.jpg 
-- module 1 video title image: 3
-- module 1 video recorded lines: 30
-- module 1 video Unsplash photo: 1
+- home hero image: 0
+- course page thumbnails: 
+- module 1 video title image: 0
+- module 1 video recorded lines: 0
+- module 1 download link: 
+- module 1 MP4 download: 200 5425001B
+- module 1 video Unsplash photo: 0
 ## Translations
-- ar lesson translated blocks: 10, rtl: 6, video captions with lang: 12
-- vi lesson translated blocks: 10, rtl: 0, video captions with lang: 12
-- zh-Hans lesson translated blocks: 10, rtl: 0, video captions with lang: 12
-- zh-Hans module 1 video: 30 lines with zh-Hans voice
-- hi module 1 video: 30 lines with hi voice
-- es module 1 video: 30 lines with es voice
-- it module 1 video: 30 lines with it voice
+- ar lesson translated blocks: 0, rtl: 0, video captions with lang: 0
+- vi lesson translated blocks: 0, rtl: 0, video captions with lang: 0
+- zh-Hans lesson translated blocks: 0, rtl: 0, video captions with lang: 0
+- zh-Hans module 1 video: 0 lines with zh-Hans voice
+- hi module 1 video: 0 lines with hi voice
+- es module 1 video: 0 lines with es voice
+- it module 1 video: 0 lines with it voice
 - ar module 1 video: 0 lines with ar voice
 - vi module 1 video: 0 lines with vi voice
 - zh-Hant module 1 video: 0 lines with zh-Hant voice
