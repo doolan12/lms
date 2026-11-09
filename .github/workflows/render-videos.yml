@@ -1,0 +1,62 @@
+name: Export module videos (MP4)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/video/**"
+      - "src/content/videos/modules-*.ts"
+      - "src/content/videos/audio-manifest.json"
+      - "src/components/video/SlideVisual.tsx"
+      - "src/components/video/diagrams.tsx"
+      - "src/components/video/svg-parts.tsx"
+      - "src/app/render/**"
+      - ".github/workflows/render-videos.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: render-videos
+  cancel-in-progress: true
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install
+        run: |
+          sudo apt-get update -q && sudo apt-get install -yq ffmpeg
+          npm ci
+          npm i --no-save playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Build and start the site in render mode
+        run: |
+          printf 'NEXT_PUBLIC_SUPABASE_URL=http://127.0.0.1:9\nNEXT_PUBLIC_SUPABASE_ANON_KEY=render\nRENDER_SLIDES=1\n' > .env.local
+          npm run build
+          (npm start > /tmp/next.log 2>&1 &)
+          for i in $(seq 1 30); do curl -sf -o /dev/null localhost:3000/render/1 && break; sleep 2; done
+      - name: Render videos
+        run: |
+          rm -rf assets-pipeline/slides
+          OUT=out SLIDE_IMAGES=assets-pipeline/slides node scripts/video/render.mjs
+          cp out/report.md assets-pipeline/video-export.md
+          ls -la out
+      - name: Publish to the "videos" release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view videos >/dev/null 2>&1 || gh release create videos --title "Module videos (MP4)" --latest=false \
+            --notes "Narrated module videos for Forklift Theory, with English captions (.srt). Independent study aid, not an RTO."
+          gh release upload videos out/*.mp4 out/*.srt --clobber
+      - name: Commit slide images and report
+        if: always()
+        run: |
+          git config user.name "${{ github.repository_owner }}"
+          git config user.email "${{ github.repository_owner_id }}+${{ github.repository_owner }}@users.noreply.github.com"
+          git add -A assets-pipeline/slides assets-pipeline/video-export.md || true
+          git commit -m "Export module videos [skip ci]" || exit 0
+          for i in 1 2 3 4 5; do (git pull --rebase -X theirs -q origin main || { git rebase --abort; false; }) && git push && break; sleep 10; done
